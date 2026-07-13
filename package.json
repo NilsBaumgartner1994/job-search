@@ -1,0 +1,26 @@
+{
+  "name": "job-search",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Durchsucht Job-Portale, speichert Angebote in data/jobs.json und generiert jobs.md",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "crawl": "tsx src/index.ts",
+    "crawl:full": "tsx src/index.ts --refresh",
+    "html": "tsx src/index.ts --html-only",
+    "salaries": "tsx src/salary/fetchSalaryTables.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "pdf-parse": "^2.4.5",
+    "playwright": "^1.61.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

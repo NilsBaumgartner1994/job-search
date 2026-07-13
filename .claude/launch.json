@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "jobs-html",
+      "runtimeExecutable": "/Users/nilsbaumgartner/.nvm/versions/node/v22.16.0/bin/npx",
+      "runtimeArgs": ["-y", "http-server", "-p", "8321", "-c-1"],
+      "port": 8321
+    }
+  ]
+}
