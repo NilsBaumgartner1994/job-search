@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T09:15:07.499Z",
+  "updatedAt": "2026-08-13T13:15:48.009Z",
   "entries": [
     {
       "jobId": "accenture:13818109",
@@ -168,6 +168,22 @@
       "updatedAt": "2026-08-13T09:15:07.499Z",
       "punkte": 7,
       "begruendung": "Die Position als IT-Projektleiter im öffentlichen Sektor passt sehr gut zu deiner Promotion und Führungserfahrung aus der Unternehmensleitung. Accenture bietet Homeoffice-Optionen, allerdings liegen die genannten Bürostandorte außerhalb deiner 40-Minuten-Einzugsregion, weshalb der reale Präsenz- und Reiseanteil geprüft werden sollte."
+    },
+    {
+      "jobId": "interamt:1413536",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-13T13:15:48.009Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 0,
+        "gehalt": 1,
+        "arbeitszeit": 4,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Die Stelle richtet sich an Meister/Fachkräfte der Abwassertechnik und entspricht weder fachlich noch gehaltlich (TV-V 8 statt E13+) dem Profil eines promovierten Informatikers. Zudem liegt der Schichtarbeitsplatz in Hetlingen weit außerhalb des gewünschten Einzugsgebiets und erlaubt kein Homeoffice."
     }
   ]
 }
