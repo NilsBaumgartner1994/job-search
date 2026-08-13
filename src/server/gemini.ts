@@ -83,8 +83,14 @@ export async function generateContent(env: ServerEnv, options: GenerateOptions):
     }
 
     const errorText = (await response.text()).slice(0, 500);
+    const hint =
+      response.status === 404
+        ? `\n→ Das Modell "${env.geminiModel}" ist nicht (mehr) verfügbar. Anderes ` +
+          `Modell über GEMINI_MODEL wählen (.env bzw. Repo-Variable in GitHub), ` +
+          `z.B. "gemini-flash-latest" — der Alias zeigt immer auf das aktuelle Flash-Modell.`
+        : "";
     lastError = new GeminiError(
-      `Gemini-API ${response.status}: ${errorText}`,
+      `Gemini-API ${response.status}: ${errorText}${hint}`,
       response.status,
     );
     // 429 (Rate-Limit) und 5xx sind transient → warten und neu versuchen

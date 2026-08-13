@@ -6,7 +6,11 @@ export const ENV_FILE = join(process.cwd(), ".env");
 
 export interface ServerEnv {
   geminiApiKey: string;
-  /** z.B. "gemini-2.5-flash" — im kostenlosen Kontingent enthalten */
+  /**
+   * Default "gemini-flash-latest": Alias, der immer auf das aktuelle
+   * Flash-Modell zeigt (konkrete Versionen wie "gemini-2.5-flash" werden
+   * von Google für neue Nutzer irgendwann abgeschaltet → 404).
+   */
   geminiModel: string;
   port: number;
   /** Pause zwischen zwei Triage-Anfragen (Rate-Limit des Gratis-Kontingents) */
@@ -93,11 +97,14 @@ export async function ensureEnv(options?: { interactive?: boolean }): Promise<Se
     console.log(`✔ Schlüssel in ${ENV_FILE} gespeichert.\n`);
   }
 
+  // 0 ist erlaubt (bezahltes Kontingent → keine Pause nötig), daher nicht "|| 7000"
+  const delayRaw = get("AGENT_DELAY_MS")?.trim();
+  const delay = Number(delayRaw);
   return {
     geminiApiKey: apiKey,
-    geminiModel: get("GEMINI_MODEL")?.trim() || "gemini-2.5-flash",
+    geminiModel: get("GEMINI_MODEL")?.trim() || "gemini-flash-latest",
     port: Number(get("PORT")) || 8322,
-    // Gratis-Kontingent von gemini-2.5-flash: ~10 Anfragen/Minute → 7s Pause
-    agentDelayMs: Number(get("AGENT_DELAY_MS")) || 7000,
+    // Gratis-Kontingent der Flash-Modelle: ~10 Anfragen/Minute → 7s Pause
+    agentDelayMs: delayRaw && Number.isFinite(delay) && delay >= 0 ? delay : 7000,
   };
 }
