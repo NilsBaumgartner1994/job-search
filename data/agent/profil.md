@@ -1,17 +1,9 @@
-<!-- BITTE AUSFÜLLEN: Ersetze den kompletten Inhalt dieser Datei durch dein
-     eigenes Profil. Der KI-Agent bekommt genau diesen Text zusammen mit jedem
-     Stellenangebot und entscheidet damit, was für dich interessant ist.
+Ich habe Informatik (M.Sc.) studiert und im Mai 2026 im Bereich Software Engineering promoviert. Ich verfüge über fundierte Berufserfahrung in der Softwareentwicklung, in der wissenschaftlichen Forschung und Lehre sowie als Geschäftsführer eines Softwareentwicklung-Unternehmens.
 
-     Was reingehört (frei formuliert, Stichpunkte reichen):
-     - Studium/Abschluss und Berufserfahrung
-     - Was du dir wünschst: Orte bzw. Homeoffice, Gehalt/Entgeltgruppe,
-       befristet/unbefristet, Verbeamtung ja/nein
-     - No-Gos (z.B. "keine reinen Vertriebsstellen")
+Ich suche unbefristete Stellen (oder passende wissenschaftliche/Führungspositionen), gerne im öffentlichen Dienst (z. B. ab E13 / vergleichbare Entgeltgruppen) oder in der Industrie. Örtlich suche ich im Raum Osnabrück/Vechta/Cloppenburg oder mit überwiegendem Homeoffice-Anteil. Eine Verbeamtung ist für mich grundsätzlich denkbar, aber keine zwingende Voraussetzung.
 
-     Beispiel:
+Ich will realistisch vorzugsweise Home Office haben, aber ins Büro fahren wäre auch gut, solange es nicht mehr als 40min weg ist.
 
-     Ich habe Informatik (M.Sc.) studiert und 5 Jahre Erfahrung in
-     Webentwicklung (TypeScript, React, Node). Ich suche unbefristete
-     Stellen, gern im öffentlichen Dienst ab E13, Raum Osnabrück oder
-     überwiegend Homeoffice. Keine reinen SAP- oder Vertriebsstellen.
--->
+No-Gos:
+- Keine reinen Vertriebsstellen
+- Keine reinen SAP-Beratungsstellen
