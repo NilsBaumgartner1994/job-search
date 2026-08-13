@@ -3,6 +3,8 @@
 Durchsucht Job-Portale, speichert alle Angebote normalisiert in `data/jobs.json`
 und generiert daraus eine interaktive Übersicht in `jobs.html`.
 
+[https://nilsbaumgartner1994.github.io/job-search/](https://nilsbaumgartner1994.github.io/job-search/)
+
 ## Nutzung
 
 ```bash
