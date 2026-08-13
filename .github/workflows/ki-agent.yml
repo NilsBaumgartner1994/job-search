@@ -35,9 +35,10 @@ concurrency:
 jobs:
   agent:
     runs-on: ubuntu-latest
-    # Notbremse des Runners: Zeitlimit + Puffer für Install/Commit
-    # (bei zeitlimit=0 gelten 6h; GitHub kappt gehostete Runner ohnehin dort)
-    timeout-minutes: ${{ fromJSON(inputs.zeitlimit || '30') == 0 && 360 || fromJSON(inputs.zeitlimit || '30') + 20 }}
+    # Obergrenze des Runners: GitHub kappt gehostete Runner ohnehin bei 6h.
+    # Die eigentliche Notbremse (Zeitlimit + Puffer) setzt der timeout-Befehl
+    # im Agent-Schritt durch — Actions-Ausdrücke können nicht rechnen.
+    timeout-minutes: 360
     steps:
       - uses: actions/checkout@v4
 
@@ -53,7 +54,11 @@ jobs:
           PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
 
       - name: KI-Agent ausführen
-        run: yarn agent --limit="$LIMIT" --minuten="$MINUTEN"
+        # Notbremse: Zeitlimit + 20 Minuten Puffer, falls der Agent hängt;
+        # bei 0 ist timeout deaktiviert und es bremst nur das 6h-Joblimit.
+        # Der Commit-Schritt (if: always()) sichert das bis dahin Geschaffte.
+        run: |
+          timeout --kill-after=60s "$(( MINUTEN > 0 ? (MINUTEN + 20) * 60 : 0 ))s" yarn agent --limit="$LIMIT" --minuten="$MINUTEN"
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           AENDERUNGEN: ${{ inputs.aenderungen }}
