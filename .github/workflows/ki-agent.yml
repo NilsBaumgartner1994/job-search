@@ -61,7 +61,7 @@ jobs:
           MINUTEN: ${{ inputs.zeitlimit || '30' }}
           # Optionale Repo-Variablen (Settings → Secrets and variables →
           # Actions → Variables) — z.B. für ein bezahltes Gemini-Kontingent:
-          # GEMINI_MODEL (Default gemini-2.5-flash) und AGENT_DELAY_MS
+          # GEMINI_MODEL (Default gemini-flash-latest) und AGENT_DELAY_MS
           # (Pause zwischen Anfragen; Default 7000, bezahlt reicht z.B. 500)
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           AGENT_DELAY_MS: ${{ vars.AGENT_DELAY_MS }}

@@ -177,7 +177,7 @@ nächsten Start automatisch geladen. Optionale `.env`-Einträge:
 | Variable         | Default            | Bedeutung                                        |
 | ---------------- | ------------------ | ------------------------------------------------ |
 | `GEMINI_API_KEY` | — (wird abgefragt) | API-Schlüssel aus Google AI Studio               |
-| `GEMINI_MODEL`   | `gemini-2.5-flash` | verwendetes Modell                               |
+| `GEMINI_MODEL`   | `gemini-flash-latest` | verwendetes Modell (Alias = aktuelles Flash)  |
 | `PORT`           | `8322`             | Port des Kanban-Servers                          |
 | `AGENT_DELAY_MS` | `7000`             | Pause zwischen zwei Triage-Anfragen (Rate-Limit) |
 
@@ -272,7 +272,7 @@ Actions → **KI-Agent** → "Run workflow". Drei optionale Eingaben:
 - **limit** (Default 200, 0 = unbeschränkt) — wie viele neue Jobs dieser
   Lauf maximal triagiert. Das Gratis-Kontingent hat neben dem Minuten-
   auch ein **Tageslimit** (Größenordnung ein paar hundert Anfragen für
-  `gemini-2.5-flash`) — bei ~1000 offenen Jobs braucht der erste
+  die Flash-Modelle) — bei ~1000 offenen Jobs braucht der erste
   Komplettdurchlauf also mehrere Läufe an mehreren Tagen. Jeder Lauf macht
   dort weiter, wo der letzte aufgehört hat; bei aufgebrauchtem Kontingent
   bricht er ab und committet das bis dahin Geschaffte.
