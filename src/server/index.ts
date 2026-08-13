@@ -5,6 +5,7 @@ import { loadJobs } from "../storage.js";
 import type { JobOffer } from "../types.js";
 import { askAboutJob, getAgentStatus, startAgent, stopAgent } from "./agent.js";
 import { ensureEnv, type ServerEnv } from "./env.js";
+import { getGeminiUsage } from "./gemini.js";
 import { lightJob } from "./publish.js";
 import {
   getEntry,
@@ -64,6 +65,7 @@ async function handle(
       profile: loadProfile(),
       agent: getAgentStatus(),
       model: env.geminiModel,
+      usage: getGeminiUsage(env),
       statuses: BOARD_STATUSES,
     });
     return;

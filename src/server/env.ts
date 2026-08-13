@@ -5,7 +5,13 @@ import { createInterface } from "node:readline/promises";
 export const ENV_FILE = join(process.cwd(), ".env");
 
 export interface ServerEnv {
-  geminiApiKey: string;
+  /**
+   * Ein oder mehrere Gemini-API-Schlüssel (z.B. privater + Business-Key).
+   * In GEMINI_API_KEY durch Komma, Semikolon oder Zeilenumbruch getrennt;
+   * bei 429 (Kontingent erschöpft) wird automatisch auf den nächsten
+   * Schlüssel gewechselt.
+   */
+  geminiApiKeys: string[];
   /**
    * Default "gemini-flash-latest": Alias, der immer auf das aktuelle
    * Flash-Modell zeigt (konkrete Versionen wie "gemini-2.5-flash" werden
@@ -54,6 +60,9 @@ keine Kreditkarte nötig — das Gratis-Kontingent genügt für die Triage):
   4. Kopiere den erzeugten Schlüssel (beginnt mit "AIza…")
   5. Füge ihn hier unten ein und drücke Enter
 
+Tipp: Mehrere Schlüssel (z.B. privat + Business) lassen sich durch Komma
+getrennt angeben — bei erschöpftem Kontingent wird automatisch gewechselt.
+
 Der Schlüssel wird in der Datei .env gespeichert (steht im .gitignore,
 landet also nicht im Git) und beim nächsten Start automatisch geladen.
 `;
@@ -65,6 +74,19 @@ landet also nicht im Git) und beim nächsten Start automatisch geladen.
  * Ohne Terminal (CI / GitHub Actions) wird stattdessen mit einer klaren
  * Fehlermeldung abgebrochen, die auf das Repo-Secret hinweist.
  */
+/**
+ * Zerlegt GEMINI_API_KEY in einzelne Schlüssel: getrennt durch Komma,
+ * Semikolon oder Zeilenumbruch (echte Newlines z.B. aus einem mehrzeiligen
+ * GitHub-Secret, in der .env auch als literales "\n").
+ */
+export function splitApiKeys(raw: string): string[] {
+  return raw
+    .replace(/\\n/g, "\n")
+    .split(/[,;\n]+/)
+    .map((key) => key.trim())
+    .filter(Boolean);
+}
+
 export async function ensureEnv(options?: { interactive?: boolean }): Promise<ServerEnv> {
   const interactive = options?.interactive ?? true;
   const fromFile = parseEnvFile(ENV_FILE);
@@ -101,7 +123,7 @@ export async function ensureEnv(options?: { interactive?: boolean }): Promise<Se
   const delayRaw = get("AGENT_DELAY_MS")?.trim();
   const delay = Number(delayRaw);
   return {
-    geminiApiKey: apiKey,
+    geminiApiKeys: splitApiKeys(apiKey),
     geminiModel: get("GEMINI_MODEL")?.trim() || "gemini-flash-latest",
     port: Number(get("PORT")) || 8322,
     // Gratis-Kontingent der Flash-Modelle: ~10 Anfragen/Minute → 7s Pause

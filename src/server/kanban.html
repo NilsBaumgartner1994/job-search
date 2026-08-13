@@ -126,6 +126,7 @@
   <button id="btnProfile">👤 Profil</button>
   <button id="btnAgent" class="primary">🤖 KI-Agent starten</button>
   <span id="agentInfo"></span>
+  <span id="usageInfo" class="hint"></span>
   <span class="spacer"></span>
   <label class="hint" title="Sortierung für alle Spalten setzen">Sortierung
     <select id="sortAll"></select>
@@ -509,7 +510,40 @@ function renderMsg(msg) {
 
 // ---------- Agent ----------
 
+/**
+ * Zeigt die API-Nutzung pro Gemini-Key: Anfragen, erreichte Limits und —
+ * falls ein Key gesperrt ist — warum (Minuten-/Tageslimit, Höhe, Modell)
+ * und ab wann sich neue Anfragen wieder lohnen.
+ */
+function renderUsage() {
+  const el = document.getElementById("usageInfo");
+  const usage = (state.usage || []).filter(u => u.ok || u.fehler || u.rateLimited || u.gesperrtBis);
+  if (!usage.length) { el.innerHTML = ""; return; }
+  el.innerHTML = "📊 " + usage.map(u => {
+    const parts = [u.ok + " ok"];
+    if (u.fehler) parts.push(u.fehler + " Fehler");
+    if (u.rateLimited) parts.push(u.rateLimited + "× Limit");
+    let text = esc(u.label) + ": " + parts.join(" · ");
+    if (u.gesperrtBis) {
+      const bis = new Date(u.gesperrtBis).toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" });
+      text += ' · <span style="color:#b92500">gesperrt bis ' + bis + "</span>";
+    }
+    let title = "Nutzung seit Server-Start. Offizieller Stand: https://ai.dev/rate-limit";
+    const q = u.letztesLimit;
+    if (q) {
+      title = "Letztes Limit: " + q.art +
+        (q.limit ? ", " + q.limit + " Anfragen" : "") +
+        (q.model ? ", " + q.model : "") +
+        (q.art === "Tageslimit" ? ", Reset ca. 09:00 deutscher Zeit" :
+          (q.retrySeconds ? ", erneut in ~" + Math.ceil(q.retrySeconds) + "s" : "")) +
+        "\n" + title;
+    }
+    return '<span title="' + esc(title) + '">' + text + "</span>";
+  }).join(" &nbsp;|&nbsp; ");
+}
+
 function renderAgent() {
+  renderUsage();
   const agent = state.agent || {};
   const btn = document.getElementById("btnAgent");
   const info = document.getElementById("agentInfo");

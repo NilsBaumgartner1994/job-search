@@ -1,7 +1,7 @@
 import { loadJobs } from "../storage.js";
 import { requireProfile, sortTriageQueue, triageJob } from "./agent.js";
 import { ensureEnv } from "./env.js";
-import { GeminiError } from "./gemini.js";
+import { GeminiError, usageSummaryText } from "./gemini.js";
 import { publishDocs } from "./publish.js";
 import { getEntry, hasChat, loadBoard, setStatus } from "./store.js";
 import { BOARD_STATUSES, type BoardStatus } from "./types.js";
@@ -74,6 +74,7 @@ async function main(): Promise<void> {
   const jobs = loadJobs();
   console.log(
     `${jobs.length} Jobs in data/jobs.json, Modell: ${env.geminiModel}, ` +
+      `${env.geminiApiKeys.length} API-Key(s), ` +
       `Limit: ${limit || "∞"} Jobs / ${minuten || "∞"} Minuten`,
   );
 
@@ -122,10 +123,11 @@ async function main(): Promise<void> {
     } catch (err) {
       failed++;
       console.error(`  ⚠ ${job.titel}: ${err instanceof Error ? err.message : err}`);
-      // Dauerhafte Fehler (ungültiger Key, Tageskontingent aufgebraucht, …):
-      // abbrechen — der nächste Lauf macht dort weiter, wo dieser aufhörte
-      if (err instanceof GeminiError && err.status && err.status < 500 && err.status !== 429) {
-        console.error("  ✂ Lauf abgebrochen (dauerhafter API-Fehler).");
+      // Dauerhafte Fehler (ungültiger Key, Kontingent aller Keys erschöpft —
+      // 429 wird erst geworfen, nachdem Key-Wechsel und Warten nichts gebracht
+      // haben): abbrechen — der nächste Lauf macht dort weiter
+      if (err instanceof GeminiError && err.status && err.status < 500) {
+        console.error("  ✂ Lauf abgebrochen (dauerhafter API-Fehler bzw. Kontingent erschöpft).");
         break;
       }
     }
@@ -136,6 +138,7 @@ async function main(): Promise<void> {
 
   publishDocs(jobs);
   console.log(`\n✔ Triage: ${done} bearbeitet, ${failed} fehlgeschlagen.`);
+  console.log(usageSummaryText(env));
   console.log("✔ docs/ (GitHub-Pages-Daten) aktualisiert.");
   if (queue.length > 0 && done === 0) process.exitCode = 1;
 }

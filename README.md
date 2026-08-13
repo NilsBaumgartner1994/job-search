@@ -176,10 +176,24 @@ nächsten Start automatisch geladen. Optionale `.env`-Einträge:
 
 | Variable         | Default            | Bedeutung                                        |
 | ---------------- | ------------------ | ------------------------------------------------ |
-| `GEMINI_API_KEY` | — (wird abgefragt) | API-Schlüssel aus Google AI Studio               |
+| `GEMINI_API_KEY` | — (wird abgefragt) | API-Schlüssel aus Google AI Studio — **mehrere Keys** (z.B. privat + Business) durch Komma, Semikolon oder Zeilenumbruch getrennt |
 | `GEMINI_MODEL`   | `gemini-flash-latest` | verwendetes Modell (Alias = aktuelles Flash)  |
 | `PORT`           | `8322`             | Port des Kanban-Servers                          |
 | `AGENT_DELAY_MS` | `7000`             | Pause zwischen zwei Triage-Anfragen (Rate-Limit) |
+
+### Rate-Limits & API-Nutzung
+
+- Läuft ein Key in ein **429 (Kontingent erschöpft)**, wertet der Agent die
+  Antwort aus (Minuten- oder **Tageslimit**, Höhe des Limits, betroffenes
+  Modell, empfohlene Wartezeit) und wechselt automatisch auf den **nächsten
+  konfigurierten Key**. Erst wenn alle Keys gesperrt sind, wird kurz gewartet
+  bzw. der Lauf mit einer klaren Meldung beendet, **wann** sich neue Anfragen
+  wieder lohnen (Tageslimits resetten ca. 09:00 deutscher Zeit).
+- Die **Nutzung pro Key** (erfolgreiche Anfragen, Fehler, erreichte Limits,
+  Sperre bis wann und warum) zeigt das Board oben in der Leiste (📊, Details
+  im Tooltip); `yarn agent` druckt sie am Ende des Laufs. Eine echte
+  Usage-Abfrage bietet die Gemini-API nicht — den offiziellen Stand zeigt
+  https://ai.dev/rate-limit.
 
 ### So arbeitet der Agent
 
@@ -300,7 +314,9 @@ Lokal geht derselbe Headless-Lauf mit `yarn agent --limit=50 --minuten=10`.
 
 ### Bezahltes Gemini-Kontingent (z.B. Firmen-Account)
 
-Der Workflow braucht als **Secret** nur `GEMINI_API_KEY`. Zwei optionale
+Der Workflow braucht als **Secret** nur `GEMINI_API_KEY` (auch hier sind
+mehrere Keys erlaubt — durch Komma oder Zeilenumbruch getrennt, das Secret
+darf mehrzeilig sein). Zwei optionale
 **Repo-Variablen** (Settings → Secrets and variables → Actions → Tab
 "Variables" — nicht Secrets, da unkritisch) passen ihn an ein bezahltes
 Kontingent an:

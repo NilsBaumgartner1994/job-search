@@ -235,9 +235,11 @@ export function startAgent(env: ServerEnv, jobs: JobOffer[]): { started: boolean
       } catch (error) {
         status.lastError = `${job.titel}: ${error instanceof Error ? error.message : error}`;
         console.error(`⚠ Triage fehlgeschlagen für ${job.id}: ${status.lastError}`);
-        // Dauerhafte Fehler (ungültiger Key, falsches Modell, kein Kontingent):
-        // Lauf abbrechen statt jeden weiteren Job in denselben Fehler laufen zu lassen
-        if (error instanceof GeminiError && error.status && error.status < 500 && error.status !== 429) {
+        // Dauerhafte Fehler (ungültiger Key, falsches Modell) und erschöpftes
+        // Kontingent aller Keys (429 wird erst geworfen, nachdem Key-Wechsel
+        // und Warten nichts gebracht haben): Lauf abbrechen statt jeden
+        // weiteren Job in denselben Fehler laufen zu lassen
+        if (error instanceof GeminiError && error.status && error.status < 500) {
           break;
         }
       }
