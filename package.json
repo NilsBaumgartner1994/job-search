@@ -10,6 +10,7 @@
     "crawl": "tsx src/index.ts",
     "crawl:full": "tsx src/index.ts --refresh",
     "html": "tsx src/index.ts --html-only",
+    "server": "tsx src/server/index.ts",
     "salaries": "tsx src/salary/fetchSalaryTables.ts",
     "typecheck": "tsc --noEmit"
   },
