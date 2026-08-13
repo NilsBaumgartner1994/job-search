@@ -16,9 +16,13 @@ on:
         required: false
         default: ""
       limit:
-        description: "Max. Anzahl neu zu triagierender Jobs in diesem Lauf (Gratis-Kontingent hat ein Tageslimit)"
+        description: "Max. Anzahl neu zu triagierender Jobs in diesem Lauf (0 = unbeschränkt; Gratis-Kontingent hat ein Tageslimit)"
         required: false
         default: "200"
+      zeitlimit:
+        description: "Zeitlimit in Minuten — danach hört der Lauf sauber auf und committet das bis dahin Geschaffte (0 = kein Zeitlimit)"
+        required: false
+        default: "30"
 
 permissions:
   contents: write
@@ -31,7 +35,9 @@ concurrency:
 jobs:
   agent:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    # Notbremse des Runners: Zeitlimit + Puffer für Install/Commit
+    # (bei zeitlimit=0 gelten 6h; GitHub kappt gehostete Runner ohnehin dort)
+    timeout-minutes: ${{ fromJSON(inputs.zeitlimit || '30') == 0 && 360 || fromJSON(inputs.zeitlimit || '30') + 20 }}
     steps:
       - uses: actions/checkout@v4
 
@@ -47,11 +53,18 @@ jobs:
           PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
 
       - name: KI-Agent ausführen
-        run: yarn agent --limit="$LIMIT"
+        run: yarn agent --limit="$LIMIT" --minuten="$MINUTEN"
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           AENDERUNGEN: ${{ inputs.aenderungen }}
           LIMIT: ${{ inputs.limit || '200' }}
+          MINUTEN: ${{ inputs.zeitlimit || '30' }}
+          # Optionale Repo-Variablen (Settings → Secrets and variables →
+          # Actions → Variables) — z.B. für ein bezahltes Gemini-Kontingent:
+          # GEMINI_MODEL (Default gemini-2.5-flash) und AGENT_DELAY_MS
+          # (Pause zwischen Anfragen; Default 7000, bezahlt reicht z.B. 500)
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          AGENT_DELAY_MS: ${{ vars.AGENT_DELAY_MS }}
 
       - name: Ergebnisse committen und pushen
         if: always()

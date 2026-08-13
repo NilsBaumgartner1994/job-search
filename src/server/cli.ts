@@ -9,26 +9,28 @@ import { BOARD_STATUSES, type BoardStatus } from "./types.js";
 /**
  * Headless-Variante des KI-Agenten für GitHub Actions (oder lokal ohne UI):
  *
- *   yarn agent [--limit=200]
+ *   yarn agent [--limit=200] [--minuten=30]
  *
  * 1. Wendet Änderungen aus dem Browser an (Umgebungsvariable AENDERUNGEN —
  *    das JSON, das die GitHub-Pages-Seite über "Änderungen kopieren" liefert):
  *    [{"jobId":"bka:T-2026-54","status":"beworben"}, …] → vonKi=false
- * 2. Triagiert bis zu --limit unbearbeitete Jobs mit Gemini (Gratis-Kontingent:
- *    das Tageslimit liegt bei ein paar hundert Anfragen, daher das Limit).
+ * 2. Triagiert unbearbeitete Jobs mit Gemini, bis --limit Jobs bearbeitet
+ *    sind ODER --minuten Zeit vergangen ist — je nachdem, was zuerst greift
+ *    (0 = jeweils unbeschränkt). Bereits Geschaffte bleibt bei Abbruch
+ *    erhalten; der nächste Lauf macht dort weiter.
  * 3. Schreibt die JSON-Daten für die GitHub-Pages-Seite nach docs/.
  *
  * Der Workflow committet danach data/agent/ und docs/ zurück ins Repo.
  */
 
-function parseLimit(argv: string[]): number {
+function parseNumberArg(argv: string[], name: string, fallback: number): number {
   for (const arg of argv) {
-    if (arg.startsWith("--limit=")) {
-      const limit = Number(arg.slice("--limit=".length));
-      if (Number.isFinite(limit) && limit >= 0) return Math.floor(limit);
+    if (arg.startsWith(`--${name}=`)) {
+      const value = Number(arg.slice(name.length + 3));
+      if (Number.isFinite(value) && value >= 0) return Math.floor(value);
     }
   }
-  return 200;
+  return fallback;
 }
 
 interface ChangeInput {
@@ -64,10 +66,16 @@ function applyChanges(raw: string, knownIds: Set<string>): void {
 }
 
 async function main(): Promise<void> {
-  const limit = parseLimit(process.argv.slice(2));
+  const argv = process.argv.slice(2);
+  const limit = parseNumberArg(argv, "limit", 200);
+  const minuten = parseNumberArg(argv, "minuten", 30);
+  const deadline = minuten > 0 ? Date.now() + minuten * 60_000 : Infinity;
   const env = await ensureEnv({ interactive: process.stdin.isTTY === true });
   const jobs = loadJobs();
-  console.log(`${jobs.length} Jobs in data/jobs.json, Modell: ${env.geminiModel}, Limit: ${limit}`);
+  console.log(
+    `${jobs.length} Jobs in data/jobs.json, Modell: ${env.geminiModel}, ` +
+      `Limit: ${limit || "∞"} Jobs / ${minuten || "∞"} Minuten`,
+  );
 
   const changesRaw = process.env.AENDERUNGEN?.trim();
   if (changesRaw) {
@@ -85,17 +93,20 @@ async function main(): Promise<void> {
   }
 
   const board = loadBoard();
-  const queue = jobs
-    .filter((job) => {
-      const entry = getEntry(board, job.id);
-      return (!entry || entry.status === "todo") && !hasChat(job.id);
-    })
-    .slice(0, limit);
-  console.log(`${queue.length} unbearbeitete Jobs werden triagiert …`);
+  const open = jobs.filter((job) => {
+    const entry = getEntry(board, job.id);
+    return (!entry || entry.status === "todo") && !hasChat(job.id);
+  });
+  const queue = limit > 0 ? open.slice(0, limit) : open;
+  console.log(`${queue.length} von ${open.length} unbearbeiteten Jobs werden triagiert …`);
 
   let done = 0;
   let failed = 0;
   for (const job of queue) {
+    if (Date.now() >= deadline) {
+      console.log(`  ⏱ Zeitlimit von ${minuten} Minuten erreicht — Lauf endet sauber.`);
+      break;
+    }
     try {
       await triageJob(env, profile, job);
       done++;

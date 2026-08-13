@@ -93,11 +93,14 @@ export async function ensureEnv(options?: { interactive?: boolean }): Promise<Se
     console.log(`✔ Schlüssel in ${ENV_FILE} gespeichert.\n`);
   }
 
+  // 0 ist erlaubt (bezahltes Kontingent → keine Pause nötig), daher nicht "|| 7000"
+  const delayRaw = get("AGENT_DELAY_MS")?.trim();
+  const delay = Number(delayRaw);
   return {
     geminiApiKey: apiKey,
     geminiModel: get("GEMINI_MODEL")?.trim() || "gemini-2.5-flash",
     port: Number(get("PORT")) || 8322,
     // Gratis-Kontingent von gemini-2.5-flash: ~10 Anfragen/Minute → 7s Pause
-    agentDelayMs: Number(get("AGENT_DELAY_MS")) || 7000,
+    agentDelayMs: delayRaw && Number.isFinite(delay) && delay >= 0 ? delay : 7000,
   };
 }

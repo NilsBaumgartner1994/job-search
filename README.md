@@ -265,19 +265,45 @@ GitHub-Workflow "KI-Agent" (workflow_dispatch)
 
 ### Einen Lauf starten
 
-Actions → **KI-Agent** → "Run workflow". Zwei optionale Eingaben:
+Actions → **KI-Agent** → "Run workflow". Drei optionale Eingaben:
 
 - **aenderungen** — das JSON von der Pages-Seite (siehe unten); leer
   lassen, wenn es keine gibt.
-- **limit** (Default 200) — wie viele neue Jobs dieser Lauf maximal
-  triagiert. Das Gratis-Kontingent hat neben dem Minuten- auch ein
-  **Tageslimit** (Größenordnung ein paar hundert Anfragen für
+- **limit** (Default 200, 0 = unbeschränkt) — wie viele neue Jobs dieser
+  Lauf maximal triagiert. Das Gratis-Kontingent hat neben dem Minuten-
+  auch ein **Tageslimit** (Größenordnung ein paar hundert Anfragen für
   `gemini-2.5-flash`) — bei ~1000 offenen Jobs braucht der erste
   Komplettdurchlauf also mehrere Läufe an mehreren Tagen. Jeder Lauf macht
   dort weiter, wo der letzte aufgehört hat; bei aufgebrauchtem Kontingent
   bricht er ab und committet das bis dahin Geschaffte.
+- **zeitlimit** (Default 30 Minuten, 0 = keins) — harte Obergrenze für die
+  Laufzeit: nach Ablauf hört die Triage **sauber** auf (kein Abschuss
+  mitten im Job), Ergebnisse und Pages-Daten werden ganz normal
+  committet. Es gilt, was zuerst greift: limit oder zeitlimit. Als
+  Notbremse bricht der Runner selbst zusätzlich 20 Minuten nach dem
+  Zeitlimit ab (bzw. bei zeitlimit=0 nach 6 Stunden, dem Maximum von
+  GitHub-gehosteten Runnern).
 
-Lokal geht derselbe Headless-Lauf mit `yarn agent --limit=50`.
+Lokal geht derselbe Headless-Lauf mit `yarn agent --limit=50 --minuten=10`.
+
+### Bezahltes Gemini-Kontingent (z.B. Firmen-Account)
+
+Der Workflow braucht als **Secret** nur `GEMINI_API_KEY`. Zwei optionale
+**Repo-Variablen** (Settings → Secrets and variables → Actions → Tab
+"Variables" — nicht Secrets, da unkritisch) passen ihn an ein bezahltes
+Kontingent an:
+
+| Variable         | Beispiel (bezahlt)  | Wirkung                                     |
+| ---------------- | ------------------- | ------------------------------------------- |
+| `GEMINI_MODEL`   | `gemini-2.5-pro`    | anderes Modell für Triage & Chat            |
+| `AGENT_DELAY_MS` | `500`               | kürzere Pause zwischen Anfragen (Default 7000) |
+
+Mit bezahltem Key entfallen Minuten-/Tageslimit praktisch — dann z.B.
+limit=0, zeitlimit=60 und `AGENT_DELAY_MS=500` setzen, und ~1100 Jobs
+laufen in einem einzigen Lauf durch. Wichtig: Es muss ein API-Schlüssel
+der **Gemini Developer API** sein (AI Studio, beginnt mit `AIza…`) —
+Vertex-AI-Zugänge (Google-Cloud-Projekt mit Service-Account) benutzen
+eine andere Authentifizierung und funktionieren hier nicht.
 
 ### Änderungen von der Pages-Seite zurück ins Repo
 
