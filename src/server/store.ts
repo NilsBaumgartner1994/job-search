@@ -1,7 +1,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import type { JobOffer } from "../types.js";
-import type { BoardEntry, BoardFile, BoardStatus, ChatMessage } from "./types.js";
+import type { BoardEntry, BoardFile, BoardStatus, ChatMessage, TriageScores } from "./types.js";
 
 /**
  * Alles rund um den KI-Agenten liegt lokal im Dateisystem unter data/agent/:
@@ -60,7 +60,7 @@ export function setStatus(
   jobId: string,
   status: BoardStatus,
   vonKi: boolean,
-  extra?: { punkte?: number; begruendung?: string },
+  extra?: { punkte?: number; punkteDetails?: TriageScores; begruendung?: string },
 ): BoardEntry {
   const board = loadBoard();
   let entry = getEntry(board, jobId);
@@ -72,6 +72,7 @@ export function setStatus(
   entry.vonKi = vonKi;
   entry.updatedAt = new Date().toISOString();
   if (extra?.punkte !== undefined) entry.punkte = extra.punkte;
+  if (extra?.punkteDetails !== undefined) entry.punkteDetails = extra.punkteDetails;
   if (extra?.begruendung !== undefined) entry.begruendung = extra.begruendung;
   saveBoard(board);
   return entry;

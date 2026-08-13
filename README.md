@@ -190,10 +190,15 @@ nächsten Start automatisch geladen. Optionale `.env`-Einträge:
    dem nächsten vorgelegt — jeweils mit deinem Profil und dem **kompletten
    Seitentext** der Ausschreibung (`raw.detail`, HTML → Text) — und
    entscheidet: lohnt ein genauer Blick (**⭐ Interessant**) oder kann es weg
-   (**🗄 Archiviert**)? Dazu vergibt er 0–10 Relevanz-Punkte und eine kurze
-   Begründung. Der Fortschritt ist oben in der Leiste sichtbar; der Lauf
-   lässt sich jederzeit stoppen und später fortsetzen (bereits bearbeitete
-   Jobs werden nicht erneut angefragt).
+   (**🗄 Archiviert**)? Dazu vergibt er **strukturierte Punkte** (je 0–10) für
+   Entfernung, Homeoffice/Remote, Gehalt, Vollzeit/Teilzeit, Verbeamtung und
+   eine Gesamtpunktzahl, plus eine kurze Begründung. Der Fortschritt ist oben
+   in der Leiste sichtbar; der Lauf lässt sich jederzeit stoppen und später
+   fortsetzen (bereits bearbeitete Jobs werden nicht erneut angefragt).
+   Abgearbeitet wird **sortiert**: öffentliche Arbeitgeber vor privaten
+   (z.B. Accenture), innerhalb eines Arbeitgebers die früheste
+   Bewerbungsfrist zuerst; Jobs ohne jede Gehaltsangabe kommen ganz nach
+   hinten.
 3. Wegen des Rate-Limits im Gratis-Kontingent (~10 Anfragen/Minute) pausiert
    der Agent zwischen zwei Jobs — bei vielen hundert Angeboten läuft ein
    kompletter Erstlauf also eine ganze Weile; einfach laufen lassen.
@@ -205,7 +210,12 @@ nächsten Start automatisch geladen. Optionale `.env`-Einträge:
 - Karten lassen sich per **Drag & Drop** zwischen den Spalten verschieben —
   das zählt als menschliche Entscheidung. Jede Karte zeigt, ob sie zuletzt
   von der **🤖 KI** oder vom **👤 Menschen** eingruppiert wurde, dazu die
-  KI-Punkte, Frist und Entgeltgruppe.
+  KI-Punkte (Tooltip zeigt die Einzelbewertungen), Frist und Entgeltgruppe.
+- **Sortierung**: Standard ist ⭐ KI-Punkte (absteigend). Über das Dropdown
+  im Kopf jeder Spalte lässt sich jede Spalte einzeln nach 💶 Gehalt
+  (Entgelt-/Besoldungsgruppe, dann Euro-Beträge, ohne Angabe zuletzt) oder
+  ⏳ Bewerbungsfrist sortieren; das Dropdown oben in der Leiste setzt die
+  Sortierung für **alle Spalten** auf einmal.
 - **Klick auf eine Karte** öffnet das Detail-Modal mit Beschreibung,
   Voraussetzungen, KI-Begründung und dem **kompletten Chat-Verlauf mit dem
   KI-Agenten** (die große Triage-Anfrage ist einklappbar). Dort lassen sich
@@ -228,7 +238,9 @@ data/agent/jobs/<job-id>/chat.json   Chat-Verlauf mit dem KI-Agenten
 `board.json` ist die allgemeine Übersichtsdatei: pro Job die ID, der
 Kanban-Status (`todo`/`interessant`/`beworben`/`abgelehnt`/`archiviert`)
 und der Boolean `vonKi` (true = von der KI eingruppiert, false = vom
-Menschen), dazu optional Punkte und Begründung. Da Job-IDs Zeichen wie `:`
+Menschen), dazu optional Gesamt-Punkte, die Einzelbewertungen
+(`punkteDetails`: Entfernung, Homeoffice, Gehalt, Arbeitszeit, Verbeamtung,
+Gesamt) und Begründung. Da Job-IDs Zeichen wie `:`
 enthalten, werden sie für Ordnernamen zu `_` normalisiert
 (`bka:T-2026-54` → `bka_T-2026-54`).
 

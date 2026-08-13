@@ -25,6 +25,7 @@ export function lightJob(job: JobOffer) {
     employer: job.employer,
     link: job.link,
     dienstorte: job.dienstorte,
+    gehalt: job.gehalt,
     gehaltsstufe: job.gehaltsstufe,
     bewerbungsfrist: job.bewerbungsfrist,
     befristung: job.befristung,

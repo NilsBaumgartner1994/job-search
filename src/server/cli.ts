@@ -1,5 +1,5 @@
 import { loadJobs } from "../storage.js";
-import { requireProfile, triageJob } from "./agent.js";
+import { requireProfile, sortTriageQueue, triageJob } from "./agent.js";
 import { ensureEnv } from "./env.js";
 import { GeminiError } from "./gemini.js";
 import { publishDocs } from "./publish.js";
@@ -93,10 +93,14 @@ async function main(): Promise<void> {
   }
 
   const board = loadBoard();
-  const open = jobs.filter((job) => {
-    const entry = getEntry(board, job.id);
-    return (!entry || entry.status === "todo") && !hasChat(job.id);
-  });
+  // Sortiert abarbeiten: öffentliche Arbeitgeber zuerst, innerhalb nach Frist,
+  // Jobs ohne Gehaltsangabe ganz hinten (siehe sortTriageQueue)
+  const open = sortTriageQueue(
+    jobs.filter((job) => {
+      const entry = getEntry(board, job.id);
+      return (!entry || entry.status === "todo") && !hasChat(job.id);
+    }),
+  );
   const queue = limit > 0 ? open.slice(0, limit) : open;
   console.log(`${queue.length} von ${open.length} unbearbeiteten Jobs werden triagiert …`);
 

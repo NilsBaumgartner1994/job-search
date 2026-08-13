@@ -50,9 +50,14 @@
     font-size: 13px; margin: 0; padding: 10px 12px 8px; display: flex; align-items: center; gap: 6px;
   }
   .col > h2 .count {
-    margin-left: auto; background: #d5d8de; border-radius: 10px; padding: 0 8px;
+    background: #d5d8de; border-radius: 10px; padding: 0 8px;
     font-weight: normal; color: var(--muted);
   }
+  .col > h2 select.colsort {
+    margin-left: auto; font: 11px/1.3 inherit; max-width: 96px;
+    border: 1px solid var(--line); border-radius: 4px; background: #fff; color: var(--muted);
+  }
+  #sortAll { font: inherit; border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; background: #fff; color: var(--text); }
   .cards { flex: 1; overflow-y: auto; padding: 0 8px 10px; display: flex; flex-direction: column; gap: 8px; }
 
   .jobcard {
@@ -122,6 +127,9 @@
   <button id="btnAgent" class="primary">🤖 KI-Agent starten</button>
   <span id="agentInfo"></span>
   <span class="spacer"></span>
+  <label class="hint" title="Sortierung für alle Spalten setzen">Sortierung
+    <select id="sortAll"></select>
+  </label>
   <input id="search" type="search" placeholder="Suche (Titel, Arbeitgeber, Ort)…">
   <span id="counts" class="hint"></span>
 </header>
@@ -170,6 +178,16 @@ const COLUMNS = [
 ];
 const STATUS_LABEL = Object.fromEntries(COLUMNS.map(c => [c.key, c.label]));
 
+// Sortier-Modi für die Spalten. "punkte" = KI-Gesamtpunkte (Standard).
+const SORT_OPTIONS = [
+  { key: "punkte", label: "⭐ KI-Punkte" },
+  { key: "gehalt", label: "💶 Gehalt" },
+  { key: "frist",  label: "⏳ Bewerbungsfrist" },
+];
+const DEFAULT_SORT = "punkte";
+// pro Spalte einstellbar; das Header-Dropdown setzt alle Spalten auf einmal
+let colSorts = Object.fromEntries(COLUMNS.map(c => [c.key, DEFAULT_SORT]));
+
 let state = { jobs: [], board: { entries: [] }, profile: "", agent: { running: false } };
 let entryById = new Map();
 let openJobId = null;
@@ -207,6 +225,84 @@ function matchesSearch(job, needle) {
   return hay.includes(needle);
 }
 
+// ---------- Sortierung ----------
+
+function punkteOf(jobId) {
+  const entry = entryById.get(jobId);
+  return entry && entry.punkte != null ? entry.punkte : -1;
+}
+function fristOf(job) { return job.bewerbungsfrist || "9999-12-31"; }
+
+/** Größten Euro-Betrag aus dem Gehalts-Freitext ziehen ("57.700 € brutto p.a." → 57700). */
+function parseEuro(text) {
+  if (!text) return 0;
+  let max = 0;
+  const re = /\d{1,3}(?:\.\d{3})+|\d{4,6}/g;
+  let m;
+  while ((m = re.exec(String(text)))) {
+    const n = Number(m[0].replace(/\./g, ""));
+    if (n >= 1000 && n > max) max = n;
+  }
+  return max;
+}
+/** Höchste Entgelt-/Besoldungsgruppe aus der Stufe ziehen ("A 9g/A 11" → 11). */
+function parseGrade(text) {
+  if (!text) return 0;
+  let max = 0;
+  const re = /\d{1,2}/g;
+  let m;
+  while ((m = re.exec(String(text)))) {
+    const n = Number(m[0]);
+    if (n >= 1 && n <= 17 && n > max) max = n;
+  }
+  return max;
+}
+/**
+ * Vergleichsschlüssel fürs Gehalt: erst Jobs mit Entgelt-/Besoldungsstufe
+ * (EG/A-Gruppe absteigend — die aussagekräftigste Angabe), dann Jobs mit nur
+ * einem Euro-Betrag im Freitext (meist Anwärter-Monatsbezüge, absteigend),
+ * ganz hinten Jobs ohne jede Gehaltsangabe.
+ */
+function salaryRank(job) {
+  const grade = parseGrade(job.gehaltsstufe);
+  if (grade) return [0, -grade, -parseEuro(job.gehalt)];
+  const euro = parseEuro(job.gehalt);
+  if (euro) return [1, -euro, 0];
+  return [2, 0, 0];
+}
+
+function sortJobs(jobs, mode) {
+  jobs.sort((a, b) => {
+    if (mode === "frist") {
+      const c = fristOf(a).localeCompare(fristOf(b));
+      return c !== 0 ? c : punkteOf(b.id) - punkteOf(a.id);
+    }
+    if (mode === "gehalt") {
+      const ra = salaryRank(a), rb = salaryRank(b);
+      if (ra[0] !== rb[0]) return ra[0] - rb[0];
+      if (ra[1] !== rb[1]) return ra[1] - rb[1];
+      return fristOf(a).localeCompare(fristOf(b));
+    }
+    // Standard: KI-Punkte absteigend, bei Gleichstand nach Frist
+    const d = punkteOf(b.id) - punkteOf(a.id);
+    return d !== 0 ? d : fristOf(a).localeCompare(fristOf(b));
+  });
+}
+
+function sortOptionsHtml(selected) {
+  return SORT_OPTIONS.map(o =>
+    '<option value="' + o.key + '"' + (o.key === selected ? " selected" : "") + ">" + o.label + "</option>"
+  ).join("");
+}
+
+/** Kurztext der Einzelpunkte (für Tooltip und Detail-Ansicht). */
+function scoreDetailsText(entry) {
+  const d = entry && entry.punkteDetails;
+  if (!d) return "";
+  return "Entfernung " + d.entfernung + "/10 · Homeoffice " + d.homeoffice + "/10 · Gehalt " + d.gehalt +
+    "/10 · Arbeitszeit " + d.arbeitszeit + "/10 · Verbeamtung " + d.verbeamtung + "/10";
+}
+
 function render() {
   renderAgent();
   const needle = document.getElementById("search").value.trim().toLowerCase();
@@ -223,18 +319,18 @@ function render() {
   board.innerHTML = "";
   for (const col of COLUMNS) {
     const jobs = byStatus[col.key];
-    // Interessante zuerst nach KI-Punkten sortieren, sonst nach Frist
-    jobs.sort((a, b) => {
-      const pa = (entryById.get(a.id) || {}).punkte ?? -1;
-      const pb = (entryById.get(b.id) || {}).punkte ?? -1;
-      if (pa !== pb) return pb - pa;
-      return (a.bewerbungsfrist || "9999").localeCompare(b.bewerbungsfrist || "9999");
-    });
+    sortJobs(jobs, colSorts[col.key] || DEFAULT_SORT);
 
     const colEl = document.createElement("div");
     colEl.className = "col";
     colEl.dataset.status = col.key;
-    colEl.innerHTML = '<h2>' + col.label + ' <span class="count">' + jobs.length + "</span></h2>";
+    colEl.innerHTML = '<h2>' + col.label + ' <span class="count">' + jobs.length + "</span>" +
+      '<select class="colsort" title="Sortierung dieser Spalte">' +
+        sortOptionsHtml(colSorts[col.key] || DEFAULT_SORT) + "</select></h2>";
+    colEl.querySelector(".colsort").addEventListener("change", e => {
+      colSorts[col.key] = e.target.value;
+      render();
+    });
     const cards = document.createElement("div");
     cards.className = "cards";
     if (!jobs.length) cards.innerHTML = '<div class="empty">– leer –</div>';
@@ -263,7 +359,11 @@ function renderCard(job) {
     badges.push(entry.vonKi
       ? '<span class="badge ki" title="von der KI eingruppiert">🤖 KI</span>'
       : '<span class="badge mensch" title="vom Menschen eingruppiert">👤 Mensch</span>');
-    if (entry.punkte != null) badges.push('<span class="badge punkte">' + entry.punkte + "/10</span>");
+    if (entry.punkte != null) {
+      const details = scoreDetailsText(entry);
+      badges.push('<span class="badge punkte"' + (details ? ' title="' + esc(details) + '"' : "") + ">" +
+        entry.punkte + "/10</span>");
+    }
   }
   if (job.hasChat) badges.push('<span class="badge" title="Chat-Verlauf vorhanden">💬</span>');
   if (job.bewerbungsfrist) badges.push('<span class="badge frist">bis ' + esc(job.bewerbungsfrist) + "</span>");
@@ -333,9 +433,17 @@ function renderJobModal(data) {
     html += '<p class="hint">Eingruppiert ' + (entry.vonKi ? "von der 🤖 KI" : "vom 👤 Menschen") +
       " am " + esc((entry.updatedAt || "").slice(0, 16).replace("T", " ")) + "</p>";
   }
-  if (entry && entry.begruendung) {
+  if (entry && (entry.begruendung || entry.punkteDetails)) {
     html += '<div class="kiverdict">🤖 <b>' + (entry.punkte != null ? entry.punkte + "/10 — " : "") +
-      "</b>" + esc(entry.begruendung) + "</div>";
+      "</b>" + esc(entry.begruendung || "");
+    if (entry.punkteDetails) {
+      const d = entry.punkteDetails;
+      html += '<div class="badges" style="margin-top:8px">' + [
+        ["📍 Entfernung", d.entfernung], ["🏠 Homeoffice", d.homeoffice], ["💶 Gehalt", d.gehalt],
+        ["⏱ Arbeitszeit", d.arbeitszeit], ["🏛 Verbeamtung", d.verbeamtung], ["Σ Gesamt", d.gesamt],
+      ].map(([label, value]) => '<span class="badge punkte">' + label + " " + value + "/10</span>").join("") + "</div>";
+    }
+    html += "</div>";
   }
 
   if (job.beschreibung) {
@@ -476,6 +584,14 @@ document.addEventListener("keydown", e => {
   }
 });
 document.getElementById("search").addEventListener("input", render);
+
+// Header-Dropdown: setzt die Sortierung aller Spalten auf einmal
+const sortAll = document.getElementById("sortAll");
+sortAll.innerHTML = sortOptionsHtml(DEFAULT_SORT);
+sortAll.addEventListener("change", () => {
+  for (const col of COLUMNS) colSorts[col.key] = sortAll.value;
+  render();
+});
 
 loadState().then(() => {
   if (!state.profile.trim()) openProfile();

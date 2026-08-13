@@ -9,14 +9,32 @@ export const BOARD_STATUSES: BoardStatus[] = [
   "archiviert",
 ];
 
+/** Einzelbewertungen (je 0–10) aus der KI-Triage. */
+export interface TriageScores {
+  /** Nähe des Dienstorts zum Wohn-/Wunschort (10 = vor Ort bzw. dank Remote egal) */
+  entfernung: number;
+  /** Homeoffice-/Remote-Möglichkeiten (10 = voll remote möglich) */
+  homeoffice: number;
+  /** Gehalt im Verhältnis zu den Wünschen (0 = keine Angabe oder viel zu niedrig) */
+  gehalt: number;
+  /** Passung Vollzeit/Teilzeit zu den Wünschen */
+  arbeitszeit: number;
+  /** Möglichkeit der Verbeamtung (10 = ja, 0 = nein/unbekannt) */
+  verbeamtung: number;
+  /** Gesamtbewertung (nicht zwingend der Durchschnitt — die KI gewichtet selbst) */
+  gesamt: number;
+}
+
 /** Eintrag in der Übersichtsdatei data/agent/board.json. */
 export interface BoardEntry {
   jobId: string;
   status: BoardStatus;
   /** true = zuletzt von der KI eingruppiert, false = vom Menschen */
   vonKi: boolean;
-  /** Relevanz-Punkte 0–10 aus der KI-Triage (falls vorhanden) */
+  /** Gesamt-Punkte 0–10 aus der KI-Triage (falls vorhanden) */
   punkte?: number;
+  /** Aufschlüsselung der Punkte nach Kriterien (bei neueren Triagen vorhanden) */
+  punkteDetails?: TriageScores;
   /** Kurzbegründung der KI-Entscheidung (falls vorhanden) */
   begruendung?: string;
   updatedAt: string;
@@ -39,7 +57,10 @@ export interface ChatMessage {
 /** Ergebnis, das die KI bei der Triage als JSON liefern soll. */
 export interface TriageResult {
   entscheidung: "interessant" | "archivieren";
+  /** Gesamt-Punkte 0–10 (aus punkteDetails.gesamt bzw. altes Zahlenformat) */
   punkte: number;
+  /** Aufschlüsselung nach Kriterien (fehlt nur bei Antworten im alten Format) */
+  punkteDetails?: TriageScores;
   begruendung: string;
 }
 

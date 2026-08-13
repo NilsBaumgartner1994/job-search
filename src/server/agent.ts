@@ -12,7 +12,7 @@ import {
   setStatus,
 } from "./store.js";
 import { jobToRawText } from "./text.js";
-import type { AgentStatus, ChatMessage, TriageResult } from "./types.js";
+import type { AgentStatus, ChatMessage, TriageResult, TriageScores } from "./types.js";
 
 const status: AgentStatus = { running: false, processed: 0, total: 0 };
 let stopRequested = false;
@@ -40,17 +40,37 @@ function systemPrompt(profile: string): string {
 function triagePrompt(job: JobOffer): string {
   return [
     "Hier ist ein Stellenangebot (kompletter Seitentext). Entscheide, ob sich ein",
-    "genauerer Blick für den Nutzer lohnt.",
+    "genauerer Blick für den Nutzer lohnt, und bewerte es strukturiert mit Punkten.",
     "",
     "Antworte NUR mit einem JSON-Objekt in genau dieser Form:",
-    '{ "entscheidung": "interessant" | "archivieren", "punkte": 0-10, "begruendung": "1-3 Sätze" }',
+    "{",
+    '  "entscheidung": "interessant" | "archivieren",',
+    '  "punkte": {',
+    '    "entfernung": 0-10,',
+    '    "homeoffice": 0-10,',
+    '    "gehalt": 0-10,',
+    '    "arbeitszeit": 0-10,',
+    '    "verbeamtung": 0-10,',
+    '    "gesamt": 0-10',
+    "  },",
+    '  "begruendung": "1-3 Sätze"',
+    "}",
     "",
     '- "interessant": passt zum Profil, der Nutzer sollte es sich anschauen',
     '- "archivieren": passt nicht (z.B. falsche Fachrichtung, falscher Ort, Anforderungen unerfüllbar)',
-    '- "punkte": wie gut es passt (0 = gar nicht, 10 = perfekt)',
+    '- "entfernung": Nähe des Dienstorts zum Wohn-/Wunschort des Nutzers (10 = vor Ort oder dank Remote egal, 0 = unerreichbar weit weg)',
+    '- "homeoffice": Homeoffice-/Remote-Möglichkeiten (10 = voll remote möglich, 0 = keine/unbekannt)',
+    '- "gehalt": Gehalt im Verhältnis zu den Wünschen des Nutzers (0 = keine Angabe im Angebot oder viel zu niedrig)',
+    '- "arbeitszeit": Passung Vollzeit/Teilzeit zu den Wünschen des Nutzers',
+    '- "verbeamtung": Möglichkeit der Verbeamtung (10 = ja, 0 = nein/unbekannt)',
+    '- "gesamt": Gesamtbewertung, wie gut das Angebot insgesamt passt (0 = gar nicht, 10 = perfekt) — gewichte die Kriterien nach den Wünschen aus dem Profil',
     "",
     jobToRawText(job),
   ].join("\n");
+}
+
+function clampScore(value: unknown): number {
+  return Math.max(0, Math.min(10, Number(value) || 0));
 }
 
 function parseTriage(text: string): TriageResult | undefined {
@@ -58,13 +78,31 @@ function parseTriage(text: string): TriageResult | undefined {
     // zur Sicherheit auch ```json-Zäune und umgebenden Text tolerieren
     const match = text.match(/\{[\s\S]*\}/);
     if (!match) return undefined;
-    const parsed = JSON.parse(match[0]) as Partial<TriageResult>;
+    const parsed = JSON.parse(match[0]) as { entscheidung?: string; punkte?: unknown; begruendung?: unknown };
     if (parsed.entscheidung !== "interessant" && parsed.entscheidung !== "archivieren") {
       return undefined;
     }
+    // "punkte" ist entweder das neue Objekt mit Einzelbewertungen oder (altes Format) eine Zahl
+    let punkte: number;
+    let punkteDetails: TriageScores | undefined;
+    if (parsed.punkte && typeof parsed.punkte === "object") {
+      const p = parsed.punkte as Record<string, unknown>;
+      punkteDetails = {
+        entfernung: clampScore(p.entfernung),
+        homeoffice: clampScore(p.homeoffice),
+        gehalt: clampScore(p.gehalt),
+        arbeitszeit: clampScore(p.arbeitszeit),
+        verbeamtung: clampScore(p.verbeamtung),
+        gesamt: clampScore(p.gesamt),
+      };
+      punkte = punkteDetails.gesamt;
+    } else {
+      punkte = clampScore(parsed.punkte);
+    }
     return {
       entscheidung: parsed.entscheidung,
-      punkte: Math.max(0, Math.min(10, Number(parsed.punkte) || 0)),
+      punkte,
+      punkteDetails,
       begruendung: String(parsed.begruendung ?? "").trim(),
     };
   } catch {
@@ -117,7 +155,42 @@ export async function triageJob(env: ServerEnv, profile: string, job: JobOffer):
   }
   setStatus(job.id, result.entscheidung === "interessant" ? "interessant" : "archiviert", true, {
     punkte: result.punkte,
+    punkteDetails: result.punkteDetails,
     begruendung: result.begruendung,
+  });
+}
+
+/** Adapter, hinter denen kein öffentlicher Arbeitgeber steht — deren Jobs kommen ans Ende. */
+const PRIVATE_ADAPTERS = new Set(["accenture"]);
+
+function hasSalaryInfo(job: JobOffer): boolean {
+  return Boolean(job.gehalt?.trim() || job.gehaltsstufe?.trim());
+}
+
+/**
+ * Reihenfolge, in der die KI die Jobs abarbeitet:
+ *
+ *   1. Jobs ohne jede Gehaltsangabe ganz nach hinten (damit lässt sich nichts anfangen)
+ *   2. Öffentliche Arbeitgeber/Staat vor privaten (z.B. Accenture)
+ *   3. Nach Arbeitgeber gruppiert (alphabetisch)
+ *   4. Innerhalb eines Arbeitgebers: früheste Bewerbungsfrist zuerst,
+ *      Jobs ohne Frist zuletzt
+ */
+export function sortTriageQueue(jobs: JobOffer[]): JobOffer[] {
+  return [...jobs].sort((a, b) => {
+    const salaryA = hasSalaryInfo(a) ? 0 : 1;
+    const salaryB = hasSalaryInfo(b) ? 0 : 1;
+    if (salaryA !== salaryB) return salaryA - salaryB;
+
+    const publicA = PRIVATE_ADAPTERS.has(a.adapter) ? 1 : 0;
+    const publicB = PRIVATE_ADAPTERS.has(b.adapter) ? 1 : 0;
+    if (publicA !== publicB) return publicA - publicB;
+
+    const employerA = (a.employer || a.adapter).toLowerCase();
+    const employerB = (b.employer || b.adapter).toLowerCase();
+    if (employerA !== employerB) return employerA.localeCompare(employerB, "de");
+
+    return (a.bewerbungsfrist || "9999-12-31").localeCompare(b.bewerbungsfrist || "9999-12-31");
   });
 }
 
@@ -134,11 +207,13 @@ export function startAgent(env: ServerEnv, jobs: JobOffer[]): { started: boolean
   }
 
   const board = loadBoard();
-  const queue = jobs.filter((job) => {
-    const entry = getEntry(board, job.id);
-    const isTodo = !entry || entry.status === "todo";
-    return isTodo && !hasChat(job.id);
-  });
+  const queue = sortTriageQueue(
+    jobs.filter((job) => {
+      const entry = getEntry(board, job.id);
+      const isTodo = !entry || entry.status === "todo";
+      return isTodo && !hasChat(job.id);
+    }),
+  );
   if (queue.length === 0) {
     return { started: false, reason: "Keine unbearbeiteten Jobs in „Noch abzuarbeiten“." };
   }
