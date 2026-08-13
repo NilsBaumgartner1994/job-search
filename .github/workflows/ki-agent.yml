@@ -1,0 +1,72 @@
+# Lässt den KI-Agenten (Gemini) in GitHub Actions laufen:
+# - übernimmt zuerst deine im Browser (GitHub-Pages-Seite) gemachten Änderungen
+# - triagiert dann bis zu <limit> unbearbeitete Jobs
+# - committet Board, Chat-Verläufe und die Pages-Daten (docs/) zurück ins Repo
+#
+# Voraussetzung: Repo-Secret GEMINI_API_KEY
+# (Settings → Secrets and variables → Actions → New repository secret;
+#  Schlüssel von https://aistudio.google.com/apikey)
+name: KI-Agent
+
+on:
+  workflow_dispatch:
+    inputs:
+      aenderungen:
+        description: 'Änderungen aus dem Browser (JSON vom Button "Änderungen kopieren" der Pages-Seite) — leer lassen, wenn keine'
+        required: false
+        default: ""
+      limit:
+        description: "Max. Anzahl neu zu triagierender Jobs in diesem Lauf (Gratis-Kontingent hat ein Tageslimit)"
+        required: false
+        default: "200"
+
+permissions:
+  contents: write
+
+# nie zwei Läufe parallel — beide würden data/agent/ committen
+concurrency:
+  group: ki-agent
+  cancel-in-progress: false
+
+jobs:
+  agent:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - name: Abhängigkeiten installieren
+        run: yarn install --frozen-lockfile
+        env:
+          # Playwright wird nur vom Interamt-Crawler gebraucht, nicht vom Agenten
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
+
+      - name: KI-Agent ausführen
+        run: yarn agent --limit="$LIMIT"
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          AENDERUNGEN: ${{ inputs.aenderungen }}
+          LIMIT: ${{ inputs.limit || '200' }}
+
+      - name: Ergebnisse committen und pushen
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/agent docs
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen zu committen."
+            exit 0
+          fi
+          git commit -m "KI-Agent: Board & Pages-Daten aktualisieren"
+          # Falls zwischenzeitlich jemand gepusht hat: rebase und erneut versuchen
+          for i in 1 2 3; do
+            git push && exit 0
+            git pull --rebase
+          done
+          git push

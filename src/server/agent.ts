@@ -76,8 +76,27 @@ function now(): string {
   return new Date().toISOString();
 }
 
+/**
+ * Prüft, ob ein brauchbares Profil hinterlegt ist (nicht leer, nicht mehr
+ * die Platzhalter-Vorlage). Liefert den Profil-Text oder eine Fehlermeldung.
+ */
+export function requireProfile(): { profile?: string; error?: string } {
+  const profile = loadProfile().trim();
+  if (!profile) {
+    return { error: "Kein Profil hinterlegt (data/agent/profil.md ist leer)." };
+  }
+  if (profile.includes("BITTE AUSFÜLLEN")) {
+    return {
+      error:
+        "data/agent/profil.md enthält noch die Vorlage — bitte durch dein " +
+        "eigenes Profil ersetzen (Studium, Wünsche, No-Gos, …).",
+    };
+  }
+  return { profile };
+}
+
 /** Triagiert EIN Angebot: Prompt senden, Antwort parsen, Board + Chat speichern. */
-async function triageJob(env: ServerEnv, profile: string, job: JobOffer): Promise<void> {
+export async function triageJob(env: ServerEnv, profile: string, job: JobOffer): Promise<void> {
   saveJobSnapshot(job);
   const prompt = triagePrompt(job);
   const answer = await generateContent(env, {
@@ -109,12 +128,9 @@ async function triageJob(env: ServerEnv, profile: string, job: JobOffer): Promis
  */
 export function startAgent(env: ServerEnv, jobs: JobOffer[]): { started: boolean; reason?: string } {
   if (status.running) return { started: false, reason: "Der Agent läuft bereits." };
-  const profile = loadProfile().trim();
+  const { profile, error } = requireProfile();
   if (!profile) {
-    return {
-      started: false,
-      reason: "Bitte zuerst ein Profil hinterlegen (Wünsche, Studium, …) — Button „Profil“.",
-    };
+    return { started: false, reason: error };
   }
 
   const board = loadBoard();

@@ -58,13 +58,24 @@ landet also nicht im Git) und beim nächsten Start automatisch geladen.
  * Lädt die .env, prüft ob alle nötigen Informationen (v.a. der Gemini-Key)
  * vorhanden sind und fragt fehlende Werte interaktiv in der Konsole ab —
  * inklusive Schritt-für-Schritt-Anleitung, woher man den Key bekommt.
+ * Ohne Terminal (CI / GitHub Actions) wird stattdessen mit einer klaren
+ * Fehlermeldung abgebrochen, die auf das Repo-Secret hinweist.
  */
-export async function ensureEnv(): Promise<ServerEnv> {
+export async function ensureEnv(options?: { interactive?: boolean }): Promise<ServerEnv> {
+  const interactive = options?.interactive ?? true;
   const fromFile = parseEnvFile(ENV_FILE);
   // Bereits gesetzte Umgebungsvariablen haben Vorrang vor der .env
   const get = (key: string): string | undefined => process.env[key] ?? fromFile[key];
 
   let apiKey = get("GEMINI_API_KEY")?.trim();
+  if (!apiKey && !interactive) {
+    throw new Error(
+      "GEMINI_API_KEY fehlt. In GitHub Actions: Repo → Settings → Secrets and " +
+        "variables → Actions → 'New repository secret' → Name GEMINI_API_KEY, " +
+        "Wert von https://aistudio.google.com/apikey. Lokal: .env-Datei anlegen " +
+        "oder einfach `yarn server` starten (fragt interaktiv).",
+    );
+  }
   if (!apiKey) {
     console.log(KEY_ANLEITUNG);
     const rl = createInterface({ input: process.stdin, output: process.stdout });

@@ -5,9 +5,9 @@ import { loadJobs } from "../storage.js";
 import type { JobOffer } from "../types.js";
 import { askAboutJob, getAgentStatus, startAgent, stopAgent } from "./agent.js";
 import { ensureEnv, type ServerEnv } from "./env.js";
+import { lightJob } from "./publish.js";
 import {
   getEntry,
-  hasChat,
   loadBoard,
   loadChat,
   loadProfile,
@@ -33,24 +33,6 @@ async function readBody(req: IncomingMessage): Promise<unknown> {
   } catch {
     return {};
   }
-}
-
-/** Kompakte Job-Daten für die Karten des Boards (ohne Beschreibung/Rohdaten). */
-function lightJob(job: JobOffer) {
-  return {
-    id: job.id,
-    adapter: job.adapter,
-    titel: job.titel,
-    employer: job.employer,
-    link: job.link,
-    dienstorte: job.dienstorte,
-    gehaltsstufe: job.gehaltsstufe,
-    bewerbungsfrist: job.bewerbungsfrist,
-    befristung: job.befristung,
-    arbeitszeit: job.arbeitszeit,
-    homeoffice: job.homeoffice,
-    hasChat: hasChat(job.id),
-  };
 }
 
 function findJob(jobs: JobOffer[], encodedId: string): JobOffer | undefined {

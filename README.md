@@ -212,10 +212,11 @@ nächsten Start automatisch geladen. Optionale `.env`-Einträge:
   auch **Folgefragen** stellen ("Erfülle ich die Voraussetzungen?") — die
   Antwort landet im selben Verlauf.
 
-### Lokale Speicherung (Dateisystem statt localStorage)
+### Speicherung (Dateisystem statt localStorage)
 
-Alles liegt als einfache Dateien unter `data/agent/` (im `.gitignore`, da
-persönlich):
+Alles liegt als einfache Dateien unter `data/agent/` — **im Git**, damit
+auch der GitHub-Workflow (siehe unten) damit arbeiten und die Ergebnisse
+zurück ins Repo committen kann:
 
 ```
 data/agent/board.json           Übersicht: Job-ID, Status, vonKi-Boolean, Punkte
@@ -234,6 +235,69 @@ enthalten, werden sie für Ordnernamen zu `_` normalisiert
 Board-Status und die Status/Notizen der statischen `jobs.html`
 (localStorage im Browser) sind bewusst **zwei getrennte Welten** — die
 statische Variante funktioniert weiterhin ohne Server.
+
+## KI-Agent in GitHub Actions + Kanban auf GitHub Pages
+
+Statt (oder zusätzlich zu) `yarn server` kann der KI-Agent komplett auf
+GitHub laufen — ohne eigenen Rechner:
+
+```
+GitHub-Pages-Seite (docs/index.html, mobil optimiert)
+  ↑ liest docs/data.json + docs/jobs/<id>.json
+GitHub-Workflow "KI-Agent" (workflow_dispatch)
+  1. übernimmt deine Browser-Änderungen (Input "aenderungen")
+  2. triagiert neue Jobs mit Gemini (Secret GEMINI_API_KEY)
+  3. committet data/agent/ + docs/ zurück ins Repo
+```
+
+### Einmalige Einrichtung
+
+1. **Secret anlegen**: Repo → Settings → Secrets and variables → Actions →
+   "New repository secret" → Name `GEMINI_API_KEY`, Wert von
+   https://aistudio.google.com/apikey (gleicher Schlüssel wie lokal).
+2. **Profil einchecken**: `data/agent/profil.md` ausfüllen (die Datei
+   enthält eine Vorlage mit Beispiel) und committen — das ist der Input,
+   den der Agent im Workflow bekommt. Solange noch die Vorlage drinsteht,
+   bricht der Workflow mit einem Hinweis ab.
+3. **GitHub Pages aktivieren**: Repo → Settings → Pages → Source
+   "Deploy from a branch" → Branch `main`, Ordner `/docs`. Die Seite liegt
+   dann unter `https://<user>.github.io/job-search/`.
+
+### Einen Lauf starten
+
+Actions → **KI-Agent** → "Run workflow". Zwei optionale Eingaben:
+
+- **aenderungen** — das JSON von der Pages-Seite (siehe unten); leer
+  lassen, wenn es keine gibt.
+- **limit** (Default 200) — wie viele neue Jobs dieser Lauf maximal
+  triagiert. Das Gratis-Kontingent hat neben dem Minuten- auch ein
+  **Tageslimit** (Größenordnung ein paar hundert Anfragen für
+  `gemini-2.5-flash`) — bei ~1000 offenen Jobs braucht der erste
+  Komplettdurchlauf also mehrere Läufe an mehreren Tagen. Jeder Lauf macht
+  dort weiter, wo der letzte aufgehört hat; bei aufgebrauchtem Kontingent
+  bricht er ab und committet das bis dahin Geschaffte.
+
+Lokal geht derselbe Headless-Lauf mit `yarn agent --limit=50`.
+
+### Änderungen von der Pages-Seite zurück ins Repo
+
+Die Pages-Seite ist statisch und kann nicht ins Repo schreiben. Status-
+Änderungen (Karte verschieben bzw. Status-Button im Detail) werden deshalb
+**nur im Browser gemerkt** (localStorage) und als "⏳ lokal" markiert:
+
+1. Oben erscheint der Button **"⏳ Änderungen (N)"** → antippen
+2. **"Änderungen kopieren"** → JSON liegt in der Zwischenablage
+3. Link "KI-Agent-Workflow öffnen" → "Run workflow" → JSON in das Feld
+   **aenderungen** einfügen → starten
+4. Der Workflow übernimmt sie als menschliche Entscheidungen
+   (`vonKi: false`) und committet; beim nächsten Laden der Seite sind die
+   Änderungen im Repo-Stand enthalten und werden lokal automatisch
+   aufgeräumt (auch pro Änderung: was schon übernommen ist, fliegt aus dem
+   localStorage)
+
+Der Chat-Verlauf jedes Jobs ist auch auf der Pages-Seite einsehbar
+(read-only); **Folgefragen** an den Agenten gehen nur in der lokalen
+Server-Variante (`yarn server`).
 
 ## Gehaltstabellen (`yarn salaries`)
 
