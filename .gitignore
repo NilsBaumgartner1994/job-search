@@ -4,3 +4,5 @@ dist/
 # lokaler PDF-Cache der Stellenausschreibungen (wird von yarn crawl gefüllt)
 data/pdfs/
 src/_tmp*
+# API-Schlüssel (Gemini) — niemals einchecken
+.env

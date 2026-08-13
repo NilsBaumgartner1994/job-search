@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Job-Kanban · KI-Agent</title>
+<style>
+  :root {
+    --bg: #f4f5f7; --card: #ffffff; --line: #dfe1e6; --text: #172b4d;
+    --muted: #6b778c; --accent: #0052cc; --accent-soft: #e9f2ff;
+    --ki: #6f42c1; --mensch: #0a7d33;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 14px/1.45 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex; flex-direction: column;
+  }
+  header {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    padding: 10px 16px; background: #fff; border-bottom: 1px solid var(--line);
+  }
+  header h1 { font-size: 16px; margin: 0 12px 0 0; }
+  button {
+    font: inherit; border: 1px solid var(--line); background: #fff; color: var(--text);
+    border-radius: 6px; padding: 6px 12px; cursor: pointer;
+  }
+  button:hover { background: #f0f1f4; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  button.primary:hover { background: #0747a6; }
+  button.danger { color: #b92500; border-color: #f0b9ab; }
+  button:disabled { opacity: .5; cursor: default; }
+  #agentInfo { color: var(--muted); }
+  #agentInfo .err { color: #b92500; }
+  #search { font: inherit; border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; min-width: 220px; }
+  .spacer { flex: 1; }
+
+  /* Board: Spalten nebeneinander, horizontal scrollbar */
+  #board {
+    flex: 1; display: flex; gap: 12px; align-items: stretch;
+    overflow-x: auto; overflow-y: hidden; padding: 14px 16px;
+  }
+  .col {
+    flex: 0 0 300px; max-width: 300px; display: flex; flex-direction: column;
+    background: #ebecf0; border-radius: 10px; max-height: 100%;
+  }
+  .col.dragover { outline: 2px dashed var(--accent); outline-offset: -4px; }
+  .col > h2 {
+    font-size: 13px; margin: 0; padding: 10px 12px 8px; display: flex; align-items: center; gap: 6px;
+  }
+  .col > h2 .count {
+    margin-left: auto; background: #d5d8de; border-radius: 10px; padding: 0 8px;
+    font-weight: normal; color: var(--muted);
+  }
+  .cards { flex: 1; overflow-y: auto; padding: 0 8px 10px; display: flex; flex-direction: column; gap: 8px; }
+
+  .jobcard {
+    background: var(--card); border-radius: 8px; border: 1px solid var(--line);
+    padding: 8px 10px; cursor: pointer; box-shadow: 0 1px 1px rgba(9,30,66,.1);
+  }
+  .jobcard:hover { border-color: var(--accent); }
+  .jobcard.dragging { opacity: .4; }
+  .jobcard .t { font-weight: 600; margin-bottom: 2px; }
+  .jobcard .sub { color: var(--muted); font-size: 12.5px; }
+  .badges { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+  .badge {
+    font-size: 11.5px; border-radius: 4px; padding: 1px 6px; background: #f0f1f4; color: var(--muted);
+  }
+  .badge.ki { background: #f1e9fb; color: var(--ki); }
+  .badge.mensch { background: #e6f4ea; color: var(--mensch); }
+  .badge.frist { background: #fff0e6; color: #a54800; }
+  .badge.punkte { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+
+  /* Modals */
+  .overlay {
+    position: fixed; inset: 0; background: rgba(9,30,66,.5);
+    display: none; align-items: flex-start; justify-content: center; padding: 4vh 16px; z-index: 10;
+  }
+  .overlay.open { display: flex; }
+  .modal {
+    background: #fff; border-radius: 10px; width: 900px; max-width: 100%;
+    max-height: 92vh; display: flex; flex-direction: column;
+  }
+  .modal > .head { display: flex; align-items: flex-start; gap: 10px; padding: 14px 18px 8px; }
+  .modal > .head h3 { margin: 0; font-size: 17px; }
+  .modal > .head .close { margin-left: auto; border: none; font-size: 20px; line-height: 1; background: none; }
+  .modal > .body { overflow-y: auto; padding: 0 18px 18px; }
+  .meta { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+  .statusrow { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+  .statusrow button.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .kiverdict {
+    background: #f8f5fd; border: 1px solid #e2d6f5; border-radius: 8px;
+    padding: 8px 12px; margin: 10px 0;
+  }
+  .desc {
+    white-space: pre-wrap; background: #fafbfc; border: 1px solid var(--line);
+    border-radius: 8px; padding: 10px 12px; max-height: 320px; overflow-y: auto;
+  }
+  details.section { margin: 12px 0; }
+  details.section > summary { cursor: pointer; font-weight: 600; }
+
+  /* Chat */
+  .chat { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+  .msg { max-width: 85%; border-radius: 10px; padding: 8px 12px; white-space: pre-wrap; }
+  .msg.user { align-self: flex-end; background: var(--accent-soft); }
+  .msg.model { align-self: flex-start; background: #f0f1f4; }
+  .msg .who { font-size: 11.5px; color: var(--muted); margin-bottom: 3px; }
+  .msg details summary { cursor: pointer; color: var(--muted); }
+  .msg pre { white-space: pre-wrap; margin: 6px 0 0; font: 12px/1.4 ui-monospace, monospace; max-height: 260px; overflow-y: auto; }
+  .chatform { display: flex; gap: 8px; margin-top: 10px; }
+  .chatform input { flex: 1; font: inherit; border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; }
+  #profileText { width: 100%; min-height: 260px; font: inherit; border: 1px solid var(--line); border-radius: 8px; padding: 10px; }
+  .hint { color: var(--muted); font-size: 12.5px; }
+  .empty { color: var(--muted); text-align: center; padding: 20px 8px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🗂 Job-Kanban</h1>
+  <button id="btnProfile">👤 Profil</button>
+  <button id="btnAgent" class="primary">🤖 KI-Agent starten</button>
+  <span id="agentInfo"></span>
+  <span class="spacer"></span>
+  <input id="search" type="search" placeholder="Suche (Titel, Arbeitgeber, Ort)…">
+  <span id="counts" class="hint"></span>
+</header>
+
+<div id="board"></div>
+
+<!-- Job-Detail-Modal -->
+<div class="overlay" id="jobOverlay">
+  <div class="modal">
+    <div class="head">
+      <h3 id="jobTitle"></h3>
+      <button class="close" data-close="jobOverlay">✕</button>
+    </div>
+    <div class="body" id="jobBody"></div>
+  </div>
+</div>
+
+<!-- Profil-Modal -->
+<div class="overlay" id="profileOverlay">
+  <div class="modal" style="width:640px">
+    <div class="head">
+      <h3>👤 Mein Profil für den KI-Agenten</h3>
+      <button class="close" data-close="profileOverlay">✕</button>
+    </div>
+    <div class="body">
+      <p class="hint">Beschreibe kurz, wer du bist und was du dir wünschst — z.B. Studium/Abschluss,
+      Berufserfahrung, gewünschte Orte bzw. Homeoffice, Gehaltsvorstellung, No-Gos.
+      Der KI-Agent nutzt genau diesen Text, um jedes Angebot für dich vorzusortieren.</p>
+      <textarea id="profileText" placeholder="Beispiel:&#10;Ich habe Informatik (M.Sc.) studiert, 5 Jahre Erfahrung in Webentwicklung (TypeScript, React, Node).&#10;Ich suche unbefristete Stellen, gern öffentlicher Dienst ab E13, Raum Osnabrück oder überwiegend Homeoffice.&#10;Keine reinen SAP- oder Vertriebsstellen."></textarea>
+      <div class="statusrow" style="justify-content:flex-end">
+        <button id="btnSaveProfile" class="primary">Speichern</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+"use strict";
+
+const COLUMNS = [
+  { key: "todo",        label: "📥 Noch abzuarbeiten" },
+  { key: "interessant", label: "⭐ Interessant" },
+  { key: "beworben",    label: "📨 Beworben" },
+  { key: "abgelehnt",   label: "❌ Bewerbung abgelehnt" },
+  { key: "archiviert",  label: "🗄 Archiviert" },
+];
+const STATUS_LABEL = Object.fromEntries(COLUMNS.map(c => [c.key, c.label]));
+
+let state = { jobs: [], board: { entries: [] }, profile: "", agent: { running: false } };
+let entryById = new Map();
+let openJobId = null;
+let pollTimer = null;
+
+function esc(s) {
+  return String(s == null ? "" : s).replace(/[&<>"']/g, c => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+  })[c]);
+}
+
+async function api(path, options) {
+  const res = await fetch(path, options ? {
+    headers: { "Content-Type": "application/json" }, ...options,
+  } : undefined);
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || data.reason || ("HTTP " + res.status));
+  return data;
+}
+
+async function loadState() {
+  state = await api("/api/state");
+  entryById = new Map(state.board.entries.map(e => [e.jobId, e]));
+  render();
+}
+
+function statusOf(jobId) {
+  const entry = entryById.get(jobId);
+  return entry ? entry.status : "todo";
+}
+
+function matchesSearch(job, needle) {
+  if (!needle) return true;
+  const hay = [job.titel, job.employer, (job.dienstorte || []).join(" ")].join(" ").toLowerCase();
+  return hay.includes(needle);
+}
+
+function render() {
+  renderAgent();
+  const needle = document.getElementById("search").value.trim().toLowerCase();
+  const byStatus = Object.fromEntries(COLUMNS.map(c => [c.key, []]));
+  let visible = 0;
+  for (const job of state.jobs) {
+    if (!matchesSearch(job, needle)) continue;
+    byStatus[statusOf(job.id)].push(job);
+    visible++;
+  }
+  document.getElementById("counts").textContent = visible + " von " + state.jobs.length + " Angeboten";
+
+  const board = document.getElementById("board");
+  board.innerHTML = "";
+  for (const col of COLUMNS) {
+    const jobs = byStatus[col.key];
+    // Interessante zuerst nach KI-Punkten sortieren, sonst nach Frist
+    jobs.sort((a, b) => {
+      const pa = (entryById.get(a.id) || {}).punkte ?? -1;
+      const pb = (entryById.get(b.id) || {}).punkte ?? -1;
+      if (pa !== pb) return pb - pa;
+      return (a.bewerbungsfrist || "9999").localeCompare(b.bewerbungsfrist || "9999");
+    });
+
+    const colEl = document.createElement("div");
+    colEl.className = "col";
+    colEl.dataset.status = col.key;
+    colEl.innerHTML = '<h2>' + col.label + ' <span class="count">' + jobs.length + "</span></h2>";
+    const cards = document.createElement("div");
+    cards.className = "cards";
+    if (!jobs.length) cards.innerHTML = '<div class="empty">– leer –</div>';
+    for (const job of jobs) cards.appendChild(renderCard(job));
+    colEl.appendChild(cards);
+
+    colEl.addEventListener("dragover", e => { e.preventDefault(); colEl.classList.add("dragover"); });
+    colEl.addEventListener("dragleave", () => colEl.classList.remove("dragover"));
+    colEl.addEventListener("drop", async e => {
+      e.preventDefault();
+      colEl.classList.remove("dragover");
+      const jobId = e.dataTransfer.getData("text/job-id");
+      if (jobId && statusOf(jobId) !== col.key) await setJobStatus(jobId, col.key);
+    });
+    board.appendChild(colEl);
+  }
+}
+
+function renderCard(job) {
+  const entry = entryById.get(job.id);
+  const el = document.createElement("div");
+  el.className = "jobcard";
+  el.draggable = true;
+  const badges = [];
+  if (entry) {
+    badges.push(entry.vonKi
+      ? '<span class="badge ki" title="von der KI eingruppiert">🤖 KI</span>'
+      : '<span class="badge mensch" title="vom Menschen eingruppiert">👤 Mensch</span>');
+    if (entry.punkte != null) badges.push('<span class="badge punkte">' + entry.punkte + "/10</span>");
+  }
+  if (job.hasChat) badges.push('<span class="badge" title="Chat-Verlauf vorhanden">💬</span>');
+  if (job.bewerbungsfrist) badges.push('<span class="badge frist">bis ' + esc(job.bewerbungsfrist) + "</span>");
+  if (job.gehaltsstufe) badges.push('<span class="badge">' + esc(job.gehaltsstufe) + "</span>");
+
+  el.innerHTML =
+    '<div class="t">' + esc(job.titel) + "</div>" +
+    '<div class="sub">' + esc(job.employer || job.adapter) +
+      (job.dienstorte && job.dienstorte.length ? " · " + esc(job.dienstorte.slice(0, 2).join(", ")) : "") +
+    "</div>" +
+    (badges.length ? '<div class="badges">' + badges.join("") + "</div>" : "");
+
+  el.addEventListener("click", () => openJob(job.id));
+  el.addEventListener("dragstart", e => {
+    e.dataTransfer.setData("text/job-id", job.id);
+    el.classList.add("dragging");
+  });
+  el.addEventListener("dragend", () => el.classList.remove("dragging"));
+  return el;
+}
+
+async function setJobStatus(jobId, status) {
+  try {
+    await api("/api/jobs/" + encodeURIComponent(jobId) + "/status", {
+      method: "POST", body: JSON.stringify({ status }),
+    });
+    await loadState();
+    if (openJobId === jobId) await openJob(jobId);
+  } catch (err) { alert("Status konnte nicht gesetzt werden: " + err.message); }
+}
+
+// ---------- Job-Modal ----------
+
+async function openJob(jobId) {
+  openJobId = jobId;
+  const overlay = document.getElementById("jobOverlay");
+  overlay.classList.add("open");
+  document.getElementById("jobBody").innerHTML = '<p class="hint">Lade…</p>';
+  try {
+    const data = await api("/api/jobs/" + encodeURIComponent(jobId));
+    renderJobModal(data);
+  } catch (err) {
+    document.getElementById("jobBody").innerHTML = '<p class="hint">' + esc(err.message) + "</p>";
+  }
+}
+
+function renderJobModal(data) {
+  const job = data.job, entry = data.entry;
+  document.getElementById("jobTitle").textContent = job.titel;
+  const status = entry ? entry.status : "todo";
+
+  const meta = [
+    job.employer, (job.dienstorte || []).join(", "), job.gehaltsstufe,
+    (job.befristung || []).join(", "), (job.arbeitszeit || []).join(", "),
+    job.homeoffice, job.bewerbungsfrist ? "Frist: " + job.bewerbungsfrist : "",
+    job.referenzcode ? "Ref: " + job.referenzcode : "",
+  ].filter(Boolean).map(esc).join(" · ");
+
+  let html = '<div class="meta">' + meta + "</div>";
+  html += '<a href="' + esc(job.link) + '" target="_blank" rel="noopener"><button>🔗 Zum Angebot ↗</button></a>';
+
+  html += '<div class="statusrow">' + COLUMNS.map(c =>
+    '<button data-setstatus="' + c.key + '"' + (c.key === status ? ' class="active"' : "") + ">" +
+    c.label + "</button>").join("") + "</div>";
+
+  if (entry) {
+    html += '<p class="hint">Eingruppiert ' + (entry.vonKi ? "von der 🤖 KI" : "vom 👤 Menschen") +
+      " am " + esc((entry.updatedAt || "").slice(0, 16).replace("T", " ")) + "</p>";
+  }
+  if (entry && entry.begruendung) {
+    html += '<div class="kiverdict">🤖 <b>' + (entry.punkte != null ? entry.punkte + "/10 — " : "") +
+      "</b>" + esc(entry.begruendung) + "</div>";
+  }
+
+  if (job.beschreibung) {
+    html += '<details class="section" open><summary>Beschreibung</summary><div class="desc">' +
+      esc(job.beschreibung) + "</div></details>";
+  }
+  const vz = job.voraussetzungenZwingend || [], vw = job.voraussetzungenWuenschenswert || [];
+  if (vz.length || vw.length) {
+    html += '<details class="section"><summary>Voraussetzungen</summary>';
+    if (vz.length) html += "<p><b>Zwingend:</b></p><ul>" + vz.map(v => "<li>" + esc(v) + "</li>").join("") + "</ul>";
+    if (vw.length) html += "<p><b>Wünschenswert:</b></p><ul>" + vw.map(v => "<li>" + esc(v) + "</li>").join("") + "</ul>";
+    html += "</details>";
+  }
+
+  html += '<details class="section" open><summary>💬 Chat mit dem KI-Agenten</summary>';
+  html += '<div class="chat">' + (data.chat.length
+    ? data.chat.map(renderMsg).join("")
+    : '<p class="hint">Noch kein Chat-Verlauf. Der KI-Agent hat diesen Job noch nicht bearbeitet — du kannst ihm unten direkt eine Frage stellen.</p>'
+  ) + "</div>";
+  html += '<form class="chatform" id="chatForm">' +
+    '<input id="chatInput" placeholder="Frage zum Angebot stellen… (z.B. Erfülle ich die Voraussetzungen?)" autocomplete="off">' +
+    '<button class="primary" id="chatSend">Senden</button></form>';
+  html += "</details>";
+
+  const body = document.getElementById("jobBody");
+  body.innerHTML = html;
+  body.querySelectorAll("[data-setstatus]").forEach(btn =>
+    btn.addEventListener("click", () => setJobStatus(job.id, btn.dataset.setstatus)));
+  document.getElementById("chatForm").addEventListener("submit", async e => {
+    e.preventDefault();
+    const input = document.getElementById("chatInput");
+    const frage = input.value.trim();
+    if (!frage) return;
+    const send = document.getElementById("chatSend");
+    send.disabled = true; send.textContent = "Denkt…";
+    try {
+      await api("/api/jobs/" + encodeURIComponent(job.id) + "/chat", {
+        method: "POST", body: JSON.stringify({ frage }),
+      });
+      await openJob(job.id);
+      await loadState();
+    } catch (err) {
+      alert("Frage fehlgeschlagen: " + err.message);
+      send.disabled = false; send.textContent = "Senden";
+    }
+  });
+}
+
+function renderMsg(msg) {
+  const who = msg.role === "model" ? "🤖 KI-Agent" : "👤 Du";
+  const when = esc((msg.at || "").slice(0, 16).replace("T", " "));
+  let content;
+  if (msg.kind === "triage" && msg.role === "user") {
+    content = "<details><summary>Triage-Anfrage (kompletter Seitentext) anzeigen</summary><pre>" +
+      esc(msg.content) + "</pre></details>";
+  } else if (msg.kind === "triage" && msg.role === "model") {
+    content = "<pre>" + esc(msg.content) + "</pre>";
+  } else {
+    content = esc(msg.content);
+  }
+  return '<div class="msg ' + esc(msg.role) + '"><div class="who">' + who + " · " + when + "</div>" + content + "</div>";
+}
+
+// ---------- Agent ----------
+
+function renderAgent() {
+  const agent = state.agent || {};
+  const btn = document.getElementById("btnAgent");
+  const info = document.getElementById("agentInfo");
+  if (agent.running) {
+    btn.textContent = "⏹ KI-Agent stoppen";
+    btn.classList.remove("primary");
+    btn.classList.add("danger");
+    info.innerHTML = "🤖 " + agent.processed + "/" + agent.total +
+      (agent.currentTitel ? " — prüft gerade: <b>" + esc(agent.currentTitel) + "</b>" : "");
+  } else {
+    btn.textContent = "🤖 KI-Agent starten";
+    btn.classList.add("primary");
+    btn.classList.remove("danger");
+    info.innerHTML = agent.finishedAt
+      ? "✔ Lauf beendet (" + agent.processed + "/" + agent.total + ")" +
+        (agent.lastError ? ' <span class="err" title="' + esc(agent.lastError) + '">⚠ Fehler beim letzten Job</span>' : "")
+      : "";
+  }
+  if (agent.running && !pollTimer) {
+    pollTimer = setInterval(loadState, 3000);
+  } else if (!agent.running && pollTimer) {
+    clearInterval(pollTimer);
+    pollTimer = null;
+  }
+}
+
+document.getElementById("btnAgent").addEventListener("click", async () => {
+  if (state.agent && state.agent.running) {
+    await api("/api/agent/stop", { method: "POST", body: "{}" });
+  } else {
+    if (!state.profile.trim()) { openProfile(); return; }
+    try {
+      await api("/api/agent/start", { method: "POST", body: "{}" });
+    } catch (err) { alert(err.message); }
+  }
+  await loadState();
+});
+
+// ---------- Profil ----------
+
+function openProfile() {
+  document.getElementById("profileText").value = state.profile || "";
+  document.getElementById("profileOverlay").classList.add("open");
+}
+document.getElementById("btnProfile").addEventListener("click", openProfile);
+document.getElementById("btnSaveProfile").addEventListener("click", async () => {
+  await api("/api/profile", {
+    method: "PUT", body: JSON.stringify({ text: document.getElementById("profileText").value }),
+  });
+  document.getElementById("profileOverlay").classList.remove("open");
+  await loadState();
+});
+
+// ---------- Allgemein ----------
+
+document.querySelectorAll("[data-close]").forEach(btn =>
+  btn.addEventListener("click", () => {
+    document.getElementById(btn.dataset.close).classList.remove("open");
+    if (btn.dataset.close === "jobOverlay") openJobId = null;
+  }));
+document.querySelectorAll(".overlay").forEach(overlay =>
+  overlay.addEventListener("click", e => {
+    if (e.target === overlay) {
+      overlay.classList.remove("open");
+      if (overlay.id === "jobOverlay") openJobId = null;
+    }
+  }));
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") {
+    document.querySelectorAll(".overlay.open").forEach(o => o.classList.remove("open"));
+    openJobId = null;
+  }
+});
+document.getElementById("search").addEventListener("input", render);
+
+loadState().then(() => {
+  if (!state.profile.trim()) openProfile();
+}).catch(err => {
+  document.getElementById("board").innerHTML = '<p class="hint" style="padding:16px">Fehler: ' + esc(err.message) + "</p>";
+});
+</script>
+</body>
+</html>

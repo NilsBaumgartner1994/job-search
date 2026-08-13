@@ -12,6 +12,7 @@ yarn crawl                       # Trefferlisten laden, Details nur für NEUE Jo
 yarn crawl --adapter=bka,bwi     # nur bestimmte Portale
 yarn crawl:full                  # Details auch für bekannte Jobs neu laden (Netz)
 yarn html                        # jobs.html neu aus data/jobs.json erzeugen (offline)
+yarn server                      # KI-Agent + Kanban-Board starten (siehe unten)
 yarn typecheck                   # TypeScript prüfen
 ```
 
@@ -146,6 +147,157 @@ Eine einzelne, offline nutzbare HTML-Datei (einfach im Browser öffnen):
   neben "E"/"A"/"B" auch "W" (Professoren-Besoldung, z.B. "W2"), "R"
   (Richter:innen/Staatsanwält:innen, z.B. "R 2"), "S" (TVöD-SuE, z.B. "S 8a")
   sowie "TV-BA" mit römischer Tätigkeitsebene (z.B. "TV-BA III").
+
+## KI-Agent & Kanban-Board (`yarn server`)
+
+Zusätzlich zur statischen `jobs.html` (die unverändert offline mit
+localStorage funktioniert) gibt es einen kleinen lokalen Node-Server mit
+**Kanban-Board** und angeschlossenem **KI-Agenten** (Google Gemini — im
+Gratis-Kontingent eines privaten Google-Kontos nutzbar, keine Kreditkarte
+nötig):
+
+```bash
+yarn server        # danach http://localhost:8322/ im Browser öffnen
+```
+
+### Erststart: API-Schlüssel
+
+Beim Start prüft der Server, ob alle nötigen Informationen in der `.env`
+vorhanden sind (v.a. `GEMINI_API_KEY`). Fehlt der Schlüssel, wirst du direkt
+in der Konsole danach gefragt — inklusive Schritt-für-Schritt-Anleitung:
+
+1. https://aistudio.google.com/apikey im Browser öffnen
+2. Mit dem (privaten) Google-Konto anmelden
+3. "API-Schlüssel erstellen" / "Create API key" klicken
+4. Schlüssel kopieren (beginnt mit `AIza…`), in die Konsole einfügen, Enter
+
+Der Schlüssel wird in `.env` gespeichert (steht im `.gitignore`) und beim
+nächsten Start automatisch geladen. Optionale `.env`-Einträge:
+
+| Variable         | Default            | Bedeutung                                        |
+| ---------------- | ------------------ | ------------------------------------------------ |
+| `GEMINI_API_KEY` | — (wird abgefragt) | API-Schlüssel aus Google AI Studio               |
+| `GEMINI_MODEL`   | `gemini-2.5-flash` | verwendetes Modell                               |
+| `PORT`           | `8322`             | Port des Kanban-Servers                          |
+| `AGENT_DELAY_MS` | `7000`             | Pause zwischen zwei Triage-Anfragen (Rate-Limit) |
+
+### So arbeitet der Agent
+
+1. Im Board oben unter **"👤 Profil"** einmalig einen kurzen Text hinterlegen:
+   wer du bist (Studium, Erfahrung) und was du dir wünschst (Orte, Gehalt,
+   No-Gos). Beim ersten Öffnen geht das Profil-Fenster automatisch auf.
+2. **"🤖 KI-Agent starten"** klicken. Der Agent bekommt nun ein Angebot nach
+   dem nächsten vorgelegt — jeweils mit deinem Profil und dem **kompletten
+   Seitentext** der Ausschreibung (`raw.detail`, HTML → Text) — und
+   entscheidet: lohnt ein genauer Blick (**⭐ Interessant**) oder kann es weg
+   (**🗄 Archiviert**)? Dazu vergibt er 0–10 Relevanz-Punkte und eine kurze
+   Begründung. Der Fortschritt ist oben in der Leiste sichtbar; der Lauf
+   lässt sich jederzeit stoppen und später fortsetzen (bereits bearbeitete
+   Jobs werden nicht erneut angefragt).
+3. Wegen des Rate-Limits im Gratis-Kontingent (~10 Anfragen/Minute) pausiert
+   der Agent zwischen zwei Jobs — bei vielen hundert Angeboten läuft ein
+   kompletter Erstlauf also eine ganze Weile; einfach laufen lassen.
+
+### Das Board
+
+- **Spalten** (horizontal scrollbar): 📥 Noch abzuarbeiten → ⭐ Interessant →
+  📨 Beworben → ❌ Bewerbung abgelehnt → 🗄 Archiviert.
+- Karten lassen sich per **Drag & Drop** zwischen den Spalten verschieben —
+  das zählt als menschliche Entscheidung. Jede Karte zeigt, ob sie zuletzt
+  von der **🤖 KI** oder vom **👤 Menschen** eingruppiert wurde, dazu die
+  KI-Punkte, Frist und Entgeltgruppe.
+- **Klick auf eine Karte** öffnet das Detail-Modal mit Beschreibung,
+  Voraussetzungen, KI-Begründung und dem **kompletten Chat-Verlauf mit dem
+  KI-Agenten** (die große Triage-Anfrage ist einklappbar). Dort lassen sich
+  auch **Folgefragen** stellen ("Erfülle ich die Voraussetzungen?") — die
+  Antwort landet im selben Verlauf.
+
+### Speicherung (Dateisystem statt localStorage)
+
+Alles liegt als einfache Dateien unter `data/agent/` — **im Git**, damit
+auch der GitHub-Workflow (siehe unten) damit arbeiten und die Ergebnisse
+zurück ins Repo committen kann:
+
+```
+data/agent/board.json           Übersicht: Job-ID, Status, vonKi-Boolean, Punkte
+data/agent/profil.md            dein Profil-Text
+data/agent/jobs/<job-id>/job.json    Schnappschuss der Job-Informationen
+data/agent/jobs/<job-id>/chat.json   Chat-Verlauf mit dem KI-Agenten
+```
+
+`board.json` ist die allgemeine Übersichtsdatei: pro Job die ID, der
+Kanban-Status (`todo`/`interessant`/`beworben`/`abgelehnt`/`archiviert`)
+und der Boolean `vonKi` (true = von der KI eingruppiert, false = vom
+Menschen), dazu optional Punkte und Begründung. Da Job-IDs Zeichen wie `:`
+enthalten, werden sie für Ordnernamen zu `_` normalisiert
+(`bka:T-2026-54` → `bka_T-2026-54`).
+
+Board-Status und die Status/Notizen der statischen `jobs.html`
+(localStorage im Browser) sind bewusst **zwei getrennte Welten** — die
+statische Variante funktioniert weiterhin ohne Server.
+
+## KI-Agent in GitHub Actions + Kanban auf GitHub Pages
+
+Statt (oder zusätzlich zu) `yarn server` kann der KI-Agent komplett auf
+GitHub laufen — ohne eigenen Rechner:
+
+```
+GitHub-Pages-Seite (docs/index.html, mobil optimiert)
+  ↑ liest docs/data.json + docs/jobs/<id>.json
+GitHub-Workflow "KI-Agent" (workflow_dispatch)
+  1. übernimmt deine Browser-Änderungen (Input "aenderungen")
+  2. triagiert neue Jobs mit Gemini (Secret GEMINI_API_KEY)
+  3. committet data/agent/ + docs/ zurück ins Repo
+```
+
+### Einmalige Einrichtung
+
+1. **Secret anlegen**: Repo → Settings → Secrets and variables → Actions →
+   "New repository secret" → Name `GEMINI_API_KEY`, Wert von
+   https://aistudio.google.com/apikey (gleicher Schlüssel wie lokal).
+2. **Profil einchecken**: `data/agent/profil.md` ausfüllen (die Datei
+   enthält eine Vorlage mit Beispiel) und committen — das ist der Input,
+   den der Agent im Workflow bekommt. Solange noch die Vorlage drinsteht,
+   bricht der Workflow mit einem Hinweis ab.
+3. **GitHub Pages aktivieren**: Repo → Settings → Pages → Source
+   "Deploy from a branch" → Branch `main`, Ordner `/docs`. Die Seite liegt
+   dann unter `https://<user>.github.io/job-search/`.
+
+### Einen Lauf starten
+
+Actions → **KI-Agent** → "Run workflow". Zwei optionale Eingaben:
+
+- **aenderungen** — das JSON von der Pages-Seite (siehe unten); leer
+  lassen, wenn es keine gibt.
+- **limit** (Default 200) — wie viele neue Jobs dieser Lauf maximal
+  triagiert. Das Gratis-Kontingent hat neben dem Minuten- auch ein
+  **Tageslimit** (Größenordnung ein paar hundert Anfragen für
+  `gemini-2.5-flash`) — bei ~1000 offenen Jobs braucht der erste
+  Komplettdurchlauf also mehrere Läufe an mehreren Tagen. Jeder Lauf macht
+  dort weiter, wo der letzte aufgehört hat; bei aufgebrauchtem Kontingent
+  bricht er ab und committet das bis dahin Geschaffte.
+
+Lokal geht derselbe Headless-Lauf mit `yarn agent --limit=50`.
+
+### Änderungen von der Pages-Seite zurück ins Repo
+
+Die Pages-Seite ist statisch und kann nicht ins Repo schreiben. Status-
+Änderungen (Karte verschieben bzw. Status-Button im Detail) werden deshalb
+**nur im Browser gemerkt** (localStorage) und als "⏳ lokal" markiert:
+
+1. Oben erscheint der Button **"⏳ Änderungen (N)"** → antippen
+2. **"Änderungen kopieren"** → JSON liegt in der Zwischenablage
+3. Link "KI-Agent-Workflow öffnen" → "Run workflow" → JSON in das Feld
+   **aenderungen** einfügen → starten
+4. Der Workflow übernimmt sie als menschliche Entscheidungen
+   (`vonKi: false`) und committet; beim nächsten Laden der Seite sind die
+   Änderungen im Repo-Stand enthalten und werden lokal automatisch
+   aufgeräumt (auch pro Änderung: was schon übernommen ist, fliegt aus dem
+   localStorage)
+
+Der Chat-Verlauf jedes Jobs ist auch auf der Pages-Seite einsehbar
+(read-only); **Folgefragen** an den Agenten gehen nur in der lokalen
+Server-Variante (`yarn server`).
 
 ## Gehaltstabellen (`yarn salaries`)
 
