@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T14:00:49.190Z",
+  "updatedAt": "2026-08-14T14:07:35.897Z",
   "entries": [
     {
       "jobId": "accenture:13818109",
@@ -202,6 +202,22 @@
       "begruendung": "Der Dienstort Berlin liegt weit außerhalb der gewünschten Region (Raum Osnabrück/Vechta/Cloppenburg) und die Stelle erfordert als Berliner Landesbehörde sowie für Vor-Ort-Kontrollen regelmäßige Präsenz. Trotz sehr guter Gehaltseinstufung (TV-L E 14) und passendem fachlichen Profil ist das Angebot wegen des reinen Hybrid-Modells ohne vollen Remote-Anteil ungeeignet."
     },
     {
+      "jobId": "interamt:1458638",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-14T13:49:14.615Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 3,
+        "arbeitszeit": 9,
+        "verbeamtung": 10,
+        "gesamt": 3
+      },
+      "begruendung": "Die Stelle ist mit E 11 / A 11 (gehobener Dienst) für Ihr Profil mit Master und Promotion unterwertig dotiert (gesucht ab E 13). Zudem liegt der Dienstort Freital (Sachsen) weit außerhalb Ihrer Wunschregion und erfordert trotz Hybridmodell regelmäßige mehrtägige Dienstreisen."
+    },
+    {
       "jobId": "interamt:1460315",
       "status": "archiviert",
       "vonKi": true,
@@ -282,6 +298,22 @@
       "begruendung": "Obwohl die Führungsfunktion und die Vergütung (A15 / E15) hervorragend zum Profil passen, liegt der Dienstort Potsdam weit außerhalb des Suchraums (Raum Osnabrück/Vechta/Cloppenburg). Da bei einer Dezernatsleitung Präsenz vor Ort erforderlich ist und kein überwiegendes Homeoffice geboten wird, scheidet das Angebot aus."
     },
     {
+      "jobId": "interamt:1461460",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-14T13:58:56.754Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 0,
+        "arbeitszeit": 9,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "Die Stelle ist im mittleren Dienst angesiedelt (E7 / A7) und umfasst reine Assistenz-/Geschäftszimmeraufgaben, was für ein Promotionsprofil im Bereich Informatik/Software Engineering (gesucht ab E13) massiv unterqualifiziert ist. Zudem liegt der Dienstort Bonn außerhalb des Wunschradius und erfordert trotz Hybridmodell Präsenz."
+    },
+    {
       "jobId": "interamt:1461708",
       "status": "archiviert",
       "vonKi": true,
@@ -344,6 +376,22 @@
         "gesamt": 1
       },
       "begruendung": "Das Stellenangebot im Bereich Personalmarketing/Organisationsentwicklung in Mannheim liegt fachlich weit außerhalb Ihres Profils als promovierter Informatiker. Zudem entspricht die Entgeltgruppe E9b nicht Ihren Qualifikationen und Wünschen (ab E13)."
+    },
+    {
+      "jobId": "interamt:1463422",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-14T13:55:03.168Z",
+      "punkte": 5,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 5
+      },
+      "begruendung": "Inhaltlich und von den Rahmenbedingungen (E13/A13h, Verbeamtungsmöglichkeit) passt die Stelle gut, jedoch ist der Dienstort Bonn viel zu weit von der Zielregion entfernt. Da die Stelle als 'hybrid' und nicht als Voll-Remote ausgeschrieben ist, übersteigt die nötige Präsenz vor Ort die maximale Pendelzeit von 40 Minuten deutlich."
     },
     {
       "jobId": "interamt:1463450",
@@ -442,6 +490,22 @@
       "begruendung": "Der Dienstort Berlin liegt weit außerhalb des Suchradiers und bietet nur ein hybrides Modell statt Voll-Remote. Zudem liegt die Eingruppierung (TV-L E 11) unter dem geforderten Niveau (ab E 13) und das Aufgabenprofil (Systemadministration/IT-Support) passt nicht zu einer Promotion im Software Engineering."
     },
     {
+      "jobId": "interamt:1464732",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-14T14:07:35.897Z",
+      "punkte": 5,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 9,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 5
+      },
+      "begruendung": "Inhaltlich und von der Dotierung (A14 / E14 mit Verbeamtung) passt die Stelle hervorragend zum Profil. Da jedoch eine Präsenzpflicht von mindestens 40 % in Bonn besteht und der Dienstort weit außerhalb der 40-Minuten-Pendelgrenze liegt, ist das Angebot für den Alltag ungeeignet."
+    },
+    {
       "jobId": "interamt:1464922",
       "status": "archiviert",
       "vonKi": true,
@@ -488,6 +552,22 @@
         "gesamt": 2
       },
       "begruendung": "Die Stelle ist mit Entgeltgruppe E11 und der Anforderung eines Bachelorabschlusses deutlich unter dem Qualifikationsniveau einer Promotion/E13+ angesiedelt. Zudem liegt der Dienstort Bonn weit außerhalb des Suchradiusses und bietet keine Garantie für die geforderte hohe Remote-Quote."
+    },
+    {
+      "jobId": "interamt:1467164",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-14T13:55:12.116Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 2,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 2
+      },
+      "begruendung": "Die Stelle ist mit E10 / A10 (gehobener Dienst / Bachelor-Niveau) für ein Profil mit Promotion und Master (Ziel ab E13) deutlich zu niedrig eingestuft. Zudem liegt der Dienstort Bonn weit außerhalb des 40-Minuten-Radius und bietet lediglich hybrides Arbeiten statt voller Remote-Option."
     },
     {
       "jobId": "interamt:1467314",
