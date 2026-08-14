@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T20:51:14.682Z",
+  "updatedAt": "2026-08-14T21:45:20.080Z",
   "entries": [
     {
       "jobId": "accenture:13818109",
@@ -568,6 +568,22 @@
         "gesamt": 4
       },
       "begruendung": "Obwohl das Profil fachlich perfekt passt und die Konditionen (E13/A14 sowie Verbeamtung) hervorragend sind, liegen die Dienstorte Bonn und Leipzig deutlich außerhalb des Radius von 40 Minuten um den Wunschraum Osnabrück/Vechta/Cloppenburg. Da lediglich hybrides und kein vollständiges Remote-Arbeiten angeboten wird, ist die Stelle örtlich unpassend."
+    },
+    {
+      "jobId": "interamt:1464474",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-14T21:45:20.080Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 5,
+        "arbeitszeit": 10,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Der Dienstort Bonn ist deutlich zu weit vom Wunschraum entfernt und bei einem hybriden Modell nicht innerhalb der maximal 40 Minuten Pendelzeit erreichbar. Zudem liegt die Eingruppierung mit E12 unter dem gewünschten Niveau ab E13 für Master/Promovierte."
     },
     {
       "jobId": "interamt:1464559",
