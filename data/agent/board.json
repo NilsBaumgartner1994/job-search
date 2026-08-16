@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T21:45:20.080Z",
+  "updatedAt": "2026-08-16T09:48:03.835Z",
   "entries": [
     {
       "jobId": "accenture:13818109",
@@ -170,6 +170,214 @@
       "begruendung": "Die Position als IT-Projektleiter im öffentlichen Sektor passt sehr gut zu deiner Promotion und Führungserfahrung aus der Unternehmensleitung. Accenture bietet Homeoffice-Optionen, allerdings liegen die genannten Bürostandorte außerhalb deiner 40-Minuten-Einzugsregion, weshalb der reale Präsenz- und Reiseanteil geprüft werden sollte."
     },
     {
+      "jobId": "bka:BKA-KKA-3J_GK-2026-1",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:37:58.880Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 2,
+        "gehalt": 1,
+        "arbeitszeit": 7,
+        "verbeamtung": 10,
+        "gesamt": 0
+      },
+      "begruendung": "Es handelt sich um ein duales Bachelor-Studium für den gehobenen Dienst (Einstieg A9g), welches für einen promovierten Informatiker (Ziel E13+) fachlich und niveaumäßig völlig unpassend ist. Zudem liegen die Studien- und Dienstorte weit außerhalb des gewünschten Einzugsgebiets."
+    },
+    {
+      "jobId": "bka:T-2025-78",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:47:28.052Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 1,
+        "gehalt": 2,
+        "arbeitszeit": 3,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Die Stelle richtet sich an staatlich geprüfte Techniker im Bereich Elektrotechnik/Gebäudeleittechnik mit 24/7-Schichtdienst in Wiesbaden/Frankfurt. Für ein Profil mit Promotion in Informatik ist die Tätigkeit fachfremd, die Entgeltgruppe (EG 9b) liegt weit unter dem Zielbereich (ab E13) und Homeoffice ist im Schichtbetrieb kaum möglich."
+    },
+    {
+      "jobId": "bka:T-2026-39",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:38:53.793Z",
+      "punkte": 6,
+      "punkteDetails": {
+        "entfernung": 3,
+        "homeoffice": 7,
+        "gehalt": 9,
+        "arbeitszeit": 9,
+        "verbeamtung": 2,
+        "gesamt": 6
+      },
+      "begruendung": "Inhaltlich und finanziell (EG 14 Bund) passt die Stelle als KI-Innovationsmanager exzellent zu Ihrer Promotion und Qualifikation. Der Dienstort Wiesbaden ist zwar weit entfernt und erfordert gelegentliche Präsenz/Dienstreisen, jedoch wird Homeoffice nach eigenem Ermessen ermöglicht; die Stelle ist auf 5 Jahre befristet."
+    },
+    {
+      "jobId": "bka:T-2026-40",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:42:53.312Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 4,
+        "gehalt": 9,
+        "arbeitszeit": 9,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Der Dienstort Wiesbaden liegt weit außerhalb des Wunschgebiets, und da die Mehrzahl der Schulungen und Workshops vor Ort in Präsenz stattfindet (inkl. Dienstreisen), ist die Stelle trotz teilweisem Homeoffice nicht remote genug. Zudem ist die Stelle auf 5 Jahre befristet, wenngleich die Eingruppierung mit E14 attraktiv ist."
+    },
+    {
+      "jobId": "bka:T-2026-41",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:43:19.022Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 1,
+        "gehalt": 9,
+        "arbeitszeit": 9,
+        "verbeamtung": 10,
+        "gesamt": 2
+      },
+      "begruendung": "Obwohl die Vergütung (EG 14 / A 14) und die Verbeamtungsmöglichkeit exzellent sind, ist der Dienstort Wiesbaden viel zu weit entfernt. Da in der Ausschreibung ausdrücklich eine Tätigkeit vor Ort gefordert wird, kommt die Stelle aufgrund fehlender Remote-Möglichkeit nicht infrage."
+    },
+    {
+      "jobId": "bka:T-2026-52",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:45:08.529Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 5,
+        "gehalt": 5,
+        "arbeitszeit": 9,
+        "verbeamtung": 10,
+        "gesamt": 3
+      },
+      "begruendung": "Der Dienstort Wiesbaden liegt weit außerhalb der Zielregion und bietet kein reines Full-Remote-Modell. Zudem liegt die Stelle mit EG 12 / A 12 unter dem gewünschten Niveau ab E 13 für Promovierte/Master-Absolventen."
+    },
+    {
+      "jobId": "bka:T-2026-53",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:44:58.501Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 1,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Die Stelle ist mit EG 9b deutlich unter dem gesuchten Niveau (ab E13 für Promovierte) eingruppiert und bis Ende 2028 befristet. Zudem handelt es sich um eine rein kaufmännisch-administrative Sachbearbeiterstelle in Berlin ohne fachlichen Bezug zur Informatik."
+    },
+    {
+      "jobId": "bka:T-2026-54",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:45:48.239Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 5,
+        "gehalt": 9,
+        "arbeitszeit": 10,
+        "verbeamtung": 3,
+        "gesamt": 3
+      },
+      "begruendung": "Der Dienstort Wiesbaden liegt weit außerhalb des gewünschten Pendelbereichs (Raum Osnabrück/Vechta/Cloppenburg) und es wird kein reiner Remote-Vertrag geboten. Zudem wird zwingend nachweisbare Erfahrung als ISTQB-Tester verlangt, wenngleich Gehalt (EG 13) und Aufgabenbereich grundsätzlich attraktiv wären."
+    },
+    {
+      "jobId": "bka:T-2026-55",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:46:52.940Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 4,
+        "gehalt": 9,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 3
+      },
+      "begruendung": "Der Dienstort Wiesbaden liegt weit außerhalb des Pendelbereichs und bietet als operative Leitungsfunktion keine vollständige Remote-Option. Trotz sehr gut passender Vergütung (EG 14 / A14) und Verbeamtungsmöglichkeit scheidet die Stelle aufgrund der Entfernung aus."
+    },
+    {
+      "jobId": "bka:W-2026-1",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:44:47.717Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 5,
+        "gehalt": 1,
+        "arbeitszeit": 2,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Es handelt sich um eine befristete Werkstudentenstelle (EG 9a) in Teilzeit für aktuell immatrikulierte Studierende. Dies passt überhaupt nicht zu Ihrem Profil als promovierter Informatiker auf der Suche nach Vollzeit-/Führungspositionen ab E13."
+    },
+    {
+      "jobId": "bnd:AS-2026-064",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:47:42.009Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 1,
+        "gehalt": 2,
+        "arbeitszeit": 10,
+        "verbeamtung": 8,
+        "gesamt": 1
+      },
+      "begruendung": "Die Stelle im gehobenen Dienst (E10) für Endgeräte- und Druckersupport liegt fachlich und gehaltlich weit unter deinem Qualifikationsniveau (Promotion Informatik, Ziel ab E13). Zudem ist der Dienstort Pullach bei München viel zu weit entfernt und Vor-Ort-Präsenz für Hardware-Betreuung erforderlich."
+    },
+    {
+      "jobId": "bnd:AS-2026-070",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:47:52.449Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 0,
+        "gehalt": 0,
+        "arbeitszeit": 10,
+        "verbeamtung": 8,
+        "gesamt": 0
+      },
+      "begruendung": "Die Stelle richtet sich an Personen mit Ausbildungsabschluss im mittleren Dienst (E6) und passt weder zur Qualifikation (Promotion Informatik) noch zur Gehaltsvorstellung (ab E13). Zudem liegen die Standorte Berlin und Pullach weit außerhalb des Suchradius ohne Remote-Option."
+    },
+    {
+      "jobId": "bnd:AS-2026-071",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:48:03.835Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 1,
+        "gehalt": 2,
+        "arbeitszeit": 9,
+        "verbeamtung": 8,
+        "gesamt": 1
+      },
+      "begruendung": "Der Dienstort Berlin ist weit außerhalb des Suchraums und bei einer Sicherheitsbehörde wie dem BND ist nicht von nennenswerten Remote-Möglichkeiten auszugehen. Zudem liegt die Stelle mit Entgeltgruppe 10 (gehobener Dienst) deutlich unter dem gewünschten Niveau (ab E13) und fokussiert sich stark auf SAP-Applikationsbetreuung."
+    },
+    {
       "jobId": "interamt:1193238",
       "status": "archiviert",
       "vonKi": true,
@@ -202,6 +410,22 @@
       "begruendung": "Die Stelle richtet sich an Meister/Fachkräfte der Abwassertechnik und entspricht weder fachlich noch gehaltlich (TV-V 8 statt E13+) dem Profil eines promovierten Informatikers. Zudem liegt der Schichtarbeitsplatz in Hetlingen weit außerhalb des gewünschten Einzugsgebiets und erlaubt kein Homeoffice."
     },
     {
+      "jobId": "interamt:1444071",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:43:29.877Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 0,
+        "gehalt": 9,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 2
+      },
+      "begruendung": "Die Stelle in Wiesbaden erfordert ausdrücklich eine Tätigkeit vor Ort und bietet kein Homeoffice. Wegen der großen Distanz zur Zielregion Osnabrück/Vechta/Cloppenburg scheidet das Angebot trotz passender Dotierung (E13/E14 bzw. A13/A14) und Verbeamtungsmöglichkeit aus."
+    },
+    {
       "jobId": "interamt:1444658",
       "status": "archiviert",
       "vonKi": true,
@@ -232,6 +456,38 @@
         "gesamt": 2
       },
       "begruendung": "Der Dienstort Berlin liegt weit außerhalb der gewünschten Region (Raum Osnabrück/Vechta/Cloppenburg) und die Stelle erfordert als Berliner Landesbehörde sowie für Vor-Ort-Kontrollen regelmäßige Präsenz. Trotz sehr guter Gehaltseinstufung (TV-L E 14) und passendem fachlichen Profil ist das Angebot wegen des reinen Hybrid-Modells ohne vollen Remote-Anteil ungeeignet."
+    },
+    {
+      "jobId": "interamt:1456794",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:43:03.895Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 2,
+        "gehalt": 5,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "Der Dienstort Wiesbaden liegt weit außerhalb des Suchraums und erfordert ca. 80 % Präsenz vor Ort. Zudem richtet sich die Stelle an Bachelor-Absolventen (E 12 / A 12) und liegt damit unter dem gesuchten Niveau (ab E 13)."
+    },
+    {
+      "jobId": "interamt:1458282",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:38:11.805Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 5,
+        "gehalt": 9,
+        "arbeitszeit": 9,
+        "verbeamtung": 10,
+        "gesamt": 4
+      },
+      "begruendung": "Inhaltlich und formal (E13/A13, Leitungsfunktion DevOps, Verbeamtung) passt die Stelle hervorragend zum Profil. Der Dienstort Wiesbaden ist jedoch viel zu weit von Osnabrück/Vechta/Cloppenburg entfernt und bei einer Sachgebietsleitung ist reines bzw. überwiegendes Remote-Arbeiten im BKA unrealistisch."
     },
     {
       "jobId": "interamt:1458638",
@@ -554,6 +810,38 @@
       "begruendung": "Der Dienstort Potsdam ist viel zu weit vom Zielgebiet entfernt und bietet nur bis zu 40 % Homeoffice. Zudem liegt die Vergütung (TV-L E 11) deutlich unter Ihren Gehaltsvorstellungen (ab E 13) sowie unter Ihrem Qualifikationsniveau."
     },
     {
+      "jobId": "interamt:1464204",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:36:51.129Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 10,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 4
+      },
+      "begruendung": "Inhaltlich und finanziell (E15/A15, Führungsposition, Verbeamtung) ist die Stelle hervorragend passend. Der Dienstort Bonn ist jedoch viel zu weit von Osnabrück/Vechta/Cloppenburg entfernt, und bei einem hybriden Leitungsmodell ist die Pendeldistanz von maximal 40 Minuten nicht einhaltbar."
+    },
+    {
+      "jobId": "interamt:1464219",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:37:02.782Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 10,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 4
+      },
+      "begruendung": "Fachlich und finanziell (E15/A15) eine exzellente Führungsposition, jedoch liegt der Dienstort Bonn weit außerhalb des 40-Minuten-Radius. Da bei der Leitung des IT-Betriebs mit 30 Mitarbeitenden im hybriden Modell regelmäßige Präsenztage vor Ort unvermeidbar sind, ist die Stelle ohne Umzugsbereitschaft unpassend."
+    },
+    {
       "jobId": "interamt:1464257",
       "status": "archiviert",
       "vonKi": true,
@@ -568,6 +856,22 @@
         "gesamt": 4
       },
       "begruendung": "Obwohl das Profil fachlich perfekt passt und die Konditionen (E13/A14 sowie Verbeamtung) hervorragend sind, liegen die Dienstorte Bonn und Leipzig deutlich außerhalb des Radius von 40 Minuten um den Wunschraum Osnabrück/Vechta/Cloppenburg. Da lediglich hybrides und kein vollständiges Remote-Arbeiten angeboten wird, ist die Stelle örtlich unpassend."
+    },
+    {
+      "jobId": "interamt:1464392",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:45:30.000Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 5,
+        "gehalt": 5,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 3
+      },
+      "begruendung": "Der Dienstort Wiesbaden ist viel zu weit vom Wunschgebiet entfernt und erfordert bei einem hybriden Arbeitsmodell regelmäßige Präsenz vor Ort. Zudem ist die Stelle mit E12 / A12 im gehobenen Dienst angesiedelt und liegt unter dem angestrebten Niveau (ab E13 / höherer Dienst)."
     },
     {
       "jobId": "interamt:1464474",
@@ -760,6 +1064,38 @@
         "gesamt": 2
       },
       "begruendung": "Die Stelle ist mit Entgeltgruppe E11 und der Anforderung eines Bachelorabschlusses deutlich unter dem Qualifikationsniveau einer Promotion/E13+ angesiedelt. Zudem liegt der Dienstort Bonn weit außerhalb des Suchradiusses und bietet keine Garantie für die geforderte hohe Remote-Quote."
+    },
+    {
+      "jobId": "interamt:1466415",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:47:08.327Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 8,
+        "arbeitszeit": 9,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Der Dienstort Wiesbaden liegt weit außerhalb des gewünschten Radius und ist für regelmäßiges Pendeln ungeeignet. Da lediglich hybrides Arbeiten (kein volles Remote) angeboten wird und Präsenzphasen vor Ort anfallen, passt die Stelle örtlich nicht."
+    },
+    {
+      "jobId": "interamt:1466447",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-16T09:47:18.660Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 4,
+        "gehalt": 10,
+        "arbeitszeit": 9,
+        "verbeamtung": 10,
+        "gesamt": 3
+      },
+      "begruendung": "Gehalt (E14/A13h-A14) und Verbeamtungsmöglichkeit sind zwar hervorragend, der Dienstort Wiesbaden liegt jedoch weit außerhalb des Suchraums (Osnabrück/Vechta/Cloppenburg). Da es sich um eine operative Sachgebietsleitung mit Teamführung und Rufbereitschaft handelt, ist ein überwiegendes Homeoffice ohne erhebliche Präsenz vor Ort unrealistisch."
     },
     {
       "jobId": "interamt:1467164",
