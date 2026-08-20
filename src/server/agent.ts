@@ -1,5 +1,5 @@
 import type { JobOffer } from "../types.js";
-import type { ServerEnv } from "./env.js";
+import { MAX_BATCH_SIZE, type ServerEnv } from "./env.js";
 import { GeminiError, generateContent, type GeminiMessage } from "./gemini.js";
 import {
   appendChat,
@@ -37,7 +37,35 @@ function systemPrompt(profile: string): string {
   ].join("\n");
 }
 
-function triagePrompt(job: JobOffer): string {
+/** Form des "punkte"-Objekts — in Einzel- und Sammel-Prompt identisch. */
+const PUNKTE_FORM = [
+  '"punkte": {',
+  '  "entfernung": 0-10,',
+  '  "homeoffice": 0-10,',
+  '  "gehalt": 0-10,',
+  '  "arbeitszeit": 0-10,',
+  '  "verbeamtung": 0-10,',
+  '  "gesamt": 0-10',
+  "},",
+];
+
+/** Erklärung der Entscheidung und der einzelnen Punkte-Kriterien. */
+const KRITERIEN = [
+  '- "interessant": passt zum Profil, der Nutzer sollte es sich anschauen',
+  '- "archivieren": passt nicht (z.B. falsche Fachrichtung, falscher Ort, Anforderungen unerfüllbar)',
+  '- "entfernung": Nähe des Dienstorts zum Wohn-/Wunschort des Nutzers (10 = vor Ort oder dank Remote egal, 0 = unerreichbar weit weg)',
+  '- "homeoffice": Homeoffice-/Remote-Möglichkeiten (10 = voll remote möglich, 0 = keine/unbekannt)',
+  '- "gehalt": Gehalt im Verhältnis zu den Wünschen des Nutzers (0 = keine Angabe im Angebot oder viel zu niedrig)',
+  '- "arbeitszeit": Passung Vollzeit/Teilzeit zu den Wünschen des Nutzers',
+  '- "verbeamtung": Möglichkeit der Verbeamtung (10 = ja, 0 = nein/unbekannt)',
+  '- "gesamt": Gesamtbewertung, wie gut das Angebot insgesamt passt (0 = gar nicht, 10 = perfekt) — gewichte die Kriterien nach den Wünschen aus dem Profil',
+];
+
+function indent(lines: string[], prefix: string): string[] {
+  return lines.map((line) => prefix + line);
+}
+
+function triagePrompt(text: string): string {
   return [
     "Hier ist ein Stellenangebot (kompletter Seitentext). Entscheide, ob sich ein",
     "genauerer Blick für den Nutzer lohnt, und bewerte es strukturiert mit Punkten.",
@@ -45,27 +73,51 @@ function triagePrompt(job: JobOffer): string {
     "Antworte NUR mit einem JSON-Objekt in genau dieser Form:",
     "{",
     '  "entscheidung": "interessant" | "archivieren",',
-    '  "punkte": {',
-    '    "entfernung": 0-10,',
-    '    "homeoffice": 0-10,',
-    '    "gehalt": 0-10,',
-    '    "arbeitszeit": 0-10,',
-    '    "verbeamtung": 0-10,',
-    '    "gesamt": 0-10',
-    "  },",
+    ...indent(PUNKTE_FORM, "  "),
     '  "begruendung": "1-3 Sätze"',
     "}",
     "",
-    '- "interessant": passt zum Profil, der Nutzer sollte es sich anschauen',
-    '- "archivieren": passt nicht (z.B. falsche Fachrichtung, falscher Ort, Anforderungen unerfüllbar)',
-    '- "entfernung": Nähe des Dienstorts zum Wohn-/Wunschort des Nutzers (10 = vor Ort oder dank Remote egal, 0 = unerreichbar weit weg)',
-    '- "homeoffice": Homeoffice-/Remote-Möglichkeiten (10 = voll remote möglich, 0 = keine/unbekannt)',
-    '- "gehalt": Gehalt im Verhältnis zu den Wünschen des Nutzers (0 = keine Angabe im Angebot oder viel zu niedrig)',
-    '- "arbeitszeit": Passung Vollzeit/Teilzeit zu den Wünschen des Nutzers',
-    '- "verbeamtung": Möglichkeit der Verbeamtung (10 = ja, 0 = nein/unbekannt)',
-    '- "gesamt": Gesamtbewertung, wie gut das Angebot insgesamt passt (0 = gar nicht, 10 = perfekt) — gewichte die Kriterien nach den Wünschen aus dem Profil',
+    ...KRITERIEN,
     "",
-    jobToRawText(job),
+    text,
+  ].join("\n");
+}
+
+/**
+ * Prompt für eine Sammel-Anfrage: mehrere Angebote in EINER Anfrage, Antwort
+ * als JSON-Array. Das Gratis-Kontingent begrenzt die Zahl der *Anfragen* pro
+ * Tag — mit zwei Angeboten je Anfrage verdoppelt sich also die Zahl der
+ * Angebote, die pro Tag abgearbeitet werden können.
+ */
+function batchTriagePrompt(batch: PreparedJob[]): string {
+  const count = batch.length;
+  return [
+    `Hier sind ${count} Stellenangebote (jeweils kompletter Seitentext).`,
+    "Bewerte JEDES Angebot einzeln und unabhängig von den anderen — vergleiche",
+    "sie nicht miteinander, sondern jeweils nur mit dem Profil des Nutzers.",
+    "Entscheide je Angebot, ob sich ein genauerer Blick lohnt, und bewerte es",
+    "strukturiert mit Punkten.",
+    "",
+    `Antworte NUR mit einem JSON-Array mit genau ${count} Objekten — eines je`,
+    "Angebot, in derselben Reihenfolge wie unten, jeweils in dieser Form:",
+    "[",
+    "  {",
+    '    "nr": 1,',
+    '    "entscheidung": "interessant" | "archivieren",',
+    ...indent(PUNKTE_FORM, "    "),
+    '    "begruendung": "1-3 Sätze"',
+    "  }",
+    "]",
+    "",
+    `- "nr": Nummer des Angebots (1 bis ${count}), genau wie in der Überschrift`,
+    "  des jeweiligen Angebots — damit die Bewertungen zugeordnet werden können",
+    ...KRITERIEN,
+    "",
+    ...batch.flatMap((prepared, index) => [
+      `=== ANGEBOT ${index + 1} von ${count} ===`,
+      prepared.text,
+      "",
+    ]),
   ].join("\n");
 }
 
@@ -78,7 +130,17 @@ function parseTriage(text: string): TriageResult | undefined {
     // zur Sicherheit auch ```json-Zäune und umgebenden Text tolerieren
     const match = text.match(/\{[\s\S]*\}/);
     if (!match) return undefined;
-    const parsed = JSON.parse(match[0]) as { entscheidung?: string; punkte?: unknown; begruendung?: unknown };
+    return triageFromObject(JSON.parse(match[0]));
+  } catch {
+    return undefined;
+  }
+}
+
+/** Wandelt ein einzelnes Antwort-Objekt der KI in ein TriageResult. */
+function triageFromObject(value: unknown): TriageResult | undefined {
+  try {
+    if (!value || typeof value !== "object") return undefined;
+    const parsed = value as { entscheidung?: string; punkte?: unknown; begruendung?: unknown };
     if (parsed.entscheidung !== "interessant" && parsed.entscheidung !== "archivieren") {
       return undefined;
     }
@@ -110,6 +172,32 @@ function parseTriage(text: string): TriageResult | undefined {
   }
 }
 
+/**
+ * Zerlegt die Antwort einer Sammel-Anfrage in `count` Ergebnisse. Zugeordnet
+ * wird über das Feld "nr" (1-basiert), sonst über die Position im Array.
+ * Fehlende oder unbrauchbare Einträge bleiben `undefined` — die betroffenen
+ * Angebote werden anschließend einzeln nachgefragt.
+ */
+function parseTriageBatch(text: string, count: number): (TriageResult | undefined)[] {
+  const results: (TriageResult | undefined)[] = new Array(count).fill(undefined);
+  let items: unknown;
+  try {
+    // auch hier Zäune/umgebenden Text tolerieren
+    const match = text.match(/\[[\s\S]*\]/);
+    items = JSON.parse(match ? match[0] : text);
+  } catch {
+    return results;
+  }
+  if (!Array.isArray(items)) return results;
+  items.forEach((item, index) => {
+    const nr = Number((item as { nr?: unknown } | null)?.nr);
+    const slot = Number.isInteger(nr) && nr >= 1 && nr <= count ? nr - 1 : index;
+    if (slot >= count || results[slot]) return;
+    results[slot] = triageFromObject(item);
+  });
+  return results;
+}
+
 function now(): string {
   return new Date().toISOString();
 }
@@ -133,31 +221,215 @@ export function requireProfile(): { profile?: string; error?: string } {
   return { profile };
 }
 
-/** Triagiert EIN Angebot: Prompt senden, Antwort parsen, Board + Chat speichern. */
-export async function triageJob(env: ServerEnv, profile: string, job: JobOffer): Promise<void> {
+/** Speichert Chat-Verlauf und Board-Eintrag eines triagierten Angebots. */
+function saveTriage(job: JobOffer, prompt: string, answer: string, result: TriageResult): void {
+  const chat: ChatMessage[] = [
+    { role: "user", content: prompt, at: now(), kind: "triage" },
+    { role: "model", content: answer, at: now(), kind: "triage" },
+  ];
+  appendChat(job.id, chat);
+  setStatus(job.id, result.entscheidung === "interessant" ? "interessant" : "archiviert", true, {
+    punkte: result.punkte,
+    punkteDetails: result.punkteDetails,
+    begruendung: result.begruendung,
+  });
+}
+
+/**
+ * Zeichen-Budget für die Angebotstexte EINER Anfrage. Im dynamischen Modus
+ * wird eine Anfrage bis zu dieser Grenze aufgefüllt; bei fester Bündelgröße
+ * teilen sich die Angebote das Budget (mindestens MIN_CHARS_PER_JOB je Angebot).
+ */
+const BATCH_CHAR_BUDGET = 160_000;
+/** So viel Text bekommt ein Angebot mindestens, egal wie groß das Bündel ist. */
+const MIN_CHARS_PER_JOB = 20_000;
+/** Obergrenze an Angeboten je Anfrage (MAX_BATCH_SIZE) — auch dynamisch. */
+
+/** Ein Angebot samt fertig aufbereitetem Text für den Prompt. */
+export interface PreparedJob {
+  job: JobOffer;
+  /** Ergebnis von jobToRawText — nur einmal erzeugen, mehrfach verwenden */
+  text: string;
+}
+
+/**
+ * Bildet die Stapel, die je EINE Gemini-Anfrage ergeben:
+ *
+ *   size >= 1  feste Bündelgröße; die Angebote teilen sich das Zeichenbudget
+ *   size <= 0  dynamisch (`-1`): Angebote werden der Reihe nach aufgefüllt,
+ *              bis das Zeichenbudget bzw. MAX_BATCH_SIZE erreicht ist —
+ *              kurze Ausschreibungen landen also zu vielen in einer Anfrage,
+ *              sehr lange notfalls allein.
+ *
+ * Bewusst ein Generator: die Angebotstexte (HTML → Text) werden erst erzeugt,
+ * wenn der Stapel wirklich drankommt — bei Zeit-/Kontingentlimit wird also
+ * keine Arbeit für nie gesendete Angebote verschwendet. Der erzeugte Text
+ * wird an die Triage durchgereicht und dort nicht erneut gebaut.
+ */
+export function* planBatches(jobs: JobOffer[], size: number): Generator<PreparedJob[]> {
+  const dynamisch = size <= 0;
+  const feste = Math.min(MAX_BATCH_SIZE, Math.max(1, Math.floor(size)));
+  const maxChars = dynamisch
+    ? undefined
+    : Math.max(MIN_CHARS_PER_JOB, Math.floor(BATCH_CHAR_BUDGET / feste));
+
+  let stapel: PreparedJob[] = [];
+  let zeichen = 0;
+  for (const job of jobs) {
+    const prepared: PreparedJob = { job, text: jobToRawText(job, maxChars) };
+    if (dynamisch) {
+      const zuVoll =
+        zeichen + prepared.text.length > BATCH_CHAR_BUDGET ||
+        stapel.length >= MAX_BATCH_SIZE;
+      // mindestens ein Angebot je Anfrage — auch wenn es allein zu lang ist
+      if (stapel.length && zuVoll) {
+        yield stapel;
+        stapel = [];
+        zeichen = 0;
+      }
+      stapel.push(prepared);
+      zeichen += prepared.text.length;
+    } else {
+      stapel.push(prepared);
+      if (stapel.length >= feste) {
+        yield stapel;
+        stapel = [];
+      }
+    }
+  }
+  if (stapel.length) yield stapel;
+}
+
+/** Ergebnis der Triage eines einzelnen Angebots innerhalb eines Stapels. */
+export interface TriageOutcome {
+  job: JobOffer;
+  ok: boolean;
+  /** Fehlermeldung, falls dieses Angebot nicht bewertet werden konnte */
+  error?: string;
+}
+
+/** Triagiert EIN Angebot mit einer eigenen Anfrage. */
+async function triageOne(env: ServerEnv, profile: string, prepared: PreparedJob): Promise<void> {
+  const { job } = prepared;
   saveJobSnapshot(job);
-  const prompt = triagePrompt(job);
+  const prompt = triagePrompt(prepared.text);
   const answer = await generateContent(env, {
     system: systemPrompt(profile),
     messages: [{ role: "user", text: prompt }],
     json: true,
   });
 
-  const chat: ChatMessage[] = [
-    { role: "user", content: prompt, at: now(), kind: "triage" },
-    { role: "model", content: answer, at: now(), kind: "triage" },
-  ];
-  appendChat(job.id, chat);
-
   const result = parseTriage(answer);
   if (!result) {
+    // Antwort trotzdem im Verlauf sichern, damit nachvollziehbar bleibt, was kam
+    appendChat(job.id, [
+      { role: "user", content: prompt, at: now(), kind: "triage" },
+      { role: "model", content: answer, at: now(), kind: "triage" },
+    ]);
     throw new Error(`Antwort der KI nicht als Triage-JSON lesbar: ${answer.slice(0, 200)}`);
   }
-  setStatus(job.id, result.entscheidung === "interessant" ? "interessant" : "archiviert", true, {
-    punkte: result.punkte,
-    punkteDetails: result.punkteDetails,
-    begruendung: result.begruendung,
+  saveTriage(job, prompt, answer, result);
+}
+
+/** Triagiert EIN Angebot: Prompt senden, Antwort parsen, Board + Chat speichern. */
+export async function triageJob(env: ServerEnv, profile: string, job: JobOffer): Promise<void> {
+  await triageOne(env, profile, { job, text: jobToRawText(job) });
+}
+
+/**
+ * Triagiert einen Stapel Angebote mit EINER Gemini-Anfrage (Sammel-Triage).
+ *
+ * Das Gratis-Kontingent begrenzt die Zahl der Anfragen pro Tag, nicht die Zahl
+ * der bewerteten Angebote — mehrere Angebote je Anfrage erhöhen also den
+ * Tagesdurchsatz entsprechend. Angebote, für die die Antwort keine brauchbare
+ * Bewertung enthält, werden anschließend einzeln nachgefragt, damit durch das
+ * Bündeln nichts verloren geht.
+ *
+ * Im Chat-Verlauf steht pro Angebot weiterhin nur dessen eigene Anfrage und
+ * dessen eigene Bewertung (mit Hinweis auf die Sammel-Anfrage) — so bleiben
+ * Detail-Ansicht und Folgefragen unverändert übersichtlich.
+ */
+export async function triageJobs(
+  env: ServerEnv,
+  profile: string,
+  batch: PreparedJob[],
+): Promise<TriageOutcome[]> {
+  if (batch.length === 0) return [];
+  if (batch.length === 1) {
+    try {
+      await triageOne(env, profile, batch[0]);
+      return [{ job: batch[0].job, ok: true }];
+    } catch (error) {
+      if (error instanceof GeminiError) throw error;
+      return [{ job: batch[0].job, ok: false, error: message(error) }];
+    }
+  }
+
+  for (const prepared of batch) saveJobSnapshot(prepared.job);
+  const answer = await generateContent(env, {
+    system: systemPrompt(profile),
+    messages: [{ role: "user", text: batchTriagePrompt(batch) }],
+    json: true,
   });
+
+  const results = parseTriageBatch(answer, batch.length);
+  const outcomes: TriageOutcome[] = [];
+  const nachzuholen: PreparedJob[] = [];
+  batch.forEach((prepared, index) => {
+    const result = results[index];
+    if (!result) {
+      nachzuholen.push(prepared);
+      return;
+    }
+    const hinweis =
+      `[Sammel-Anfrage: dieses Angebot wurde zusammen mit ${batch.length - 1} weiteren ` +
+      `in einer Anfrage bewertet.]`;
+    // Im Verlauf steht die Bewertung im selben Format wie bei einer Einzelanfrage
+    const antwort = JSON.stringify(
+      {
+        entscheidung: result.entscheidung,
+        punkte: result.punkteDetails ?? result.punkte,
+        begruendung: result.begruendung,
+      },
+      null,
+      2,
+    );
+    saveTriage(prepared.job, `${hinweis}\n\n${triagePrompt(prepared.text)}`, antwort, result);
+    outcomes.push({ job: prepared.job, ok: true });
+  });
+
+  // Was die Sammel-Antwort nicht abgedeckt hat, einzeln nachfragen
+  for (const prepared of nachzuholen) {
+    console.error(
+      `  ↻ Keine Bewertung in der Sammel-Antwort für „${prepared.job.titel}“ — frage einzeln nach.`,
+    );
+    try {
+      await triageOne(env, profile, prepared);
+      outcomes.push({ job: prepared.job, ok: true });
+    } catch (error) {
+      // Kontingent erschöpft / dauerhafter API-Fehler → nach oben durchreichen,
+      // damit der Lauf sauber abbricht statt weiterzurennen
+      if (error instanceof GeminiError && error.status && error.status < 500) throw error;
+      outcomes.push({ job: prepared.job, ok: false, error: message(error) });
+    }
+  }
+
+  // Reihenfolge des Stapels beibehalten (Nachzügler wurden hinten angehängt)
+  const byId = new Map(outcomes.map((outcome) => [outcome.job.id, outcome]));
+  return batch.map(
+    (prepared) => byId.get(prepared.job.id) ?? { job: prepared.job, ok: false, error: "unbekannter Fehler" },
+  );
+}
+
+function message(error: unknown): string {
+  return error instanceof Error ? error.message : String(error);
+}
+
+/** Menschlich lesbare Beschreibung der eingestellten Bündelung (für Logs/UI). */
+export function batchSizeText(size: number): string {
+  return size <= 0
+    ? `dynamisch (bis zu ${MAX_BATCH_SIZE} Angebote bzw. ${BATCH_CHAR_BUDGET / 1000}k Zeichen je Anfrage)`
+    : `${size} Angebot(e) je Anfrage`;
 }
 
 /** Adapter, hinter denen kein öffentlicher Arbeitgeber steht — deren Jobs kommen ans Ende. */
@@ -221,20 +493,28 @@ export function startAgent(env: ServerEnv, jobs: JobOffer[]): { started: boolean
   status.running = true;
   status.processed = 0;
   status.total = queue.length;
+  status.batchSize = env.agentBatchSize;
   status.lastError = undefined;
   status.finishedAt = undefined;
   stopRequested = false;
 
   void (async () => {
-    for (const job of queue) {
+    for (const stapel of planBatches(queue, env.agentBatchSize)) {
       if (stopRequested) break;
-      status.currentJobId = job.id;
-      status.currentTitel = job.titel;
+      status.currentJobId = stapel[0].job.id;
+      status.currentTitel = stapel.map((prepared) => prepared.job.titel).join(" · ");
       try {
-        await triageJob(env, profile, job);
+        const outcomes = await triageJobs(env, profile, stapel);
+        const gescheitert = outcomes.filter((outcome) => !outcome.ok);
+        if (gescheitert.length) {
+          status.lastError = gescheitert
+            .map((outcome) => `${outcome.job.titel}: ${outcome.error}`)
+            .join(" | ");
+          console.error(`⚠ Triage fehlgeschlagen: ${status.lastError}`);
+        }
       } catch (error) {
-        status.lastError = `${job.titel}: ${error instanceof Error ? error.message : error}`;
-        console.error(`⚠ Triage fehlgeschlagen für ${job.id}: ${status.lastError}`);
+        status.lastError = `${status.currentTitel}: ${message(error)}`;
+        console.error(`⚠ Triage fehlgeschlagen: ${status.lastError}`);
         // Dauerhafte Fehler (ungültiger Key, falsches Modell) und erschöpftes
         // Kontingent aller Keys (429 wird erst geworfen, nachdem Key-Wechsel
         // und Warten nichts gebracht haben): Lauf abbrechen statt jeden
@@ -243,7 +523,7 @@ export function startAgent(env: ServerEnv, jobs: JobOffer[]): { started: boolean
           break;
         }
       }
-      status.processed++;
+      status.processed += stapel.length;
       if (!stopRequested && status.processed < status.total) {
         await new Promise((resolve) => setTimeout(resolve, env.agentDelayMs));
       }

@@ -2,7 +2,7 @@ import * as cheerio from "cheerio";
 import type { JobOffer } from "../types.js";
 
 /** Obergrenze, damit ein einzelner Prompt das Kontingent nicht sprengt. */
-const MAX_RAW_CHARS = 80_000;
+export const MAX_RAW_CHARS = 80_000;
 
 function looksLikeHtml(text: string): boolean {
   return /<\s*(html|body|div|p|table|span|section|article|ul|li|h[1-6])[\s>]/i.test(text);
@@ -24,8 +24,11 @@ function htmlToText(html: string): string {
  * Baut den kompletten Roh-Text eines Angebots für den KI-Agenten zusammen:
  * die gesamte Seite als kopierter Text (raw.detail, HTML wird zu Text) plus
  * die normalisierten Felder als kompakte Übersicht.
+ *
+ * `maxChars` begrenzt die Länge; bei einer Sammel-Anfrage (mehrere Angebote in
+ * einem Prompt) wird das Budget auf die Angebote aufgeteilt.
  */
-export function jobToRawText(job: JobOffer): string {
+export function jobToRawText(job: JobOffer, maxChars: number = MAX_RAW_CHARS): string {
   const fields: string[] = [
     `Titel: ${job.titel}`,
     job.employer ? `Arbeitgeber: ${job.employer}` : "",
@@ -69,8 +72,8 @@ export function jobToRawText(job: JobOffer): string {
   }
 
   let result = parts.join("\n\n");
-  if (result.length > MAX_RAW_CHARS) {
-    result = result.slice(0, MAX_RAW_CHARS) + "\n\n[… gekürzt …]";
+  if (result.length > maxChars) {
+    result = result.slice(0, maxChars) + "\n\n[… gekürzt …]";
   }
   return result;
 }

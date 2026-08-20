@@ -1,5 +1,5 @@
 import { loadJobs } from "../storage.js";
-import { requireProfile, sortTriageQueue, triageJob } from "./agent.js";
+import { batchSizeText, planBatches, requireProfile, sortTriageQueue, triageJobs } from "./agent.js";
 import { ensureEnv } from "./env.js";
 import { GeminiError, usageSummaryText } from "./gemini.js";
 import { publishDocs } from "./publish.js";
@@ -17,7 +17,9 @@ import { BOARD_STATUSES, type BoardStatus } from "./types.js";
  * 2. Triagiert unbearbeitete Jobs mit Gemini, bis --limit Jobs bearbeitet
  *    sind ODER --minuten Zeit vergangen ist — je nachdem, was zuerst greift
  *    (0 = jeweils unbeschränkt). Bereits Geschaffte bleibt bei Abbruch
- *    erhalten; der nächste Lauf macht dort weiter.
+ *    erhalten; der nächste Lauf macht dort weiter. Mit AGENT_BATCH_SIZE
+ *    gehen mehrere Angebote gebündelt in EINE Anfrage (-1 = dynamisch
+ *    auffüllen) — das Tageslimit zählt Anfragen, nicht Angebote.
  * 3. Schreibt die JSON-Daten für die GitHub-Pages-Seite nach docs/.
  *
  * Der Workflow committet danach data/agent/ und docs/ zurück ins Repo.
@@ -75,6 +77,7 @@ async function main(): Promise<void> {
   console.log(
     `${jobs.length} Jobs in data/jobs.json, Modell: ${env.geminiModel}, ` +
       `${env.geminiApiKeys.length} API-Key(s), ` +
+      `Bündelung: ${batchSizeText(env.agentBatchSize)}, ` +
       `Limit: ${limit || "∞"} Jobs / ${minuten || "∞"} Minuten`,
   );
 
@@ -107,22 +110,35 @@ async function main(): Promise<void> {
 
   let done = 0;
   let failed = 0;
-  for (const job of queue) {
+  let requests = 0;
+  for (const gruppe of planBatches(queue, env.agentBatchSize)) {
     if (Date.now() >= deadline) {
       console.log(`  ⏱ Zeitlimit von ${minuten} Minuten erreicht — Lauf endet sauber.`);
       break;
     }
+    requests++;
     try {
-      await triageJob(env, profile, job);
-      done++;
-      const entry = getEntry(loadBoard(), job.id);
-      console.log(
-        `  [${done + failed}/${queue.length}] ${entry?.status === "interessant" ? "⭐" : "🗄"} ` +
-          `${entry?.punkte ?? "?"}/10  ${job.titel}`,
-      );
+      const outcomes = await triageJobs(env, profile, gruppe);
+      const board = loadBoard();
+      for (const outcome of outcomes) {
+        if (!outcome.ok) {
+          failed++;
+          console.error(`  ⚠ ${outcome.job.titel}: ${outcome.error}`);
+          continue;
+        }
+        done++;
+        const entry = getEntry(board, outcome.job.id);
+        console.log(
+          `  [${done + failed}/${queue.length}] ${entry?.status === "interessant" ? "⭐" : "🗄"} ` +
+            `${entry?.punkte ?? "?"}/10  ${outcome.job.titel}`,
+        );
+      }
     } catch (err) {
-      failed++;
-      console.error(`  ⚠ ${job.titel}: ${err instanceof Error ? err.message : err}`);
+      failed += gruppe.length;
+      console.error(
+        `  ⚠ Anfrage ${requests} (${gruppe.length} Angebot(e)): ` +
+          `${err instanceof Error ? err.message : err}`,
+      );
       // Dauerhafte Fehler (ungültiger Key, Kontingent aller Keys erschöpft —
       // 429 wird erst geworfen, nachdem Key-Wechsel und Warten nichts gebracht
       // haben): abbrechen — der nächste Lauf macht dort weiter
@@ -137,7 +153,11 @@ async function main(): Promise<void> {
   }
 
   publishDocs(jobs);
-  console.log(`\n✔ Triage: ${done} bearbeitet, ${failed} fehlgeschlagen.`);
+  const proAnfrage = requests > 0 ? ((done + failed) / requests).toFixed(1) : "0";
+  console.log(
+    `\n✔ Triage: ${done} bearbeitet, ${failed} fehlgeschlagen ` +
+      `(in ${requests} Gemini-Anfrage(n), Ø ${proAnfrage} Angebote je Anfrage).`,
+  );
   console.log(usageSummaryText(env));
   console.log("✔ docs/ (GitHub-Pages-Daten) aktualisiert.");
   if (queue.length > 0 && done === 0) process.exitCode = 1;

@@ -21,6 +21,35 @@ export interface ServerEnv {
   port: number;
   /** Pause zwischen zwei Triage-Anfragen (Rate-Limit des Gratis-Kontingents) */
   agentDelayMs: number;
+  /**
+   * Wie viele Angebote in EINER Anfrage bewertet werden (Sammel-Triage).
+   * Das Gratis-Kontingent begrenzt die Zahl der *Anfragen* pro Tag — mit 2
+   * Angeboten je Anfrage werden aus 20 Anfragen also 40 bewertete Angebote.
+   *
+   *   1   Default: ein Angebot je Anfrage
+   *   n   feste Bündelgröße (Maximum MAX_BATCH_SIZE)
+   *  -1   dynamisch: der Agent füllt jede Anfrage mit so vielen Angeboten,
+   *       wie hineinpassen (Zeichenbudget bzw. Obergrenze je Anfrage)
+   */
+  agentBatchSize: number;
+}
+
+/** Obergrenze für AGENT_BATCH_SIZE — darüber leidet die Qualität je Angebot. */
+export const MAX_BATCH_SIZE = 20;
+
+/**
+ * Liest AGENT_BATCH_SIZE: Zahl ≥ 1 = feste Bündelgröße (auf MAX_BATCH_SIZE
+ * gedeckelt), "-1"/"0"/"dynamisch"/"dynamic"/"auto" = dynamisch (-1),
+ * alles andere (leer, Tippfehler, Platzhalter aus dem Workflow) = 1.
+ */
+export function parseBatchSize(raw: string | undefined): number {
+  const value = raw?.trim().toLowerCase();
+  if (!value) return 1;
+  if (["dynamisch", "dynamic", "auto"].includes(value)) return -1;
+  const size = Number(value);
+  if (!Number.isFinite(size)) return 1;
+  if (size <= 0) return -1;
+  return Math.min(MAX_BATCH_SIZE, Math.floor(size));
 }
 
 /** Sehr kleiner .env-Parser (KEY=VALUE pro Zeile, # = Kommentar). */
@@ -128,5 +157,7 @@ export async function ensureEnv(options?: { interactive?: boolean }): Promise<Se
     port: Number(get("PORT")) || 8322,
     // Gratis-Kontingent der Flash-Modelle: ~10 Anfragen/Minute → 7s Pause
     agentDelayMs: delayRaw && Number.isFinite(delay) && delay >= 0 ? delay : 7000,
+    // Default 1 (ein Angebot je Anfrage); -1 = dynamisch auffüllen
+    agentBatchSize: parseBatchSize(get("AGENT_BATCH_SIZE")),
   };
 }
