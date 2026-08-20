@@ -552,7 +552,8 @@ function renderAgent() {
     btn.classList.remove("primary");
     btn.classList.add("danger");
     info.innerHTML = "🤖 " + agent.processed + "/" + agent.total +
-      (agent.batchSize > 1 ? " (" + agent.batchSize + " Angebote je Anfrage)" : "") +
+      (agent.batchSize < 0 ? " (dynamisch gebündelt)"
+        : agent.batchSize > 1 ? " (" + agent.batchSize + " Angebote je Anfrage)" : "") +
       (agent.currentTitel ? " — prüft gerade: <b>" + esc(agent.currentTitel) + "</b>" : "");
   } else {
     btn.textContent = "🤖 KI-Agent starten";

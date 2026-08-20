@@ -182,39 +182,48 @@ nächsten Start automatisch geladen. Optionale `.env`-Einträge:
 | `GEMINI_MODEL`   | `gemini-flash-latest` | verwendetes Modell (Alias = aktuelles Flash)  |
 | `PORT`           | `8322`             | Port des Kanban-Servers                          |
 | `AGENT_DELAY_MS` | `7000`             | Pause zwischen zwei Triage-Anfragen (Rate-Limit) |
-| `AGENT_BATCH_SIZE` | `2`              | Angebote je Anfrage (**Sammel-Triage**) — siehe unten; `1` = wie früher ein Angebot pro Anfrage, Maximum `10` |
+| `AGENT_BATCH_SIZE` | `1`              | Angebote je Anfrage (**Sammel-Triage**) — `1` = einzeln, `2`…`20` = feste Bündel, `-1` bzw. `dynamisch` = so viele, wie in eine Anfrage passen |
 
 ### Sammel-Triage: mehrere Angebote in einer Anfrage
 
 Das Gratis-Kontingent begrenzt die Zahl der **Anfragen** pro Tag — nicht die
-Zahl der bewerteten Angebote. Deshalb legt der Agent standardmäßig **zwei
-Angebote in eine Anfrage** und lässt sich beide in einer Antwort (JSON-Array)
-bewerten: aus z.B. 20 Anfragen pro Tag werden so **40 abgearbeitete
-Angebote**. Über `AGENT_BATCH_SIZE` (bzw. das Feld „Angebote je Anfrage“ beim
-Start des GitHub-Workflows) lässt sich das einstellen:
+Zahl der bewerteten Angebote. Der Agent kann deshalb mehrere Angebote in
+**eine** Anfrage packen und sie in einer Antwort (JSON-Array, ein Objekt je
+Angebot) bewerten lassen. Gesteuert wird das über `AGENT_BATCH_SIZE` bzw.
+beim GitHub-Workflow über die Auswahl **„buendel“**:
 
-| Wert | Angebote pro Tag (bei 20 Anfragen) | Hinweis                       |
-| ---- | ---------------------------------- | ----------------------------- |
-| `1`  | 20                                 | wie früher, eine Anfrage je Angebot |
-| `2`  | 40                                 | **Default** — guter Kompromiss |
-| `4`  | 80                                 | Angebotstexte werden stärker gekürzt |
-| `10` | 200                                | Maximum; Bewertungen werden merklich knapper |
+| Wert            | Verhalten                                     | Angebote pro Tag (bei 20 Anfragen) |
+| --------------- | --------------------------------------------- | ---------------------------------- |
+| `1`             | **Default** — ein Angebot je Anfrage          | 20                                 |
+| `2` … `20`      | feste Bündelgröße                             | 40 … 400                           |
+| `-1`/`dynamisch`| füllt jede Anfrage, bis das Budget voll ist   | so viele wie möglich               |
+
+**Dynamisch (`-1`)** ist der effizienteste Modus: Ausschreibungstexte sind
+unterschiedlich lang, also nimmt der Agent so lange das nächste Angebot dazu,
+bis das Zeichenbudget einer Anfrage (**160.000 Zeichen**) oder die Obergrenze
+von **20 Angeboten je Anfrage** erreicht ist. Kurze Ausschreibungen landen so
+zu vielen in einer Anfrage, sehr lange notfalls allein — statt starr immer
+gleich viele zu bündeln.
 
 Details:
 
 - Jedes Angebot wird im Prompt **einzeln und unabhängig** bewertet (gleiche
   Kriterien und Punkte wie bei der Einzelanfrage), die Antwort ist ein Array
   mit einem Objekt je Angebot (Feld `nr` zur Zuordnung).
-- Der Platz für Angebotstext wird auf die Angebote aufgeteilt (insgesamt
-  ~160.000 Zeichen, mindestens 20.000 je Angebot) — bei sehr großen Bündeln
-  werden lange Ausschreibungstexte also gekürzt. Deswegen ist `2` der Default
-  und nicht `10`.
+- Bei **fester** Bündelgröße teilen sich die Angebote das Zeichenbudget
+  (mindestens 20.000 Zeichen je Angebot) — lange Ausschreibungen werden bei
+  großen Bündeln also gekürzt. Im **dynamischen** Modus bekommt jedes Angebot
+  seinen vollen Text (bis 80.000 Zeichen), dafür ist die Zahl je Anfrage
+  variabel.
 - Fehlt in der Antwort die Bewertung eines Angebots (oder ist sie unlesbar),
   wird **genau dieses Angebot einzeln nachgefragt** — durch das Bündeln geht
   also nichts verloren.
 - Im Chat-Verlauf steht pro Angebot weiterhin nur dessen eigene Anfrage und
   dessen eigene Bewertung (mit dem Hinweis, dass es Teil einer Sammel-Anfrage
   war). Folgefragen funktionieren unverändert.
+- Je mehr Angebote in einer Anfrage stecken, desto knapper fallen die
+  Begründungen tendenziell aus. Bei knappem Kontingent lohnt `dynamisch`, für
+  maximale Bewertungsqualität `1`.
 
 ### Rate-Limits & API-Nutzung
 
@@ -250,8 +259,9 @@ Details:
    hinten.
 3. Wegen des Rate-Limits im Gratis-Kontingent (~10 Anfragen/Minute) pausiert
    der Agent zwischen zwei Anfragen — bei vielen hundert Angeboten läuft ein
-   kompletter Erstlauf also eine ganze Weile; einfach laufen lassen. Pro
-   Anfrage werden dabei standardmäßig **zwei Angebote** bewertet (siehe
+   kompletter Erstlauf also eine ganze Weile; einfach laufen lassen. Standard
+   ist **ein Angebot je Anfrage**; mit `AGENT_BATCH_SIZE` lassen sich mehrere
+   bündeln (siehe
    [Sammel-Triage](#sammel-triage-mehrere-angebote-in-einer-anfrage)).
 
 ### Das Board
@@ -346,10 +356,12 @@ Actions → **KI-Agent** → "Run workflow". Vier optionale Eingaben:
   Notbremse bricht der Runner selbst zusätzlich 20 Minuten nach dem
   Zeitlimit ab (bzw. bei zeitlimit=0 nach 6 Stunden, dem Maximum von
   GitHub-gehosteten Runnern).
-- **buendel** (leer = Repo-Variable `AGENT_BATCH_SIZE` bzw. Default 2) — wie
-  viele Angebote in **eine** Anfrage gepackt werden. Das Tageslimit zählt
-  Anfragen, nicht Angebote: mit `2` werden aus 20 Anfragen 40 abgearbeitete
-  Angebote, mit `4` schon 80. Details unter
+- **buendel** (Auswahlfeld, Default `standard`) — wie viele Angebote in
+  **eine** Anfrage gepackt werden. Das Tageslimit zählt Anfragen, nicht
+  Angebote: mit `2` werden aus 20 Anfragen 40 abgearbeitete Angebote, mit
+  `dynamisch` füllt der Agent jede Anfrage so weit auf, wie es das Budget
+  zulässt. `standard` nimmt die Repo-Variable `AGENT_BATCH_SIZE` bzw. den
+  Default `1`. Details unter
   [Sammel-Triage](#sammel-triage-mehrere-angebote-in-einer-anfrage).
 
 Lokal geht derselbe Headless-Lauf mit `yarn agent --limit=50 --minuten=10`
@@ -368,7 +380,7 @@ Kontingent an:
 | ---------------- | ------------------- | ------------------------------------------- |
 | `GEMINI_MODEL`   | `gemini-2.5-pro`    | anderes Modell für Triage & Chat            |
 | `AGENT_DELAY_MS` | `500`               | kürzere Pause zwischen Anfragen (Default 7000) |
-| `AGENT_BATCH_SIZE` | `1`               | Angebote je Anfrage — bezahlt lohnt sich Bündeln nicht mehr, `1` gibt jedem Angebot den vollen Text (Default 2) |
+| `AGENT_BATCH_SIZE` | `1`               | Angebote je Anfrage — mit bezahltem Kontingent lohnt Bündeln nicht mehr, `1` (Default) gibt jedem Angebot den vollen Text |
 
 Mit bezahltem Key entfallen Minuten-/Tageslimit praktisch — dann z.B.
 limit=0, zeitlimit=60 und `AGENT_DELAY_MS=500` setzen, und ~1100 Jobs

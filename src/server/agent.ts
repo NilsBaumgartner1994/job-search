@@ -1,5 +1,5 @@
 import type { JobOffer } from "../types.js";
-import type { ServerEnv } from "./env.js";
+import { MAX_BATCH_SIZE, type ServerEnv } from "./env.js";
 import { GeminiError, generateContent, type GeminiMessage } from "./gemini.js";
 import {
   appendChat,
@@ -65,7 +65,7 @@ function indent(lines: string[], prefix: string): string[] {
   return lines.map((line) => prefix + line);
 }
 
-function triagePrompt(job: JobOffer): string {
+function triagePrompt(text: string): string {
   return [
     "Hier ist ein Stellenangebot (kompletter Seitentext). Entscheide, ob sich ein",
     "genauerer Blick für den Nutzer lohnt, und bewerte es strukturiert mit Punkten.",
@@ -79,7 +79,7 @@ function triagePrompt(job: JobOffer): string {
     "",
     ...KRITERIEN,
     "",
-    jobToRawText(job),
+    text,
   ].join("\n");
 }
 
@@ -89,8 +89,8 @@ function triagePrompt(job: JobOffer): string {
  * Tag — mit zwei Angeboten je Anfrage verdoppelt sich also die Zahl der
  * Angebote, die pro Tag abgearbeitet werden können.
  */
-function batchTriagePrompt(jobs: JobOffer[], maxCharsPerJob: number): string {
-  const count = jobs.length;
+function batchTriagePrompt(batch: PreparedJob[]): string {
+  const count = batch.length;
   return [
     `Hier sind ${count} Stellenangebote (jeweils kompletter Seitentext).`,
     "Bewerte JEDES Angebot einzeln und unabhängig von den anderen — vergleiche",
@@ -113,9 +113,9 @@ function batchTriagePrompt(jobs: JobOffer[], maxCharsPerJob: number): string {
     "  des jeweiligen Angebots — damit die Bewertungen zugeordnet werden können",
     ...KRITERIEN,
     "",
-    ...jobs.flatMap((job, index) => [
+    ...batch.flatMap((prepared, index) => [
       `=== ANGEBOT ${index + 1} von ${count} ===`,
-      jobToRawText(job, maxCharsPerJob),
+      prepared.text,
       "",
     ]),
   ].join("\n");
@@ -235,10 +235,84 @@ function saveTriage(job: JobOffer, prompt: string, answer: string, result: Triag
   });
 }
 
-/** Triagiert EIN Angebot: Prompt senden, Antwort parsen, Board + Chat speichern. */
-export async function triageJob(env: ServerEnv, profile: string, job: JobOffer): Promise<void> {
+/**
+ * Zeichen-Budget für die Angebotstexte EINER Anfrage. Im dynamischen Modus
+ * wird eine Anfrage bis zu dieser Grenze aufgefüllt; bei fester Bündelgröße
+ * teilen sich die Angebote das Budget (mindestens MIN_CHARS_PER_JOB je Angebot).
+ */
+const BATCH_CHAR_BUDGET = 160_000;
+/** So viel Text bekommt ein Angebot mindestens, egal wie groß das Bündel ist. */
+const MIN_CHARS_PER_JOB = 20_000;
+/** Obergrenze an Angeboten je Anfrage (MAX_BATCH_SIZE) — auch dynamisch. */
+
+/** Ein Angebot samt fertig aufbereitetem Text für den Prompt. */
+export interface PreparedJob {
+  job: JobOffer;
+  /** Ergebnis von jobToRawText — nur einmal erzeugen, mehrfach verwenden */
+  text: string;
+}
+
+/**
+ * Bildet die Stapel, die je EINE Gemini-Anfrage ergeben:
+ *
+ *   size >= 1  feste Bündelgröße; die Angebote teilen sich das Zeichenbudget
+ *   size <= 0  dynamisch (`-1`): Angebote werden der Reihe nach aufgefüllt,
+ *              bis das Zeichenbudget bzw. MAX_BATCH_SIZE erreicht ist —
+ *              kurze Ausschreibungen landen also zu vielen in einer Anfrage,
+ *              sehr lange notfalls allein.
+ *
+ * Bewusst ein Generator: die Angebotstexte (HTML → Text) werden erst erzeugt,
+ * wenn der Stapel wirklich drankommt — bei Zeit-/Kontingentlimit wird also
+ * keine Arbeit für nie gesendete Angebote verschwendet. Der erzeugte Text
+ * wird an die Triage durchgereicht und dort nicht erneut gebaut.
+ */
+export function* planBatches(jobs: JobOffer[], size: number): Generator<PreparedJob[]> {
+  const dynamisch = size <= 0;
+  const feste = Math.min(MAX_BATCH_SIZE, Math.max(1, Math.floor(size)));
+  const maxChars = dynamisch
+    ? undefined
+    : Math.max(MIN_CHARS_PER_JOB, Math.floor(BATCH_CHAR_BUDGET / feste));
+
+  let stapel: PreparedJob[] = [];
+  let zeichen = 0;
+  for (const job of jobs) {
+    const prepared: PreparedJob = { job, text: jobToRawText(job, maxChars) };
+    if (dynamisch) {
+      const zuVoll =
+        zeichen + prepared.text.length > BATCH_CHAR_BUDGET ||
+        stapel.length >= MAX_BATCH_SIZE;
+      // mindestens ein Angebot je Anfrage — auch wenn es allein zu lang ist
+      if (stapel.length && zuVoll) {
+        yield stapel;
+        stapel = [];
+        zeichen = 0;
+      }
+      stapel.push(prepared);
+      zeichen += prepared.text.length;
+    } else {
+      stapel.push(prepared);
+      if (stapel.length >= feste) {
+        yield stapel;
+        stapel = [];
+      }
+    }
+  }
+  if (stapel.length) yield stapel;
+}
+
+/** Ergebnis der Triage eines einzelnen Angebots innerhalb eines Stapels. */
+export interface TriageOutcome {
+  job: JobOffer;
+  ok: boolean;
+  /** Fehlermeldung, falls dieses Angebot nicht bewertet werden konnte */
+  error?: string;
+}
+
+/** Triagiert EIN Angebot mit einer eigenen Anfrage. */
+async function triageOne(env: ServerEnv, profile: string, prepared: PreparedJob): Promise<void> {
+  const { job } = prepared;
   saveJobSnapshot(job);
-  const prompt = triagePrompt(job);
+  const prompt = triagePrompt(prepared.text);
   const answer = await generateContent(env, {
     system: systemPrompt(profile),
     messages: [{ role: "user", text: prompt }],
@@ -257,25 +331,19 @@ export async function triageJob(env: ServerEnv, profile: string, job: JobOffer):
   saveTriage(job, prompt, answer, result);
 }
 
-/** Gesamt-Budget an Zeichen Angebotstext für EINE Sammel-Anfrage. */
-const BATCH_CHAR_BUDGET = 160_000;
-
-/** Ergebnis der Triage eines einzelnen Angebots innerhalb eines Stapels. */
-export interface TriageOutcome {
-  job: JobOffer;
-  ok: boolean;
-  /** Fehlermeldung, falls dieses Angebot nicht bewertet werden konnte */
-  error?: string;
+/** Triagiert EIN Angebot: Prompt senden, Antwort parsen, Board + Chat speichern. */
+export async function triageJob(env: ServerEnv, profile: string, job: JobOffer): Promise<void> {
+  await triageOne(env, profile, { job, text: jobToRawText(job) });
 }
 
 /**
  * Triagiert einen Stapel Angebote mit EINER Gemini-Anfrage (Sammel-Triage).
  *
  * Das Gratis-Kontingent begrenzt die Zahl der Anfragen pro Tag, nicht die Zahl
- * der bewerteten Angebote — zwei Angebote je Anfrage verdoppeln also den
- * Tagesdurchsatz. Angebote, für die die Antwort keine brauchbare Bewertung
- * enthält, werden anschließend einzeln nachgefragt, damit durch das Bündeln
- * nichts verloren geht.
+ * der bewerteten Angebote — mehrere Angebote je Anfrage erhöhen also den
+ * Tagesdurchsatz entsprechend. Angebote, für die die Antwort keine brauchbare
+ * Bewertung enthält, werden anschließend einzeln nachgefragt, damit durch das
+ * Bündeln nichts verloren geht.
  *
  * Im Chat-Verlauf steht pro Angebot weiterhin nur dessen eigene Anfrage und
  * dessen eigene Bewertung (mit Hinweis auf die Sammel-Anfrage) — so bleiben
@@ -284,38 +352,37 @@ export interface TriageOutcome {
 export async function triageJobs(
   env: ServerEnv,
   profile: string,
-  jobs: JobOffer[],
+  batch: PreparedJob[],
 ): Promise<TriageOutcome[]> {
-  if (jobs.length === 0) return [];
-  if (jobs.length === 1) {
+  if (batch.length === 0) return [];
+  if (batch.length === 1) {
     try {
-      await triageJob(env, profile, jobs[0]);
-      return [{ job: jobs[0], ok: true }];
+      await triageOne(env, profile, batch[0]);
+      return [{ job: batch[0].job, ok: true }];
     } catch (error) {
       if (error instanceof GeminiError) throw error;
-      return [{ job: jobs[0], ok: false, error: message(error) }];
+      return [{ job: batch[0].job, ok: false, error: message(error) }];
     }
   }
 
-  for (const job of jobs) saveJobSnapshot(job);
-  const maxCharsPerJob = Math.max(20_000, Math.floor(BATCH_CHAR_BUDGET / jobs.length));
+  for (const prepared of batch) saveJobSnapshot(prepared.job);
   const answer = await generateContent(env, {
     system: systemPrompt(profile),
-    messages: [{ role: "user", text: batchTriagePrompt(jobs, maxCharsPerJob) }],
+    messages: [{ role: "user", text: batchTriagePrompt(batch) }],
     json: true,
   });
 
-  const results = parseTriageBatch(answer, jobs.length);
+  const results = parseTriageBatch(answer, batch.length);
   const outcomes: TriageOutcome[] = [];
-  const nachzuholen: JobOffer[] = [];
-  jobs.forEach((job, index) => {
+  const nachzuholen: PreparedJob[] = [];
+  batch.forEach((prepared, index) => {
     const result = results[index];
     if (!result) {
-      nachzuholen.push(job);
+      nachzuholen.push(prepared);
       return;
     }
     const hinweis =
-      `[Sammel-Anfrage: dieses Angebot wurde zusammen mit ${jobs.length - 1} weiteren ` +
+      `[Sammel-Anfrage: dieses Angebot wurde zusammen mit ${batch.length - 1} weiteren ` +
       `in einer Anfrage bewertet.]`;
     // Im Verlauf steht die Bewertung im selben Format wie bei einer Einzelanfrage
     const antwort = JSON.stringify(
@@ -327,41 +394,42 @@ export async function triageJobs(
       null,
       2,
     );
-    saveTriage(job, `${hinweis}\n\n${triagePrompt(job)}`, antwort, result);
-    outcomes.push({ job, ok: true });
+    saveTriage(prepared.job, `${hinweis}\n\n${triagePrompt(prepared.text)}`, antwort, result);
+    outcomes.push({ job: prepared.job, ok: true });
   });
 
   // Was die Sammel-Antwort nicht abgedeckt hat, einzeln nachfragen
-  for (const job of nachzuholen) {
-    console.error(`  ↻ Keine Bewertung in der Sammel-Antwort für „${job.titel}“ — frage einzeln nach.`);
+  for (const prepared of nachzuholen) {
+    console.error(
+      `  ↻ Keine Bewertung in der Sammel-Antwort für „${prepared.job.titel}“ — frage einzeln nach.`,
+    );
     try {
-      await triageJob(env, profile, job);
-      outcomes.push({ job, ok: true });
+      await triageOne(env, profile, prepared);
+      outcomes.push({ job: prepared.job, ok: true });
     } catch (error) {
       // Kontingent erschöpft / dauerhafter API-Fehler → nach oben durchreichen,
       // damit der Lauf sauber abbricht statt weiterzurennen
       if (error instanceof GeminiError && error.status && error.status < 500) throw error;
-      outcomes.push({ job, ok: false, error: message(error) });
+      outcomes.push({ job: prepared.job, ok: false, error: message(error) });
     }
   }
 
   // Reihenfolge des Stapels beibehalten (Nachzügler wurden hinten angehängt)
   const byId = new Map(outcomes.map((outcome) => [outcome.job.id, outcome]));
-  return jobs.map((job) => byId.get(job.id) ?? { job, ok: false, error: "unbekannter Fehler" });
+  return batch.map(
+    (prepared) => byId.get(prepared.job.id) ?? { job: prepared.job, ok: false, error: "unbekannter Fehler" },
+  );
 }
 
 function message(error: unknown): string {
   return error instanceof Error ? error.message : String(error);
 }
 
-/** Teilt eine Liste in Stapel fester Größe (letzter Stapel ggf. kleiner). */
-export function chunk<T>(items: T[], size: number): T[][] {
-  const groesse = Math.max(1, Math.floor(size));
-  const stapel: T[][] = [];
-  for (let index = 0; index < items.length; index += groesse) {
-    stapel.push(items.slice(index, index + groesse));
-  }
-  return stapel;
+/** Menschlich lesbare Beschreibung der eingestellten Bündelung (für Logs/UI). */
+export function batchSizeText(size: number): string {
+  return size <= 0
+    ? `dynamisch (bis zu ${MAX_BATCH_SIZE} Angebote bzw. ${BATCH_CHAR_BUDGET / 1000}k Zeichen je Anfrage)`
+    : `${size} Angebot(e) je Anfrage`;
 }
 
 /** Adapter, hinter denen kein öffentlicher Arbeitgeber steht — deren Jobs kommen ans Ende. */
@@ -431,10 +499,10 @@ export function startAgent(env: ServerEnv, jobs: JobOffer[]): { started: boolean
   stopRequested = false;
 
   void (async () => {
-    for (const stapel of chunk(queue, env.agentBatchSize)) {
+    for (const stapel of planBatches(queue, env.agentBatchSize)) {
       if (stopRequested) break;
-      status.currentJobId = stapel[0].id;
-      status.currentTitel = stapel.map((job) => job.titel).join(" · ");
+      status.currentJobId = stapel[0].job.id;
+      status.currentTitel = stapel.map((prepared) => prepared.job.titel).join(" · ");
       try {
         const outcomes = await triageJobs(env, profile, stapel);
         const gescheitert = outcomes.filter((outcome) => !outcome.ok);

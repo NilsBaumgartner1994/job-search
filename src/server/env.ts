@@ -25,13 +25,32 @@ export interface ServerEnv {
    * Wie viele Angebote in EINER Anfrage bewertet werden (Sammel-Triage).
    * Das Gratis-Kontingent begrenzt die Zahl der *Anfragen* pro Tag — mit 2
    * Angeboten je Anfrage werden aus 20 Anfragen also 40 bewertete Angebote.
-   * 1 = wie früher ein Angebot pro Anfrage; sinnvolles Maximum ist 10.
+   *
+   *   1   Default: ein Angebot je Anfrage
+   *   n   feste Bündelgröße (Maximum MAX_BATCH_SIZE)
+   *  -1   dynamisch: der Agent füllt jede Anfrage mit so vielen Angeboten,
+   *       wie hineinpassen (Zeichenbudget bzw. Obergrenze je Anfrage)
    */
   agentBatchSize: number;
 }
 
 /** Obergrenze für AGENT_BATCH_SIZE — darüber leidet die Qualität je Angebot. */
-export const MAX_BATCH_SIZE = 10;
+export const MAX_BATCH_SIZE = 20;
+
+/**
+ * Liest AGENT_BATCH_SIZE: Zahl ≥ 1 = feste Bündelgröße (auf MAX_BATCH_SIZE
+ * gedeckelt), "-1"/"0"/"dynamisch"/"dynamic"/"auto" = dynamisch (-1),
+ * alles andere (leer, Tippfehler, Platzhalter aus dem Workflow) = 1.
+ */
+export function parseBatchSize(raw: string | undefined): number {
+  const value = raw?.trim().toLowerCase();
+  if (!value) return 1;
+  if (["dynamisch", "dynamic", "auto"].includes(value)) return -1;
+  const size = Number(value);
+  if (!Number.isFinite(size)) return 1;
+  if (size <= 0) return -1;
+  return Math.min(MAX_BATCH_SIZE, Math.floor(size));
+}
 
 /** Sehr kleiner .env-Parser (KEY=VALUE pro Zeile, # = Kommentar). */
 function parseEnvFile(path: string): Record<string, string> {
@@ -132,18 +151,13 @@ export async function ensureEnv(options?: { interactive?: boolean }): Promise<Se
   // 0 ist erlaubt (bezahltes Kontingent → keine Pause nötig), daher nicht "|| 7000"
   const delayRaw = get("AGENT_DELAY_MS")?.trim();
   const delay = Number(delayRaw);
-  const batchRaw = get("AGENT_BATCH_SIZE")?.trim();
-  const batch = Number(batchRaw);
   return {
     geminiApiKeys: splitApiKeys(apiKey),
     geminiModel: get("GEMINI_MODEL")?.trim() || "gemini-flash-latest",
     port: Number(get("PORT")) || 8322,
     // Gratis-Kontingent der Flash-Modelle: ~10 Anfragen/Minute → 7s Pause
     agentDelayMs: delayRaw && Number.isFinite(delay) && delay >= 0 ? delay : 7000,
-    // Default 2: verdoppelt die Angebote pro Tag, ohne die Bewertung zu verwässern
-    agentBatchSize:
-      batchRaw && Number.isFinite(batch) && batch >= 1
-        ? Math.min(MAX_BATCH_SIZE, Math.floor(batch))
-        : 2,
+    // Default 1 (ein Angebot je Anfrage); -1 = dynamisch auffüllen
+    agentBatchSize: parseBatchSize(get("AGENT_BATCH_SIZE")),
   };
 }
