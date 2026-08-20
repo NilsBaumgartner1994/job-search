@@ -12,6 +12,7 @@
     "html": "tsx src/index.ts --html-only",
     "server": "tsx src/server/index.ts",
     "agent": "tsx src/server/cli.ts",
+    "pages": "tsx src/server/publishCli.ts",
     "salaries": "tsx src/salary/fetchSalaryTables.ts",
     "typecheck": "tsc --noEmit"
   },

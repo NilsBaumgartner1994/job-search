@@ -13,7 +13,9 @@ yarn salaries                    # einmalig/jährlich: Besoldungs- & Entgelttabe
 yarn crawl                       # Trefferlisten laden, Details nur für NEUE Jobs (Netz)
 yarn crawl --adapter=bka,bwi     # nur bestimmte Portale
 yarn crawl:full                  # Details auch für bekannte Jobs neu laden (Netz)
+yarn crawl --adapter=interamt --forget   # ein Portal komplett vergessen und neu einlesen
 yarn html                        # jobs.html neu aus data/jobs.json erzeugen (offline)
+yarn pages                       # docs/ (GitHub-Pages-Daten) neu schreiben (offline)
 yarn server                      # KI-Agent + Kanban-Board starten (siehe unten)
 yarn typecheck                   # TypeScript prüfen
 ```
@@ -35,6 +37,14 @@ heruntergeladen — verbesserte Extraktoren greifen also auch ohne Netz-Abruf.
 Nur neue Jobs verursachen Detail-Abrufe (erster Lauf ~2 min, danach ~10 s).
 `yarn crawl:full` erzwingt das Neuladen aller Details. PDFs abgelaufener Jobs
 werden beim Löschen mit entfernt; `data/pdfs/` ist nicht im Git.
+
+`--forget` geht noch einen Schritt weiter: der gespeicherte Bestand der
+Portale, die in diesem Lauf mitmachen, wird **weggeworfen** und komplett neu
+eingelesen (`firstSeen` beginnt damit von vorn, Angebote, die das Portal nicht
+mehr listet, verschwinden). Weggeworfen wird erst, nachdem der Adapter
+erfolgreich geliefert hat — bricht er ab, bleibt der alte Bestand stehen. In
+Kombination mit `--html-only` ist `--forget` nicht erlaubt, das wäre reiner
+Datenverlust.
 
 ## jobs.html
 
@@ -316,6 +326,29 @@ Board-Status und die Status/Notizen der statischen `jobs.html`
 (localStorage im Browser) sind bewusst **zwei getrennte Welten** — die
 statische Variante funktioniert weiterhin ohne Server.
 
+## Crawler in GitHub Actions
+
+`yarn crawl` läuft nicht nur lokal, sondern auch als Workflow: Actions →
+**Crawler** → "Run workflow". Kein Secret nötig — hier wird nur gescrapt.
+Der Lauf installiert Chromium für Playwright (für Interamt zwingend), holt
+die Trefferlisten, entfernt Angebote mit abgelaufener Frist, schreibt
+`jobs.html` und `docs/` neu und committet `data/jobs.json`, `jobs.html` und
+`docs/` zurück ins Repo. Zwei Eingaben:
+
+- **portale** — kommagetrennte Adapternamen (z.B. `interamt` oder
+  `bka,bwi`); leer = alle.
+- **modus** —
+  - `normal`: Details nur für neue Angebote laden (Default),
+  - `details-neu`: auch bekannte Details neu laden (`--refresh`),
+  - `komplett-neu`: den gespeicherten Bestand der gewählten Portale
+    wegwerfen und alles frisch einlesen (`--forget`).
+
+Ein kompletter Interamt-Lauf öffnet je Angebot eine Detailseite im Browser
+und dauert entsprechend lange (grob 20–40 Minuten, Timeout des Workflows:
+5 Stunden). Board-Status und Chat-Verläufe (`data/agent/`) rührt der
+Crawler nicht an — sie hängen an der Job-ID und finden auch nach einem
+`komplett-neu` wieder zu ihrem Angebot zurück.
+
 ## KI-Agent in GitHub Actions + Kanban auf GitHub Pages
 
 Statt (oder zusätzlich zu) `yarn server` kann der KI-Agent komplett auf
@@ -487,10 +520,28 @@ Detailseite. Bei ~500 Treffern dauert **der erste Lauf entsprechend lange**
 schnell, da nur neu hinzugekommene Jobs einen Detail-Klick brauchen.
 Playwright ist dafür eine echte Abhängigkeit (`yarn add playwright && yarn
 playwright install chromium`, ca. 300 MB) — anders als bei den übrigen
-Adaptern, die alle ohne Browser auskommen. Der gespeicherte `link` ist
-Interamts "crypt."-Permalink (Wicket-eigener, für genau diese Verschlüsselung
-gedachter Dauerlink) — sitzungsgebunden und daher nicht immer dauerhaft
-stabil; läuft er ins Leere ("Sitzung abgelaufen"), hilft der **Referenzcode**
+Adaptern, die alle ohne Browser auskommen.
+
+#### Der gespeicherte Link
+
+Die URL, die beim Öffnen einer Detailseite in der Adresszeile steht
+(`interamt.de/koop/app/crypt.<Hash>/<Seite>`), gehört zur laufenden
+Wicket-Sitzung: sobald diese abgelaufen ist, landet man beim Anklicken nur
+noch auf "Sitzung abgelaufen". Frühere Läufe haben genau diese URL
+gespeichert. Der Adapter baut den Link deshalb selbst aus der Angebots-ID:
+
+```
+https://interamt.de/koop/app/trefferliste?stellenangebotliste=<Angebots-ID>
+```
+
+Das ist der Deep-Link, den Interamt Arbeitgebern zum Verlinken ihrer eigenen
+Ausschreibungen nennt — sitzungsfrei und beliebig oft aufrufbar. Weil die
+Angebots-ID schon in der Job-ID steckt (`interamt:1467339`), lässt sich der
+Link ohne Netz nachrechnen: **jeder `yarn crawl`-Lauf schreibt gespeicherte
+"crypt."-Links automatisch um** (`repairInteramtLinks`), auch bei Angeboten,
+die gar nicht mehr in der Trefferliste stehen.
+
+Verschwindet ein Angebot ganz aus Interamt, hilft der **Referenzcode**
 weiter: der Adapter sucht im Freitext der Detailseite nach einer vom
 Arbeitgeber selbst vergebenen Kennziffer/Chiffre ("Kennziffer:",
 "Referenznummer", "Chiffre:", "Stellen-ID", "Ausschreibungsnummer", ...) und
