@@ -200,6 +200,20 @@ function esc(s) {
   })[c]);
 }
 
+/** ISO-Tag (2026-07-16) → deutsches Datum (16.07.2026). */
+function fmtDatum(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(iso || ""));
+  return m ? m[3] + "." + m[2] + "." + m[1] : String(iso || "");
+}
+/** ISO-Zeitstempel (UTC) → deutsches Datum mit Uhrzeit in lokaler Zeit. */
+function fmtZeitpunkt(iso) {
+  const d = iso ? new Date(iso) : null;
+  if (!d || isNaN(d.getTime())) return "";
+  return d.toLocaleString("de-DE", {
+    day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit",
+  });
+}
+
 async function api(path, options) {
   const res = await fetch(path, options ? {
     headers: { "Content-Type": "application/json" }, ...options,
@@ -367,7 +381,7 @@ function renderCard(job) {
     }
   }
   if (job.hasChat) badges.push('<span class="badge" title="Chat-Verlauf vorhanden">💬</span>');
-  if (job.bewerbungsfrist) badges.push('<span class="badge frist">bis ' + esc(job.bewerbungsfrist) + "</span>");
+  if (job.bewerbungsfrist) badges.push('<span class="badge frist">bis ' + esc(fmtDatum(job.bewerbungsfrist)) + "</span>");
   if (job.gehaltsstufe) badges.push('<span class="badge">' + esc(job.gehaltsstufe) + "</span>");
 
   el.innerHTML =
@@ -419,7 +433,7 @@ function renderJobModal(data) {
   const meta = [
     job.employer, (job.dienstorte || []).join(", "), job.gehaltsstufe,
     (job.befristung || []).join(", "), (job.arbeitszeit || []).join(", "),
-    job.homeoffice, job.bewerbungsfrist ? "Frist: " + job.bewerbungsfrist : "",
+    job.homeoffice, job.bewerbungsfrist ? "Frist: " + fmtDatum(job.bewerbungsfrist) : "",
     job.referenzcode ? "Ref: " + job.referenzcode : "",
   ].filter(Boolean).map(esc).join(" · ");
 
@@ -432,7 +446,7 @@ function renderJobModal(data) {
 
   if (entry) {
     html += '<p class="hint">Eingruppiert ' + (entry.vonKi ? "von der 🤖 KI" : "vom 👤 Menschen") +
-      " am " + esc((entry.updatedAt || "").slice(0, 16).replace("T", " ")) + "</p>";
+      " am " + esc(fmtZeitpunkt(entry.updatedAt)) + "</p>";
   }
   if (entry && (entry.begruendung || entry.punkteDetails)) {
     html += '<div class="kiverdict">🤖 <b>' + (entry.punkte != null ? entry.punkte + "/10 — " : "") +
@@ -495,7 +509,7 @@ function renderJobModal(data) {
 
 function renderMsg(msg) {
   const who = msg.role === "model" ? "🤖 KI-Agent" : "👤 Du";
-  const when = esc((msg.at || "").slice(0, 16).replace("T", " "));
+  const when = esc(fmtZeitpunkt(msg.at));
   let content;
   if (msg.kind === "triage" && msg.role === "user") {
     content = "<details><summary>Triage-Anfrage (kompletter Seitentext) anzeigen</summary><pre>" +

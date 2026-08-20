@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T20:43:24.974Z",
+  "updatedAt": "2026-08-20T21:01:07.592Z",
   "entries": [
     {
       "jobId": "accenture:13818109",
@@ -570,6 +570,20 @@
       "begruendung": "Die Stelle im gehobenen Dienst (E10/E11) erfordert Schichtdienst im Raum Bonn und richtet sich an Bachelor-Absolventen für reine Instandhaltung/Systemadministration. Für ein Profil mit M.Sc., Promotion und Führungserfahrung ist die Position unterdotiert."
     },
     {
+      "jobId": "bnd:AS-2026-089",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 24.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bnd:AS-2026-090",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 22.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "bnd:AS-2026-091",
       "status": "archiviert",
       "vonKi": true,
@@ -600,6 +614,13 @@
         "gesamt": 0
       },
       "begruendung": "Völlig fachfremde Ausschreibung für staatlich geprüfte Techniker der Luftfahrzeugtechnik/Mechanik. Passt weder zum Informatik-Profil noch zum gesuchten Standort."
+    },
+    {
+      "jobId": "bnd:AS-2026-093",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 29.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "bnd:AS-2026-095",
@@ -714,6 +735,13 @@
       "begruendung": "Einfache technische Unterstützungstätigkeit (E6) im mittleren Dienst für kaufmännische/Verwaltungsausbildungen. Liegt weit unter dem Qualifikationsniveau und in Berlin."
     },
     {
+      "jobId": "bnd:AS-2026-102",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 29.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "bnd:AS-2026-103",
       "status": "archiviert",
       "vonKi": true,
@@ -778,6 +806,27 @@
       "begruendung": "Die Ausschreibung im Objektschutz des mittleren Dienstes (E5/E6) liegt fachlich und gehaltlich weit unter Ihrem Qualifikationsprofil."
     },
     {
+      "jobId": "bnd:AS-2026-107",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 29.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bnd:AS-2026-108",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 29.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bnd:AS-2026-109",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 22.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "bnd:AS-2026-110",
       "status": "archiviert",
       "vonKi": true,
@@ -840,6 +889,13 @@
         "gesamt": 1
       },
       "begruendung": "Gefordert wird ein Masterabschluss in Bauingenieurwesen oder Architektur für Hochbauprojekte in Pullach. Die Stelle ist fachfremd und räumlich unpassend."
+    },
+    {
+      "jobId": "bnd:AS-2026-114",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 22.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "bwi:63245",
@@ -938,6 +994,13 @@
       "begruendung": "Gehobener Dienst (A10-A12) in München; unterhalb der angestrebten Besoldungshöhe (höherer Dienst/E13+) und zu weit entfernt."
     },
     {
+      "jobId": "interamt:1360287",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1363114",
       "status": "archiviert",
       "vonKi": true,
@@ -952,6 +1015,27 @@
         "gesamt": 3
       },
       "begruendung": "Sachbearbeitung im gehobenen Dienst (A10-A12) am DPMA in München entspricht nicht den Kriterien für eine promovierte Führungskraft/Experten ab E13."
+    },
+    {
+      "jobId": "interamt:1379582",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 09.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1399796",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1410895",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1413536",
@@ -970,10 +1054,31 @@
       "begruendung": "Die Stelle richtet sich an Meister/Fachkräfte der Abwassertechnik und entspricht weder fachlich noch gehaltlich (TV-V 8 statt E13+) dem Profil eines promovierten Informatikers. Zudem liegt der Schichtarbeitsplatz in Hetlingen weit außerhalb des gewünschten Einzugsgebiets und erlaubt kein Homeoffice."
     },
     {
-      "jobId": "interamt:1431369",
-      "status": "interessant",
+      "jobId": "interamt:1414430",
+      "status": "archiviert",
       "vonKi": true,
-      "updatedAt": "2026-08-20T20:43:24.961Z",
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 01.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1424871",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 30.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1428017",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1431369",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
       "punkte": 8,
       "punkteDetails": {
         "entfernung": 5,
@@ -983,7 +1088,28 @@
         "verbeamtung": 0,
         "gesamt": 8
       },
-      "begruendung": "Hochdotierte Führungsposition (E15) für rund 45 Mitarbeitende, die perfekt zur Kombination aus Promotion im Software Engineering und Geschäftsführungserfahrung passt. Die Vereinbarkeit von Dienstort Berlin mit Homeoffice-Optionen sollte im Detail geprüft werden."
+      "begruendung": "Bewerbungsfrist am 30.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage).\n\nFrühere KI-Einschätzung: Hochdotierte Führungsposition (E15) für rund 45 Mitarbeitende, die perfekt zur Kombination aus Promotion im Software Engineering und Geschäftsführungserfahrung passt. Die Vereinbarkeit von Dienstort Berlin mit Homeoffice-Optionen sollte im Detail geprüft werden."
+    },
+    {
+      "jobId": "interamt:1439502",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 20.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1440329",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 17.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1443603",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1444071",
@@ -1002,6 +1128,13 @@
       "begruendung": "Die Stelle in Wiesbaden erfordert ausdrücklich eine Tätigkeit vor Ort und bietet kein Homeoffice. Wegen der großen Distanz zur Zielregion Osnabrück/Vechta/Cloppenburg scheidet das Angebot trotz passender Dotierung (E13/E14 bzw. A13/A14) und Verbeamtungsmöglichkeit aus."
     },
     {
+      "jobId": "interamt:1444375",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1444658",
       "status": "archiviert",
       "vonKi": true,
@@ -1016,6 +1149,34 @@
         "gesamt": 0
       },
       "begruendung": "Die Stelle richtet sich an Forstwirte für praktische Waldarbeiten und passt fachlich überhaupt nicht zu Ihrem Informatik-Profil. Zudem liegt das Gehalt (E 5) weit unter Ihren Vorstellungen und der Arbeitsort in Brandenburg bietet keine Remote-Möglichkeit."
+    },
+    {
+      "jobId": "interamt:1444990",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1447399",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 03.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1447598",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1449460",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1449493",
@@ -1050,6 +1211,13 @@
       "begruendung": "Die Eingruppierung nach E11 TVöD entspricht nicht Ihren Gehaltserwartungen ab E13, und der Standort Mainz ist ohne vollständigen Remote-Anteil zu weit entfernt."
     },
     {
+      "jobId": "interamt:1450445",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 24.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1450683",
       "status": "archiviert",
       "vonKi": true,
@@ -1080,6 +1248,104 @@
         "gesamt": 2
       },
       "begruendung": "Der Dienstort Berlin liegt weit außerhalb der gewünschten Region (Raum Osnabrück/Vechta/Cloppenburg) und die Stelle erfordert als Berliner Landesbehörde sowie für Vor-Ort-Kontrollen regelmäßige Präsenz. Trotz sehr guter Gehaltseinstufung (TV-L E 14) und passendem fachlichen Profil ist das Angebot wegen des reinen Hybrid-Modells ohne vollen Remote-Anteil ungeeignet."
+    },
+    {
+      "jobId": "interamt:1453637",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 13.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1454658",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 09.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1454695",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 29.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1454790",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 27.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1454810",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 27.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1454829",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 17.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1455182",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1455367",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1455974",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1456070",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1456436",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 18.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1456484",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1456716",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1456717",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1456723",
@@ -1114,10 +1380,101 @@
       "begruendung": "Der Dienstort Wiesbaden liegt weit außerhalb des Suchraums und erfordert ca. 80 % Präsenz vor Ort. Zudem richtet sich die Stelle an Bachelor-Absolventen (E 12 / A 12) und liegt damit unter dem gesuchten Niveau (ab E 13)."
     },
     {
-      "jobId": "interamt:1457963",
-      "status": "interessant",
+      "jobId": "interamt:1457005",
+      "status": "archiviert",
       "vonKi": true,
-      "updatedAt": "2026-08-20T20:43:24.958Z",
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 24.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1457092",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 14.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1457220",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1457234",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 20.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1457324",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 13.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1457357",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1457377",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1457618",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1457686",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1457754",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1457769",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1457774",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1457908",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 20.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1457963",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
       "punkte": 8,
       "punkteDetails": {
         "entfernung": 8,
@@ -1127,7 +1484,7 @@
         "verbeamtung": 0,
         "gesamt": 8
       },
-      "begruendung": "Passende Dotierung (E13) im IT-Sicherheitsbereich mit ausdrücklicher Möglichkeit, nach der Einarbeitung überwiegend im Homeoffice zu arbeiten (bundesweit möglich)."
+      "begruendung": "Bewerbungsfrist am 21.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage).\n\nFrühere KI-Einschätzung: Passende Dotierung (E13) im IT-Sicherheitsbereich mit ausdrücklicher Möglichkeit, nach der Einarbeitung überwiegend im Homeoffice zu arbeiten (bundesweit möglich)."
     },
     {
       "jobId": "interamt:1458282",
@@ -1146,6 +1503,27 @@
       "begruendung": "Inhaltlich und formal (E13/A13, Leitungsfunktion DevOps, Verbeamtung) passt die Stelle hervorragend zum Profil. Der Dienstort Wiesbaden ist jedoch viel zu weit von Osnabrück/Vechta/Cloppenburg entfernt und bei einer Sachgebietsleitung ist reines bzw. überwiegendes Remote-Arbeiten im BKA unrealistisch."
     },
     {
+      "jobId": "interamt:1458435",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 16.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1458445",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 16.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1458575",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 27.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1458638",
       "status": "archiviert",
       "vonKi": true,
@@ -1160,6 +1538,132 @@
         "gesamt": 3
       },
       "begruendung": "Die Stelle ist mit E 11 / A 11 (gehobener Dienst) für Ihr Profil mit Master und Promotion unterwertig dotiert (gesucht ab E 13). Zudem liegt der Dienstort Freital (Sachsen) weit außerhalb Ihrer Wunschregion und erfordert trotz Hybridmodell regelmäßige mehrtägige Dienstreisen."
+    },
+    {
+      "jobId": "interamt:1458647",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1458659",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 01.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1458895",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 14.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1458953",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1458968",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1459024",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1459065",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 13.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1459067",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 13.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1459068",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 13.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1459070",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 13.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1459269",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1459373",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 16.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1459468",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1459585",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1459658",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 16.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1459726",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 24.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1459916",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1460063",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 17.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1460073",
@@ -1178,6 +1682,20 @@
       "begruendung": "Reine Sachbearbeiterstelle im gehobenen Dienst (E12 TV-L bzw. A13g) mit Dienstort Kiel, was bei nur hybridem Modell zu weit entfernt und unter Ihrem Qualifikationsniveau liegt."
     },
     {
+      "jobId": "interamt:1460256",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 21.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1460312",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1460315",
       "status": "archiviert",
       "vonKi": true,
@@ -1194,10 +1712,45 @@
       "begruendung": "Die Stelle ist mit der Entgeltgruppe E 6 TV-L für First-Level-Support weit unter Ihrem Qualifikationsniveau (M.Sc. / Promotion, angestrebt ab E 13) angesiedelt. Zudem liegt der Dienstort Berlin außerhalb Ihrer Wunschregion und erfordert Präsenz vor Ort (nur hybrides Modell)."
     },
     {
-      "jobId": "interamt:1460473",
-      "status": "interessant",
+      "jobId": "interamt:1460327",
+      "status": "archiviert",
       "vonKi": true,
-      "updatedAt": "2026-08-20T20:42:52.288Z",
+      "updatedAt": "2026-08-20T21:01:07.590Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1460352",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1460364",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1460399",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 13.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1460450",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1460473",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
       "punkte": 8,
       "punkteDetails": {
         "entfernung": 5,
@@ -1207,7 +1760,49 @@
         "verbeamtung": 10,
         "gesamt": 8
       },
-      "begruendung": "Sehr attraktive Führungs- und Entwicklungsstelle im höheren Dienst (E14 / A14) mit Schwerpunkt auf DV-Verfahren und Softwareeinsatz. Hannover ist per Hybridmodell gut machbar und Verbeamtung ist möglich."
+      "begruendung": "Bewerbungsfrist am 16.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage).\n\nFrühere KI-Einschätzung: Sehr attraktive Führungs- und Entwicklungsstelle im höheren Dienst (E14 / A14) mit Schwerpunkt auf DV-Verfahren und Softwareeinsatz. Hannover ist per Hybridmodell gut machbar und Verbeamtung ist möglich."
+    },
+    {
+      "jobId": "interamt:1460475",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 17.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1460477",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 17.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1460478",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 17.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1460518",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 16.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1460543",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 24.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1460558",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1460565",
@@ -1226,6 +1821,34 @@
       "begruendung": "Die Stelle richtet sich an Ausbildungsabschlüsse und liegt mit E 9a / A 9m weit unter dem Niveau eines promovierten Informatikers (Ziel E13+). Zudem befindet sich der Dienstort in Bonn bei nur sehr geringem Homeoffice-Anteil."
     },
     {
+      "jobId": "interamt:1460574",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 03.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1460579",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1460589",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 23.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1460590",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 27.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1460676",
       "status": "archiviert",
       "vonKi": true,
@@ -1242,6 +1865,13 @@
       "begruendung": "Der Dienstort Frankfurt am Main ist viel zu weit vom Zielgebiet (Osnabrück/Vechta) entfernt und mit nur 50 % Homeoffice-Anteil nicht pendelbar. Zudem richtet sich die Stelle an den gehobenen Dienst (Bachelor-Niveau) und ist zunächst auf 5 Jahre befristet."
     },
     {
+      "jobId": "interamt:1460708",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1460766",
       "status": "archiviert",
       "vonKi": true,
@@ -1256,6 +1886,55 @@
         "gesamt": 2
       },
       "begruendung": "Der Dienstort Frankfurt am Main ist viel zu weit entfernt und bei lediglich 50 % Homeoffice-Anteil nicht mit den Pendelvorgaben vereinbar. Zudem ist die Stelle mit A12 (gehobener Dienst / Bachelor-Niveau) unterhalb des gesuchten Niveaus ab E13 dotiert und zunächst auf 5 Jahre befristet."
+    },
+    {
+      "jobId": "interamt:1460816",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1460838",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1460899",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1460948",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 20.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1461036",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 07.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1461054",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 14.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1461061",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1461166",
@@ -1290,6 +1969,27 @@
       "begruendung": "Das Stellenangebot richtet sich an Fachkräfte der Landschaftspflege/Naturschutz und passt fachlich überhaupt nicht zum Profil (Informatik/Software Engineering). Zudem liegt der Dienstort in Bayern bei nur max. 50% Homeoffice und die Eingruppierung (TV-L E 10) liegt weit unter der Qualifikation."
     },
     {
+      "jobId": "interamt:1461249",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 21.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1461269",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 14.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1461274",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1461276",
       "status": "archiviert",
       "vonKi": true,
@@ -1304,6 +2004,34 @@
         "gesamt": 2
       },
       "begruendung": "Die Stelle richtet sich zwingend an Geophysiker/Geowissenschaftler für marine Rohstofferkundung und seismische Datenanalyse (inkl. Schiffsexpeditionen). Trotz attraktiver E14/A14-Dotierung passt das fachliche Profil nicht zu einem Informatiker/Software-Engineer, und der Dienstort Hannover liegt außerhalb der gewünschten Fahrzeit."
+    },
+    {
+      "jobId": "interamt:1461279",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 13.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1461322",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1461346",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1461368",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1461456",
@@ -1338,6 +2066,27 @@
       "begruendung": "Die Stelle ist im mittleren Dienst angesiedelt (E7 / A7) und umfasst reine Assistenz-/Geschäftszimmeraufgaben, was für ein Promotionsprofil im Bereich Informatik/Software Engineering (gesucht ab E13) massiv unterqualifiziert ist. Zudem liegt der Dienstort Bonn außerhalb des Wunschradius und erfordert trotz Hybridmodell Präsenz."
     },
     {
+      "jobId": "interamt:1461512",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1461570",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1461578",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1461603",
       "status": "archiviert",
       "vonKi": true,
@@ -1352,6 +2101,20 @@
         "gesamt": 3
       },
       "begruendung": "Die Stelle ist im gehobenen Dienst (E10/E11 bzw. A9-A11) eingruppiert und bleibt damit deutlich hinter Ihren Gehalts- und Qualifikationsvorstellungen als promovierter Informatiker zurück."
+    },
+    {
+      "jobId": "interamt:1461626",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1461631",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 22.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1461634",
@@ -1370,6 +2133,34 @@
       "begruendung": "Mit maximal 2 Tagen Homeoffice ist der Standort Saarbrücken viel zu weit von Ihrem Wunschraum entfernt, zudem liegt die Eingruppierung mit E10–E12 unter dem angestrebten Niveau."
     },
     {
+      "jobId": "interamt:1461658",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1461670",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 22.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1461681",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 25.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1461682",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 27.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1461708",
       "status": "archiviert",
       "vonKi": true,
@@ -1384,6 +2175,13 @@
         "gesamt": 2
       },
       "begruendung": "Obwohl die Stelle (TV-L E 14 mit Verbeamtungsoption) fachlich und bezüglich der Qualifikation hervorragend zu Ihrem Profil passt, liegt der Dienstort in Brandenburg (Potsdam/Zossen) weit außerhalb Ihres Zielgebiets. Da kein überwiegender Remote-Anteil angeboten wird, ist die Position örtlich unpassend."
+    },
+    {
+      "jobId": "interamt:1461710",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 22.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1461746",
@@ -1402,6 +2200,13 @@
       "begruendung": "Inhaltlich und finanziell (E14 mit Fachkräftezulage) passt die Stelle sehr gut, jedoch ist der Dienstort Potsdam bei einem hybriden Modell viel zu weit von der Zielregion (Osnabrück/Vechta/Cloppenburg bzw. max. 40 Min. Pendelzeit) entfernt. Zudem ist bei der BImA eine Neuverbeamtung rechtlich ausgeschlossen."
     },
     {
+      "jobId": "interamt:1462057",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 16.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1462061",
       "status": "archiviert",
       "vonKi": true,
@@ -1416,6 +2221,27 @@
         "gesamt": 4
       },
       "begruendung": "Die Referatsleitung in Frankfurt am Main bietet zwar E13/A13h, erfordert jedoch als Leitungsfunktion regelmäßige Vor-Ort-Präsenz weit außerhalb des 40-Minuten-Radius."
+    },
+    {
+      "jobId": "interamt:1462092",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1462132",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 20.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1462371",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 17.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1462394",
@@ -1434,6 +2260,20 @@
       "begruendung": "Die Stelle in Berlin liegt weit außerhalb des gesuchten Einzugsgebiets und ist als hybride Systemadministrator-Tätigkeit vor Ort nicht pendelbar. Zudem entspricht das Entgelt (TV-L E 10) nicht Ihren Erwartungen (ab E 13) und die Support-Tätigkeiten unterfordern eine Promotion in Informatik deutlich."
     },
     {
+      "jobId": "interamt:1462427",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 14.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1462430",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1462456",
       "status": "archiviert",
       "vonKi": true,
@@ -1448,6 +2288,83 @@
         "gesamt": 0
       },
       "begruendung": "Das Angebot passt fachlich überhaupt nicht zum Profil, da ein forstwirtschaftliches Studium sowie eine Jägerprüfung vorausgesetzt werden. Zudem liegt der Dienstort in Bayern (weit außerhalb des Suchradius) und die Gehaltsstufe (E11 / A10–A11) liegt unter den gewünschten Qualifikationen (E13+)."
+    },
+    {
+      "jobId": "interamt:1462465",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 17.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1462556",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1462562",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1462570",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 20.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1462603",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1462636",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 24.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1462649",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 20.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1462973",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 17.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463021",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463024",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463063",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1463077",
@@ -1466,6 +2383,69 @@
       "begruendung": "Trotz hervorragender Dotierung (E15) fachlich unpassend, da die Leitungsposition primär einen Hintergrund in Natur- oder Humanwissenschaften bzw. Epidemiologie/Public Health erfordert."
     },
     {
+      "jobId": "interamt:1463099",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 22.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463110",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 17.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463112",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463197",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463213",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463263",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 24.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463269",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 30.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463294",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 16.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463306",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 20.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1463404",
       "status": "archiviert",
       "vonKi": true,
@@ -1480,6 +2460,13 @@
         "gesamt": 1
       },
       "begruendung": "Das Stellenangebot im Bereich Personalmarketing/Organisationsentwicklung in Mannheim liegt fachlich weit außerhalb Ihres Profils als promovierter Informatiker. Zudem entspricht die Entgeltgruppe E9b nicht Ihren Qualifikationen und Wünschen (ab E13)."
+    },
+    {
+      "jobId": "interamt:1463420",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 27.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1463422",
@@ -1530,6 +2517,34 @@
       "begruendung": "Der Dienstort München liegt weit außerhalb des Suchradiuses (Osnabrück/Vechta/Cloppenburg) und erfordert bei einem hybriden Arbeitsmodell regelmäßige Präsenz vor Ort. Zudem sind die Aufgaben (u. a. First-Level-Support und IT-Controlling) für ein Profil mit Promotion im Software Engineering deutlich unterqualifiziert."
     },
     {
+      "jobId": "interamt:1463467",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 20.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463479",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 20.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463485",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463503",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 21.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1463545",
       "status": "archiviert",
       "vonKi": true,
@@ -1562,6 +2577,104 @@
       "begruendung": "Die Stelle ist mit E12/A12 für eine promovierte Informatik-Fachkraft unterdotiert und liegt örtlich in Karlsruhe."
     },
     {
+      "jobId": "interamt:1463557",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463628",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 28.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463645",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 27.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463653",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463681",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 23.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463702",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 28.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463713",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 30.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463717",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 20.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463737",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 13.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463754",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 24.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463761",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 03.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463766",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 03.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463839",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 17.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463857",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 17.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1463867",
       "status": "archiviert",
       "vonKi": true,
@@ -1578,6 +2691,27 @@
       "begruendung": "Die Stelle richtet sich an Absolventen der Agrarwissenschaften oder Biologie mit Schwerpunkt Mykologie/Bakteriologie im Weinbau und passt fachlich nicht zu Ihrem Profil in Informatik/Software Engineering. Zudem liegt der Dienstort in Rheinland-Pfalz weit außerhalb Ihrer Zielregion und erfordert durch Lehre und Labor-/Freilandarbeiten regelmäßige Präsenz."
     },
     {
+      "jobId": "interamt:1463905",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 17.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1463993",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 29.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1464054",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1464144",
       "status": "archiviert",
       "vonKi": true,
@@ -1592,6 +2726,13 @@
         "gesamt": 1
       },
       "begruendung": "Das Stellenangebot passt weder örtlich noch von der Qualifikation her zum Profil: Der Dienstort Brück (Brandenburg) liegt außerhalb des Wunschgebiets und bietet kein überwiegendes Homeoffice. Zudem liegt die Vergütung mit E 9b–E 10 weit unter dem angestrebten Niveau (ab E 13) und die reine IT-Administrator-Tätigkeit unterfordert eine promovierte Informatik-Fachkraft."
+    },
+    {
+      "jobId": "interamt:1464164",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 22.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1464189",
@@ -1642,6 +2783,13 @@
       "begruendung": "Fachlich und finanziell (E15/A15) eine exzellente Führungsposition, jedoch liegt der Dienstort Bonn weit außerhalb des 40-Minuten-Radius. Da bei der Leitung des IT-Betriebs mit 30 Mitarbeitenden im hybriden Modell regelmäßige Präsenztage vor Ort unvermeidbar sind, ist die Stelle ohne Umzugsbereitschaft unpassend."
     },
     {
+      "jobId": "interamt:1464253",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 27.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1464257",
       "status": "archiviert",
       "vonKi": true,
@@ -1656,6 +2804,41 @@
         "gesamt": 4
       },
       "begruendung": "Obwohl das Profil fachlich perfekt passt und die Konditionen (E13/A14 sowie Verbeamtung) hervorragend sind, liegen die Dienstorte Bonn und Leipzig deutlich außerhalb des Radius von 40 Minuten um den Wunschraum Osnabrück/Vechta/Cloppenburg. Da lediglich hybrides und kein vollständiges Remote-Arbeiten angeboten wird, ist die Stelle örtlich unpassend."
+    },
+    {
+      "jobId": "interamt:1464265",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1464280",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 28.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1464332",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 01.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1464346",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 30.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1464384",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1464392",
@@ -1674,6 +2857,27 @@
       "begruendung": "Der Dienstort Wiesbaden ist viel zu weit vom Wunschgebiet entfernt und erfordert bei einem hybriden Arbeitsmodell regelmäßige Präsenz vor Ort. Zudem ist die Stelle mit E12 / A12 im gehobenen Dienst angesiedelt und liegt unter dem angestrebten Niveau (ab E13 / höherer Dienst)."
     },
     {
+      "jobId": "interamt:1464398",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 03.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1464427",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 29.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1464436",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 03.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1464474",
       "status": "archiviert",
       "vonKi": true,
@@ -1688,6 +2892,13 @@
         "gesamt": 3
       },
       "begruendung": "Der Dienstort Bonn ist deutlich zu weit vom Wunschraum entfernt und bei einem hybriden Modell nicht innerhalb der maximal 40 Minuten Pendelzeit erreichbar. Zudem liegt die Eingruppierung mit E12 unter dem gewünschten Niveau ab E13 für Master/Promovierte."
+    },
+    {
+      "jobId": "interamt:1464542",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1464559",
@@ -1706,6 +2917,13 @@
       "begruendung": "Die Stelle im User Helpdesk (First-/Second-Level-Support mit Schichtdienst) ist mit EG 9b / A6m–A9 (mittlerer Dienst) für ein Profil mit Promotion und Master in Informatik massiv unterqualifiziert und unterdotiert (gesucht wird ab E13)."
     },
     {
+      "jobId": "interamt:1464587",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 22.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1464634",
       "status": "archiviert",
       "vonKi": true,
@@ -1720,6 +2938,55 @@
         "gesamt": 1
       },
       "begruendung": "Der Dienstort Berlin liegt weit außerhalb des Suchradiers und bietet nur ein hybrides Modell statt Voll-Remote. Zudem liegt die Eingruppierung (TV-L E 11) unter dem geforderten Niveau (ab E 13) und das Aufgabenprofil (Systemadministration/IT-Support) passt nicht zu einer Promotion im Software Engineering."
+    },
+    {
+      "jobId": "interamt:1464638",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 14.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1464642",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 30.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1464647",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1464652",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1464655",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1464686",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 22.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1464729",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 03.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1464732",
@@ -1754,6 +3021,55 @@
       "begruendung": "Der Dienstort Frankfurt am Main ist viel zu weit entfernt und bietet mit regulär nur 50 % Homeoffice keine praxistaugliche Remote-Option. Zudem richtet sich die Stelle (A11 / Bachelor-Niveau) deutlich unterhalb Ihrer Qualifikation (Promotion) und Ihren Gehaltserwartungen (ab E13)."
     },
     {
+      "jobId": "interamt:1464752",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1464757",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 14.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1464779",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 06.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1464794",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1464804",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 03.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1464819",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1464880",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 14.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1464922",
       "status": "archiviert",
       "vonKi": true,
@@ -1784,6 +3100,13 @@
         "gesamt": 4
       },
       "begruendung": "Mit Entgeltgruppe E12 unter dem gesuchten Gehaltsniveau und rein operativ im BCM-Bereich in Berlin angesiedelt."
+    },
+    {
+      "jobId": "interamt:1464977",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 23.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1465016",
@@ -1818,6 +3141,20 @@
       "begruendung": "Datenbankadministration mit E11 in Düsseldorf entspricht weder der gesuchten Gehaltsstufe noch der örtlichen Präferenz."
     },
     {
+      "jobId": "interamt:1465065",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465072",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 04.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1465075",
       "status": "archiviert",
       "vonKi": true,
@@ -1850,6 +3187,27 @@
       "begruendung": "Die Stelle richtet sich an Fachkräfte der Landschaftsarchitektur bzw. des Gartenbaus und passt fachlich nicht zum Informatik-Profil. Zudem befindet sich der Dienstort in München als reine Präsenzstelle und die Vergütung (E11) liegt unter der gewünschten Entgeltgruppe E13."
     },
     {
+      "jobId": "interamt:1465155",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465173",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 24.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465189",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1465245",
       "status": "archiviert",
       "vonKi": true,
@@ -1866,10 +3224,136 @@
       "begruendung": "Zwar ist die Bezahlung (E13 / A13–A15) passend, jedoch erfordern max. 60 % Homeoffice regelmäßige Präsenztage in Frankfurt am Main, was bei über 40 min Fahrzeit nicht vereinbar ist. Fachlich liegt der Fokus primär auf Auslagerungs-Governance/Sourcing."
     },
     {
-      "jobId": "interamt:1465707",
-      "status": "interessant",
+      "jobId": "interamt:1465257",
+      "status": "archiviert",
       "vonKi": true,
-      "updatedAt": "2026-08-20T20:42:52.290Z",
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465337",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 07.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465352",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465418",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465420",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465427",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465430",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465433",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465444",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 27.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465465",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 04.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465569",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 27.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465581",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465585",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465605",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 10.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465643",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 24.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465653",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 18.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465678",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 01.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465693",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 05.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465707",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
       "punkte": 8,
       "punkteDetails": {
         "entfernung": 4,
@@ -1879,7 +3363,14 @@
         "verbeamtung": 10,
         "gesamt": 8
       },
-      "begruendung": "Passende Führungsposition im höheren Dienst (E13/E14 bzw. A13h/A14) für die Leitung eines Softwareentwicklungs-Sachgebiets im öD. Ihre Erfahrung aus Promotion und Geschäftsführung passt hervorragend zu den geforderten Kompetenzen."
+      "begruendung": "Bewerbungsfrist am 27.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage).\n\nFrühere KI-Einschätzung: Passende Führungsposition im höheren Dienst (E13/E14 bzw. A13h/A14) für die Leitung eines Softwareentwicklungs-Sachgebiets im öD. Ihre Erfahrung aus Promotion und Geschäftsführung passt hervorragend zu den geforderten Kompetenzen."
+    },
+    {
+      "jobId": "interamt:1465719",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1465746",
@@ -1914,6 +3405,41 @@
       "begruendung": "Das Event richtet sich explizit nur an Bewerber für den mittleren und gehobenen Dienst (max. E12/A13g), während Stellen für den höheren Dienst (ab E13) ausdrücklich ausgeschlossen sind. Zudem ist der Einsatzort Köln ohne Homeoffice-Option viel zu weit von Ihrer Wunschregion entfernt."
     },
     {
+      "jobId": "interamt:1465777",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465781",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 27.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465789",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 01.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465815",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 27.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465827",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 20.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1465898",
       "status": "archiviert",
       "vonKi": true,
@@ -1930,6 +3456,20 @@
       "begruendung": "Inhaltlich und finanziell (A13-A15) sehr attraktiv, jedoch beträgt der Homeoffice-Anteil maximal 60 %, was bei Dienstort Frankfurt am Main regelmäßiges langes Pendeln aus dem Raum Osnabrück/Vechta erfordern würde."
     },
     {
+      "jobId": "interamt:1465972",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 09.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465983",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1466037",
       "status": "archiviert",
       "vonKi": true,
@@ -1944,6 +3484,41 @@
         "gesamt": 2
       },
       "begruendung": "Die Stelle ist mit Entgeltgruppe E11 und der Anforderung eines Bachelorabschlusses deutlich unter dem Qualifikationsniveau einer Promotion/E13+ angesiedelt. Zudem liegt der Dienstort Bonn weit außerhalb des Suchradiusses und bietet keine Garantie für die geforderte hohe Remote-Quote."
+    },
+    {
+      "jobId": "interamt:1466055",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 28.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466100",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 28.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466117",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 04.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466120",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 28.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466138",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 07.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1466153",
@@ -1978,6 +3553,13 @@
       "begruendung": "Junior-Position mit E11 und nur tageweisem Homeoffice in Berlin; für ein Profil mit Promotion und Leitungserfahrung deutlich unterqualifiziert."
     },
     {
+      "jobId": "interamt:1466193",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 06.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1466205",
       "status": "archiviert",
       "vonKi": true,
@@ -1992,6 +3574,69 @@
         "gesamt": 4
       },
       "begruendung": "Zwar inhaltlich passend als Tech Lead, jedoch mit TVöD E12 für eine promovierte Informatik-Fachkraft unter Tarifniveau eingestuft und an Berlin gebunden."
+    },
+    {
+      "jobId": "interamt:1466206",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 20.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466213",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466249",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 21.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466272",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 07.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466317",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 01.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466329",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 24.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466384",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 28.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466400",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 21.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466408",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 04.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1466415",
@@ -2010,6 +3655,13 @@
       "begruendung": "Der Dienstort Wiesbaden liegt weit außerhalb des gewünschten Radius und ist für regelmäßiges Pendeln ungeeignet. Da lediglich hybrides Arbeiten (kein volles Remote) angeboten wird und Präsenzphasen vor Ort anfallen, passt die Stelle örtlich nicht."
     },
     {
+      "jobId": "interamt:1466444",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 24.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1466447",
       "status": "archiviert",
       "vonKi": true,
@@ -2026,10 +3678,31 @@
       "begruendung": "Gehalt (E14/A13h-A14) und Verbeamtungsmöglichkeit sind zwar hervorragend, der Dienstort Wiesbaden liegt jedoch weit außerhalb des Suchraums (Osnabrück/Vechta/Cloppenburg). Da es sich um eine operative Sachgebietsleitung mit Teamführung und Rufbereitschaft handelt, ist ein überwiegendes Homeoffice ohne erhebliche Präsenz vor Ort unrealistisch."
     },
     {
-      "jobId": "interamt:1466546",
-      "status": "interessant",
+      "jobId": "interamt:1466454",
+      "status": "archiviert",
       "vonKi": true,
-      "updatedAt": "2026-08-20T20:43:24.959Z",
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 28.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466464",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 12.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466473",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466546",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
       "punkte": 8,
       "punkteDetails": {
         "entfernung": 8,
@@ -2039,7 +3712,21 @@
         "verbeamtung": 0,
         "gesamt": 8
       },
-      "begruendung": "Gute Übereinstimmung mit Forschungs-/Projekterfahrung, E13-Vergütung und überwiegender Erbringung der Arbeitsleistung im Homeoffice."
+      "begruendung": "Bewerbungsfrist am 21.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage).\n\nFrühere KI-Einschätzung: Gute Übereinstimmung mit Forschungs-/Projekterfahrung, E13-Vergütung und überwiegender Erbringung der Arbeitsleistung im Homeoffice."
+    },
+    {
+      "jobId": "interamt:1466595",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 16.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466602",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 05.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1466605",
@@ -2058,6 +3745,97 @@
       "begruendung": "Gehalt und Verbeamtung (E13 / A13–A15) stimmen, aber mit max. 60 % Homeoffice ist der Dienstort Düsseldorf für ein regelmäßiges Pendeln ab Raum Osnabrück/Vechta deutlich zu weit entfernt (>40 min)."
     },
     {
+      "jobId": "interamt:1466640",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 24.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466658",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 28.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466671",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466704",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466883",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 16.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466933",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.591Z",
+      "begruendung": "Bewerbungsfrist am 05.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466945",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 29.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466949",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 22.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467010",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 05.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467038",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 28.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467060",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 24.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467067",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 14.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467091",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 09.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1467164",
       "status": "archiviert",
       "vonKi": true,
@@ -2072,6 +3850,41 @@
         "gesamt": 2
       },
       "begruendung": "Die Stelle ist mit E10 / A10 (gehobener Dienst / Bachelor-Niveau) für ein Profil mit Promotion und Master (Ziel ab E13) deutlich zu niedrig eingestuft. Zudem liegt der Dienstort Bonn weit außerhalb des 40-Minuten-Radius und bietet lediglich hybrides Arbeiten statt voller Remote-Option."
+    },
+    {
+      "jobId": "interamt:1467185",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467194",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467197",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 09.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467201",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 06.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467204",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1467210",
@@ -2090,6 +3903,13 @@
       "begruendung": "Die Stelle richtet sich an Bachelor-Absolventen im gehobenen Dienst (A9–A11) und liegt damit deutlich unter Ihrer Qualifikation (Promotion/Master, Ziel ab E13). Zudem befindet sich der Dienstort in Köln, was außerhalb des Pendelbereichs liegt."
     },
     {
+      "jobId": "interamt:1467213",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 06.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1467224",
       "status": "archiviert",
       "vonKi": true,
@@ -2104,6 +3924,27 @@
         "gesamt": 1
       },
       "begruendung": "Die Stelle richtet sich an Absolventen des speziellen Studiengangs 'Digital Administration and Cyber Security' im gehobenen Dienst (A9g–A11) und ist damit für eine Promotion/Master (E13+) deutlich unterqualifiziert. Zudem liegt der Dienstort in Berlin ohne vollwertige Remote-Option."
+    },
+    {
+      "jobId": "interamt:1467280",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467291",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 09.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467303",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 16.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1467314",
@@ -2138,6 +3979,13 @@
       "begruendung": "Die Stelle ist mit Entgeltgruppe E 8 / A 8 (mittlerer Dienst für Ausbildungsberufe) für einen promovierten Informatiker massiv unterqualifiziert. Zudem befindet sich der Dienstort vor Ort in Berlin, was weit außerhalb des gewünschten Pendelbereichs liegt."
     },
     {
+      "jobId": "interamt:1467331",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 27.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1467339",
       "status": "archiviert",
       "vonKi": true,
@@ -2154,6 +4002,20 @@
       "begruendung": "Eingruppierung in E11 und Dienstort Frankfurt am Main mit nur tageweisem mobilem Arbeiten passen nicht zu den Anforderungen."
     },
     {
+      "jobId": "interamt:1467348",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467372",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 09.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1467375",
       "status": "archiviert",
       "vonKi": true,
@@ -2168,6 +4030,125 @@
         "gesamt": 2
       },
       "begruendung": "Der Dienstort Erlangen liegt weit außerhalb des Zielgebiets und bietet nur hybrides Arbeiten ohne Garantie auf vollen Remote-Anteil. Zudem ist die Stelle mit E 11 / A 11 (Anforderung Bachelor/FH) unter dem angestrebten Niveau (ab E 13) für jemanden mit M.Sc. und Promotion dotiert."
+    },
+    {
+      "jobId": "interamt:1467430",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467449",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 10.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467490",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467587",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 07.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467600",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467605",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467663",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467706",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467712",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 22.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467804",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 09.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467820",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 29.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467821",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 10.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467854",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467888",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 07.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467893",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 07.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467899",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 09.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467958",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 10.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1467994",
@@ -2202,6 +4183,76 @@
       "begruendung": "E11-Stelle für MS SQL-Administration in Leipzig/Düsseldorf; unterhalb des Qualifikations- und Gehaltsprofils."
     },
     {
+      "jobId": "interamt:1468104",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1468117",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 07.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1468147",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 09.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1468198",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1468288",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 11.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1468402",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 29.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1468428",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 09.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1468432",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 09.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1468471",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 09.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1468491",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:862104",
       "status": "archiviert",
       "vonKi": true,
@@ -2216,6 +4267,55 @@
         "gesamt": 1
       },
       "begruendung": "Die Stelle im Amt Achterwehr (Schleswig-Holstein) liegt weit außerhalb der Wunschregion und bietet nur zeitanteiliges Homeoffice. Zudem ist die Vergütung mit E 9a für eine promovierte Informatik-Fachkraft deutlich unterqualifiziert (gesucht wird ab E13)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD09CBC4D1EA44B8DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD09CBC55332EDECDC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD198F92A8C51BB0DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 18.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD199AD33D8D8806DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 30.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD19AFC295E4F2E4DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 17.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD19AFE725BC07D4DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 17.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD19AFF4C4C61DE2DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 17.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "itzbund:1000004333801FD19BC5C34579234DC6",
@@ -2234,6 +4334,69 @@
       "begruendung": "Zwar ist die Stelle mit E14 TVöD unbefristet und fachlich passend im IT-Strategiebereich angesiedelt, jedoch liegt der Dienstort Bonn weit außerhalb des 40-Minuten-Pendelbereichs. Zudem wird kein vollständiges Remote-Modell zugesichert und die Stelle erfordert häufige, mehrtägige Dienstreisen."
     },
     {
+      "jobId": "itzbund:1000004333801FD19BE017E1717F2DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD19C8D0158A8720DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD19C8D36CE780E6DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD19CF2268D3C916DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 30.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD19CF3F3E0CF418DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD19D903C8A02F80DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 28.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD19DA3A8A9FB780DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD19DAB9B821264CDC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 29.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD19DBEB7AC8B034DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 30.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "itzbund:1000004333801FD19DC1DDB0ADB94DC6",
       "status": "archiviert",
       "vonKi": true,
@@ -2248,6 +4411,62 @@
         "gesamt": 0
       },
       "begruendung": "Die Stelle richtet sich zwingend an Volljuristen mit 1. und 2. juristischem Staatsexamen, womit die formalen Einstellungsvoraussetzungen mit einem Informatik-Hintergrund nicht erfüllt werden. Zudem liegt der Dienstort Bonn deutlich außerhalb des gewünschten Pendelbereichs."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD19DC344F210BA4DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 30.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD19EA1C37047D46DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD19EA312EEDA228DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 07.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD19EA6BD30A747ADC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 04.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD19EC0EC4076B30DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 04.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD19EEC881AB1978DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 06.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD19EF38F922C24CDC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 30.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD19F859879AA782DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:01:07.592Z",
+      "begruendung": "Bewerbungsfrist am 23.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     }
   ]
 }
