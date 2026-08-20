@@ -257,6 +257,13 @@ Details:
    (z.B. Accenture), innerhalb eines Arbeitgebers die früheste
    Bewerbungsfrist zuerst; Jobs ohne jede Gehaltsangabe kommen ganz nach
    hinten.
+   **Angebote mit abgelaufener Bewerbungsfrist** (Frist liegt vor dem
+   heutigen Tag) gehen gar nicht erst an die KI: sie wandern zu Beginn
+   jedes Laufs direkt nach **🗄 Archiviert** — mit der Begründung
+   „Bewerbungsfrist am TT.MM.JJJJ abgelaufen“; eine frühere KI-Einschätzung
+   bleibt darunter erhalten. Betroffen sind nur Jobs in **📥 Noch
+   abzuarbeiten** und **⭐ Interessant** — was du schon auf **📨 Beworben**
+   oder **❌ Bewerbung abgelehnt** gesetzt hast, bleibt unangetastet.
 3. Wegen des Rate-Limits im Gratis-Kontingent (~10 Anfragen/Minute) pausiert
    der Agent zwischen zwei Anfragen — bei vielen hundert Angeboten läuft ein
    kompletter Erstlauf also eine ganze Weile; einfach laufen lassen. Standard
@@ -338,7 +345,10 @@ GitHub-Workflow "KI-Agent" (workflow_dispatch)
 
 ### Einen Lauf starten
 
-Actions → **KI-Agent** → "Run workflow". Vier optionale Eingaben:
+Actions → **KI-Agent** → "Run workflow". Jeder Lauf übernimmt zuerst deine
+Browser-Änderungen, archiviert dann alle Angebote mit **abgelaufener Frist**
+ohne KI-Anfrage (siehe oben) und triagiert erst danach die verbliebenen
+offenen Jobs. Vier optionale Eingaben:
 
 - **aenderungen** — das JSON von der Pages-Seite (siehe unten); leer
   lassen, wenn es keine gibt.

@@ -1,6 +1,7 @@
 import { loadJobs } from "../storage.js";
 import { batchSizeText, planBatches, requireProfile, sortTriageQueue, triageJobs } from "./agent.js";
 import { ensureEnv } from "./env.js";
+import { archivLogText, archiviereAbgelaufene, istFristAbgelaufen } from "./expiry.js";
 import { GeminiError, usageSummaryText } from "./gemini.js";
 import { publishDocs } from "./publish.js";
 import { getEntry, hasChat, loadBoard, setStatus } from "./store.js";
@@ -14,13 +15,15 @@ import { BOARD_STATUSES, type BoardStatus } from "./types.js";
  * 1. Wendet Änderungen aus dem Browser an (Umgebungsvariable AENDERUNGEN —
  *    das JSON, das die GitHub-Pages-Seite über "Änderungen kopieren" liefert):
  *    [{"jobId":"bka:T-2026-54","status":"beworben"}, …] → vonKi=false
- * 2. Triagiert unbearbeitete Jobs mit Gemini, bis --limit Jobs bearbeitet
+ * 2. Archiviert Angebote mit abgelaufener Bewerbungsfrist direkt (ohne
+ *    Gemini-Anfrage) — dafür lohnt sich kein Kontingent mehr.
+ * 3. Triagiert unbearbeitete Jobs mit Gemini, bis --limit Jobs bearbeitet
  *    sind ODER --minuten Zeit vergangen ist — je nachdem, was zuerst greift
  *    (0 = jeweils unbeschränkt). Bereits Geschaffte bleibt bei Abbruch
  *    erhalten; der nächste Lauf macht dort weiter. Mit AGENT_BATCH_SIZE
  *    gehen mehrere Angebote gebündelt in EINE Anfrage (-1 = dynamisch
  *    auffüllen) — das Tageslimit zählt Anfragen, nicht Angebote.
- * 3. Schreibt die JSON-Daten für die GitHub-Pages-Seite nach docs/.
+ * 4. Schreibt die JSON-Daten für die GitHub-Pages-Seite nach docs/.
  *
  * Der Workflow committet danach data/agent/ und docs/ zurück ins Repo.
  */
@@ -86,6 +89,10 @@ async function main(): Promise<void> {
     applyChanges(changesRaw, new Set(jobs.map((job) => job.id)));
   }
 
+  // Abgelaufene Fristen zuerst wegräumen — dann landen sie weder in der
+  // Triage-Warteschlange noch kosten sie Gemini-Anfragen
+  console.log(archivLogText(archiviereAbgelaufene(jobs)));
+
   const { profile, error } = requireProfile();
   if (!profile) {
     // Ohne Profil trotzdem Änderungen übernehmen + Pages-Daten schreiben
@@ -102,6 +109,7 @@ async function main(): Promise<void> {
   const open = sortTriageQueue(
     jobs.filter((job) => {
       const entry = getEntry(board, job.id);
+      if (istFristAbgelaufen(job)) return false; // eben archiviert
       return (!entry || entry.status === "todo") && !hasChat(job.id);
     }),
   );

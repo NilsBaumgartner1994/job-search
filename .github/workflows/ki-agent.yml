@@ -1,5 +1,6 @@
 # Lässt den KI-Agenten (Gemini) in GitHub Actions laufen:
 # - übernimmt zuerst deine im Browser (GitHub-Pages-Seite) gemachten Änderungen
+# - archiviert Angebote mit abgelaufener Bewerbungsfrist direkt (ohne KI-Anfrage)
 # - triagiert dann bis zu <limit> unbearbeitete Jobs, auf Wunsch mehrere
 #   Angebote je Anfrage (Sammel-Triage, siehe <buendel> / AGENT_BATCH_SIZE)
 # - committet Board, Chat-Verläufe und die Pages-Daten (docs/) zurück ins Repo
