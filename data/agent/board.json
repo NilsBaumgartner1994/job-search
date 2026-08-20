@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-16T09:48:03.835Z",
+  "updatedAt": "2026-08-20T20:43:24.974Z",
   "entries": [
     {
       "jobId": "accenture:13818109",
@@ -147,9 +147,9 @@
     },
     {
       "jobId": "accenture:R00277012",
-      "status": "interessant",
-      "vonKi": true,
-      "updatedAt": "2026-08-13T09:14:07.919Z",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T20:20:13.111Z",
       "punkte": 7,
       "begruendung": "Die Stelle als IT-Consultant für die öffentliche Verwaltung passt inhaltlich sehr gut zu Ihrem Informatik-Hintergrund und vermittelt an der Schnittstelle von IT-Konzeption und Softwareentwicklung. Dank des flexiblen, mobilen Arbeitsmodells ist die Position auch fernab der genannten Standorte denkbar, sofern Sie mit gelegentlichen Dienstreisen zum Kunden einverstanden sind."
     },
@@ -163,9 +163,9 @@
     },
     {
       "jobId": "accenture:R00277027",
-      "status": "interessant",
-      "vonKi": true,
-      "updatedAt": "2026-08-13T09:15:07.499Z",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T20:20:13.103Z",
       "punkte": 7,
       "begruendung": "Die Position als IT-Projektleiter im öffentlichen Sektor passt sehr gut zu deiner Promotion und Führungserfahrung aus der Unternehmensleitung. Accenture bietet Homeoffice-Optionen, allerdings liegen die genannten Bürostandorte außerhalb deiner 40-Minuten-Einzugsregion, weshalb der reale Präsenz- und Reiseanteil geprüft werden sollte."
     },
@@ -203,9 +203,9 @@
     },
     {
       "jobId": "bka:T-2026-39",
-      "status": "interessant",
-      "vonKi": true,
-      "updatedAt": "2026-08-16T09:38:53.793Z",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T20:20:13.111Z",
       "punkte": 6,
       "punkteDetails": {
         "entfernung": 3,
@@ -330,6 +330,54 @@
       "begruendung": "Es handelt sich um eine befristete Werkstudentenstelle (EG 9a) in Teilzeit für aktuell immatrikulierte Studierende. Dies passt überhaupt nicht zu Ihrem Profil als promovierter Informatiker auf der Suche nach Vollzeit-/Führungspositionen ab E13."
     },
     {
+      "jobId": "bnd:AS-2026-052",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:38:29.461Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 0,
+        "gehalt": 1,
+        "arbeitszeit": 6,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Objektschutzstelle im mittleren Dienst (E5/E6) in Bad Aibling mit Schichtdienst. Sie weist keinerlei Bezug zur Informatik auf und liegt weit außerhalb des Wunschgebiets."
+    },
+    {
+      "jobId": "bnd:AS-2026-056",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:38:29.462Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 0,
+        "gehalt": 1,
+        "arbeitszeit": 6,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Wach- und Objektschutztätigkeit im Landkreis Traunstein (E5/E6). Fachlich, gehaltlich und örtlich völlig irrelevant für das gesuchte Profil."
+    },
+    {
+      "jobId": "bnd:AS-2026-062",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:42:52.287Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 3,
+        "gehalt": 8,
+        "arbeitszeit": 9,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "Zwingende Voraussetzung ist die Befähigung zum Richteramt (zwei juristische Staatsexamina), weshalb eine Bewerbung als Informatiker formal ausgeschlossen ist."
+    },
+    {
       "jobId": "bnd:AS-2026-064",
       "status": "archiviert",
       "vonKi": true,
@@ -378,6 +426,486 @@
       "begruendung": "Der Dienstort Berlin ist weit außerhalb des Suchraums und bei einer Sicherheitsbehörde wie dem BND ist nicht von nennenswerten Remote-Möglichkeiten auszugehen. Zudem liegt die Stelle mit Entgeltgruppe 10 (gehobener Dienst) deutlich unter dem gewünschten Niveau (ab E13) und fokussiert sich stark auf SAP-Applikationsbetreuung."
     },
     {
+      "jobId": "bnd:AS-2026-072",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:24:03.883Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 2,
+        "gehalt": 9,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 3
+      },
+      "begruendung": "Fachlich und bezüglich der Eingruppierung (E14) sehr passend für einen promovierten Informatiker. Allerdings ist der Dienstort Berlin ohne erkennbare überwiegende Homeoffice-Option viel zu weit von Osnabrück/Vechta entfernt."
+    },
+    {
+      "jobId": "bnd:AS-2026-073",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:24:03.885Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 2,
+        "gehalt": 9,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 3
+      },
+      "begruendung": "Das Anforderungsprofil und die Vergütung (E14) stimmen hervorragend mit der akademischen Qualifikation überein. Der ausschließliche Arbeitsort Berlin ohne Remote-Möglichkeit überschreitet jedoch den Pendelradius massiv."
+    },
+    {
+      "jobId": "bnd:AS-2026-077",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:24:03.885Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 1,
+        "gehalt": 1,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "Die Stelle ist im mittleren Dienst (E8) für Personen mit Ausbildungsabschluss angesiedelt und liegt gehaltlich weit unter den Vorstellungen. Zudem ist der Standort Gablingen (Bayern) unpassend."
+    },
+    {
+      "jobId": "bnd:AS-2026-078",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:38:29.460Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 0,
+        "gehalt": 1,
+        "arbeitszeit": 6,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Stelle für Objektschutz/Wachdienst (E5/E6) im Schichtdienst in Berlin/Pullach. Fachlich und vom Anforderungsniveau komplett unpassend."
+    },
+    {
+      "jobId": "bnd:AS-2026-079",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:37:17.838Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 0,
+        "gehalt": 0,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 0
+      },
+      "begruendung": "Es handelt sich um eine Ausbildung für den mittleren Dienst (A6) in Berlin. Für einen promovierten Informatiker ist dieses Angebot inhaltlich und vom Niveau her völlig unpassend."
+    },
+    {
+      "jobId": "bnd:AS-2026-080",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:37:17.842Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 0,
+        "gehalt": 2,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "Hierbei handelt es sich um eine 18-monatige Anwärterausbildung für den gehobenen Dienst (A10) an wechselnden Standorten (München, Flensburg). Das Ausbildungsniveau und die Bezahlung passen nicht zu einer Promotion im höheren Dienst."
+    },
+    {
+      "jobId": "bnd:AS-2026-082",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:24:03.886Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 1,
+        "gehalt": 1,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "Reine Assistenzstelle im mittleren Dienst (E7) zur LMS-Administration und Inventarisierung, für die eine Promotion weit überqualifiziert ist. Zudem liegt der Arbeitsort in Berlin."
+    },
+    {
+      "jobId": "bnd:AS-2026-084",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:24:03.887Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 1,
+        "gehalt": 1,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "Position im mittleren Dienst (E8) für Personen mit IT-Berufsausbildung. Inhaltlich und finanziell weit unter dem Profil eines promovierten Informatikers, zudem Dienstort Berlin."
+    },
+    {
+      "jobId": "bnd:AS-2026-086",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:37:17.842Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 2,
+        "gehalt": 4,
+        "arbeitszeit": 5,
+        "verbeamtung": 10,
+        "gesamt": 2
+      },
+      "begruendung": "Die Stelle im gehobenen Dienst (E10/E11) erfordert Schichtdienst im Raum Bonn und richtet sich an Bachelor-Absolventen für reine Instandhaltung/Systemadministration. Für ein Profil mit M.Sc., Promotion und Führungserfahrung ist die Position unterdotiert."
+    },
+    {
+      "jobId": "bnd:AS-2026-091",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:38:29.455Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 2,
+        "gehalt": 4,
+        "arbeitszeit": 9,
+        "verbeamtung": 8,
+        "gesamt": 3
+      },
+      "begruendung": "Der Dienstort Berlin liegt weit außerhalb des Pendelbereichs und bei Sicherheitsbehörden gibt es in der Regel kaum Homeoffice-Möglichkeiten. Zudem liegt die Stelle mit E10 (gehobener Dienst) deutlich unter dem Qualifikations- und Gehaltsniveau eines promovierten Informatikers (ab E13)."
+    },
+    {
+      "jobId": "bnd:AS-2026-092",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:24:03.888Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 0,
+        "gehalt": 2,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 0
+      },
+      "begruendung": "Völlig fachfremde Ausschreibung für staatlich geprüfte Techniker der Luftfahrzeugtechnik/Mechanik. Passt weder zum Informatik-Profil noch zum gesuchten Standort."
+    },
+    {
+      "jobId": "bnd:AS-2026-095",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:38:29.458Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 0,
+        "gehalt": 0,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Dies ist ein Ausbildungsplatz im Sicherheitsgewerbe in Berlin. Das Angebot ist für ein Profil mit Promotion und mehrjähriger Führungserfahrung völlig unpassend."
+    },
+    {
+      "jobId": "bnd:AS-2026-096",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:38:29.457Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 0,
+        "gehalt": 1,
+        "arbeitszeit": 8,
+        "verbeamtung": 4,
+        "gesamt": 0
+      },
+      "begruendung": "Es handelt sich um eine fachfremde Stelle im Bereich Fotografie im mittleren Dienst (E8). Weder Qualifikation noch Standort oder Vergütung passen zum Profil."
+    },
+    {
+      "jobId": "bnd:AS-2026-097",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:37:17.843Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 0,
+        "gehalt": 1,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 0
+      },
+      "begruendung": "Es handelt sich um eine Ausschreibung für ein duales Bachelor-Erststudium zum technischen Regierungsinspektor (A10). Als promovierter Master-Absolvent der Informatik ist dies irrelevant."
+    },
+    {
+      "jobId": "bnd:AS-2026-098",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:37:17.844Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 0,
+        "gehalt": 1,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 0
+      },
+      "begruendung": "Das Angebot richtet sich an Studieninteressierte für ein duales Bachelorstudium im Bereich Cyber-Security / gehobener Dienst. Für einen promovierten Informatiker kommt dieses Ausbildungsformat nicht in Betracht."
+    },
+    {
+      "jobId": "bnd:AS-2026-099",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:24:03.889Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 1,
+        "gehalt": 1,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "Stelle für den mittleren Dienst (E8) am Standort Pullach bei München. Finanziell und vom Anforderungsniveau unpassend für einen Promovierten, zudem falsche Region."
+    },
+    {
+      "jobId": "bnd:AS-2026-100",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:38:29.463Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 0,
+        "gehalt": 1,
+        "arbeitszeit": 6,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Objektschutztätigkeit im Schichtdienst (E5/E6) in Schöningen. Das Aufgabenfeld hat keinen IT-Bezug und ist für promovierte Informatiker ungeeignet."
+    },
+    {
+      "jobId": "bnd:AS-2026-101",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:24:03.890Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 1,
+        "gehalt": 0,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "Einfache technische Unterstützungstätigkeit (E6) im mittleren Dienst für kaufmännische/Verwaltungsausbildungen. Liegt weit unter dem Qualifikationsniveau und in Berlin."
+    },
+    {
+      "jobId": "bnd:AS-2026-103",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:38:29.465Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 0,
+        "gehalt": 1,
+        "arbeitszeit": 6,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Ausschreibung für Sicherheits- und Wachdienst in Rheinhausen (E5/E6). Es besteht keinerlei fachliche Passung zum gesuchten Anforderungsprofil."
+    },
+    {
+      "jobId": "bnd:AS-2026-104",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:38:29.466Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 0,
+        "gehalt": 1,
+        "arbeitszeit": 6,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Objektschutzstelle im Raum Starnberg im Schichtdienst (E5/E6). Die Position entspricht in keiner Weise der akademischen IT-Qualifikation oder den örtlichen Vorgaben."
+    },
+    {
+      "jobId": "bnd:AS-2026-105",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:42:52.285Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 0,
+        "gehalt": 1,
+        "arbeitszeit": 9,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Es handelt sich um eine Stelle im Objektschutz des mittleren Dienstes (E5/E6), die fachlich und qualifikatorisch in keiner Weise zu einer Promotion in Informatik passt."
+    },
+    {
+      "jobId": "bnd:AS-2026-106",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:42:52.286Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 0,
+        "gehalt": 1,
+        "arbeitszeit": 9,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Die Ausschreibung im Objektschutz des mittleren Dienstes (E5/E6) liegt fachlich und gehaltlich weit unter Ihrem Qualifikationsprofil."
+    },
+    {
+      "jobId": "bnd:AS-2026-110",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:37:17.839Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 1,
+        "gehalt": 9,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "Zwingende Voraussetzung ist ein Masterabschluss in Versorgungs- bzw. Gebäudetechnik sowie einschlägige Berufserfahrung in Bauprojekten. Zudem befindet sich der Arbeitsort in Pullach bei München."
+    },
+    {
+      "jobId": "bnd:AS-2026-111",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:37:17.838Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 1,
+        "gehalt": 9,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 3
+      },
+      "begruendung": "Die Stelle ist mit E14/A14 attraktiv dotiert, verlangt jedoch einen Abschluss in Wirtschaftswissenschaften/Wirtschaftsinformatik mit Fokus auf Controlling. Zudem ist der Dienstort Berlin ohne ausgewiesene Homeoffice-Option für den gesuchten Raum nicht vereinbar."
+    },
+    {
+      "jobId": "bnd:AS-2026-112",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:37:17.840Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 1,
+        "gehalt": 9,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "Die Stelle erfordert zwingend ein Studium der Elektrotechnik/Nachrichtentechnik mit mehrjähriger Ingenieurserfahrung im Bauprojektmanagement. Zudem liegt der Dienstort in Pullach."
+    },
+    {
+      "jobId": "bnd:AS-2026-113",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:37:17.841Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 1,
+        "gehalt": 9,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "Gefordert wird ein Masterabschluss in Bauingenieurwesen oder Architektur für Hochbauprojekte in Pullach. Die Stelle ist fachfremd und räumlich unpassend."
+    },
+    {
+      "jobId": "bwi:63245",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:42:52.292Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 4,
+        "gehalt": 0,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Es handelt sich um ein duales Bachelorstudium für Abiturienten und ist für Ihr Profil mit Master und Promotion nicht relevant."
+    },
+    {
+      "jobId": "bwi:63257",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:42:52.293Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 4,
+        "gehalt": 0,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Es handelt sich um ein Ausbildungsangebot (duales Bachelorstudium), das weit unter Ihrem Bildungsstand liegt."
+    },
+    {
+      "jobId": "bwi:63285",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:42:52.294Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 4,
+        "gehalt": 2,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Ausschreibung für ein duales Masterstudium mit Ausbildungsgehalt; als bereits promovierter Informatiker sind Sie hierfür stark überqualifiziert."
+    },
+    {
+      "jobId": "bwi:63293",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:42:52.295Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 4,
+        "gehalt": 2,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Duales Master-Studienprogramm mit Ausbildungsvergütung, das für Ihr Profil nach abgeschlossener Promotion ungeeignet ist."
+    },
+    {
       "jobId": "interamt:1193238",
       "status": "archiviert",
       "vonKi": true,
@@ -394,6 +922,38 @@
       "begruendung": "Das Angebot richtet sich an Forstwirte im handwerklichen Außendienst (E 5 TVöD) in Schleswig-Holstein. Es passt weder fachlich zum Informatik-Profil noch gehaltlich oder bezüglich des Einsatzorts."
     },
     {
+      "jobId": "interamt:1240129",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.973Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 5,
+        "gehalt": 3,
+        "arbeitszeit": 10,
+        "verbeamtung": 6,
+        "gesamt": 3
+      },
+      "begruendung": "Gehobener Dienst (A10-A12) in München; unterhalb der angestrebten Besoldungshöhe (höherer Dienst/E13+) und zu weit entfernt."
+    },
+    {
+      "jobId": "interamt:1363114",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.974Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 5,
+        "gehalt": 3,
+        "arbeitszeit": 10,
+        "verbeamtung": 6,
+        "gesamt": 3
+      },
+      "begruendung": "Sachbearbeitung im gehobenen Dienst (A10-A12) am DPMA in München entspricht nicht den Kriterien für eine promovierte Führungskraft/Experten ab E13."
+    },
+    {
       "jobId": "interamt:1413536",
       "status": "archiviert",
       "vonKi": true,
@@ -408,6 +968,22 @@
         "gesamt": 0
       },
       "begruendung": "Die Stelle richtet sich an Meister/Fachkräfte der Abwassertechnik und entspricht weder fachlich noch gehaltlich (TV-V 8 statt E13+) dem Profil eines promovierten Informatikers. Zudem liegt der Schichtarbeitsplatz in Hetlingen weit außerhalb des gewünschten Einzugsgebiets und erlaubt kein Homeoffice."
+    },
+    {
+      "jobId": "interamt:1431369",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.961Z",
+      "punkte": 8,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 7,
+        "gehalt": 10,
+        "arbeitszeit": 10,
+        "verbeamtung": 0,
+        "gesamt": 8
+      },
+      "begruendung": "Hochdotierte Führungsposition (E15) für rund 45 Mitarbeitende, die perfekt zur Kombination aus Promotion im Software Engineering und Geschäftsführungserfahrung passt. Die Vereinbarkeit von Dienstort Berlin mit Homeoffice-Optionen sollte im Detail geprüft werden."
     },
     {
       "jobId": "interamt:1444071",
@@ -442,6 +1018,54 @@
       "begruendung": "Die Stelle richtet sich an Forstwirte für praktische Waldarbeiten und passt fachlich überhaupt nicht zu Ihrem Informatik-Profil. Zudem liegt das Gehalt (E 5) weit unter Ihren Vorstellungen und der Arbeitsort in Brandenburg bietet keine Remote-Möglichkeit."
     },
     {
+      "jobId": "interamt:1449493",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.960Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 4,
+        "arbeitszeit": 10,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Eingruppierung in E12 liegt unter der Zielkategorie E13+; zudem liegt der Schwerpunkt auf COBOL-Altsystemen in Berlin."
+    },
+    {
+      "jobId": "interamt:1450092",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:42:52.297Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 5,
+        "arbeitszeit": 9,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Die Eingruppierung nach E11 TVöD entspricht nicht Ihren Gehaltserwartungen ab E13, und der Standort Mainz ist ohne vollständigen Remote-Anteil zu weit entfernt."
+    },
+    {
+      "jobId": "interamt:1450683",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:42:52.299Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 5,
+        "arbeitszeit": 9,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Die Stelle ist lediglich nach E11 TVöD vergütet und am Standort Mainz angesiedelt, was weder gehaltlich noch örtlich passt."
+    },
+    {
       "jobId": "interamt:1453121",
       "status": "archiviert",
       "vonKi": true,
@@ -458,6 +1082,22 @@
       "begruendung": "Der Dienstort Berlin liegt weit außerhalb der gewünschten Region (Raum Osnabrück/Vechta/Cloppenburg) und die Stelle erfordert als Berliner Landesbehörde sowie für Vor-Ort-Kontrollen regelmäßige Präsenz. Trotz sehr guter Gehaltseinstufung (TV-L E 14) und passendem fachlichen Profil ist das Angebot wegen des reinen Hybrid-Modells ohne vollen Remote-Anteil ungeeignet."
     },
     {
+      "jobId": "interamt:1456723",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:24:03.891Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 0,
+        "gehalt": 1,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "Dublette zu Angebot 5 (E8, mittlerer Dienst) mit expliziter Ausweisung als reine Vor-Ort-Tätigkeit in Berlin. Nicht passend zu Gehaltserwartung und Standort."
+    },
+    {
       "jobId": "interamt:1456794",
       "status": "archiviert",
       "vonKi": true,
@@ -472,6 +1112,22 @@
         "gesamt": 1
       },
       "begruendung": "Der Dienstort Wiesbaden liegt weit außerhalb des Suchraums und erfordert ca. 80 % Präsenz vor Ort. Zudem richtet sich die Stelle an Bachelor-Absolventen (E 12 / A 12) und liegt damit unter dem gesuchten Niveau (ab E 13)."
+    },
+    {
+      "jobId": "interamt:1457963",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.958Z",
+      "punkte": 8,
+      "punkteDetails": {
+        "entfernung": 8,
+        "homeoffice": 9,
+        "gehalt": 8,
+        "arbeitszeit": 10,
+        "verbeamtung": 0,
+        "gesamt": 8
+      },
+      "begruendung": "Passende Dotierung (E13) im IT-Sicherheitsbereich mit ausdrücklicher Möglichkeit, nach der Einarbeitung überwiegend im Homeoffice zu arbeiten (bundesweit möglich)."
     },
     {
       "jobId": "interamt:1458282",
@@ -506,6 +1162,22 @@
       "begruendung": "Die Stelle ist mit E 11 / A 11 (gehobener Dienst) für Ihr Profil mit Master und Promotion unterwertig dotiert (gesucht ab E 13). Zudem liegt der Dienstort Freital (Sachsen) weit außerhalb Ihrer Wunschregion und erfordert trotz Hybridmodell regelmäßige mehrtägige Dienstreisen."
     },
     {
+      "jobId": "interamt:1460073",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:42:52.300Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 6,
+        "arbeitszeit": 9,
+        "verbeamtung": 8,
+        "gesamt": 3
+      },
+      "begruendung": "Reine Sachbearbeiterstelle im gehobenen Dienst (E12 TV-L bzw. A13g) mit Dienstort Kiel, was bei nur hybridem Modell zu weit entfernt und unter Ihrem Qualifikationsniveau liegt."
+    },
+    {
       "jobId": "interamt:1460315",
       "status": "archiviert",
       "vonKi": true,
@@ -520,6 +1192,22 @@
         "gesamt": 1
       },
       "begruendung": "Die Stelle ist mit der Entgeltgruppe E 6 TV-L für First-Level-Support weit unter Ihrem Qualifikationsniveau (M.Sc. / Promotion, angestrebt ab E 13) angesiedelt. Zudem liegt der Dienstort Berlin außerhalb Ihrer Wunschregion und erfordert Präsenz vor Ort (nur hybrides Modell)."
+    },
+    {
+      "jobId": "interamt:1460473",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:42:52.288Z",
+      "punkte": 8,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 7,
+        "gehalt": 10,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 8
+      },
+      "begruendung": "Sehr attraktive Führungs- und Entwicklungsstelle im höheren Dienst (E14 / A14) mit Schwerpunkt auf DV-Verfahren und Softwareeinsatz. Hannover ist per Hybridmodell gut machbar und Verbeamtung ist möglich."
     },
     {
       "jobId": "interamt:1460565",
@@ -650,6 +1338,38 @@
       "begruendung": "Die Stelle ist im mittleren Dienst angesiedelt (E7 / A7) und umfasst reine Assistenz-/Geschäftszimmeraufgaben, was für ein Promotionsprofil im Bereich Informatik/Software Engineering (gesucht ab E13) massiv unterqualifiziert ist. Zudem liegt der Dienstort Bonn außerhalb des Wunschradius und erfordert trotz Hybridmodell Präsenz."
     },
     {
+      "jobId": "interamt:1461603",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:42:52.289Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 3,
+        "homeoffice": 6,
+        "gehalt": 4,
+        "arbeitszeit": 9,
+        "verbeamtung": 7,
+        "gesamt": 3
+      },
+      "begruendung": "Die Stelle ist im gehobenen Dienst (E10/E11 bzw. A9-A11) eingruppiert und bleibt damit deutlich hinter Ihren Gehalts- und Qualifikationsvorstellungen als promovierter Informatiker zurück."
+    },
+    {
+      "jobId": "interamt:1461634",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:42:52.296Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 3,
+        "gehalt": 5,
+        "arbeitszeit": 9,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "Mit maximal 2 Tagen Homeoffice ist der Standort Saarbrücken viel zu weit von Ihrem Wunschraum entfernt, zudem liegt die Eingruppierung mit E10–E12 unter dem angestrebten Niveau."
+    },
+    {
       "jobId": "interamt:1461708",
       "status": "archiviert",
       "vonKi": true,
@@ -680,6 +1400,22 @@
         "gesamt": 4
       },
       "begruendung": "Inhaltlich und finanziell (E14 mit Fachkräftezulage) passt die Stelle sehr gut, jedoch ist der Dienstort Potsdam bei einem hybriden Modell viel zu weit von der Zielregion (Osnabrück/Vechta/Cloppenburg bzw. max. 40 Min. Pendelzeit) entfernt. Zudem ist bei der BImA eine Neuverbeamtung rechtlich ausgeschlossen."
+    },
+    {
+      "jobId": "interamt:1462061",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.954Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 8,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 4
+      },
+      "begruendung": "Die Referatsleitung in Frankfurt am Main bietet zwar E13/A13h, erfordert jedoch als Leitungsfunktion regelmäßige Vor-Ort-Präsenz weit außerhalb des 40-Minuten-Radius."
     },
     {
       "jobId": "interamt:1462394",
@@ -714,6 +1450,22 @@
       "begruendung": "Das Angebot passt fachlich überhaupt nicht zum Profil, da ein forstwirtschaftliches Studium sowie eine Jägerprüfung vorausgesetzt werden. Zudem liegt der Dienstort in Bayern (weit außerhalb des Suchradius) und die Gehaltsstufe (E11 / A10–A11) liegt unter den gewünschten Qualifikationen (E13+)."
     },
     {
+      "jobId": "interamt:1463077",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.953Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 10,
+        "arbeitszeit": 10,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Trotz hervorragender Dotierung (E15) fachlich unpassend, da die Leitungsposition primär einen Hintergrund in Natur- oder Humanwissenschaften bzw. Epidemiologie/Public Health erfordert."
+    },
+    {
       "jobId": "interamt:1463404",
       "status": "archiviert",
       "vonKi": true,
@@ -746,6 +1498,22 @@
       "begruendung": "Inhaltlich und von den Rahmenbedingungen (E13/A13h, Verbeamtungsmöglichkeit) passt die Stelle gut, jedoch ist der Dienstort Bonn viel zu weit von der Zielregion entfernt. Da die Stelle als 'hybrid' und nicht als Voll-Remote ausgeschrieben ist, übersteigt die nötige Präsenz vor Ort die maximale Pendelzeit von 40 Minuten deutlich."
     },
     {
+      "jobId": "interamt:1463444",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.968Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 4,
+        "homeoffice": 4,
+        "gehalt": 0,
+        "arbeitszeit": 10,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Reine Sekretariats-/Verwaltungstätigkeit (E6), fachlich und gehaltlich gänzlich irrelevant."
+    },
+    {
       "jobId": "interamt:1463450",
       "status": "archiviert",
       "vonKi": true,
@@ -760,6 +1528,38 @@
         "gesamt": 1
       },
       "begruendung": "Der Dienstort München liegt weit außerhalb des Suchradiuses (Osnabrück/Vechta/Cloppenburg) und erfordert bei einem hybriden Arbeitsmodell regelmäßige Präsenz vor Ort. Zudem sind die Aufgaben (u. a. First-Level-Support und IT-Controlling) für ein Profil mit Promotion im Software Engineering deutlich unterqualifiziert."
+    },
+    {
+      "jobId": "interamt:1463545",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.955Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 5,
+        "gehalt": 4,
+        "arbeitszeit": 10,
+        "verbeamtung": 8,
+        "gesamt": 3
+      },
+      "begruendung": "Mit Entgeltgruppe E12/A12 unterhalb der Gehaltswünsche (ab E13) angesiedelt und mit Dienstort Stuttgart/Karlsruhe zu weit entfernt."
+    },
+    {
+      "jobId": "interamt:1463548",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.956Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 5,
+        "gehalt": 4,
+        "arbeitszeit": 10,
+        "verbeamtung": 8,
+        "gesamt": 3
+      },
+      "begruendung": "Die Stelle ist mit E12/A12 für eine promovierte Informatik-Fachkraft unterdotiert und liegt örtlich in Karlsruhe."
     },
     {
       "jobId": "interamt:1463867",
@@ -970,6 +1770,22 @@
       "begruendung": "Inhaltlich und bezahlungstechnisch (TVöD E13 / A14 inkl. Verbeamtungsoption) passt die Stelle sehr gut zu Ihrer Promotion im Bereich Informatik. Allerdings liegen die Standorte Leipzig und Bonn weit außerhalb des gewünschten 40-Minuten-Radius um Osnabrück/Vechta/Cloppenburg. Da lediglich mobiles Arbeiten im hybriden Modell und kein reines Homeoffice angeboten wird, ist die Stelle örtlich ungeeignet."
     },
     {
+      "jobId": "interamt:1464970",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.963Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 3,
+        "homeoffice": 6,
+        "gehalt": 4,
+        "arbeitszeit": 10,
+        "verbeamtung": 0,
+        "gesamt": 4
+      },
+      "begruendung": "Mit Entgeltgruppe E12 unter dem gesuchten Gehaltsniveau und rein operativ im BCM-Bereich in Berlin angesiedelt."
+    },
+    {
       "jobId": "interamt:1465016",
       "status": "archiviert",
       "vonKi": true,
@@ -984,6 +1800,22 @@
         "gesamt": 1
       },
       "begruendung": "Zwingende Voraussetzung für diese B3-Abteilungsleiterstelle ist die Qualifikation als Volljurist (1. und 2. juristisches Staatsexamen) mit einschlägiger Erfahrung im Pflanzenschutzrecht. Zudem liegt der Dienstort Braunschweig außerhalb des gewünschten Pendelbereichs."
+    },
+    {
+      "jobId": "interamt:1465020",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.971Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 3,
+        "arbeitszeit": 10,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Datenbankadministration mit E11 in Düsseldorf entspricht weder der gesuchten Gehaltsstufe noch der örtlichen Präferenz."
     },
     {
       "jobId": "interamt:1465075",
@@ -1018,6 +1850,38 @@
       "begruendung": "Die Stelle richtet sich an Fachkräfte der Landschaftsarchitektur bzw. des Gartenbaus und passt fachlich nicht zum Informatik-Profil. Zudem befindet sich der Dienstort in München als reine Präsenzstelle und die Vergütung (E11) liegt unter der gewünschten Entgeltgruppe E13."
     },
     {
+      "jobId": "interamt:1465245",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:42:52.301Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 9,
+        "arbeitszeit": 9,
+        "verbeamtung": 9,
+        "gesamt": 4
+      },
+      "begruendung": "Zwar ist die Bezahlung (E13 / A13–A15) passend, jedoch erfordern max. 60 % Homeoffice regelmäßige Präsenztage in Frankfurt am Main, was bei über 40 min Fahrzeit nicht vereinbar ist. Fachlich liegt der Fokus primär auf Auslagerungs-Governance/Sourcing."
+    },
+    {
+      "jobId": "interamt:1465707",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:42:52.290Z",
+      "punkte": 8,
+      "punkteDetails": {
+        "entfernung": 4,
+        "homeoffice": 7,
+        "gehalt": 9,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 8
+      },
+      "begruendung": "Passende Führungsposition im höheren Dienst (E13/E14 bzw. A13h/A14) für die Leitung eines Softwareentwicklungs-Sachgebiets im öD. Ihre Erfahrung aus Promotion und Geschäftsführung passt hervorragend zu den geforderten Kompetenzen."
+    },
+    {
       "jobId": "interamt:1465746",
       "status": "archiviert",
       "vonKi": true,
@@ -1050,6 +1914,22 @@
       "begruendung": "Das Event richtet sich explizit nur an Bewerber für den mittleren und gehobenen Dienst (max. E12/A13g), während Stellen für den höheren Dienst (ab E13) ausdrücklich ausgeschlossen sind. Zudem ist der Einsatzort Köln ohne Homeoffice-Option viel zu weit von Ihrer Wunschregion entfernt."
     },
     {
+      "jobId": "interamt:1465898",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.950Z",
+      "punkte": 5,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 9,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 5
+      },
+      "begruendung": "Inhaltlich und finanziell (A13-A15) sehr attraktiv, jedoch beträgt der Homeoffice-Anteil maximal 60 %, was bei Dienstort Frankfurt am Main regelmäßiges langes Pendeln aus dem Raum Osnabrück/Vechta erfordern würde."
+    },
+    {
       "jobId": "interamt:1466037",
       "status": "archiviert",
       "vonKi": true,
@@ -1064,6 +1944,54 @@
         "gesamt": 2
       },
       "begruendung": "Die Stelle ist mit Entgeltgruppe E11 und der Anforderung eines Bachelorabschlusses deutlich unter dem Qualifikationsniveau einer Promotion/E13+ angesiedelt. Zudem liegt der Dienstort Bonn weit außerhalb des Suchradiusses und bietet keine Garantie für die geforderte hohe Remote-Quote."
+    },
+    {
+      "jobId": "interamt:1466153",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.951Z",
+      "punkte": 5,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 9,
+        "arbeitszeit": 10,
+        "verbeamtung": 10,
+        "gesamt": 5
+      },
+      "begruendung": "Spannendes Thema im Bereich DLT/Softwareentwicklung mit A13-A15, aber mit bis zu 60 % Homeoffice ist die Präsenzpflicht am Dienstort Frankfurt am Main zu hoch für den Wohnort."
+    },
+    {
+      "jobId": "interamt:1466162",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.964Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 4,
+        "gehalt": 2,
+        "arbeitszeit": 10,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "Junior-Position mit E11 und nur tageweisem Homeoffice in Berlin; für ein Profil mit Promotion und Leitungserfahrung deutlich unterqualifiziert."
+    },
+    {
+      "jobId": "interamt:1466205",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.965Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 4,
+        "arbeitszeit": 10,
+        "verbeamtung": 0,
+        "gesamt": 4
+      },
+      "begruendung": "Zwar inhaltlich passend als Tech Lead, jedoch mit TVöD E12 für eine promovierte Informatik-Fachkraft unter Tarifniveau eingestuft und an Berlin gebunden."
     },
     {
       "jobId": "interamt:1466415",
@@ -1096,6 +2024,38 @@
         "gesamt": 3
       },
       "begruendung": "Gehalt (E14/A13h-A14) und Verbeamtungsmöglichkeit sind zwar hervorragend, der Dienstort Wiesbaden liegt jedoch weit außerhalb des Suchraums (Osnabrück/Vechta/Cloppenburg). Da es sich um eine operative Sachgebietsleitung mit Teamführung und Rufbereitschaft handelt, ist ein überwiegendes Homeoffice ohne erhebliche Präsenz vor Ort unrealistisch."
+    },
+    {
+      "jobId": "interamt:1466546",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.959Z",
+      "punkte": 8,
+      "punkteDetails": {
+        "entfernung": 8,
+        "homeoffice": 9,
+        "gehalt": 8,
+        "arbeitszeit": 10,
+        "verbeamtung": 0,
+        "gesamt": 8
+      },
+      "begruendung": "Gute Übereinstimmung mit Forschungs-/Projekterfahrung, E13-Vergütung und überwiegender Erbringung der Arbeitsleistung im Homeoffice."
+    },
+    {
+      "jobId": "interamt:1466605",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:42:52.303Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 3,
+        "homeoffice": 6,
+        "gehalt": 9,
+        "arbeitszeit": 9,
+        "verbeamtung": 9,
+        "gesamt": 4
+      },
+      "begruendung": "Gehalt und Verbeamtung (E13 / A13–A15) stimmen, aber mit max. 60 % Homeoffice ist der Dienstort Düsseldorf für ein regelmäßiges Pendeln ab Raum Osnabrück/Vechta deutlich zu weit entfernt (>40 min)."
     },
     {
       "jobId": "interamt:1467164",
@@ -1178,6 +2138,22 @@
       "begruendung": "Die Stelle ist mit Entgeltgruppe E 8 / A 8 (mittlerer Dienst für Ausbildungsberufe) für einen promovierten Informatiker massiv unterqualifiziert. Zudem befindet sich der Dienstort vor Ort in Berlin, was weit außerhalb des gewünschten Pendelbereichs liegt."
     },
     {
+      "jobId": "interamt:1467339",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.966Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 3,
+        "arbeitszeit": 10,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Eingruppierung in E11 und Dienstort Frankfurt am Main mit nur tageweisem mobilem Arbeiten passen nicht zu den Anforderungen."
+    },
+    {
       "jobId": "interamt:1467375",
       "status": "archiviert",
       "vonKi": true,
@@ -1192,6 +2168,38 @@
         "gesamt": 2
       },
       "begruendung": "Der Dienstort Erlangen liegt weit außerhalb des Zielgebiets und bietet nur hybrides Arbeiten ohne Garantie auf vollen Remote-Anteil. Zudem ist die Stelle mit E 11 / A 11 (Anforderung Bachelor/FH) unter dem angestrebten Niveau (ab E 13) für jemanden mit M.Sc. und Promotion dotiert."
+    },
+    {
+      "jobId": "interamt:1467994",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.970Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 2,
+        "arbeitszeit": 10,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "Mit Entgeltgruppe E10 in Bayreuth deutlich unter den Gehaltsvorstellungen (ab E13)."
+    },
+    {
+      "jobId": "interamt:1468101",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T20:43:24.969Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 4,
+        "gehalt": 3,
+        "arbeitszeit": 10,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "E11-Stelle für MS SQL-Administration in Leipzig/Düsseldorf; unterhalb des Qualifikations- und Gehaltsprofils."
     },
     {
       "jobId": "interamt:862104",

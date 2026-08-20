@@ -1,0 +1,32 @@
+{
+  "id": "bnd:AS-2026-091",
+  "employer": "Bundesnachrichtendienst",
+  "titel": "Mitarbeiterinnen/Mitarbeiter (w/m/d) im Bereich IT-Systemmanagement",
+  "link": "https://www.bnd.bund.de/SharedDocs/Stellenangebote/DE/Stellenangebote/AS-2026-091-ma-it-systemmanagement-berlin.html?nn=415896",
+  "referenzcode": "AS-2026-091",
+  "beschreibung": "Datenbankadministration\nAnpassung kommerzieller Hard- und Fachsoftware an die Daten- und Arbeitsumgebung der Anwenderbereiche (Customizing)\nEntwicklung und Implementierung von Verfahren und Anwendungen für fachspezifische und systemübergreifende Arbeitsabläufe\nEntwicklung von GIS- und Datenbankanwendungen\nMitarbeit bei Beschaffungsvorhaben\nAnwenderunterstützung\nErprobung und Durchführung von komplexen Analysen zu geografischen Aufgabenstellungen unter Nutzung geeigneter Analyse- und Simulationsmodelle, digitaler geografischer und topografischer Daten",
+  "gehaltsstufe": "Entgeltgruppe 10",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": true,
+  "laufbahn": [
+    "Gehobener Dienst"
+  ],
+  "dienstorte": [
+    "Berlin"
+  ],
+  "bewerbungsfrist": "2026-08-11",
+  "voraussetzungenZwingend": [
+    "ein abgeschlossenes oder voraussichtlich in den nächsten 12 Monaten abgeschlossenes Hochschulstudium (Bachelor/Dipl. FH) aus den Studienbereichen: Informatik, Elektro- und Informationstechnik, Wirtschaftsingenieurwesen mit ingenieurwissenschaftlichem Schwerpunkt entsprechend vorgenannter Studienbereiche, Mathematik, Physik",
+    "die deutsche Staatsangehörigkeit",
+    "die Bereitschaft, sich einer erweiterten Sicherheitsüberprüfung mit Sicherheitsermittlungen (Ü3) auf Grundlage des Sicherheitsüberprüfungsgesetzes (SÜG) zu unterziehen."
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Fachliche Kompetenzen: In der IT-Systemtechnik, GEO-Daten und Datenbanken, GIS-Software (Geografische Informationssysteme), Fernerkundung und FE-Datenprozessierung, Pixel- und vektororientierte Grafikprogramme, Programmierkenntnisse"
+  ],
+  "adapter": "bnd",
+  "firstSeen": "2026-07-11T00:49:00.834Z",
+  "lastSeen": "2026-07-11T00:51:49.963Z"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "bnd:AS-2026-099",
+  "employer": "Bundesnachrichtendienst",
+  "titel": "Mitarbeiter / Mitarbeiterin (w/m/d) für die IP-basierte Netzwerktechnik",
+  "link": "https://www.bnd.bund.de/SharedDocs/Stellenangebote/DE/Stellenangebote/AS-2026-099-ma-ip-basierte-netzwerktechnik-pullach.html?nn=415896",
+  "referenzcode": "AS-2026-099",
+  "beschreibung": "Planung/Entwurf, Konfiguration und Inbetriebnahme von Netzwerk-Systemen einschließlich der Programmierung/Automatisierung solcher Systeme\nEinrichtung und Inbetriebnahme neuer Netzwerk-Komponenten\nDurchführung von Wartungsmaßnahmen, auch außerhalb der Regelarbeitszeit\nRecherche, Testaufbau und Testdurchführung zur Optimierung und Qualitätssicherung von IP/TK/VK-Verbindungen\nÜberwachung der Netzwerk-Systeme\nAutomatisierung von Installations-, Überwachungs- und Konfigurationsprozessen\nErstellung von Fachbeiträgen\nDokumentation der Netze",
+  "gehaltsstufe": "Entgeltgruppe 8",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": true,
+  "laufbahn": [
+    "Mittlerer Dienst"
+  ],
+  "dienstorte": [
+    "Pullach"
+  ],
+  "bewerbungsfrist": "2026-07-15",
+  "voraussetzungenZwingend": [
+    "eine abgeschlossene oder voraussichtlich in den nächsten 12 Monaten abgeschlossene Berufsausbildung aus dem Berufsfeld IT, Computer",
+    "die deutsche Staatsangehörigkeit",
+    "die Bereitschaft, sich einer erweiterten Sicherheitsüberprüfung mit Sicherheitsermittlungen (Ü3) auf Grundlage des Sicherheitsüberprüfungsgesetzes (SÜG) zu unterziehen."
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Vertiefte IT-Fachkenntnisse, insbesondere: Netzwerkprotokolle z.B. TCP/IP, OSPF und BGP, Python-Programmierung, Automatisierung mit Ansible",
+    "Belastbarkeit",
+    "Kreativität und Innovation",
+    "Gewissenhaftigkeit und Zuverlässigkeit",
+    "Verantwortungsbereitschaft",
+    "Zusammenarbeit/teamorientiertes Handeln"
+  ],
+  "adapter": "bnd",
+  "firstSeen": "2026-07-11T00:49:02.073Z",
+  "lastSeen": "2026-07-13T07:36:45.696Z"
+}
