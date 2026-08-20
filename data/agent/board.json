@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T21:01:07.592Z",
+  "updatedAt": "2026-08-20T21:56:30.733Z",
   "entries": [
     {
       "jobId": "accenture:13818109",
@@ -898,6 +898,12 @@
       "begruendung": "Bewerbungsfrist am 22.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "bnd:AS-2026-300",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.857Z"
+    },
+    {
       "jobId": "bwi:63245",
       "status": "archiviert",
       "vonKi": true,
@@ -978,6 +984,12 @@
       "begruendung": "Das Angebot richtet sich an Forstwirte im handwerklichen Außendienst (E 5 TVöD) in Schleswig-Holstein. Es passt weder fachlich zum Informatik-Profil noch gehaltlich oder bezüglich des Einsatzorts."
     },
     {
+      "jobId": "interamt:1230459",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.859Z"
+    },
+    {
       "jobId": "interamt:1240129",
       "status": "archiviert",
       "vonKi": true,
@@ -992,6 +1004,18 @@
         "gesamt": 3
       },
       "begruendung": "Gehobener Dienst (A10-A12) in München; unterhalb der angestrebten Besoldungshöhe (höherer Dienst/E13+) und zu weit entfernt."
+    },
+    {
+      "jobId": "interamt:1324027",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.638Z"
+    },
+    {
+      "jobId": "interamt:1357479",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.861Z"
     },
     {
       "jobId": "interamt:1360287",
@@ -1017,11 +1041,69 @@
       "begruendung": "Sachbearbeitung im gehobenen Dienst (A10-A12) am DPMA in München entspricht nicht den Kriterien für eine promovierte Führungskraft/Experten ab E13."
     },
     {
+      "jobId": "interamt:1375663",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:56:11.662Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 5,
+        "gehalt": 9,
+        "arbeitszeit": 9,
+        "verbeamtung": 10,
+        "gesamt": 3
+      },
+      "begruendung": "Der Dienstort München ist vom Zielgebiet (Osnabrück/Vechta) viel zu weit entfernt, da lediglich hybrides Arbeiten ohne volle Remote-Garantie angeboten wird. Zudem ist die Stelle extrem stark auf spezifische SAP-Entwicklung (ABAP, FI/CO, PSM) fokussiert."
+    },
+    {
+      "jobId": "interamt:1376299",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.864Z"
+    },
+    {
+      "jobId": "interamt:1377022",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.843Z"
+    },
+    {
+      "jobId": "interamt:1377035",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.845Z"
+    },
+    {
+      "jobId": "interamt:1378266",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.847Z"
+    },
+    {
       "jobId": "interamt:1379582",
       "status": "archiviert",
       "vonKi": true,
       "updatedAt": "2026-08-20T21:01:07.590Z",
       "begruendung": "Bewerbungsfrist am 09.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1384366",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.867Z"
+    },
+    {
+      "jobId": "interamt:1390142",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.853Z"
+    },
+    {
+      "jobId": "interamt:1397429",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.851Z"
     },
     {
       "jobId": "interamt:1399796",
@@ -1073,6 +1155,18 @@
       "vonKi": true,
       "updatedAt": "2026-08-20T21:01:07.590Z",
       "begruendung": "Bewerbungsfrist am 19.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1429462",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.641Z"
+    },
+    {
+      "jobId": "interamt:1430997",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.869Z"
     },
     {
       "jobId": "interamt:1431369",
@@ -1218,6 +1312,12 @@
       "begruendung": "Bewerbungsfrist am 24.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "interamt:1450527",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.612Z"
+    },
+    {
       "jobId": "interamt:1450683",
       "status": "archiviert",
       "vonKi": true,
@@ -1232,6 +1332,12 @@
         "gesamt": 3
       },
       "begruendung": "Die Stelle ist lediglich nach E11 TVöD vergütet und am Standort Mainz angesiedelt, was weder gehaltlich noch örtlich passt."
+    },
+    {
+      "jobId": "interamt:1451908",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.872Z"
     },
     {
       "jobId": "interamt:1453121",
@@ -1257,6 +1363,12 @@
       "begruendung": "Bewerbungsfrist am 13.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "interamt:1453998",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.614Z"
+    },
+    {
       "jobId": "interamt:1454658",
       "status": "archiviert",
       "vonKi": true,
@@ -1269,6 +1381,12 @@
       "vonKi": true,
       "updatedAt": "2026-08-20T21:01:07.590Z",
       "begruendung": "Bewerbungsfrist am 29.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1454758",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.616Z"
     },
     {
       "jobId": "interamt:1454790",
@@ -1290,6 +1408,12 @@
       "vonKi": true,
       "updatedAt": "2026-08-20T21:01:07.590Z",
       "begruendung": "Bewerbungsfrist am 17.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1454908",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.618Z"
     },
     {
       "jobId": "interamt:1455182",
@@ -1902,6 +2026,12 @@
       "begruendung": "Bewerbungsfrist am 15.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "interamt:1460854",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.855Z"
+    },
+    {
       "jobId": "interamt:1460899",
       "status": "archiviert",
       "vonKi": true,
@@ -2446,6 +2576,12 @@
       "begruendung": "Bewerbungsfrist am 20.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "interamt:1463350",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.620Z"
+    },
+    {
       "jobId": "interamt:1463404",
       "status": "archiviert",
       "vonKi": true,
@@ -2515,6 +2651,12 @@
         "gesamt": 1
       },
       "begruendung": "Der Dienstort München liegt weit außerhalb des Suchradiuses (Osnabrück/Vechta/Cloppenburg) und erfordert bei einem hybriden Arbeitsmodell regelmäßige Präsenz vor Ort. Zudem sind die Aufgaben (u. a. First-Level-Support und IT-Controlling) für ein Profil mit Promotion im Software Engineering deutlich unterqualifiziert."
+    },
+    {
+      "jobId": "interamt:1463461",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.874Z"
     },
     {
       "jobId": "interamt:1463467",
@@ -3287,6 +3429,24 @@
       "begruendung": "Bewerbungsfrist am 27.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "interamt:1465451",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.622Z"
+    },
+    {
+      "jobId": "interamt:1465453",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.624Z"
+    },
+    {
+      "jobId": "interamt:1465457",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.643Z"
+    },
+    {
       "jobId": "interamt:1465465",
       "status": "archiviert",
       "vonKi": true,
@@ -3327,6 +3487,12 @@
       "vonKi": true,
       "updatedAt": "2026-08-20T21:01:07.591Z",
       "begruendung": "Bewerbungsfrist am 24.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465646",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.626Z"
     },
     {
       "jobId": "interamt:1465653",
@@ -3470,6 +3636,12 @@
       "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "interamt:1466004",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.645Z"
+    },
+    {
       "jobId": "interamt:1466037",
       "status": "archiviert",
       "vonKi": true,
@@ -3553,11 +3725,23 @@
       "begruendung": "Junior-Position mit E11 und nur tageweisem Homeoffice in Berlin; für ein Profil mit Promotion und Leitungserfahrung deutlich unterqualifiziert."
     },
     {
+      "jobId": "interamt:1466176",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.594Z"
+    },
+    {
       "jobId": "interamt:1466193",
       "status": "archiviert",
       "vonKi": true,
       "updatedAt": "2026-08-20T21:01:07.591Z",
       "begruendung": "Bewerbungsfrist am 06.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1466200",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.606Z"
     },
     {
       "jobId": "interamt:1466205",
@@ -3653,6 +3837,12 @@
         "gesamt": 3
       },
       "begruendung": "Der Dienstort Wiesbaden liegt weit außerhalb des gewünschten Radius und ist für regelmäßiges Pendeln ungeeignet. Da lediglich hybrides Arbeiten (kein volles Remote) angeboten wird und Präsenzphasen vor Ort anfallen, passt die Stelle örtlich nicht."
+    },
+    {
+      "jobId": "interamt:1466428",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.608Z"
     },
     {
       "jobId": "interamt:1466444",
@@ -3820,6 +4010,12 @@
       "vonKi": true,
       "updatedAt": "2026-08-20T21:01:07.592Z",
       "begruendung": "Bewerbungsfrist am 24.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467064",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.849Z"
     },
     {
       "jobId": "interamt:1467067",
@@ -4009,11 +4205,23 @@
       "begruendung": "Bewerbungsfrist am 02.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "interamt:1467368",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.604Z"
+    },
+    {
       "jobId": "interamt:1467372",
       "status": "archiviert",
       "vonKi": true,
       "updatedAt": "2026-08-20T21:01:07.592Z",
       "begruendung": "Bewerbungsfrist am 09.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467373",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.610Z"
     },
     {
       "jobId": "interamt:1467375",
@@ -4044,6 +4252,12 @@
       "vonKi": true,
       "updatedAt": "2026-08-20T21:01:07.592Z",
       "begruendung": "Bewerbungsfrist am 10.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467472",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.628Z"
     },
     {
       "jobId": "interamt:1467490",
@@ -4128,6 +4342,12 @@
       "vonKi": true,
       "updatedAt": "2026-08-20T21:01:07.592Z",
       "begruendung": "Bewerbungsfrist am 07.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1467891",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.629Z"
     },
     {
       "jobId": "interamt:1467893",
@@ -4218,6 +4438,12 @@
       "begruendung": "Bewerbungsfrist am 11.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "interamt:1468334",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.633Z"
+    },
+    {
       "jobId": "interamt:1468402",
       "status": "archiviert",
       "vonKi": true,
@@ -4253,6 +4479,12 @@
       "begruendung": "Bewerbungsfrist am 26.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "interamt:1468502",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.631Z"
+    },
+    {
       "jobId": "interamt:862104",
       "status": "archiviert",
       "vonKi": true,
@@ -4281,6 +4513,574 @@
       "vonKi": true,
       "updatedAt": "2026-08-20T21:01:07.592Z",
       "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A2B3C8B612B58DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-20T21:56:30.733Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 5,
+        "gehalt": 2,
+        "arbeitszeit": 7,
+        "verbeamtung": 10,
+        "gesamt": 2
+      },
+      "begruendung": "Die Stelle ist im gehobenen Dienst (A 10 bis A 12) angesiedelt und liegt damit deutlich unter der gesuchten Qualifikationsebene (ab E13 / höherer Dienst). Zudem ist der Dienstort München viel zu weit entfernt und es wird kein voller Remote-Anteil garantiert."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A7D22EEF82E10DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.640Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A7D49CE321ED4DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.647Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A7D4A542E3248DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.649Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A7D4A89EE5C0ADC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.651Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A7D74A0FD4532DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.654Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A7EAE630CB2FCDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.656Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A7EB1EFCFF264DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.660Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A7ED8D7BA5DB6DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.662Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A7EE77A44543CDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.664Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A7F1E8D673BB0DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.666Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A8D1B51A81056DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.668Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A8D1FC09654F4DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.670Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A8D61CA5C18FCDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.675Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A8D65E5AD4846DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.677Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A8D7F65363CDADC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.679Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A8EBD2EF5C050DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.681Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A8EC10D2AA888DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.683Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A98486B745226DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.685Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A984C1098DBD0DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.687Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A985C5F1713F4DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.689Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A9886C513D7B4DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.691Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A99C56E393BC6DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.693Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A99C647C46BA4DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.695Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A99D7778AADB8DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.697Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A99DC91DBB720DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.698Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A99E1B9F0866CDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.700Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A99F0C0B113ECDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.702Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A99F5EA9182B6DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.706Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A99F7A377CF94DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.708Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A9B3134C47084DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.710Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A9B54F92C4D56DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.712Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A9B5ECE06FA76DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.714Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A9B8C9D8D70B2DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.716Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A9B9FD644BA8EDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.718Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A9BA6DC1BB382DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.719Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0A9FF8212F6672DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.721Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0AA80C607DD81EDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.723Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0AA81156656ED4DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.725Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0AA82B7F741BA4DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.727Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0AA82C5D6B02DCDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.729Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0AA84B63C332D6DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.731Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0AA86331C645BADC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.733Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0AA9B8C06EF60CDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.735Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0AA9D132B5F7A6DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.739Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0AAA04BB08B1F8DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.741Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0AAB4A40089274DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.743Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0AAB637E9C07F2DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.745Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0AAB91367CD440DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.747Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD186A644240F9C8DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.772Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18B980C417638ADC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.749Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18BB94EBA8A0FADC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.774Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18BCE381383D74DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.751Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18CE6258092920DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.753Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18CE73E1593A84DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.755Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18CE80A1F55F52DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.757Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18CE84EFF969B8DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.776Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18CE8895DC7CEEDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.759Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18CFAAE9140398DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.763Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18CFB14EDB8E8ADC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.761Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18CFBC086D950ADC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.778Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18CFBCA0E78DA0DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.765Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18CFC8A17E9164DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.767Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18CFD25117F554DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.780Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18CFD63D62ED98DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.782Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18CFF643C3EAF4DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.770Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18D806478D1C12DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.784Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18D81EE66826C8DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.786Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18D83BC7661D08DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.788Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18D8459885604EDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.790Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18D9479743FA70DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.792Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18D9531AF9433CDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.794Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18D96AC5B6D562DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.796Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18D9774D5B3D82DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.798Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18D986FF5891FCDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.802Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18D991DEE1B4A4DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.804Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18D9A0853B6D8CDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.806Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18DDF9B621E8FEDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.808Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18DDFC450ABA8CDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.810Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18DDFCD98DF324DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.812Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18DE0DD69B944CDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.814Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18DE28E50FF44ADC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.816Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18DE31FC4DA834DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.818Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18DE3A2B8ADFCEDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.820Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18DE3C24DD30D8DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.822Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18DE4ABC88CB3CDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.824Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18DE4CDD605E0ADC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.826Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18DE551F1ECFA0DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.828Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18DE8C10AAED86DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.831Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18DE9383E18B6ADC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.834Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18DFCF44BC0E8CDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.836Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18DFE74A07EF34DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.838Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD18E956CEC375BCDC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-20T21:55:58.840Z"
     },
     {
       "jobId": "itzbund:1000004333801FD198F92A8C51BB0DC6",
