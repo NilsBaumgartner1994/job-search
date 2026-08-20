@@ -1,0 +1,94 @@
+# Lässt den Crawler in GitHub Actions laufen:
+# - holt die Trefferlisten der ausgewählten Portale (Interamt braucht dafür
+#   einen echten Chromium — der wird hier installiert)
+# - repariert nebenbei alte, sitzungsgebundene Interamt-Links
+# - entfernt Angebote mit abgelaufener Bewerbungsfrist
+# - schreibt jobs.html und die Pages-Daten (docs/) neu
+# - committet data/jobs.json, jobs.html und docs/ zurück ins Repo
+#
+# Kein Secret nötig — hier wird nur gescrapt, nicht mit Gemini triagiert.
+name: Crawler
+
+on:
+  workflow_dispatch:
+    inputs:
+      portale:
+        description: 'Portale, kommagetrennt (z.B. "interamt" oder "bka,bwi") — leer = alle'
+        required: false
+        default: ""
+      modus:
+        description: "normal = nur neue Angebote laden · details-neu = auch bekannte Details neu laden · komplett-neu = gespeicherte Angebote der gewählten Portale wegwerfen und alles frisch einlesen"
+        required: false
+        type: choice
+        default: normal
+        options:
+          - normal
+          - details-neu
+          - komplett-neu
+
+permissions:
+  contents: write
+
+# nie zwei Läufe parallel — beide würden data/ committen
+concurrency:
+  group: crawler
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    # Interamt öffnet je neuem Angebot eine Detailseite im Browser; ein
+    # komplett neuer Lauf über ~500 Treffer dauert entsprechend lange.
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - name: Abhängigkeiten installieren
+        run: yarn install --frozen-lockfile
+        env:
+          # Chromium kommt im nächsten Schritt (mit Systembibliotheken)
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
+
+      - name: Chromium für Playwright installieren
+        run: yarn playwright install --with-deps chromium
+
+      - name: Crawler ausführen
+        run: |
+          set -eu
+          ARGS=""
+          if [ -n "$PORTALE" ]; then ARGS="$ARGS --adapter=$PORTALE"; fi
+          case "$MODUS" in
+            details-neu) ARGS="$ARGS --refresh" ;;
+            komplett-neu) ARGS="$ARGS --forget" ;;
+          esac
+          echo "yarn crawl$ARGS"
+          yarn crawl $ARGS
+        env:
+          PORTALE: ${{ inputs.portale }}
+          MODUS: ${{ inputs.modus || 'normal' }}
+
+      - name: Pages-Daten neu schreiben
+        run: yarn pages
+
+      - name: Ergebnisse committen und pushen
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/jobs.json jobs.html docs
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen zu committen."
+            exit 0
+          fi
+          git commit -m "Crawler: Angebote aktualisieren"
+          # Falls zwischenzeitlich jemand gepusht hat: rebase und erneut versuchen
+          for i in 1 2 3; do
+            git push && exit 0
+            git pull --rebase
+          done
+          git push

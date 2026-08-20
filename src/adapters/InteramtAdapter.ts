@@ -10,6 +10,43 @@ import {
 import type { AdapterResult, CrawlContext, JobOffer } from "../types.js";
 import { PlaywrightAdapter } from "./PlaywrightAdapter.js";
 
+/**
+ * Interamts einziger dauerhaft gültiger Deep-Link auf ein Angebot: die
+ * Trefferliste, eingeschränkt auf eine (hier: genau eine) Angebots-ID.
+ * Interamt dokumentiert dieses Format selbst als offiziellen Verlinkungsweg
+ * für Arbeitgeber; es ist sitzungsfrei, von Suchmaschinen indiziert und lässt
+ * sich allein aus der Angebots-ID bauen — anders als die "crypt."-URL, die
+ * beim Öffnen der Detailseite in der Adresszeile steht und nur zur laufenden
+ * Wicket-Sitzung gehört ("Sitzung abgelaufen", sobald diese weg ist).
+ */
+export function interamtPermalink(offerId: string): string {
+  return `https://interamt.de/koop/app/trefferliste?stellenangebotliste=${encodeURIComponent(offerId)}`;
+}
+
+/** Erkennt die alten, sitzungsgebundenen "crypt."-Links früherer Läufe. */
+function isSessionBoundInteramtLink(link: string): boolean {
+  return /interamt\.de\/koop\/app\/crypt\./i.test(link);
+}
+
+/**
+ * Schreibt gespeicherte "crypt."-Links auf den stabilen Permalink um — ohne
+ * Netz, denn Interamts Angebots-ID steckt bereits in der Job-ID
+ * ("interamt:1467339"). Läuft bei jedem Crawl mit und erwischt so auch
+ * Angebote, die inzwischen nicht mehr in der Trefferliste stehen.
+ * Gibt zurück, wie viele Links repariert wurden.
+ */
+export function repairInteramtLinks(jobs: JobOffer[]): number {
+  let repaired = 0;
+  for (const job of jobs) {
+    if (job.adapter !== "interamt" || !isSessionBoundInteramtLink(job.link)) continue;
+    const offerId = job.id.slice(job.id.indexOf(":") + 1);
+    if (!offerId) continue;
+    job.link = interamtPermalink(offerId);
+    repaired++;
+  }
+  return repaired;
+}
+
 interface ListRow {
   id: string;
   employer: string;
@@ -35,6 +72,10 @@ interface ListRow {
  * Besoldung/Entgelt, Ort, Dienstort-Art, Frist) direkt als Tabelle — nur für
  * Beschreibung/Voraussetzungen muss die Detailseite eines Jobs geöffnet
  * werden. Dank Crawl-Cache passiert das nur einmal pro Job.
+ *
+ * Der gespeicherte `link` wird immer aus der Angebots-ID gerechnet
+ * (`interamtPermalink`) — die URL der geöffneten Detailseite wäre
+ * sitzungsgebunden und liefe später ins Leere.
  */
 export class InteramtAdapter extends PlaywrightAdapter {
   readonly name = "interamt";
@@ -58,21 +99,18 @@ export class InteramtAdapter extends PlaywrightAdapter {
       for (const row of rows) {
         const id = this.buildId(row.id);
         try {
-          const known = context.known.get(id);
-          const cachedDetail = this.cachedDetail(context, id);
-
-          let detailText = cachedDetail;
-          let link = known?.link;
+          let detailText = this.cachedDetail(context, id);
           if (detailText) {
             result.stats.cached++;
           } else {
-            const detail = await this.openDetail(page, row.editLinkSelector);
-            detailText = detail.text;
-            link = detail.url;
+            detailText = await this.openDetail(page, row.editLinkSelector);
             result.stats.fetched++;
           }
 
-          result.jobs.push(this.mapJob(id, row, detailText ?? "", link ?? this.baseUrl));
+          // Der Link kommt bewusst nicht aus page.url() der Detailseite, sondern
+          // aus der Angebots-ID — dadurch repariert jeder Lauf nebenbei auch die
+          // alten "crypt."-Links bereits bekannter Jobs.
+          result.jobs.push(this.mapJob(id, row, detailText, interamtPermalink(row.id)));
         } catch (error) {
           result.warnings.push(`Job ${row.id} übersprungen: ${error}`);
         }
@@ -152,20 +190,20 @@ export class InteramtAdapter extends PlaywrightAdapter {
     return rows;
   }
 
-  /** Öffnet die Detailseite einer Zeile, liest den Volltext, kehrt zur Liste zurück. */
-  private async openDetail(
-    page: import("playwright").Page,
-    editLinkSelector: string,
-  ): Promise<{ url: string; text: string }> {
+  /**
+   * Öffnet die Detailseite einer Zeile, liest den Volltext, kehrt zur Liste
+   * zurück. Die dabei entstehende URL wird bewusst verworfen — sie ist
+   * sitzungsgebunden (siehe `interamtPermalink`).
+   */
+  private async openDetail(page: import("playwright").Page, editLinkSelector: string): Promise<string> {
     await page.locator(editLinkSelector).first().click();
     await page.waitForLoadState("networkidle", { timeout: this.detailNavTimeout });
     await page.waitForTimeout(500);
-    const url = page.url();
     const text = await page.locator("body").innerText();
     await page.goBack();
     await page.waitForLoadState("networkidle", { timeout: this.detailNavTimeout });
     await page.waitForTimeout(500);
-    return { url, text };
+    return text;
   }
 
   private mapJob(id: string, row: ListRow, detailText: string, link: string): JobOffer {
@@ -182,8 +220,7 @@ export class InteramtAdapter extends PlaywrightAdapter {
     // vorhanden) im Freitext der Detailseite. Interamts eigene Angebots-ID (row.id) bleibt
     // nur der Fallback, damit referenzcode nie leer ist; auf dieser Kennziffer lässt sich
     // die Stelle notfalls auch über die Original-Karriereseite des Arbeitgebers wiederfinden,
-    // falls Interamts eigener "crypt."-Permalink irgendwann ins Leere läuft (Sitzung
-    // abgelaufen o.ä. — dieser Link ist wicket-sitzungsgebunden und nicht dauerhaft stabil).
+    // falls das Angebot bei Interamt selbst irgendwann verschwindet.
     const kennziffer = detailText ? extractKennziffer(detailText) : undefined;
 
     return this.finalize({
