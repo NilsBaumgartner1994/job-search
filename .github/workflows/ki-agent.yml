@@ -1,6 +1,7 @@
 # Lässt den KI-Agenten (Gemini) in GitHub Actions laufen:
 # - übernimmt zuerst deine im Browser (GitHub-Pages-Seite) gemachten Änderungen
-# - triagiert dann bis zu <limit> unbearbeitete Jobs
+# - triagiert dann bis zu <limit> unbearbeitete Jobs, dabei mehrere Angebote
+#   je Anfrage (Sammel-Triage, siehe <buendel> / AGENT_BATCH_SIZE)
 # - committet Board, Chat-Verläufe und die Pages-Daten (docs/) zurück ins Repo
 #
 # Voraussetzung: Repo-Secret GEMINI_API_KEY
@@ -23,6 +24,10 @@ on:
         description: "Zeitlimit in Minuten — danach hört der Lauf sauber auf und committet das bis dahin Geschaffte (0 = kein Zeitlimit)"
         required: false
         default: "30"
+      buendel:
+        description: "Angebote je Gemini-Anfrage (Sammel-Triage): 2 = doppelt so viele Angebote pro Tag, 1 = wie früher einzeln. Leer = Repo-Variable AGENT_BATCH_SIZE bzw. Default 2"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -70,6 +75,9 @@ jobs:
           # (Pause zwischen Anfragen; Default 7000, bezahlt reicht z.B. 500)
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           AGENT_DELAY_MS: ${{ vars.AGENT_DELAY_MS }}
+          # Angebote je Anfrage (Default 2) — das Tageslimit zählt Anfragen,
+          # nicht Angebote: 2 je Anfrage = doppelt so viele Angebote pro Tag
+          AGENT_BATCH_SIZE: ${{ inputs.buendel || vars.AGENT_BATCH_SIZE }}
 
       - name: Ergebnisse committen und pushen
         if: always()

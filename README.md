@@ -182,6 +182,39 @@ nächsten Start automatisch geladen. Optionale `.env`-Einträge:
 | `GEMINI_MODEL`   | `gemini-flash-latest` | verwendetes Modell (Alias = aktuelles Flash)  |
 | `PORT`           | `8322`             | Port des Kanban-Servers                          |
 | `AGENT_DELAY_MS` | `7000`             | Pause zwischen zwei Triage-Anfragen (Rate-Limit) |
+| `AGENT_BATCH_SIZE` | `2`              | Angebote je Anfrage (**Sammel-Triage**) — siehe unten; `1` = wie früher ein Angebot pro Anfrage, Maximum `10` |
+
+### Sammel-Triage: mehrere Angebote in einer Anfrage
+
+Das Gratis-Kontingent begrenzt die Zahl der **Anfragen** pro Tag — nicht die
+Zahl der bewerteten Angebote. Deshalb legt der Agent standardmäßig **zwei
+Angebote in eine Anfrage** und lässt sich beide in einer Antwort (JSON-Array)
+bewerten: aus z.B. 20 Anfragen pro Tag werden so **40 abgearbeitete
+Angebote**. Über `AGENT_BATCH_SIZE` (bzw. das Feld „Angebote je Anfrage“ beim
+Start des GitHub-Workflows) lässt sich das einstellen:
+
+| Wert | Angebote pro Tag (bei 20 Anfragen) | Hinweis                       |
+| ---- | ---------------------------------- | ----------------------------- |
+| `1`  | 20                                 | wie früher, eine Anfrage je Angebot |
+| `2`  | 40                                 | **Default** — guter Kompromiss |
+| `4`  | 80                                 | Angebotstexte werden stärker gekürzt |
+| `10` | 200                                | Maximum; Bewertungen werden merklich knapper |
+
+Details:
+
+- Jedes Angebot wird im Prompt **einzeln und unabhängig** bewertet (gleiche
+  Kriterien und Punkte wie bei der Einzelanfrage), die Antwort ist ein Array
+  mit einem Objekt je Angebot (Feld `nr` zur Zuordnung).
+- Der Platz für Angebotstext wird auf die Angebote aufgeteilt (insgesamt
+  ~160.000 Zeichen, mindestens 20.000 je Angebot) — bei sehr großen Bündeln
+  werden lange Ausschreibungstexte also gekürzt. Deswegen ist `2` der Default
+  und nicht `10`.
+- Fehlt in der Antwort die Bewertung eines Angebots (oder ist sie unlesbar),
+  wird **genau dieses Angebot einzeln nachgefragt** — durch das Bündeln geht
+  also nichts verloren.
+- Im Chat-Verlauf steht pro Angebot weiterhin nur dessen eigene Anfrage und
+  dessen eigene Bewertung (mit dem Hinweis, dass es Teil einer Sammel-Anfrage
+  war). Folgefragen funktionieren unverändert.
 
 ### Rate-Limits & API-Nutzung
 
@@ -216,8 +249,10 @@ nächsten Start automatisch geladen. Optionale `.env`-Einträge:
    Bewerbungsfrist zuerst; Jobs ohne jede Gehaltsangabe kommen ganz nach
    hinten.
 3. Wegen des Rate-Limits im Gratis-Kontingent (~10 Anfragen/Minute) pausiert
-   der Agent zwischen zwei Jobs — bei vielen hundert Angeboten läuft ein
-   kompletter Erstlauf also eine ganze Weile; einfach laufen lassen.
+   der Agent zwischen zwei Anfragen — bei vielen hundert Angeboten läuft ein
+   kompletter Erstlauf also eine ganze Weile; einfach laufen lassen. Pro
+   Anfrage werden dabei standardmäßig **zwei Angebote** bewertet (siehe
+   [Sammel-Triage](#sammel-triage-mehrere-angebote-in-einer-anfrage)).
 
 ### Das Board
 
@@ -293,7 +328,7 @@ GitHub-Workflow "KI-Agent" (workflow_dispatch)
 
 ### Einen Lauf starten
 
-Actions → **KI-Agent** → "Run workflow". Drei optionale Eingaben:
+Actions → **KI-Agent** → "Run workflow". Vier optionale Eingaben:
 
 - **aenderungen** — das JSON von der Pages-Seite (siehe unten); leer
   lassen, wenn es keine gibt.
@@ -311,14 +346,20 @@ Actions → **KI-Agent** → "Run workflow". Drei optionale Eingaben:
   Notbremse bricht der Runner selbst zusätzlich 20 Minuten nach dem
   Zeitlimit ab (bzw. bei zeitlimit=0 nach 6 Stunden, dem Maximum von
   GitHub-gehosteten Runnern).
+- **buendel** (leer = Repo-Variable `AGENT_BATCH_SIZE` bzw. Default 2) — wie
+  viele Angebote in **eine** Anfrage gepackt werden. Das Tageslimit zählt
+  Anfragen, nicht Angebote: mit `2` werden aus 20 Anfragen 40 abgearbeitete
+  Angebote, mit `4` schon 80. Details unter
+  [Sammel-Triage](#sammel-triage-mehrere-angebote-in-einer-anfrage).
 
-Lokal geht derselbe Headless-Lauf mit `yarn agent --limit=50 --minuten=10`.
+Lokal geht derselbe Headless-Lauf mit `yarn agent --limit=50 --minuten=10`
+(Bündelgröße dort über `AGENT_BATCH_SIZE` in der `.env`).
 
 ### Bezahltes Gemini-Kontingent (z.B. Firmen-Account)
 
 Der Workflow braucht als **Secret** nur `GEMINI_API_KEY` (auch hier sind
 mehrere Keys erlaubt — durch Komma oder Zeilenumbruch getrennt, das Secret
-darf mehrzeilig sein). Zwei optionale
+darf mehrzeilig sein). Drei optionale
 **Repo-Variablen** (Settings → Secrets and variables → Actions → Tab
 "Variables" — nicht Secrets, da unkritisch) passen ihn an ein bezahltes
 Kontingent an:
@@ -327,6 +368,7 @@ Kontingent an:
 | ---------------- | ------------------- | ------------------------------------------- |
 | `GEMINI_MODEL`   | `gemini-2.5-pro`    | anderes Modell für Triage & Chat            |
 | `AGENT_DELAY_MS` | `500`               | kürzere Pause zwischen Anfragen (Default 7000) |
+| `AGENT_BATCH_SIZE` | `1`               | Angebote je Anfrage — bezahlt lohnt sich Bündeln nicht mehr, `1` gibt jedem Angebot den vollen Text (Default 2) |
 
 Mit bezahltem Key entfallen Minuten-/Tageslimit praktisch — dann z.B.
 limit=0, zeitlimit=60 und `AGENT_DELAY_MS=500` setzen, und ~1100 Jobs

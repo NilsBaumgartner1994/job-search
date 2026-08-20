@@ -71,6 +71,8 @@ export interface AgentStatus {
   processed: number;
   /** Anzahl der Jobs, die dieser Lauf bearbeiten will */
   total: number;
+  /** Wie viele Angebote je Gemini-Anfrage bewertet werden (Sammel-Triage) */
+  batchSize?: number;
   currentJobId?: string;
   currentTitel?: string;
   lastError?: string;
