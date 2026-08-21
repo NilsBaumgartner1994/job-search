@@ -1,6 +1,7 @@
 import type { JobOffer } from "../types.js";
 import { MAX_BATCH_SIZE, type ServerEnv } from "./env.js";
 import { archiviereAbgelaufene, istFristAbgelaufen } from "./expiry.js";
+import { archiviereZuNiedrigBezahlte, istGehaltZuNiedrig } from "./lowpay.js";
 import { GeminiError, generateContent, type GeminiMessage } from "./gemini.js";
 import {
   appendChat,
@@ -470,7 +471,8 @@ export function sortTriageQueue(jobs: JobOffer[]): JobOffer[] {
 /**
  * Startet den Agenten-Lauf im Hintergrund: alle Jobs in "Noch abzuarbeiten",
  * die noch keinen Chat-Verlauf haben, werden nacheinander der KI vorgelegt.
- * Angebote mit abgelaufener Frist wandern vorher ohne Anfrage ins Archiv.
+ * Angebote mit abgelaufener Frist oder eindeutig zu niedrigem Gehalt wandern
+ * vorher ohne Anfrage ins Archiv.
  * Zwischen den Anfragen wird pausiert (Rate-Limit des Gratis-Kontingents).
  */
 export function startAgent(env: ServerEnv, jobs: JobOffer[]): { started: boolean; reason?: string } {
@@ -484,11 +486,16 @@ export function startAgent(env: ServerEnv, jobs: JobOffer[]): { started: boolean
   if (archiviert.length) {
     console.log(`✔ ${archiviert.length} Angebot(e) mit abgelaufener Frist direkt archiviert.`);
   }
+  const zuNiedrig = archiviereZuNiedrigBezahlte(jobs);
+  if (zuNiedrig.length) {
+    console.log(`✔ ${zuNiedrig.length} Angebot(e) unter E13/A13 direkt archiviert.`);
+  }
 
   const board = loadBoard();
   const queue = sortTriageQueue(
     jobs.filter((job) => {
-      if (istFristAbgelaufen(job)) return false; // eben archiviert
+      // eben archiviert — nicht erneut in die Warteschlange aufnehmen
+      if (istFristAbgelaufen(job) || istGehaltZuNiedrig(job)) return false;
       const entry = getEntry(board, job.id);
       const isTodo = !entry || entry.status === "todo";
       return isTodo && !hasChat(job.id);

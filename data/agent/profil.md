@@ -20,3 +20,15 @@ und schreibe diese Schätzung kurz in die Begründung.
 No-Gos:
 - Keine reinen Vertriebsstellen
 - Keine reinen SAP-Beratungsstellen
+
+Verbeamtung ist mir wichtiger als früher formuliert. Besonders interessant sind für mich:
+- Verbeamtung UND hoher Homeoffice-Anteil (überwiegend remote), auch wenn der Dienstort weiter weg ist
+- Verbeamtung UND ein Dienstort in erreichbarer Nähe (Raum Osnabrück/Vechta/Cloppenburg,
+  aber auch Oldenburg, Münster, Bremen, Lingen, Bielefeld o.ä.)
+Solche Angebote sollen bevorzugt und großzügiger bewertet werden als vergleichbare
+Tarifstellen. Umgekehrt ist eine Verbeamtungsmöglichkeit allein kein Grund, einen weiten
+Weg ohne Homeoffice in Kauf zu nehmen.
+
+Angebote, deren Gehalt eindeutig unter E13/A13 liegt (bzw. in der Industrie unter rund
+62.000 € Jahresbrutto an der Bandobergrenze), brauchst du mir nicht einzeln vorzulegen —
+die dürfen direkt archiviert werden.
