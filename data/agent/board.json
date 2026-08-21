@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T21:56:30.733Z",
+  "updatedAt": "2026-08-21T06:45:17.681Z",
   "entries": [
     {
       "jobId": "accenture:13818109",
@@ -4483,6 +4483,69 @@
       "status": "archiviert",
       "vonKi": false,
       "updatedAt": "2026-08-20T21:55:58.631Z"
+    },
+    {
+      "jobId": "interamt:1470398",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T06:45:17.681Z",
+      "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1474874",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T06:45:17.681Z",
+      "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1475432",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T06:45:17.681Z",
+      "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1476733",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T06:45:17.681Z",
+      "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1476888",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T06:45:17.681Z",
+      "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1477050",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T06:45:17.681Z",
+      "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1477746",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T06:45:17.681Z",
+      "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1477918",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T06:45:17.681Z",
+      "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1478587",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T06:45:17.681Z",
+      "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:862104",
