@@ -4,6 +4,19 @@ Ich suche unbefristete Stellen (oder passende wissenschaftliche/Führungspositio
 
 Ich will realistisch vorzugsweise Home Office haben, aber ins Büro fahren wäre auch gut, solange es nicht mehr als 40min weg ist.
 
+Entfernung und Gehalt hängen für mich zusammen. Schätze bei jedem Angebot selbst ab,
+wie weit der Dienstort von meinem Wohnort (Raum Osnabrück/Vechta/Cloppenburg) entfernt
+ist — als grobe Fahrzeit mit dem Auto, auch wenn im Angebot nur der Ort genannt wird —
+und schreibe diese Schätzung kurz in die Begründung.
+
+- Bis ca. 40 Minuten einfache Fahrt: Entfernung ist in Ordnung.
+- Weiter weg: nur sinnvoll, wenn überwiegend Homeoffice möglich ist ODER das Gehalt
+  deutlich besser ist, also Richtung E13/A13 oder höher (in der Industrie ein
+  vergleichbares Niveau).
+- Weit weg, kaum Homeoffice und Gehalt unter E13/A13 (oder ohne Angabe, aber nach
+  Art der Stelle erkennbar darunter): archivieren, das lohnt den Weg nicht.
+- Je weiter weg, desto höher muss das Gehalt sein, damit es sich noch rechnet.
+
 No-Gos:
 - Keine reinen Vertriebsstellen
 - Keine reinen SAP-Beratungsstellen
