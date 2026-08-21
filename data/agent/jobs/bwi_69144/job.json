@@ -1,0 +1,34 @@
+{
+  "id": "bwi:69144",
+  "employer": "BWI GmbH",
+  "titel": "Senior Security Analyst im Cyber Defense Center (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/senior-security-analyst-im-cyber-defense-center-m-w-d-69144",
+  "referenzcode": "69144",
+  "beschreibung": "ab sofort und in Vollzeit in Bonn oder Köln.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\n​​Im Bereich Cyber Defense Center (CDC) und im Computer Emergency Response Team (CERT) der BWI werden sicherheitsrelevante Systeme und Netze überwacht und Sensoriken zur Detektion von Angriffen auf IT-Infrastrukturen durch IT-Security Analysten strategisch ausgewählt und implementiert. Wir sind Teil des Competence Centers IT-Security (CCITS), in welchem innerhalb des Geschäftsbereiches CDO der BWI die IT-, Informations- und Cyber-Sicherheitskompetenzen zentralisiert sind.\n\nAufgaben:\n- Du entwickelst strategisch die Integration einer Endpoint Detection & Response Lösung in die Wirkumgebung und unterstützt bei der Anforderungsanalyse für EDR-Systeme\n- Du entwicklst eigene Erkennungsregeln und spürst proaktiv hochkomplexe, gezielte Angriffstrukturen (APTs) auf\n- Du pflegst, konfigurierst und optimierst unsere EDR-Sicherheitstrichtlinien, um False Positives zu reduzieren und die Erkennungsrate zu maximieren\n- Du suchst proaktiv nach versteckten Bedrohungen und Verhaltensanomalien im Netz (Threat Hunting)\n- Du arbeitest eng mit den Spezialisten aus der IT-Infrastruktur und dem SOC Team zusammen, um Security Incidents zu analysieren und zu mitigieren\n- Du treibst die Automatisierung von Incident-Response-Prozessen voran und integrierst EDR-Systeme nahtlos in unsere SIEM- und SOAR-Plattformen\n- Hierfür nutzt du neben klassischen Methoden auch künstliche Intelligenz zur Anreicherung und Automatisierung von Incidents\n- Mit deiner fachlichen Expertise für EDR bist du Ansprechperson für das Security Operation Center und das Security Engineering und Automation Team\n\nBereich: IT- / Cyber-Security",
+  "gehalt": "71.000 € und 104",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "Bonn",
+    "Köln"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "Ausbildung: Erfolgreich abgeschlossenes Studium der Informatik, IT-Sicherheit oder eine vergleichbare Qualifikation",
+    "Infrastruktur: Tiefgehendes Fachwissen über Endpoint-Telemetrie, Netzwerke und IT-Infrastrukturen",
+    "Incident Response: Mehrjährige Erfahrung in der Reaktion auf Sicherheitsvorfälle mittels EDR-Lösungen und Cyber Threat Intelligence",
+    "Analyse: Erste fundierte Kenntnisse im Threat Hunting oder in der Malware-Analyse",
+    "Soft Skills: Starke Kommunikations- und Teamfähigkeit, strukturierte Arbeitsweise sowie hohe Eigeninitiative",
+    "Sprachen: Fließende Deutschkenntnisse (C2-Niveau) und verhandlungssicheres Englisch"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Erfahrung: Mindestens 4 Jahre Berufspraxis in der IT-Security, idealerweise im CERT- oder SOC-Umfeld"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-08-20T22:05:56.241Z",
+  "lastSeen": "2026-08-20T22:05:56.241Z"
+}

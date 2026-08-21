@@ -1,0 +1,35 @@
+{
+  "id": "bwi:69068",
+  "employer": "BWI GmbH",
+  "titel": "Lead System Engineer - Systemprogrammierer (DB/IMS) Mainframe (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/lead-system-engineer-systemprogrammierer-db-ims-mainframe-m-w-d-69068",
+  "referenzcode": "69068",
+  "beschreibung": "ab Oktober und in Vollzeit bundesweit an einem unserer BWI Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nDie Abteilung ITOM 2 Application stellt an den Rechenzentrumsstandorten Bonn und Strausberg die Hardware-/Softwareinfrastruktur für den Betrieb der zentralen Anwendungen der Bundeswehr zur Verfügung. Sie ist zuständig für die Konzeption der Mainframe-Infrastruktur, Bereitstellung, Wartung, Betrieb und Second-Level-Support des Betriebssystems z/OS einschließlich der auf dieser Betriebssystemplattform eingesetzten Security-, Datenbank-, Automations-, Monitoring- sowie Produktions- und Anwendungssteuerenden Software.\n\nAufgaben:\n- Sicherstellung des Betriebs von Db2/IMS-Systemen unter dem Betriebssystem z/OS\n- Konfiguration, Implementierung, Wartung, Dokumentation sowie Test und Einsatz von Änderungen an den technischen Komponenten in den jeweiligen Test- und Produktivsystemen\n- Monitoring und Analyse von Systemleistungen, Optimierung von Datenbankabfragen sowie Strukturierung komplexer relationaler Datenbanken\n- Erstellung von nachhaltigen Backup- und Wiederherstellungskonzepten\n- Entwicklung und Fortschreibung von Implementierungs- und Betriebsstandards und Sicherstellung der Umsetzung sowie Einhaltung im Betrieb\n- Beratung und aktive Unterstützung von Entwicklern bei der Implementierung von Db2/IMS in Batch, Remote sowie Online-Prozessen\n- Analyse und Behebung von Systemfehlern in komplexen Systemstrukturen (2nd Level Support)​​\n\nBereich: Mobility / Mobile Apps / Communication",
+  "gehalt": "71.000 € und 104",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "Abgeschlossenes fachbezogenes Hochschulstudium oder vergleichbar",
+    "Mindestens 4 Jahre einschlägige Berufserfahrung in einem vergleichbaren Umfeld",
+    "Sehr gute Kenntnisse der Mainframe-Architektur und System-Programmierung (Db2/IMS)",
+    "Fundierte Kenntnisse in SQL, JCL, SMPE und der REXX Programmierung",
+    "Ausgeprägte analytische Kompetenz, Lernbereitschaft und Verantwortungsbewusstsein",
+    "Sehr gute Kommunikationsfähigkeit sowie eine hohe Teamfähigkeit",
+    "Bereitschaft zur Durchführung von Dienstreisen 1x pro Quartal sowie regelmäßige Rufbereitschaft",
+    "Verhandlungssichere Deutschkenntnisse in Wort und Schrift​"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Idealerweise Erfahrung im Zusammenspiel mit Mainframe-Sprachen wie COBOL, PL/I oder Java"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-08-20T22:05:57.784Z",
+  "lastSeen": "2026-08-20T22:05:57.784Z"
+}

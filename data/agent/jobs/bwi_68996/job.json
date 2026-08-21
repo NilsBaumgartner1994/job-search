@@ -1,0 +1,38 @@
+{
+  "id": "bwi:68996",
+  "employer": "BWI GmbH",
+  "titel": "Senior Systems Engineer – Business Applications (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/senior-systems-engineer-business-applications-m-w-d-68996",
+  "referenzcode": "68996",
+  "beschreibung": "ab sofort und in Vollzeit in Berlin, Strausberg oder München, alternativ deutschlandweit an einem unserer BWI Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\n​Die Abteilung Business Applications ist verantwortlich für den Aufbau, Betrieb und die Optimierung und Automatisierung von komplexen und stetig wachsenden Systemumgebungen und Verfahren auf Basis Redhat Linux, Java, PHP, uvm.. Darüber hinaus werden servicespezifische IT-Lösungen nach Vorgaben des Service Design und der Service Transition entwickelt, integriert und getestet, sowie Fachkonzepte für Delivery Einheiten erstellt und gepflegt.\n\nAufgaben:\n- 2nd Level Support für die LAMP (Linux/Apache/MySQL/PHP) - Plattformen und Applikationen in unserer eigenen Cloud\n- Mitwirkung bei der automatisierten Bereitstellung von Plattformkomponenten durch CI/CD\n- Erstellung, Test und Implementierung von Containerbuilds\n- Bearbeitung von Störungen gemäß Spezifikation der BWI (Störungsannahme, Fehleranalyse, Fehlerbehebung)\n- Identifikation von Risiken, sowie Absicherung und Behebung von Security Risiken\n- Mitwirkung bei der Entwicklung von Schulungskonzepten\n- Pflege und Weiterentwicklung der technischen Dokumentation\n\nBereich: Plattform Management",
+  "gehalt": "57.800 € und 84",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "Berlin",
+    "Strausberg",
+    "München"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "Erfahrungen mit einem oder mehreren der folgenden Technologien: Webservern (Apache, NGINX), Linux Betriebssysteme (z.B. CentOS, SuSE, RHEL, Debian), Datenbanken (z.B.: MySQL, MariaDB, PostgreSQL), LAMP basierte Anwendungen",
+    "Gute Kenntnisse in Kubernetes und Cloud-nativen Konzepten",
+    "Kenntnisse von Anwendungsdeployments as Code via Helm-Charts, kustomize, k8s-Operators",
+    "Erfahrungen mit Automatisierungswerkzeugen (z.B. GitLab-CI, Terraform, Crossplane, Ansible, ArgoCD und FluxCD)",
+    "Erfahrungen mit Container-Builds (z.B. Docker, Buildah) und Artefaktverwaltung (Nexus, Harbor)",
+    "Vertrautheit mit Monitoring- , Logging- und Alerting-Stacks (z.B. Prometheus, Grafana, Instana)",
+    "Erfahrungen mit Skalierung und Ressourcenoptimierung in Container basierten Umgebungen sowie Git/Git-Ops",
+    "Grundverständnis TCP Netze wie Firewalling, Netzstruktur, Sicherheit",
+    "Erfahrungen mit CMDB/Asset-Managementsystemen",
+    "ITIL Grundkenntnisse (Change/Incident/Problem-Management)",
+    "Fließende Deutsch- und gute Englischkenntnisse​"
+  ],
+  "voraussetzungenWuenschenswert": [],
+  "adapter": "bwi",
+  "firstSeen": "2026-08-20T22:06:00.378Z",
+  "lastSeen": "2026-08-20T22:06:00.378Z"
+}

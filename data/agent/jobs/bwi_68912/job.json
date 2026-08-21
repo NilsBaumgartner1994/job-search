@@ -1,0 +1,37 @@
+{
+  "id": "bwi:68912",
+  "employer": "BWI GmbH",
+  "titel": "Netzwerkadministrator – Network Security (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/netzwerkadministrator-network-security-m-w-d-68912",
+  "referenzcode": "68912",
+  "beschreibung": "ab sofort und in Vollzeit in Berlin, Frankfurt, Leipzig, München oder Rheinbach.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\n​Die Abteilung Network Security verantwortet den Betrieb und die Administration von Sicherheitsgateways (Firewalls), Intrusion Detection und Prevention Systemen (IDS/IPS) an Netzübergängen und für Zonen mit besonderem Schutzbedarf sowie die Backend VPN Infrastruktur für den Remote Access Service der Bundeswehr und der BWI. Wir betreiben, modernisieren und aktualisieren unsere hard- und softwarebasierten Services kontinuierlich. In zahlreichen Projekten erweitern wir unsere Kapazitäten und setzen hierfür moderne und innovative Technologien ein um die Herausforderungen von morgen effizient bewältigen zu können. Wir stellen in unserer Operations Abteilung den stabilen und sicheren Betrieb der Firewall-, IDS/IPS und RAS-Infrastruktur für unseren Kunden sicher.\n\nAufgaben:\n- ​Überwachung der Firewall-Systeme\n- Bewertung und Implementierung von Änderungen an den Firewall-Systemen\n- Planung, Koordination und Umsetzung von Inbetriebnahmen und Migrationen\n- Kooperative Fehleranalyse und Behebung von Netzwerk- und Systemstörungen im Team sowie abteilungsübergreifend\n- Erstellung und Fortschreibung von Dokumentationen\n- Implementieren von Automatisierungslösungen für Firewall-Systeme\n- Proaktive Kommunikation und Zusammenarbeit im Team\n- Teilnahme an der Rufbereitschaft\n\nBereich: Netzwerktechnologie",
+  "gehalt": "44.100 € und 61",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "Berlin",
+    "Frankfurt",
+    "Leipzig",
+    "München",
+    "Rheinbach"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "Erfolgreich abgeschlossene technische Berufsausbildung in IT Bereich oder eine vergleichbare Ausbildung",
+    "Mindestens 3 Jahre Berufserfahrung in großen Betriebsumgebungen",
+    "Gute Kenntnisse von Firewall- und Netzwerktechnologien (Cisco und genua)",
+    "Hohe Einsatzbereitschaft, Durchsetzungsvermögen und ausgeprägte Teamfähigkeit sowie hohe Kunden- und Serviceorientierung",
+    "Verhandlungssichere Deutsch- und gute Englischkenntnisse in Wort und Schrift​"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Erfahrungen mit Skriptsprachen (Python, Bash) und Automatisierungswerkzeugen (Ansible) wünschenswert",
+    "Zertifizierungen des Herstellers Cisco (CCNA, CCNP) oder genua wünschenswert"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-08-20T22:06:04.292Z",
+  "lastSeen": "2026-08-20T22:06:04.292Z"
+}

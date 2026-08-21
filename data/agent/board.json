@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T07:58:49.705Z",
+  "updatedAt": "2026-08-21T22:13:56.060Z",
   "entries": [
     {
       "jobId": "accenture:13818109",
@@ -312,6 +312,54 @@
         "gesamt": 3
       },
       "begruendung": "Der Dienstort Wiesbaden liegt weit außerhalb des Pendelbereichs und bietet als operative Leitungsfunktion keine vollständige Remote-Option. Trotz sehr gut passender Vergütung (EG 14 / A14) und Verbeamtungsmöglichkeit scheidet die Stelle aufgrund der Entfernung aus."
+    },
+    {
+      "jobId": "bka:T-2026-57",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.586Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 5,
+        "gehalt": 4,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Content-Management für Webauftritte auf Typo3-Basis in Entgeltgruppe 11 liegt unter deiner E13-Schwelle und deutlich unter deinem Profil. Die Stelle ist außerdem befristet, während du unbefristet suchst, und Wiesbaden ist geschätzt rund 3,5 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bka:T-2026-58",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.549Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 5,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 3
+      },
+      "begruendung": "Cybercrime-Auswertung beim BKA ist fachlich anschlussfähig und mobiles Arbeiten wird angeboten, Entgeltgruppe 12 liegt aber unter deiner E13-Schwelle. Wiesbaden ist geschätzt rund 3,5 Stunden Fahrt entfernt, und Ermittlungsarbeit mit Gerichtsvertretung bringt spürbare Präsenzpflicht mit sich."
+    },
+    {
+      "jobId": "bka:T-2026-62",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.605Z",
+      "punkte": 6,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 6
+      },
+      "begruendung": "Lösungsarchitektur für Cloud-native und hybride Infrastrukturen, API-Management und Modernisierungsvorhaben auf Entgeltgruppe 13 ist fachlich ein starker Treffer für einen promovierten Software Engineer mit Architekturerfahrung. Das BKA nennt ausdrücklich mobiles Arbeiten, was bei geschätzt rund 3,5 Stunden Fahrt nach Wiesbaden auch nötig wäre — den konkreten Homeoffice-Anteil unbedingt vorab klären."
     },
     {
       "jobId": "bka:W-2026-1",
@@ -904,6 +952,22 @@
       "updatedAt": "2026-08-20T21:55:58.857Z"
     },
     {
+      "jobId": "bwi:60992",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.655Z",
+      "punkte": 7,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 9,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 7
+      },
+      "begruendung": "Mit 87.700 bis 128.000 Euro liegt die Stelle deutlich über E13-Niveau, und Security-Operations-Projekte zu steuern verbindet IT-Fachlichkeit mit der Projekt- und Führungserfahrung aus deiner Geschäftsführertätigkeit. Bonn, Köln und Meckenheim liegen geschätzt 2,5 bis 3 Stunden Fahrt entfernt; die BWI wirbt ausdrücklich mit mobilem Arbeiten und Vertrauensarbeitszeit, was das bei diesem Gehalt tragfähig machen kann."
+    },
+    {
       "jobId": "bwi:63245",
       "status": "archiviert",
       "vonKi": true,
@@ -966,6 +1030,1062 @@
         "gesamt": 1
       },
       "begruendung": "Duales Master-Studienprogramm mit Ausbildungsvergütung, das für Ihr Profil nach abgeschlossener Promotion ungeeignet ist."
+    },
+    {
+      "jobId": "bwi:64678",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.661Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 10,
+        "arbeitszeit": 7,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "Das Gehaltsband von 124.500 bis 182.000 Euro und die Führungsrolle wären sehr attraktiv, inhaltlich geht es aber um HR-Analytics und Vergütungssysteme — Personalwirtschaft statt Informatik oder Software Engineering. Bonn liegt zudem geschätzt rund 2,5 bis 3 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:65023",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.665Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 5,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "Backup-Systembetrieb ist klassische Betriebsarbeit und bleibt unter deinem Profil als promovierter Software Engineer. Das Band von 51.300 bis 75.000 Euro liegt nur teilweise auf E13-Niveau, und bundesweit bedeutet einen der BWI-Standorte — im Raum Osnabrück/Vechta/Cloppenburg gibt es keinen."
+    },
+    {
+      "jobId": "bwi:66701",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.670Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 9,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Das Gehaltsband von 87.700 bis 128.000 Euro liegt klar über E13, inhaltlich ist Compliance-Management aber Governance- und Regelwerksarbeit ohne technischen Entwicklungskern und damit fachlich neben deinem Profil. Bonn ist geschätzt rund 2,5 bis 3 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:67097",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.675Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 6,
+        "gehalt": 5,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Netzwerkautomatisierung hat zwar einen Softwareanteil, bleibt aber Infrastrukturbetrieb, und das Band von 51.300 bis 75.000 Euro liegt nur im oberen Bereich auf E13-Niveau. Bonn, Berlin, Frankfurt und Wilhelmshaven sind geschätzt 2,5 bis 4 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:67843",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.680Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Betrieb und Betreuung von Business Applications ist Systembetrieb statt Softwareentwicklung, das Band von 57.800 bis 84.000 Euro liegt im Mittel etwa auf E13-Niveau. Genannt sind Berlin, München oder Strausberg beziehungsweise ein beliebiger BWI-Standort — keiner davon liegt im Raum Osnabrück/Vechta/Cloppenburg."
+    },
+    {
+      "jobId": "bwi:67940",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.685Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "Citrix-ADC-Administration ist sehr produktnaher Infrastrukturbetrieb und liegt fachlich deutlich unter deinem Profil. Bonn, Meckenheim und Rheinbach sind geschätzt rund 2,5 bis 3 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:68451",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.599Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "Das Gehaltsband von 71.000 bis 104.000 Euro liegt über E13-Niveau und bundesweit ließe sich der BWI-Standort Hannover wählen (geschätzt rund 1,5 Stunden Fahrt). Inhaltlich ist Technologiekommunikation aber Öffentlichkeitsarbeit und keine Informatik — fachlich außerhalb deines Profils."
+    },
+    {
+      "jobId": "bwi:68511",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.613Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 4,
+        "homeoffice": 6,
+        "gehalt": 5,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Netzwerkanalyse ist Infrastrukturbetrieb und liegt fachlich unter deinem Profil als promovierter Software Engineer. Das Band von 51.300 bis 75.000 Euro erreicht E13-Niveau nur an der Spitze, primär gesucht wird in München und Nürnberg (geschätzt rund 6 Stunden Fahrt)."
+    },
+    {
+      "jobId": "bwi:68527",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.621Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 4
+      },
+      "begruendung": "SecOps für einen Managed Cloud Stack ist technisch anspruchsvoll, bleibt aber Betriebs- und Absicherungsarbeit statt Softwareentwicklung. Das Band von 57.800 bis 84.000 Euro liegt in der Mitte etwa auf E13-Niveau und damit nicht deutlich darüber; die genannten Standorte Bonn, Berlin und München sind geschätzt 2,5 bis 6 Stunden entfernt, bundesweit käme allenfalls Hannover in Frage."
+    },
+    {
+      "jobId": "bwi:68700",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.628Z",
+      "punkte": 7,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 7
+      },
+      "begruendung": "Senior Android Engineer ist echte Softwareentwicklung auf Senior-Niveau und passt damit direkt zu deiner Promotion im Software Engineering. Mit 71.000 bis 104.000 Euro liegt die Vergütung klar über E13. Bonn ist geschätzt rund 2,5 bis 3 Stunden Fahrt entfernt, die BWI wirbt aber ausdrücklich mit mobilem Arbeiten — den konkreten Anteil solltest du früh ansprechen."
+    },
+    {
+      "jobId": "bwi:68732",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.634Z",
+      "punkte": 7,
+      "punkteDetails": {
+        "entfernung": 4,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 7
+      },
+      "begruendung": "Senior DevOps Engineer verbindet Softwareentwicklung, Automatisierung und Architektur und passt sehr gut zu deinem Profil. Das Band von 71.000 bis 104.000 Euro liegt klar über E13, und neben Bonn und Meckenheim ist ausdrücklich jeder BWI-Standort möglich — Hannover wäre mit geschätzt rund 1,5 Stunden Fahrt die naheliegende Wahl."
+    },
+    {
+      "jobId": "bwi:68812",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.639Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 4,
+        "homeoffice": 6,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Active-Directory-Administration ist produktnaher Systembetrieb und liegt deutlich unter deinem Profil. Das Band von 57.800 bis 84.000 Euro entspricht in etwa E13, primär gesucht wird in München und Rheinbach (geschätzt 3 bis 6 Stunden Fahrt)."
+    },
+    {
+      "jobId": "bwi:68828",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.644Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "Die Stelle ist ausdrücklich auf zwei Jahre befristet, während du unbefristet suchst. Strausberg und Berlin liegen geschätzt rund 4 Stunden Fahrt entfernt, und ein Security Officer für eine Betriebsregion ist ortsgebunden — das Gehaltsband von 71.000 bis 104.000 Euro gleicht beides nicht aus."
+    },
+    {
+      "jobId": "bwi:68832",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.649Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 9,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Mit 87.700 bis 128.000 Euro und einer Lead-Rolle wäre die Wertigkeit attraktiv, Privacy Management ist inhaltlich aber vor allem datenschutzrechtliche Steuerungsarbeit und kein Software Engineering. Bundesweit ließe sich immerhin Hannover (geschätzt rund 1,5 Stunden Fahrt) wählen."
+    },
+    {
+      "jobId": "bwi:68838",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.654Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 5,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 4
+      },
+      "begruendung": "DevOps für PKI-Plattformdienste ist fachlich anschlussfähig, das Band von 51.300 bis 75.000 Euro erreicht E13-Niveau aber nur an der Spitze. Die Stelle ist fest an Bonn, Köln oder Meckenheim gebunden (geschätzt 2,5 bis 3 Stunden Fahrt) — für diese Distanz müsste deutlich mehr geboten werden."
+    },
+    {
+      "jobId": "bwi:68850",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.660Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 4
+      },
+      "begruendung": "IT-Projektleitung passt gut zu deiner Erfahrung als Geschäftsführer und Projektverantwortlicher, das Band von 57.800 bis 84.000 Euro liegt aber nur mittig auf E13-Niveau. Die Stelle ist fest an Bonn oder Meckenheim gebunden (geschätzt 2,5 bis 3 Stunden Fahrt), ohne Option auf einen näheren Standort."
+    },
+    {
+      "jobId": "bwi:68853",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.665Z",
+      "punkte": 8,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 9,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 8
+      },
+      "begruendung": "Lead Solution Architect ist eine Architektur- und Führungsrolle und trifft die Kombination aus Software Engineering, Systementwurf und Verantwortung, die dein Profil ausmacht. Mit 87.700 bis 128.000 Euro liegt die Vergütung klar über E13, und die Stelle ist bundesweit an jedem BWI-Standort besetzbar — Hannover läge bei geschätzt rund 1,5 Stunden Fahrt."
+    },
+    {
+      "jobId": "bwi:68856",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.673Z",
+      "punkte": 6,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 6
+      },
+      "begruendung": "Release Management ist stark entwicklungsnah (Build-, Test- und Auslieferungsprozesse) und passt zu deinem Software-Engineering-Hintergrund, auch wenn es prozessorientierter ist als reine Entwicklung. Mit 71.000 bis 104.000 Euro liegt die Vergütung über E13, und bundesweit ist der Standort Hannover mit geschätzt rund 1,5 Stunden Fahrt erreichbar."
+    },
+    {
+      "jobId": "bwi:68884",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.677Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 5,
+        "gehalt": 1,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Anwenderbetreuung im User Help Desk ist First-Level-Support und liegt weit unter deinem Profil. Das Band von 36.800 bis 51.000 Euro liegt deutlich unter E13; Hannover wäre zwar mit geschätzt rund 1,5 Stunden Fahrt der nächste Standort, rechtfertigt den Weg bei dieser Wertigkeit aber nicht."
+    },
+    {
+      "jobId": "bwi:68892",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.682Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 3,
+        "gehalt": 2,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Ein Service Technician arbeitet hardwarenah vor Ort und damit fachlich weit außerhalb deines Profils. Das Band von 44.100 bis 61.000 Euro liegt unter E13, und Geltow bei Potsdam ist geschätzt rund 4 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:68904",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.687Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Datenmanagement im SAP-Umfeld ist eine SAP-Fach- und Beratungsrolle und fällt damit unter deine ausdrücklichen No-Gos. Das gute Gehaltsband von 71.000 bis 104.000 Euro und die freie Standortwahl ändern daran nichts."
+    },
+    {
+      "jobId": "bwi:68908",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.692Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Wie die Senior-Variante: eine SAP-Fachrolle im Datenmanagement und damit eines deiner No-Gos. Das Band von 57.800 bis 84.000 Euro liegt zudem nur mittig auf E13-Niveau."
+    },
+    {
+      "jobId": "bwi:68912",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.697Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 6,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Netzwerkadministration ist Betriebsarbeit deutlich unter deinem Profil, und das Band von 44.100 bis 61.000 Euro liegt unter E13. Berlin, Frankfurt, Leipzig, München und Rheinbach sind alle geschätzt 3 bis 6 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:68916",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.702Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Network Security ist Infrastruktursicherheit statt Softwareentwicklung und liegt damit neben deinem Schwerpunkt. Das Band von 57.800 bis 84.000 Euro entspricht in etwa E13, die festen Standorte Bonn, Köln und Rheinbach liegen geschätzt 2,5 bis 3 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:68928",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.708Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Senior Consultant für SAP-Trainings ist eine reine SAP-Beratungs- und Schulungsrolle und damit ein ausdrückliches No-Go in deinem Profil, unabhängig vom guten Gehaltsband."
+    },
+    {
+      "jobId": "bwi:68932",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.713Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Auch die HCM-Variante ist eine reine SAP-Beratungs- und Trainingsrolle und fällt unter deine No-Gos."
+    },
+    {
+      "jobId": "bwi:68936",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.718Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "SASPF ist das SAP-basierte ERP-Vorhaben der Bundeswehr; die Rolle ist damit eine SAP-Fach- und Beratungstätigkeit und fällt unter deine No-Gos, auch wenn 71.000 bis 104.000 Euro attraktiv wären."
+    },
+    {
+      "jobId": "bwi:68940",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.723Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Wie das Parallelangebot: Solution Manager im SAP-basierten SASPF-Umfeld und damit eine SAP-Beratungsrolle, die du ausgeschlossen hast."
+    },
+    {
+      "jobId": "bwi:68956",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.731Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 6,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "Service Management für Netzwerke ist Betriebssteuerung ohne Entwicklungskern und liegt unter deinem Profil. Das Band von 57.800 bis 84.000 Euro entspricht etwa E13, angegeben ist München mit geschätzt rund 6 Stunden Fahrt."
+    },
+    {
+      "jobId": "bwi:68964",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.736Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 5,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "System Engineering für einen Managed Cloud Stack ist Plattformbetrieb statt Softwareentwicklung, und das Band von 51.300 bis 75.000 Euro erreicht E13 nur an der Spitze. Bundesweit wäre Hannover erreichbar, das rechtfertigt die Wertigkeit aber nicht."
+    },
+    {
+      "jobId": "bwi:68968",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.741Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 5,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Automatisierung der Windows-Server-Plattform hat zwar Skripting- und Engineering-Anteile, bleibt aber Plattformbetrieb. Das Band von 51.300 bis 75.000 Euro liegt unterhalb bis knapp auf E13-Niveau."
+    },
+    {
+      "jobId": "bwi:68976",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.746Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Softwareeinkauf ist eine kaufmännische Beschaffungs- und Verhandlungsrolle und liegt fachlich außerhalb deines Profils, nah an den Vertriebstätigkeiten, die du ausgeschlossen hast. Berlin, Bonn, Frankfurt und München sind alle geschätzt 2,5 bis 6 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:68992",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.751Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 4
+      },
+      "begruendung": "ITIL Service Asset und Configuration Management ist Prozess- und Betriebsarbeit rund um Konfigurationsdaten, nicht Softwareentwicklung. Gehalt (71.000 bis 104.000 Euro) und die freie Standortwahl inklusive Hannover wären zwar passend, der inhaltliche Zuschnitt bleibt aber unter deinem Profil."
+    },
+    {
+      "jobId": "bwi:68996",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.756Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 6,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Betrieb von Business Applications ist Systembetrieb statt Entwicklung, das Band von 57.800 bis 84.000 Euro liegt mittig auf E13-Niveau. Berlin, Strausberg und München sind geschätzt 4 bis 6 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:69016",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.761Z",
+      "punkte": 7,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 7
+      },
+      "begruendung": "Senior IT Architekt für einen Enterprise Service Bus ist Systemarchitektur und Integrationsentwurf auf hohem Niveau — fachlich ein sehr guter Treffer für einen promovierten Software Engineer. Mit 71.000 bis 104.000 Euro liegt die Vergütung über E13, und die Stelle ist bundesweit an jedem BWI-Standort besetzbar (Hannover: geschätzt rund 1,5 Stunden Fahrt)."
+    },
+    {
+      "jobId": "bwi:69020",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:12:14.766Z",
+      "punkte": 6,
+      "punkteDetails": {
+        "entfernung": 4,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 6
+      },
+      "begruendung": "Eine Senior-Architektenrolle für DMZ-Umgebungen ist anspruchsvoller Systementwurf, wenn auch stärker netzwerk- und sicherheitsgeprägt als reine Softwarearchitektur. Mit 71.000 bis 104.000 Euro liegt die Vergütung über E13; primär genannt sind Strausberg und Berlin (geschätzt rund 4 Stunden Fahrt), alternativ ist aber jeder BWI-Standort möglich, also auch Hannover."
+    },
+    {
+      "jobId": "bwi:69028",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:55.892Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Service Management für ein IT-Lagebild ist Steuerungs- und Berichtsarbeit ohne Entwicklungskern und liegt damit neben deinem Schwerpunkt. Die Stelle ist fest an Rheinbach gebunden, geschätzt rund 3 Stunden Fahrt entfernt, ohne Option auf einen näheren BWI-Standort."
+    },
+    {
+      "jobId": "bwi:69032",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:55.907Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 5,
+        "gehalt": 5,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Service-Koordination und Supervision ist operative Betriebssteuerung weit unter deinem Profil, das Band von 51.300 bis 75.000 Euro erreicht E13 nur an der Spitze. Rostock ist geschätzt rund 4 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:69068",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:55.915Z",
+      "punkte": 6,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 6
+      },
+      "begruendung": "Systemprogrammierung für DB2/IMS auf dem Mainframe ist echte Softwareentwicklung, hier sogar als Lead-Rolle mit fachlicher Führung — das passt zu deiner Kombination aus Software Engineering und Führungserfahrung. Mit 71.000 bis 104.000 Euro liegt die Vergütung über E13 und die Stelle ist bundesweit besetzbar (Hannover: geschätzt rund 1,5 Stunden Fahrt). Bedenke, dass Mainframe-Technologie eine sehr spezielle Nische ist."
+    },
+    {
+      "jobId": "bwi:69080",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:55.922Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Netzwerkbetrieb im Mainframe-Umfeld ist Infrastrukturarbeit statt Softwareentwicklung, und das Band von 57.800 bis 84.000 Euro liegt nur mittig auf E13-Niveau. Die freie Standortwahl gleicht den fachlichen Zuschnitt nicht aus."
+    },
+    {
+      "jobId": "bwi:69100",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:55.928Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Arbeits- und Gesundheitsschutz ist eine sicherheitstechnische Fachrolle mit eigener Qualifikationspflicht und hat mit Informatik nichts zu tun. Meckenheim ist zudem geschätzt rund 3 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:69104",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:55.933Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 4
+      },
+      "begruendung": "Der Architektentitel und das Band von 71.000 bis 104.000 Euro sprechen dafür, inhaltlich geht es aber um eine sehr produktgebundene Citrix- und Terminal-Services-Landschaft — das ist Plattformarchitektur statt Softwarearchitektur und bleibt unter deinem Profil."
+    },
+    {
+      "jobId": "bwi:69112",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:55.939Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 2,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Beschaffungsprozesse sind kaufmännisch-administrative Arbeit außerhalb deines Profils. Die Stelle ist ausdrücklich vor Ort in Berlin zu besetzen, geschätzt rund 4 Stunden Fahrt entfernt, also ohne nennenswerten Homeoffice-Ausgleich."
+    },
+    {
+      "jobId": "bwi:69116",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:55.945Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "Consulting im Bereich Bundeswehr-Logistik verlangt militärisches Logistik-Domänenwissen statt Software Engineering. Das Band von 57.800 bis 84.000 Euro liegt zudem nur mittig auf E13-Niveau."
+    },
+    {
+      "jobId": "bwi:69124",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:55.950Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Koordination von Lagebildern und Reports im CISO-Umfeld ist Zuarbeit und Berichtswesen ohne technischen Gestaltungskern. Gehalt und freie Standortwahl sind gut, der inhaltliche Zuschnitt passt aber nicht zu deinem Profil als Software Engineer."
+    },
+    {
+      "jobId": "bwi:69128",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:55.955Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 4
+      },
+      "begruendung": "Business Architecture im eHealth-Umfeld ist stark fachdomänengetrieben (Sanitätsdienst, medizinische Prozesse) und weniger technische Architektur. Alle genannten Standorte von Meckenheim bis Berlin liegen geschätzt 2,5 bis 6 Stunden Fahrt entfernt, eine freie bundesweite Standortwahl ist hier nicht angeboten."
+    },
+    {
+      "jobId": "bwi:69144",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:55.962Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 4
+      },
+      "begruendung": "Security-Analyse im Cyber Defense Center ist Betriebs- und Auswertungsarbeit, oft mit Rufbereitschaft, und liegt neben deinem Entwicklungsschwerpunkt. Die Stelle ist fest an Bonn oder Köln gebunden, geschätzt 2,5 bis 3 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:69148",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:55.967Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Service Management für Application Management Services ist Dienstleistersteuerung statt Softwareentwicklung. Bonn ist geschätzt rund 2,5 bis 3 Stunden Fahrt entfernt und ein näherer Standort wird nicht angeboten."
+    },
+    {
+      "jobId": "bwi:69156",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:55.972Z",
+      "punkte": 9,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 9,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 9
+      },
+      "begruendung": "Software Solution Architekt ist der direkteste Treffer für dein Profil: Softwarearchitektur auf Senior-Niveau, genau das Feld deiner Promotion im Software Engineering. Mit 87.700 bis 128.000 Euro liegt die Vergütung deutlich über E13 und die Stelle ist bundesweit an jedem BWI-Standort besetzbar — Hannover läge bei geschätzt rund 1,5 Stunden Fahrt, dazu kommt mobiles Arbeiten."
+    },
+    {
+      "jobId": "bwi:69164",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:55.977Z",
+      "punkte": 7,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 9,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 7
+      },
+      "begruendung": "Eine Lead-Expert-Rolle in der Quantenkommunikation ist forschungsnah und damit anschlussfähig an deine Promotion und deine Erfahrung in Forschung und Lehre; mit 87.700 bis 128.000 Euro liegt sie deutlich über E13 und ist bundesweit besetzbar. Prüfe aber, wie stark physikalisches Fachwissen vorausgesetzt wird — der Schwerpunkt könnte eher bei Physik als bei Informatik liegen."
+    },
+    {
+      "jobId": "bwi:69172",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:55.982Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 3,
+        "gehalt": 2,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Ein Service Technician arbeitet hardwarenah vor Ort, fachlich weit außerhalb deines Profils, und 44.100 bis 61.000 Euro liegen unter E13. Pfungstadt bei Darmstadt ist geschätzt rund 3,5 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:69176",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:55.988Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 6,
+        "arbeitszeit": 5,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Die Stelle ist als vierjährige, befristete Promotionsstelle im Controlling angelegt — du bist bereits promoviert und suchst unbefristet, und Controlling liegt fachlich außerhalb deines Profils. Zudem verteilt sie sich auf Bonn und die TU Dortmund, beide geschätzt 1,5 bis 3 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:69180",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:55.993Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 4,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Eine Logistik-Fachrolle hat mit Informatik nichts zu tun, und 44.100 bis 61.000 Euro liegen unter E13. Rostock ist geschätzt rund 4 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:69188",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:55.998Z",
+      "punkte": 6,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 9,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 6
+      },
+      "begruendung": "Eine People-Lead-Rolle mit 87.700 bis 128.000 Euro trifft deinen Wunsch nach Führungspositionen und liegt deutlich über E13; Enterprise Mobile Management ist technisch anschlussfähig. Von den Standorten ist Bonn mit geschätzt rund 2,5 bis 3 Stunden Fahrt der nächste, München und Frankfurt sind deutlich weiter — und Personalführung lässt sich nur begrenzt aus dem Homeoffice machen."
+    },
+    {
+      "jobId": "bwi:69192",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:56.003Z",
+      "punkte": 7,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 7
+      },
+      "begruendung": "DevSecOps verbindet Softwareentwicklung, Automatisierung und Sicherheit und passt sehr gut zu deinem Profil. Mit 71.000 bis 104.000 Euro liegt die Vergütung über E13, und die Stelle ist bundesweit an jedem BWI-Standort besetzbar (Hannover: geschätzt rund 1,5 Stunden Fahrt) plus mobiles Arbeiten."
+    },
+    {
+      "jobId": "bwi:69196",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:56.009Z",
+      "punkte": 7,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 9,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 7
+      },
+      "begruendung": "Service Architect für einen Private-Cloud-Stack ist eine gestaltende Architekturrolle mit 87.700 bis 128.000 Euro, also deutlich über E13, und bundesweit besetzbar. Der Zuschnitt ist plattform- statt anwendungsnah, bleibt aber klar auf Architekturniveau und damit passend zu deiner Erfahrung."
+    },
+    {
+      "jobId": "bwi:69204",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:56.018Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 5,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Enterprise-Linux-Serverbetrieb ist Systemadministration und liegt unter deinem Profil, das Band von 51.300 bis 75.000 Euro erreicht E13 nur an der Spitze."
+    },
+    {
+      "jobId": "bwi:69208",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:56.023Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "Servermonitoring ist reiner Betriebsdienst und liegt deutlich unter deinem Profil. Die genannten Standorte von Bonn bis Neubrandenburg sind alle geschätzt 2,5 bis 6 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:69216",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:56.028Z",
+      "punkte": 6,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 6
+      },
+      "begruendung": "Als Product Owner für Cloud Orchestration verantwortest du Produktausrichtung und Backlog an der Schnittstelle von Technik und Steuerung — das verbindet dein Software-Engineering-Wissen mit deiner Erfahrung als Geschäftsführer. Mit 71.000 bis 104.000 Euro liegt die Vergütung über E13 und die Stelle ist bundesweit besetzbar (Hannover: geschätzt rund 1,5 Stunden Fahrt)."
+    },
+    {
+      "jobId": "bwi:69224",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:56.032Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Der Einkauf von Rechenzentrumsflächen ist eine kaufmännische Beschaffungs- und Verhandlungsrolle außerhalb deines Profils. Berlin, Bonn und München sind zudem geschätzt 2,5 bis 6 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:69240",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:56.037Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Inhouse Consulting für SAP MM/QM ist eine reine SAP-Beratungsrolle und damit ein ausdrückliches No-Go in deinem Profil. Bonn ist zusätzlich geschätzt rund 2,5 bis 3 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:69244",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:56.042Z",
+      "punkte": 6,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 6
+      },
+      "begruendung": "Cloud Engineering mit Open-Source-Stack ist entwicklungsnah (Infrastructure as Code, Automatisierung, Container) und passt zu deinem technischen Hintergrund. Mit 71.000 bis 104.000 Euro liegt die Vergütung über E13, neben Bonn, Berlin und München ist ausdrücklich jeder BWI-Standort möglich, also auch Hannover mit geschätzt rund 1,5 Stunden Fahrt."
+    },
+    {
+      "jobId": "bwi:69248",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:56.046Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 6,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Consulting für Land Operations verlangt militärisches Einsatz- und Führungswissen, nicht Informatik. Das Band von 57.800 bis 84.000 Euro liegt zudem nur mittig auf E13-Niveau."
+    },
+    {
+      "jobId": "bwi:69252",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:56.051Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "Loadbalancing mit Citrix Netscaler ADC ist sehr produktnaher Infrastrukturbetrieb, fachlich klar unter deinem Profil. Bonn, Meckenheim und Rheinbach sind geschätzt 2,5 bis 3 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:69256",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:56.055Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "Citrix Plattform Operations ist Betriebsarbeit an einem konkreten Produkt und liegt deutlich unter deinem Profil. Bonn, Frankfurt, München und Nürnberg sind geschätzt 2,5 bis 6 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "bwi:69268",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:13:56.060Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "IT Service Management für Workflow-Applikationen ist Steuerung des laufenden Betriebs, nicht Entwicklung. Trotz guter Vergütung sind alle Standorte von Bonn bis Nürnberg geschätzt 2,5 bis 6 Stunden Fahrt entfernt, eine freie bundesweite Wahl gibt es hier nicht."
     },
     {
       "jobId": "interamt:1193238",
@@ -2469,6 +3589,22 @@
       "begruendung": "Bewerbungsfrist am 20.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "interamt:1462816",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.453Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 3,
+        "gehalt": 5,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "LAN/WLAN-Betriebsadministration ist Netzbetrieb vor Ort und fachlich weit von Software Engineering entfernt. A 12 liegt unter deiner A13-Schwelle und Berlin geschätzt rund 4 Stunden Fahrt entfernt."
+    },
+    {
       "jobId": "interamt:1462973",
       "status": "archiviert",
       "vonKi": true,
@@ -3371,6 +4507,22 @@
       "vonKi": true,
       "updatedAt": "2026-08-20T21:01:07.591Z",
       "begruendung": "Bewerbungsfrist am 31.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1465320",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.460Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 0,
+        "gehalt": 0,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Forstwirt ist ein handwerklich-forstlicher Ausbildungsberuf und hat mit deinem Profil nichts zu tun. Mölln liegt geschätzt rund 2,5 bis 3 Stunden Fahrt entfernt, TVöD-Bund E 5 weit unter deinem Zielniveau."
     },
     {
       "jobId": "interamt:1465337",
@@ -4444,6 +5596,22 @@
       "updatedAt": "2026-08-20T21:55:58.633Z"
     },
     {
+      "jobId": "interamt:1468376",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.646Z",
+      "punkte": 6,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 7,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 6
+      },
+      "begruendung": "Data Science im Bundeszentralamt für Steuern passt fachlich sehr gut zu Informatik und wissenschaftlicher Methodik, A 12 bis A 13 reicht an deine Schwelle heran und die Verbeamtung ist möglich. Bonn ist geschätzt rund 2,5 bis 3 Stunden Fahrt entfernt, angegeben ist nur ein Hybrid-Dienstort — Homeoffice-Anteil und tatsächliche Eingruppierung vorab klären. Hinweis: der gespeicherte Detailtext gehört zu einem anderen Angebot."
+    },
+    {
       "jobId": "interamt:1468402",
       "status": "archiviert",
       "vonKi": true,
@@ -4485,6 +5653,54 @@
       "updatedAt": "2026-08-20T21:55:58.631Z"
     },
     {
+      "jobId": "interamt:1469233",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.381Z",
+      "punkte": 5,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 5,
+        "gehalt": 7,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 5
+      },
+      "begruendung": "Fachlich ein Volltreffer: KI-Beauftragte*r ist genau die Schnittstelle aus Informatik, Forschung und Verantwortung, die zu deiner Promotion passt, unbefristet und mit TV-L E 13 auf deinem Zielniveau. Potsdam liegt allerdings geschätzt rund 4 Stunden Fahrt von Osnabrück/Vechta entfernt und angegeben ist nur 'Dienstort: Hybrid' — ohne überwiegendes Homeoffice oder Umzug wird das nichts. Achtung: der gespeicherte Detailtext gehört zu einem anderen Interamt-Angebot, die Bewertung stützt sich nur auf die Listenfelder — vor einer Bewerbung bitte die Original-Ausschreibung prüfen."
+    },
+    {
+      "jobId": "interamt:1469712",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.483Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 3,
+        "gehalt": 5,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Rechenzentrumstechnik ist gebäude- und hardwarenaher Betrieb und damit fachlich weit von Software Engineering entfernt. TVöD-Bund E 12 liegt unter deiner E13-Schwelle, Berlin geschätzt rund 4 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "interamt:1469746",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.401Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 2,
+        "gehalt": 4,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "Clusterbetrieb an einer Hochschule ist inhaltlich nicht uninteressant, aber TV-L E 11 liegt unter deiner E13-Schwelle und Berlin ist geschätzt rund 4 Stunden Fahrt entfernt. Laborbetrieb bedeutet außerdem Präsenz vor Ort, also kein Ausgleich über Homeoffice. Hinweis: der gespeicherte Detailtext gehört zu einem anderen Angebot."
+    },
+    {
       "jobId": "interamt:1469960",
       "status": "archiviert",
       "vonKi": false,
@@ -4496,6 +5712,70 @@
       "vonKi": true,
       "updatedAt": "2026-08-21T06:45:17.681Z",
       "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1470852",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.608Z",
+      "punkte": 5,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 1,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 5
+      },
+      "begruendung": "A 13h bis A 14 mit Verbeamtung liegt klar über deiner Schwelle und offensive IT-Sicherheit ist für einen promovierten Informatiker fachlich erreichbar. Es handelt sich allerdings um einen Recruiting-Tag, nicht um eine konkrete Ausschreibung, Berlin ist geschätzt rund 4 Stunden Fahrt entfernt und beim Nachrichtendienst ist praktisch kein Homeoffice zu erwarten — realistisch also nur mit Umzug. Hinweis: der gespeicherte Detailtext gehört zu einem anderen Angebot."
+    },
+    {
+      "jobId": "interamt:1470866",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.611Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 1,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "Derselbe Recruiting-Tag, hier aber für die Laufbahn A 9g bis A 11 und damit deutlich unter deiner A13-Schwelle. Berlin ist geschätzt rund 4 Stunden Fahrt entfernt, Homeoffice beim Nachrichtendienst praktisch ausgeschlossen."
+    },
+    {
+      "jobId": "interamt:1470888",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.615Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 1,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 2
+      },
+      "begruendung": "Der Recruiting-Tag richtet sich ausdrücklich an IT-Profis mit Bachelor-Abschluss und die Laufbahn A 9g bis A 11 — beides liegt unter deinem Abschluss- und Besoldungsziel. Berlin ist geschätzt rund 4 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "interamt:1471010",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.456Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 3,
+        "gehalt": 5,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 3
+      },
+      "begruendung": "Produktbetreuung und -entwicklung wäre inhaltlich anschlussfähig, A 12 liegt aber unter deiner A13-Schwelle. Bonn ist geschätzt rund 2,5 bis 3 Stunden Fahrt entfernt, und ohne überwiegendes Homeoffice rechnet sich das bei dieser Besoldung nicht."
     },
     {
       "jobId": "interamt:1471220",
@@ -4514,10 +5794,74 @@
       "begruendung": "Reine Vor-Ort-Tätigkeit in Magdeburg für klassischen Netzwerkbetrieb in einer Krankenhaustochter. Inhaltlich und geografisch unpassend."
     },
     {
+      "jobId": "interamt:1472163",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.628Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 1,
+        "gehalt": 1,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 0
+      },
+      "begruendung": "Ein Recruiting-Tag für GEO-Profis mit Berufsabschluss in A 5m bis A 8 passt weder fachlich zur Informatik noch zu deinem Besoldungsziel. Berlin ist geschätzt rund 4 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "interamt:1472176",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.632Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 1,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 0
+      },
+      "begruendung": "Der GEO-Recruiting-Tag zielt auf Geowissenschaften und Bachelor-Abschlüsse in A 9g bis A 11 — fachlich und tariflich außerhalb deines Profils. Berlin ist geschätzt rund 4 Stunden Fahrt entfernt."
+    },
+    {
       "jobId": "interamt:1472192",
       "status": "archiviert",
       "vonKi": false,
       "updatedAt": "2026-08-21T07:58:49.703Z"
+    },
+    {
+      "jobId": "interamt:1472300",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.618Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 1,
+        "gehalt": 1,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 0
+      },
+      "begruendung": "A 5m bis A 9 ist der mittlere Dienst und liegt weit unter deiner A13-Schwelle und deinem Abschlussniveau. Berlin ist geschätzt rund 4 Stunden Fahrt entfernt, Schichtbetrieb im SOC schließt Homeoffice weitgehend aus."
+    },
+    {
+      "jobId": "interamt:1472303",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.621Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 2,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Der Recruiting-Tag richtet sich an IT-Kräfte mit Berufsausbildung, entsprechend liegen E 9c bis E 10 klar unter deiner E13-Schwelle. Berlin ist geschätzt rund 4 Stunden Fahrt entfernt."
     },
     {
       "jobId": "interamt:1472769",
@@ -4536,6 +5880,22 @@
       "begruendung": "Es handelt sich um eine reine Vor-Ort-Stelle in Würzburg ohne Homeoffice-Option. Die Vergütung mit E 10 TVöD entspricht nicht Ihrem Profil."
     },
     {
+      "jobId": "interamt:1473165",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.398Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 3,
+        "gehalt": 1,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Benutzerbetreuung auf TV-L E 8 richtet sich an Fachinformatiker mit Ausbildung und liegt weit unter deinem Abschluss- und Gehaltsniveau. München ist geschätzt rund 6 Stunden Fahrt entfernt. Hinweis: der gespeicherte Detailtext gehört zu einem anderen Angebot, bewertet wurde nach den Listenfeldern."
+    },
+    {
       "jobId": "interamt:1473861",
       "status": "archiviert",
       "vonKi": true,
@@ -4550,6 +5910,70 @@
         "gesamt": 3
       },
       "begruendung": "Die Stelle ist mit E 11 TV-L deutlich unter Ihrem Qualifikationsniveau (Promotion/M.Sc.) dotiert. Zudem liegt der Dienstort Duisburg außerhalb des Pendelbereichs und bietet kein reines Remote-Modell."
+    },
+    {
+      "jobId": "interamt:1474200",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.437Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 3,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 3
+      },
+      "begruendung": "A 12 bis A 13 liegt gerade erst an deiner Schwelle, inhaltlich ist Betriebssteuerung von Netzwerken aber Betriebs- statt Entwicklungsarbeit und damit unter deinem Profil. Berlin ist geschätzt rund 4 Stunden Fahrt entfernt — dafür müsste deutlich mehr geboten werden. Hinweis: der gespeicherte Detailtext gehört zu einem anderen Angebot."
+    },
+    {
+      "jobId": "interamt:1474513",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.389Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 1,
+        "gehalt": 4,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 2
+      },
+      "begruendung": "Datenanalyse passt fachlich grundsätzlich, aber A 10 bis A 12 bleibt unter der A13-Schwelle und München ist geschätzt rund 6 Stunden Fahrt entfernt. Beim Verfassungsschutz ist zudem mit ausgeprägter Präsenzpflicht statt überwiegendem Homeoffice zu rechnen. Hinweis: der gespeicherte Detailtext gehört zu einem anderen Angebot, bewertet wurde nur nach den Listenfeldern."
+    },
+    {
+      "jobId": "interamt:1474526",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.431Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 3,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "A 9g bis A 11 für Sachbearbeitung im Testumfeld liegt unter deiner A13-Schwelle, Berlin ist geschätzt rund 4 Stunden Fahrt entfernt. Hinweis: der gespeicherte Detailtext gehört zu einem anderen Angebot, bewertet wurde nach den Listenfeldern."
+    },
+    {
+      "jobId": "interamt:1474622",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.625Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 1,
+        "gehalt": 1,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 0
+      },
+      "begruendung": "IT-Administration und -Betrieb in A 5m bis A 9 ist mittlerer Dienst und liegt weit unter deinem Niveau. Bad Aibling in Oberbayern ist geschätzt rund 6,5 Stunden Fahrt entfernt, Homeoffice beim Nachrichtendienst praktisch ausgeschlossen."
     },
     {
       "jobId": "interamt:1474873",
@@ -4598,6 +6022,54 @@
       "status": "archiviert",
       "vonKi": false,
       "updatedAt": "2026-08-21T07:58:49.690Z"
+    },
+    {
+      "jobId": "interamt:1476256",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.413Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 3,
+        "gehalt": 2,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "TV-L E 9b für eine E-Government-Lotsentätigkeit liegt deutlich unter deiner E13-Schwelle, und Berlin ist geschätzt rund 4 Stunden Fahrt entfernt. Die Bewerbungsfrist läuft zudem heute bereits ab. Hinweis: der gespeicherte Detailtext gehört zu einem anderen Angebot."
+    },
+    {
+      "jobId": "interamt:1476278",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.384Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 6,
+        "gehalt": 1,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Eine Assistenz der Geschäftsführung auf Basis einer abgeschlossenen Berufsausbildung liegt weit unter deiner Qualifikation als promovierter Informatiker und ehemaliger Geschäftsführer. Schwerin ist geschätzt rund 3 Stunden entfernt; die großzügigen Homeoffice-Möglichkeiten wiegen das Missverhältnis bei Aufgabe und Vergütung nicht auf."
+    },
+    {
+      "jobId": "interamt:1476627",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.434Z",
+      "punkte": 6,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 4,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 6
+      },
+      "begruendung": "Eine Sachgebietsleitung mit A 13h bis A 14 und Verbeamtungsmöglichkeit liegt klar über deiner A13-Schwelle und passt zu deiner Führungserfahrung als Geschäftsführer; Daten-, Sprach- und Videodienste sind fachlich anschlussfähig. Berlin ist allerdings geschätzt rund 4 Stunden Fahrt entfernt, sodass sich das nur mit Umzug oder sehr weitgehendem Homeoffice rechnet. Hinweis: der gespeicherte Detailtext gehört zu einem anderen Angebot — bitte die Original-Ausschreibung prüfen."
     },
     {
       "jobId": "interamt:1476636",
@@ -4649,6 +6121,22 @@
       "begruendung": "Die Position ist lediglich nach E 10 TV-L eingruppiert und richtet sich primär an Absolventen einer IT-Ausbildung. Der Dienstort Koblenz ist zudem zu weit von Ihrem Wunschraum entfernt."
     },
     {
+      "jobId": "interamt:1477211",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.463Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 0,
+        "gehalt": 0,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Wie das parallele Angebot in Mölln: Forstwirt ist ein handwerklich-forstlicher Ausbildungsberuf, fachlich völlig außerhalb deines Profils, und TVöD-Bund E 5 liegt weit unter deinem Zielniveau."
+    },
+    {
       "jobId": "interamt:1477531",
       "status": "archiviert",
       "vonKi": false,
@@ -4662,11 +6150,123 @@
       "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "interamt:1477756",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.487Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 2,
+        "gehalt": 10,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "Eine Abteilungsleitung nach B 3 wäre von der Wertigkeit her weit über deiner Schwelle, verlangt aber eine wissenschaftliche Laufbahn in Toxikologie beziehungsweise Versuchstierkunde samt einschlägiger Habilitation oder vergleichbarer Reputation — mit Informatik nicht erreichbar. Berlin liegt zudem geschätzt rund 4 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "interamt:1477824",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.416Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 2,
+        "gehalt": 4,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "IT-Infrastrukturbetreuung auf TV-L E 11 liegt unter deiner E13-Schwelle und ist eine Präsenz-Betriebsaufgabe. Berlin-Spandau ist geschätzt rund 4 Stunden Fahrt entfernt. Hinweis: der gespeicherte Detailtext gehört zu einem anderen Angebot."
+    },
+    {
       "jobId": "interamt:1477918",
       "status": "archiviert",
       "vonKi": true,
       "updatedAt": "2026-08-21T06:45:17.681Z",
       "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1477954",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.490Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 3,
+        "gehalt": 4,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Microsoft-Administration auf TVöD-Bund E 11 liegt unter deiner E13-Schwelle und inhaltlich unter deinem Profil als promovierter Software Engineer. Berlin ist geschätzt rund 4 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "interamt:1477987",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.440Z",
+      "punkte": 7,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 7
+      },
+      "begruendung": "Individualsoftwareentwicklung mit Java und BPM auf TVöD-Bund E 13, unbefristet, ist fachlich und tariflich genau dein Ziel — Software Engineering im öffentlichen Dienst auf deinem Niveau. Bonn liegt geschätzt rund 2,5 bis 3 Stunden Fahrt entfernt, das geht nur mit deutlichem Homeoffice-Anteil, den die BaFin üblicherweise bietet. Hinweis: der gespeicherte Detailtext gehört zu einem anderen Angebot (LDBV Bayern) — den tatsächlichen Homeoffice-Anteil bitte in der Original-Ausschreibung prüfen."
+    },
+    {
+      "jobId": "interamt:1478105",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.463Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 3,
+        "gehalt": 5,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 2
+      },
+      "begruendung": "IT- und Informationssicherheit passt fachlich, die Besoldungsspanne beginnt aber bei A 9g und erreicht A 13 nur an der Spitze. München liegt geschätzt rund 6 Stunden Fahrt von Osnabrück entfernt und ein Hybrid-Dienstort gleicht das nicht aus. Hinweis: der gespeicherte Detailtext gehört zu einem anderen Angebot, bewertet wurde nach den Listenfeldern."
+    },
+    {
+      "jobId": "interamt:1478148",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.443Z",
+      "punkte": 6,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 6
+      },
+      "begruendung": "Eine Senior-Expert-Rolle auf TVöD-Bund E 13 passt zu deinem Erfahrungsniveau, und IT-Forensik ist für einen promovierten Informatiker fachlich erreichbar, auch wenn es ein Spezialgebiet ist. Bonn ist geschätzt rund 2,5 bis 3 Stunden Fahrt entfernt und lohnt nur mit hohem Homeoffice-Anteil. Hinweis: der gespeicherte Detailtext gehört zu einem anderen Angebot — Details bitte in der Original-Ausschreibung prüfen."
+    },
+    {
+      "jobId": "interamt:1478165",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.392Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 2,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 0
+      },
+      "begruendung": "Revierunterstützung und phytosanitäre Kontrollen setzen eine forstwirtschaftliche Laufbahnbefähigung voraus — mit Informatik nicht erreichbar. Die Dienstorte im Raum Roth/Weißenburg liegen geschätzt rund 5,5 Stunden entfernt, die Besoldung A 10 bis A 11 unter deiner A13-Schwelle."
     },
     {
       "jobId": "interamt:1478514",
@@ -4692,6 +6292,38 @@
       "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "interamt:1478702",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.650Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 3,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Trotz des Titels IT-Referent geht es um Second-Level-Support, Dienstleistersteuerung sowie Wartung und Reparatur von Arbeitsplatztechnik — das liegt deutlich unter deinem Profil. Mit 4.500 bis 5.000 Euro im Monat bleibt die Stelle unter E13-Niveau, und Berlin ist geschätzt rund 4 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "interamt:1478847",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.425Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 3,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 2
+      },
+      "begruendung": "Bonn liegt geschätzt rund 2,5 bis 3 Stunden Fahrt von Osnabrück entfernt, damit weit über deinen 40 Minuten. A 9g bis A 11 liegt unter deiner A13-Schwelle, und IT-Sachbearbeitung im gehobenen Dienst bleibt unter deinem Qualifikationsniveau."
+    },
+    {
       "jobId": "interamt:1479075",
       "status": "archiviert",
       "vonKi": true,
@@ -4714,6 +6346,22 @@
       "updatedAt": "2026-08-21T07:58:49.698Z"
     },
     {
+      "jobId": "interamt:1479167",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.486Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 3,
+        "gehalt": 0,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 0
+      },
+      "begruendung": "A 6m bis A 8 im mittleren Dienst liegt weit unter deiner A13-Schwelle und deinem Abschlussniveau. Die Dienstorte Berlin und Koblenz sind geschätzt rund 4 beziehungsweise 3 Stunden Fahrt entfernt."
+    },
+    {
       "jobId": "interamt:1479488",
       "status": "archiviert",
       "vonKi": true,
@@ -4728,6 +6376,102 @@
         "gesamt": 2
       },
       "begruendung": "Zwingende Voraussetzung ist ein sehr guter Masterabschluss in Politikwissenschaften, womit Ihr Informatik-Studium das Anforderungsprofil formal verfehlt. Zudem ist der Einsatzort Berlin mit Vor-Ort-Pflicht zu weit entfernt."
+    },
+    {
+      "jobId": "interamt:1479670",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.490Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 3,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 0
+      },
+      "begruendung": "Finanzen und Controlling ist kaufmännische Verwaltungsarbeit ohne IT-Kern und liegt mit A 9g bis A 11 unter deiner A13-Schwelle. Koblenz ist geschätzt rund 3 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "interamt:1480015",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.493Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 3,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 3
+      },
+      "begruendung": "Das Bundeskanzleramt als Arbeitgeber und die A13-Spitze wären reizvoll, die Spanne beginnt aber bei A 9g und die Aufgabe ist IT-Betrieb mit Servicemanagement-Werkzeugen, also Betriebs- statt Entwicklungsarbeit. Berlin liegt geschätzt rund 4 Stunden Fahrt entfernt, im Kanzleramt ist zudem mit hoher Präsenzerwartung zu rechnen."
+    },
+    {
+      "jobId": "interamt:1480119",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.409Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 2,
+        "gehalt": 4,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Betreuung von Telekommunikationsanlagen ist Infrastrukturbetrieb vor Ort und fachlich weit von Software Engineering entfernt. Berlin liegt geschätzt rund 4 Stunden Fahrt entfernt, TV-L E 11 unter deiner E13-Schwelle."
+    },
+    {
+      "jobId": "interamt:1480212",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.428Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 3,
+        "gehalt": 1,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "First- und Second-Level-Support inklusive Drucker- und Hotline-Betreuung auf TVöD-Bund E 7 liegt weit unter deinem Profil. Bonn ist geschätzt rund 2,5 bis 3 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "interamt:1480266",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.395Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 2,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "Die Führungsposition mit A 13h bis A 15 und Verbeamtung wäre von der Wertigkeit her attraktiv, verlangt aber die Laufbahnbefähigung für den höheren Forstdienst (Forstassessorat) — die kannst du mit Informatik nicht mitbringen. Stadtsteinach/Lichtenfels liegen geschätzt rund 5 Stunden Fahrt entfernt und ein Bereich Forsten lässt sich nicht aus dem Homeoffice leiten."
+    },
+    {
+      "jobId": "interamt:1480309",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.378Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 4,
+        "gehalt": 2,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Sachbearbeitung im Abfallrecht ist fachlich weit von Informatik und Software Engineering entfernt und setzt abfallrechtliche/ingenieurtechnische Fachkunde voraus. Salzwedel liegt geschätzt rund 3 Stunden Fahrt entfernt, mobiles Arbeiten wird nur allgemein erwähnt. E 10 liegt außerdem unter deiner E13-Schwelle."
     },
     {
       "jobId": "interamt:1480545",
@@ -4768,6 +6512,54 @@
       "updatedAt": "2026-08-21T07:58:49.700Z"
     },
     {
+      "jobId": "interamt:1480742",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.446Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 3,
+        "gehalt": 9,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 3
+      },
+      "begruendung": "Hannover wäre mit geschätzt rund 1,5 Stunden Fahrt noch vertretbar und A 14 mit Führungsverantwortung liegt klar über deiner Schwelle. Gefordert ist aber ein Studium der Ingenieurwissenschaften, Angewandten Mathematik oder Geowissenschaften mit Schwerpunkt numerische Modellierung — diese fachliche Voraussetzung erfüllst du mit Informatik/Software Engineering nicht."
+    },
+    {
+      "jobId": "interamt:1480834",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.403Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 3,
+        "gehalt": 7,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "TV-L E 13 und das geforderte wissenschaftliche Informatik-Studium passen zwar zu dir, inhaltlich ist es aber Systemadministration eines Campus-Management-Systems und damit unter deinem Profil als promovierter Software Engineer. Berlin liegt geschätzt rund 4 Stunden Fahrt entfernt und geboten wird nur Gleitzeit plus mobiles Arbeiten, kein überwiegendes Homeoffice — für diese Distanz müsste die Stelle deutlich über E13 liegen."
+    },
+    {
+      "jobId": "interamt:1481132",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.493Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 3,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "IT-Fachverfahrensbetreuung auf A 11 liegt unter deiner A13-Schwelle und ist Betreuungs- statt Entwicklungsarbeit. Frankfurt am Main ist geschätzt rund 3,5 Stunden Fahrt entfernt."
+    },
+    {
       "jobId": "interamt:1481170",
       "status": "archiviert",
       "vonKi": true,
@@ -4782,6 +6574,38 @@
         "gesamt": 3
       },
       "begruendung": "Die Eingruppierung nach E 11/A 11 richtet sich an Bachelor-Absolventen und liegt unter Ihrer Gehaltserwartung. Auch die Reisetätigkeit und der Standort Bonn sprechen gegen die Stelle."
+    },
+    {
+      "jobId": "interamt:1481238",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.449Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 3,
+        "gehalt": 9,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 3
+      },
+      "begruendung": "Auch hier wären Hannover (geschätzt rund 1,5 Stunden Fahrt), A 14 und die Leitung eines neunköpfigen Teams attraktiv. Verlangt wird jedoch ein Abschluss in Geologie, Geophysik, Geoinformatik oder Physischer Geographie samt Fernerkundungsexpertise — das deckt dein Informatik-Profil nicht ab."
+    },
+    {
+      "jobId": "interamt:1481319",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.476Z",
+      "punkte": 7,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 7
+      },
+      "begruendung": "Informatikerstelle im Anwendungs- und Projektmanagement auf TVöD-Bund E 13, unbefristet — fachlich und tariflich genau dein Zielprofil, gefordert ist ein MINT-Studium mit Praxiserfahrung, das du deutlich übererfüllst. Bonn liegt geschätzt rund 2,5 bis 3 Stunden Fahrt entfernt, angegeben ist nur ein Hybrid-Dienstort, also vorab den möglichen Homeoffice-Anteil klären."
     },
     {
       "jobId": "interamt:1481394",
@@ -4832,6 +6656,22 @@
       "begruendung": "Die Stelle im VS-IT-Portfoliomanagement ist mit E 13 TVöD / A 13h adäquat dotiert und passt hervorragend zu Ihrer Management- und Software-Expertise. Dank bundesweiter mobiler Arbeit lohnt sich eine genaue Prüfung der Präsenzanforderungen in Bonn."
     },
     {
+      "jobId": "interamt:1481500",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.367Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 3,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Ludwigsburg liegt geschätzt rund 5,5 Stunden Autofahrt von Osnabrück/Vechta entfernt, und angeboten wird nur ein Hybrid-Modell, kein überwiegendes Homeoffice. Mit TVöD-VKA E 11 liegt die Stelle unter der E13-Schwelle, ab der sich für dich ein weiter Weg rechnen würde. Reine Server-/Netzwerk-/Security-Administration bleibt zudem deutlich unter deinem Profil als promovierter Software Engineer."
+    },
+    {
       "jobId": "interamt:1481708",
       "status": "archiviert",
       "vonKi": true,
@@ -4878,6 +6718,118 @@
         "gesamt": 2
       },
       "begruendung": "Mit E 10 TVöD / A 10 liegt das Gehalt weit unter dem gesuchten Niveau ab E 13. Die Aufgaben im Bereich Konformitätsprüfung und Standardisierung unterfordern Ihr Profil."
+    },
+    {
+      "jobId": "interamt:1481919",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.497Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 3,
+        "gehalt": 5,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 2
+      },
+      "begruendung": "Systemadministration der Clientinfrastruktur auf A 10 bis A 12 liegt unter deiner A13-Schwelle und unter deinem Qualifikationsniveau. Bonn ist geschätzt rund 2,5 bis 3 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "interamt:1481929",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.480Z",
+      "punkte": 6,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 6
+      },
+      "begruendung": "Inhaltlich dieselbe Informatikerstelle wie das Parallelangebot des BfArM, hier im Beamtenverhältnis mit A 9g bis A 13 — die Verbeamtungsmöglichkeit ist für dich denkbar, die Spanne beginnt allerdings deutlich unter deiner A13-Schwelle. Bonn ist geschätzt rund 2,5 bis 3 Stunden Fahrt entfernt, also nur mit klarem Homeoffice-Anteil sinnvoll."
+    },
+    {
+      "jobId": "interamt:1482246",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.419Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 2,
+        "gehalt": 4,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 0
+      },
+      "begruendung": "Sachbearbeitung im Inneren Dienst ist allgemeine Verwaltung ohne IT-Kern, obwohl der Arbeitgeber ein IT-Dienstleister ist. A 11 liegt unter deiner A13-Schwelle und Potsdam geschätzt rund 4 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "interamt:1482452",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.636Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 1,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "Technologie-Innovationen klingt fachlich reizvoll, A 9g bis A 11 liegt aber klar unter deiner A13-Schwelle. Pullach bei München ist geschätzt rund 6 Stunden Fahrt entfernt und beim Nachrichtendienst ist kein Homeoffice zu erwarten."
+    },
+    {
+      "jobId": "interamt:1482520",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.406Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 3,
+        "gehalt": 2,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "TVöD-VKA E 9c für eine Fachadministration liegt deutlich unter deiner E13-Schwelle. München ist geschätzt rund 6 Stunden Fahrt entfernt und ein Hybrid-Dienstort gleicht das nicht aus."
+    },
+    {
+      "jobId": "interamt:1482824",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.422Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 5,
+        "gehalt": 4,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 2
+      },
+      "begruendung": "Operative IT-Sicherheit ist fachlich anschlussfähig und Homeoffice wird ausdrücklich angeboten, aber A 11 bleibt klar unter deiner A13-Schwelle. Potsdam liegt geschätzt rund 4 Stunden Fahrt entfernt — bei dieser Distanz müsste die Besoldung deutlich höher liegen."
+    },
+    {
+      "jobId": "interamt:1483291",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.387Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 5,
+        "gehalt": 0,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "TV-L E 5 für Nachweisprüfung und Abrechnung ist mehrere Entgeltgruppen unter deinem Ziel von E13 und fachlich reine Verwaltungstätigkeit. Hof in Oberfranken liegt geschätzt rund 5 Stunden Fahrt entfernt, die 50 % Homeoffice greifen erst nach drei Monaten und lösen das Entfernungsproblem nicht."
     },
     {
       "jobId": "interamt:862104",
@@ -5670,6 +7622,38 @@
       "begruendung": "Bewerbungsfrist am 23.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "itzbund:1000004333801FD1A2CBE27316F70DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.465Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 8,
+        "arbeitszeit": 5,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "E 13 im höheren Dienst mit Verbeamtungsoption wäre tariflich passend, die Stelle setzt aber zwingend die Befähigung zum Richteramt voraus — als Volljuristenstelle für dich nicht erreichbar. Bonn liegt zudem geschätzt rund 2,5 bis 3 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD1A498E8DA4841EDC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.484Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 7,
+        "arbeitszeit": 5,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Dieselbe Referentenstelle im Referat 325 (EU-Forschungsangelegenheiten, EMFAF) wie das Parallelangebot: fachfremd, befristet und in Bonn mit geschätzt rund 2,5 bis 3 Stunden Fahrtzeit."
+    },
+    {
       "jobId": "itzbund:1000004333801FD1A595E46E484E4DC6",
       "status": "archiviert",
       "vonKi": false,
@@ -5690,6 +7674,102 @@
         "gesamt": 0
       },
       "begruendung": "Es handelt sich um eine Tätigkeit im Archiv- und Registraturdienst (E 5 TVöD) in Cottbus in Teilzeit. Dies hat keinerlei Bezug zur Informatik oder Ihrem Karriereprofil."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD1A5F9E7C67B11ADC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:10:12.639Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 2,
+        "gehalt": 3,
+        "arbeitszeit": 5,
+        "verbeamtung": 10,
+        "gesamt": 0
+      },
+      "begruendung": "Ein duales Studium der Verwaltungsinformatik ist eine Ausbildung für Studienanfänger und damit für dich als promovierten Informatiker keine Option. Bonn ist zudem geschätzt rund 2,5 bis 3 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD1A6C1E81699634DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.468Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 5,
+        "gehalt": 3,
+        "arbeitszeit": 5,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "E 9c liegt deutlich unter deiner E13-Schwelle, die Stelle ist befristet und du suchst ausdrücklich unbefristet. Hamburg ist mit geschätzt rund 2,5 Stunden Fahrt außerdem zu weit für diese Wertigkeit."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD1A6CA202A88674DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.477Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 0,
+        "gehalt": 2,
+        "arbeitszeit": 5,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Prüfdienst im Außendienst auf E 9b ist fachfremde Kontrolltätigkeit weit unter deinem Niveau. München liegt geschätzt rund 6 Stunden Fahrt entfernt und Außendienst schließt Homeoffice praktisch aus."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD1A6CA966C65B0ADC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.481Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 0,
+        "gehalt": 2,
+        "arbeitszeit": 5,
+        "verbeamtung": 0,
+        "gesamt": 0
+      },
+      "begruendung": "Wie das parallele Angebot der Außenstelle 433: Prüfdienst im Außendienst auf E 9b, fachfremd und weit unter deinem Niveau, in München mit geschätzt rund 6 Stunden Fahrtzeit."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD1A6CB128C32928DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.471Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 4,
+        "arbeitszeit": 6,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "IT-Sachbearbeitung im gehobenen Dienst auf E 11 liegt unter deiner E13-Schwelle und unter deinem Qualifikationsniveau als promovierter Informatiker. Bonn ist geschätzt rund 2,5 bis 3 Stunden Fahrt entfernt; Telearbeit wird nur allgemein erwähnt."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD1A6CBCDB0F8382DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T22:07:47.474Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 7,
+        "arbeitszeit": 5,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Die Referentenstelle im Referat 325 betrifft EU-Forschungsförderung im Bereich Meeres-, Fischerei- und Aquakulturfonds — fachlich außerhalb deines Informatik-Profils. Sie ist zudem auf 24 Monate befristet, während du unbefristet suchst, und Bonn liegt geschätzt rund 2,5 bis 3 Stunden Fahrt entfernt."
     }
   ]
 }

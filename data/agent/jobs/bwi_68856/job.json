@@ -1,0 +1,31 @@
+{
+  "id": "bwi:68856",
+  "employer": "BWI GmbH",
+  "titel": "Release Manager (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/release-manager-m-w-d-68856",
+  "referenzcode": "68856",
+  "beschreibung": "ab September und in Vollzeit bundesweit an einem unserer BWI-Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen. Der Bereich Customer Solution (CS) Land & Luft versteht sich als Unterstützer und Treiber der Digitalisierung der Bundeswehr in den Dimensionen Land und Luft. Unser Bereich unterstützt sowohl die militärischen, als auch die zivilen Organisationsbereiche der Bundeswehr bei den betrieblichen, prozessualen und organisatorischen Herausforderungen der Digitalisierung.​​​​\n\nAufgaben:\n- Planung, Koordination von Softwarereleases, gem. Anforderungen entsprechender Stakeholder und von bestehenden Release Prozessen\n- Erstellung und Pflege von Release-Plänen, -Roadmaps und -Kalendern\n- Koordination zwischen Entwicklung, Test, Betrieb und Fachbereichen\n- Steuerung von Release-Fenstern und -Zyklen (z. B. monatlich, quartalsweise)\n- Pflege der Release Dokumentation / release logs sowie Change Impact Analysen und Kommunikation an die Stakeholder\n- Verantwortung für Security im Release-Prozess (SBOM, Vulnerability Scanning)\n- Einsteuerung Releases, Steuerung Testing, Steuerung Ausbringung\n- Erstellung von Release Zusammenstellungen\n- Koordination von Schulungsmaßnahmen für entsprechende Releases\n\nBereich: Softwareentwicklung / Programmierung",
+  "gehalt": "71.000 € und 104",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "Abgeschlossenes Studium der Ingenieurwissenschaften, Wirtschaftsinformatik, technische Betriebswirtschaftslehre.",
+    "Erfahrung in der Automatisierung von Build-, Test-, Deploy- und Rollback-Prozessen (ggf. KI gestützt)",
+    "Erfahrung mit Release-Management-Tools: Jira, Confluence, ServiceNow, Azure DevOps, SAP Solution Manager",
+    "Tiefe CI/CD-Kenntnisse (ArgoCD, Flux, GitHub Actions, Jenkins)",
+    "Know-how in Container-Orchestrierung: Kubernetes, OpenShift",
+    "Prozessverständnis in ITIL (Release & Deployment Management)​"
+  ],
+  "voraussetzungenWuenschenswert": [],
+  "adapter": "bwi",
+  "firstSeen": "2026-08-20T22:06:04.529Z",
+  "lastSeen": "2026-08-20T22:06:04.529Z"
+}

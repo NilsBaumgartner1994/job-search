@@ -1,0 +1,34 @@
+{
+  "id": "bwi:69104",
+  "employer": "BWI GmbH",
+  "titel": "Senior IT Architekt - Citrix/Terminal Services (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/senior-it-architekt-citrix-terminal-services-m-w-d-69104",
+  "referenzcode": "69104",
+  "beschreibung": "ab Oktober und in Vollzeit bundesweit an einem unserer BWI Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nDer Bereich Terminal Services entwickelt moderne Citrix Services und stellt den Nutzern virtuelle Arbeitsumgebungen bereit. Um unser Team zu verstärken, suchen wir einen Senior IT-Architekt (m/w/d) mit innovativen Ideen, der uns auf unserem gemeinsamen Weg in die Zukunft verstärken möchte. Sie sind kreativ und offen für neue Lösungsansätze. In ihrem bisherigen Berufsleben konnten sie umfangreiche Erfahrung in den unterschiedlichsten Einsatzszenarien der Citrix Produktwelt (Apps, HSD, VDI, u.a.) aufbauen. Ihre zukünftigen Kollegen warten darauf, sie in unserem Team willkommen heißen zu können.\n\nAufgaben:\n- Innovationstreiber für die stetige Neu- bzw. Weiterentwicklung der Citrix Architekturen\n- Weiterentwicklung von Standards für die Bereitstellung von Citrix Virtual Apps & Desktops Plattformen (CVAD) mit VDI, HSD und published applications​\n- Automatisierung von IT-Umgebungen mittels Scripting (z. B. PowerShell) und Bereitstellung von Citrix Umgebungen per „Infrastructure as Code“ (Nutzung von GIT, Ansible, Terraform etc.)​\n- Paketierung von Anwendungen und Patchen zur automatisierten Verteilung auf Citrix Systemen\n- Erstellung von IT-Konzepten, Installationsanweisungen, Handlungsanweisungen, Betriebshandbüchern und Sicherheitskonzepten nach modernisierten IT-Grundschutz (BSI)\n- Mitarbeit in Projekten als technischer Experte oder Projektleiter\n- Beratung von Kunden und dem eigenen Service Management​\n\nBereich: Mobility / Mobile Apps / Communication",
+  "gehalt": "71.000 € und 104",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "Abgeschlossenes Studium bzw. eine Berufsausbildung in einem IT-Beruf oder vergleichbare Kenntnisse",
+    "Mindestens 5 Jahre Berufserfahrung ​im Design und der Architektur von Citrix Umgebungen auf Enterprise Niveau in on Premise und in Cloud Umgebungen",
+    "Umfassende Kenntnisse im Umfeld von Microsoft Betriebssystemen (Windows Server, Windows 10/11) sowie zugehörigen Microsoft Technologien (z.B. SCCM, GPO, Powershell)",
+    "Erfahrung im Scripting (insbesondere PowerShell) sowie mit Automatisierungslösungen wie Ansible, DSC oder Terraform​",
+    "Kreativität wie auch analytisches Denken",
+    "Teamfähigkeit und gleichzeitig Durchsetzungsstärke"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Fundierte Kenntnisse in Citrix Virtual Apps & Desktops (CVAD) sowie relevanten Plattformkomponenten wie StoreFront und Citrix Provisioning, idealerweise nachgewiesen durch Citrix Zertifizierung",
+    "Erfahrungen in agilen Vorgehensweisen und ITIL wünschenswert"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-08-20T22:05:55.828Z",
+  "lastSeen": "2026-08-20T22:05:55.828Z"
+}
