@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T06:45:17.681Z",
+  "updatedAt": "2026-08-21T07:22:26.286Z",
   "entries": [
     {
       "jobId": "accenture:13818109",
@@ -4492,6 +4492,70 @@
       "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "interamt:1471220",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T07:22:26.273Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 0,
+        "gehalt": 4,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Reine Vor-Ort-Tätigkeit in Magdeburg für klassischen Netzwerkbetrieb in einer Krankenhaustochter. Inhaltlich und geografisch unpassend."
+    },
+    {
+      "jobId": "interamt:1472769",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T07:22:26.247Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 0,
+        "gehalt": 2,
+        "arbeitszeit": 9,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Es handelt sich um eine reine Vor-Ort-Stelle in Würzburg ohne Homeoffice-Option. Die Vergütung mit E 10 TVöD entspricht nicht Ihrem Profil."
+    },
+    {
+      "jobId": "interamt:1473861",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T07:22:26.241Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 3,
+        "homeoffice": 5,
+        "gehalt": 3,
+        "arbeitszeit": 9,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Die Stelle ist mit E 11 TV-L deutlich unter Ihrem Qualifikationsniveau (Promotion/M.Sc.) dotiert. Zudem liegt der Dienstort Duisburg außerhalb des Pendelbereichs und bietet kein reines Remote-Modell."
+    },
+    {
+      "jobId": "interamt:1474873",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T07:22:26.255Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 9,
+        "homeoffice": 8,
+        "gehalt": 4,
+        "arbeitszeit": 9,
+        "verbeamtung": 0,
+        "gesamt": 4
+      },
+      "begruendung": "Zwar ist der Standort Osnabrück optimal, jedoch handelt es sich um eine operative Systemadministration (Print/File/DHCP) nach E 11 TV-L. Für Ihr Profil als promovierter Informatiker und ehemaliger Geschäftsführer ist diese Position deutlich unterqualifiziert."
+    },
+    {
       "jobId": "interamt:1474874",
       "status": "archiviert",
       "vonKi": true,
@@ -4527,6 +4591,22 @@
       "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "interamt:1477140",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T07:22:26.244Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 5,
+        "gehalt": 2,
+        "arbeitszeit": 9,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "Die Position ist lediglich nach E 10 TV-L eingruppiert und richtet sich primär an Absolventen einer IT-Ausbildung. Der Dienstort Koblenz ist zudem zu weit von Ihrem Wunschraum entfernt."
+    },
+    {
       "jobId": "interamt:1477746",
       "status": "archiviert",
       "vonKi": true,
@@ -4541,11 +4621,203 @@
       "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "interamt:1478514",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T07:22:26.249Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 4,
+        "homeoffice": 8,
+        "gehalt": 3,
+        "arbeitszeit": 9,
+        "verbeamtung": 6,
+        "gesamt": 3
+      },
+      "begruendung": "Trotz guter Homeoffice-Quote (bis 80 %) liegt die Bezahlung mit E 11/A 11 unter Ihrem Anspruch ab E 13. Zudem ist das Aufgabengebiet (M365-Administration) für einen promovierten Software-Ingenieur fachlich unterfordernd."
+    },
+    {
       "jobId": "interamt:1478587",
       "status": "archiviert",
       "vonKi": true,
       "updatedAt": "2026-08-21T06:45:17.681Z",
       "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1479075",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T07:22:26.252Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 3,
+        "homeoffice": 6,
+        "gehalt": 2,
+        "arbeitszeit": 9,
+        "verbeamtung": 8,
+        "gesamt": 2
+      },
+      "begruendung": "Die Stelle ist mit E 10/A 10 für den gehobenen Dienst (Bachelor) ausgeschrieben und erfordert primär elektrotechnische Messtechnik. Sie passt weder gehaltlich noch fachlich zu Ihrer Promotion im Software Engineering."
+    },
+    {
+      "jobId": "interamt:1479488",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T07:22:26.271Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 1,
+        "gehalt": 8,
+        "arbeitszeit": 9,
+        "verbeamtung": 9,
+        "gesamt": 2
+      },
+      "begruendung": "Zwingende Voraussetzung ist ein sehr guter Masterabschluss in Politikwissenschaften, womit Ihr Informatik-Studium das Anforderungsprofil formal verfehlt. Zudem ist der Einsatzort Berlin mit Vor-Ort-Pflicht zu weit entfernt."
+    },
+    {
+      "jobId": "interamt:1480545",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T07:22:26.276Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 2,
+        "gehalt": 9,
+        "arbeitszeit": 9,
+        "verbeamtung": 9,
+        "gesamt": 4
+      },
+      "begruendung": "Die Führungsaufgabe (E 14 / A 14) passt zwar zu Ihrem Profil, ist jedoch eine reine Vor-Ort-Stelle in Berlin. Ohne überwiegenden Homeoffice-Anteil ist die Stelle räumlich nicht vereinbar."
+    },
+    {
+      "jobId": "interamt:1480552",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T07:22:26.278Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 2,
+        "gehalt": 9,
+        "arbeitszeit": 9,
+        "verbeamtung": 9,
+        "gesamt": 4
+      },
+      "begruendung": "Fachlich und finanziell (E 14 / A 14 Referatsleitung) sehr passend, erfordert jedoch Vor-Ort-Präsenz in Köln. Aufgrund der Pendeldistanz und fehlender Remote-Option zu archivieren."
+    },
+    {
+      "jobId": "interamt:1481170",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T07:22:26.260Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 3,
+        "homeoffice": 6,
+        "gehalt": 3,
+        "arbeitszeit": 9,
+        "verbeamtung": 8,
+        "gesamt": 3
+      },
+      "begruendung": "Die Eingruppierung nach E 11/A 11 richtet sich an Bachelor-Absolventen und liegt unter Ihrer Gehaltserwartung. Auch die Reisetätigkeit und der Standort Bonn sprechen gegen die Stelle."
+    },
+    {
+      "jobId": "interamt:1481394",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T07:22:26.266Z",
+      "punkte": 7,
+      "punkteDetails": {
+        "entfernung": 4,
+        "homeoffice": 6,
+        "gehalt": 9,
+        "arbeitszeit": 9,
+        "verbeamtung": 9,
+        "gesamt": 7
+      },
+      "begruendung": "Sehr attraktive Dotierung mit E 14 / A 14 im zukunftsträchtigen KI-Büro, die ideal zu Ihrem Promotions- und Softwarehintergrund passt. Bis zu 60 % Homeoffice machen die Position trotz des Standorts Bonn prüfenswert."
+    },
+    {
+      "jobId": "interamt:1481395",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T07:22:26.268Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 4,
+        "homeoffice": 6,
+        "gehalt": 3,
+        "arbeitszeit": 9,
+        "verbeamtung": 8,
+        "gesamt": 3
+      },
+      "begruendung": "Im Vergleich zur Referentenstelle im selben Referat ist diese Sachbearbeiterstelle nur mit E 11 / A 11 bewertet. Das Aufgabenspektrum (administrative Projektassistenz) passt nicht zu Ihrem akademischen Grad."
+    },
+    {
+      "jobId": "interamt:1481423",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T07:22:26.258Z",
+      "punkte": 7,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 7,
+        "gehalt": 8,
+        "arbeitszeit": 9,
+        "verbeamtung": 9,
+        "gesamt": 7
+      },
+      "begruendung": "Die Stelle im VS-IT-Portfoliomanagement ist mit E 13 TVöD / A 13h adäquat dotiert und passt hervorragend zu Ihrer Management- und Software-Expertise. Dank bundesweiter mobiler Arbeit lohnt sich eine genaue Prüfung der Präsenzanforderungen in Bonn."
+    },
+    {
+      "jobId": "interamt:1481708",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T07:22:26.280Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 4,
+        "gehalt": 1,
+        "arbeitszeit": 9,
+        "verbeamtung": 7,
+        "gesamt": 1
+      },
+      "begruendung": "Ausbildungsstelle im mittleren Dienst (E 9a / A 5m-A 9) in Berlin. Für einen promovierten Informatiker vollkommen unpassend."
+    },
+    {
+      "jobId": "interamt:1481711",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T07:22:26.283Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 2,
+        "homeoffice": 4,
+        "gehalt": 1,
+        "arbeitszeit": 9,
+        "verbeamtung": 7,
+        "gesamt": 1
+      },
+      "begruendung": "Einstiegs-/Administratorenstelle auf Ausbildungsniveau (E 9a / A 9) in Köln. Inhaltlich und gehaltlich weit unter Ihren Kriterien."
+    },
+    {
+      "jobId": "interamt:1481869",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T07:22:26.263Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 3,
+        "homeoffice": 6,
+        "gehalt": 2,
+        "arbeitszeit": 9,
+        "verbeamtung": 8,
+        "gesamt": 2
+      },
+      "begruendung": "Mit E 10 TVöD / A 10 liegt das Gehalt weit unter dem gesuchten Niveau ab E 13. Die Aufgaben im Bereich Konformitätsprüfung und Standardisierung unterfordern Ihr Profil."
     },
     {
       "jobId": "interamt:862104",
@@ -5330,6 +5602,22 @@
       "vonKi": true,
       "updatedAt": "2026-08-20T21:01:07.592Z",
       "begruendung": "Bewerbungsfrist am 23.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD1A5B01838830B2DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-21T07:22:26.286Z",
+      "punkte": 0,
+      "punkteDetails": {
+        "entfernung": 0,
+        "homeoffice": 0,
+        "gehalt": 0,
+        "arbeitszeit": 5,
+        "verbeamtung": 6,
+        "gesamt": 0
+      },
+      "begruendung": "Es handelt sich um eine Tätigkeit im Archiv- und Registraturdienst (E 5 TVöD) in Cottbus in Teilzeit. Dies hat keinerlei Bezug zur Informatik oder Ihrem Karriereprofil."
     }
   ]
 }
