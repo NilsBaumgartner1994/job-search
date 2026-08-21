@@ -1,0 +1,37 @@
+{
+  "id": "bwi:69272",
+  "employer": "BWI GmbH",
+  "titel": "Senior Application Architect ETL & DataWarehouse (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/senior-application-architect-etl-datawarehouse-m-w-d-69272",
+  "referenzcode": "69272",
+  "beschreibung": "ab sofort und in Vollzeit in Bonn oder Meckenheim.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\n​Das Competence Center Application Lifecycle Management (CCALM) ist der IT-Application Provider im Chief Information Office (CIO). Wir stellen die Anwendungen der Corporate IT zur optimalen Nutzung für unsere Kollegen:innen bereit. Wir verstehen uns als DevSecOps Organisation in der wir unsere agile Kultur mit Leadership pflegen und weiterentwickeln. Let's be Agile ist unser Motto! Wir freuen uns auf Dich.\n\nAufgaben:\n- Konzeption und Weiterentwicklung der unternehmensweiten Daten- und Schnittstellen-Architektur (DWH, ETL/ELT, EDH)\n- Design und Entwicklung von Datenmodellen und Schnittstellen-Architekturen im bestehenden Data Warehouse sowie Durchsetzung von Modellierungsstandards\n- Analyse, Konzeption, Entwicklung und Optimierung von ETL-Jobs hinsichtlich Datenflüsse, Ladestrategien, Historisierung und Fehlerbehandlung\n- Definition von Entwicklungsstandards, Best Practices und technischen Vorgaben für die internen und externen Mitarbeiter\n- Integration von Lösungen in bestehende BI- und Applikationslandschaften im Sinne eines Enterprise Data Hubs\n- Technische Beratung von Data Engineers, BI- und Entwicklungsteams sowie Fachbereichen\n- Mitwirkung beim Aufbau der service-internen Data Governance und des Data Catalogs\n- Bewertung neuer Technologien sowie Unterstützung bei PoCs\n- Steuerung von Fremdpersonal für der Entwicklung, sowie Begleitung der Umsetzung bis zur Produktivsetzung\n- Unterstützung des Service Managements bei der Erstellung von servicespezifischen Dokumenten aus technischer Sicht\n- Mitwirkung in IT-Projekten und IT-Maßnahmen\n\nBereich: Softwareentwicklung / Programmierung",
+  "gehalt": "71.000 € und 104",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "Bonn",
+    "Meckenheim"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "​​Erfolgreich abgeschlossenes IT-Studium, alternativ eine vergleichbare Ausbildung als Fachinformatiker/in",
+    "Mehrjährige Berufserfahrung im Themenbereich ETL & Data Warehouse, davon mehrere Jahre in einer Architektur Rolle",
+    "Mindestens 4 Jahre Berufserfahrung in der Anbindung von IT-Systemen, vor allem der Produkte SAP, MicroStrategy, MS Dynamics, IT SPS",
+    "Mindestens 4 Jahre Erfahrung in der Beschaffung, Begleitung und Beziehungspflege von Dienstleistern, inklusive der notwendigen Regularien (Datenschutz, Fremdleistungsmanagement, Beschaffung)",
+    "Mindestens 4 Jahre Produkterfahrung mit IBM InfoSphere Information Server",
+    "Zertifizierung in ITIL Foundation",
+    "Kenntnisse in SQL, Orcale, Linux und Red Hat Open Shift",
+    "Nachweisbare (Schulungs-)Erfahrung im Cloud Umfeld (Kubernetes)",
+    "Erfahrung in der Nutzung relevanter Werkzeuge (ARIS, Alfabet, JIRA)",
+    "Fähigkeit, technische Sachverhalte stakeholdergerecht aufzubereiten und zu vermitteln",
+    "Sehr gute Deutsch- und Englischkenntnisse"
+  ],
+  "voraussetzungenWuenschenswert": [],
+  "adapter": "bwi",
+  "firstSeen": "2026-08-20T22:05:47.552Z",
+  "lastSeen": "2026-08-20T22:05:47.552Z"
+}

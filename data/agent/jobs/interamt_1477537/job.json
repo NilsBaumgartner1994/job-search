@@ -1,0 +1,52 @@
+{
+  "id": "interamt:1477537",
+  "employer": "Zweckverband Kommunale Datenverarbeitung (KDO)",
+  "titel": "Fachinformatiker Systemintegration (m/w/d) Teammanagement & vor Ort-Support",
+  "link": "https://interamt.de/koop/app/trefferliste?stellenangebotliste=1477537",
+  "referenzcode": "26.121-6220",
+  "beschreibung": "Anpassung und Betreuung der in der GSI entwickelten Datenerfassungssystemen MBS und DABC\nWeiterentwicklung, Wartung und Dokumentation von FPGA-Firmware\nTest und Qualitätssicherung von Datenerfassungssystemen\nSystem-Debugging und Fehlerbehebung\nUnterstützung der Nutzer*innen während der Inbetriebnahme und des Betriebs von Datenerfassungssystemen",
+  "gehaltsstufe": "4000 - 5500",
+  "befristung": [
+    "Unbefristet"
+  ],
+  "arbeitszeit": [
+    "Vollzeit",
+    "Teilzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "26121 Oldenburg (Oldb)"
+  ],
+  "homeoffice": "Dienstort: Hybrid",
+  "bewerbungsfrist": "2026-09-30",
+  "voraussetzungenZwingend": [
+    "Hochschulabschluss (Promotion oder Master) in Physik, Elektrotechnik, Informationstechnik oder einem verwandten Fachgebiet",
+    "Erfahrung mit Datenerfassungssystemen in der Kern- und Teilchenphysik",
+    "Fundierte Kenntnisse in der FPGA-Entwicklung (VHDL/Verilog) sowie in hardwarenaher Programmierung (C/C++)",
+    "Sicherer Umgang mit Werkzeugen zur FPGA-Simulation und In-System-Debugging (ILA / Signal Tap)",
+    "Sicherer Umgang mit Software-Entwicklungsumgebungen (IDEs) und Versionsverwaltungssystemen (Git)",
+    "Erfahrung im Elektronikdesign und PCB-Layout ist von Vorteil",
+    "Erfahrung mit Kommunikationsarchitekturen (von der physikalischen Schicht bis TCP/UDP) ist von Vorteil",
+    "Vertrautheit mit Linux-Betriebssystemen",
+    "Sehr gute Deutsch- und Englischkenntnisse in Wort und Schrift",
+    "Gute Kommunikationsfähigkeiten sowie Bereitschaft zur Beratung und Unterstützung von Anwender*innen",
+    "Teamfähigkeit",
+    "Wir bieten Ihnen eine einzigartige Gelegenheit, in einem spannenden und hochinnovativen Umfeld an wissenschaftlichen Themen von internationaler Spitzenklasse mitzuwirken.",
+    "Die Stelle ist unbefristet. Die Vergütung erfolgt nach dem Tarifvertrag für den öffentlichen Dienst (TVöD Bund).",
+    "GSI fördert die berufliche Entwicklung von Frauen und begrüßt es, wenn sich Frauen durch die Ausschreibung besonders angesprochen fühlen.",
+    "Schwerbehinderte erhalten bei gleicher Qualifikation den Vorzug.",
+    "Weitere Informationen über GSI und FAIR erhalten Sie unter www.gsi.de sowie www.fair-center.eu.",
+    "Bitte senden Sie Ihre vollständigen Bewerbungsunterlagen inklusive Ihrer Gehaltsvorstellung unter Angabe der Kennziffer 26.121-6220 bis spätestens 04. September 2026 über das Onlineportal auf unserer Webseite:",
+    "Online-Bewerbungsportal",
+    "GSI Helmholtzzentrum für Schwerionenforschung GmbH",
+    "Abteilung Personal",
+    "Planckstraße 1",
+    "64291 Darmstadt",
+    "Auf dieses Stellenangebot können Sie sich nicht online über INTERAMT bewerben. Bitte verwenden Sie den im Stellenangebot angegebenen Bewerbungsweg."
+  ],
+  "voraussetzungenWuenschenswert": [],
+  "adapter": "interamt",
+  "firstSeen": "2026-08-20T22:27:46.335Z",
+  "lastSeen": "2026-08-20T22:27:46.335Z"
+}

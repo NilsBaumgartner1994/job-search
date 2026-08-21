@@ -1,0 +1,36 @@
+{
+  "id": "bwi:69276",
+  "employer": "BWI GmbH",
+  "titel": "Senior Service Manager Engineering & Data Foundation (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/senior-service-manager-engineering-data-foundation-m-w-d-69276",
+  "referenzcode": "69276",
+  "beschreibung": "ab sofort und in Vollzeit in Bonn, München oder Meckenheim.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\n​​Das Competence Center Application Lifecycle Management (CCALM) ist der IT-Application Provider im Chief Information Office (CIO). Wir stellen die Anwendungen der Corporate IT zur optimalen Nutzung für unsere Kollegen:innen bereit. Wir verstehen uns als DevSecOps Organisation in der wir unsere agile Kultur mit Leadership pflegen und weiterentwickeln. Let's be Agile ist unser Motto! Wir freuen uns auf Dich.\n\nAufgaben:\n- Fachliche Verantwortung für den gesamten Service-Lifecycle mit Fokus auf einen stabilen und sicheren Betrieb\n- Verantwortung für die technische Leistungserbringung von Business Intelligence Lösungen, Daten, LowCode/NoCode Anwendungen, sowie von Software Eigenentwicklungen\n- Steuerung der ITSM-Prozesse (Incident/Problem/Change/Request)\n- Sicherstellen der Servicebereitstellung inkl. SLA-Überwachung, Eskalationsmanagement und Kapazitätsplanung\n- Mitarbeit bei der kontinuierlichen Verbesserung des Services\n- Monitoring von KPIs, Performance-Reporting und Identifikation von Optimierungsmaßnahmen\n- Verwaltung von Berechtigungen, Zertifikaten und Firewallfreischaltung\n- Datenpflege in relevanten Werkzeugen (bspw. Jira, Alfabet, Aris)\n- Steuerung und Mitarbeit im Rahmen der virtuellen DevOps Teams\n- Ansprechpartner für interne Bereiche sowie Koordination und Mitwirkung bei der Erstellung der notwendigen Dokumentation gemäß ITIL-Standard\n\nBereich: Softwareentwicklung / Programmierung",
+  "gehalt": "71.000 € und 104",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "Bonn",
+    "München",
+    "Meckenheim"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "Erfolgreich abgeschlossenes fachbezogenes Studium im IT-Umfeld oder vergleichbare Qualifikation",
+    "Mindestens 4 Jahre relevante Berufserfahrung im IT und Service Management",
+    "Erfahrungen im IT-Servicemanagement mit ITIL und BSI Grundschutz",
+    "Kenntnisse im Bereich Einkauf und Vergabemanagement",
+    "Teamfähigkeit, Kommunikationsfähigkeit, ein hohes Maß an Verantwortungsbewusstsein und Eigeninitiative und hohe Kundenorientierung",
+    "Sehr gute Deutsch- und gute Englischkenntnisse in Wort und Schrift"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Grundkenntnisse in Business Intelligence und LowCode/NoCode Anwendungen wünschenswert",
+    "Erfahrung in agilen Organisationen und virtuellen Teams wünschenswert"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-08-20T22:05:47.871Z",
+  "lastSeen": "2026-08-20T22:05:47.871Z"
+}

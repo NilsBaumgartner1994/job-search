@@ -31,12 +31,24 @@ und landet damit nicht im Repo.
 
 1. **Profil lesen**: `data/agent/profil.md`. Das ist die einzige Quelle für die
    Bewertungskriterien. Nicht aus dem Bauch heraus abweichen.
-2. **Abgelaufene Fristen archivieren** (kostet keine Bewertung):
-   `archiviereAbgelaufene(loadJobs())` aus `src/server/expiry.ts`.
+2. **Ohne Bewertung wegräumen** (kostet keine Anfrage):
+   - `archiviereAbgelaufene(loadJobs())` aus `src/server/expiry.ts` — abgelaufene Fristen
+   - `archiviereZuNiedrigBezahlte(loadJobs())` aus `src/server/lowpay.ts` — alles
+     eindeutig unter E13/A13. Beide laufen auch automatisch in `yarn agent` und
+     `startAgent()`. Vor einer Änderung an der Regel immer erst einen Trockenlauf
+     über `istGehaltZuNiedrig()` machen und die getroffenen Angaben ansehen.
 3. **Warteschlange bilden** wie in `cli.ts`: Jobs ohne Board-Eintrag oder mit
-   Status `todo`, ohne `chat.json`, Frist nicht abgelaufen — sortiert mit
-   `sortTriageQueue()` (öffentliche Arbeitgeber zuerst, Jobs ohne Gehaltsangabe
-   nach hinten).
+   Status `todo`, ohne `chat.json`, Frist nicht abgelaufen und nicht unter
+   Zielniveau — sortiert mit `sortTriageQueue()` (öffentliche Arbeitgeber zuerst,
+   Jobs ohne Gehaltsangabe nach hinten). **Dann nach Priorität umsortieren:**
+   1. Verbeamtung **und** (Homeoffice-Hinweis **oder** Dienstort in Nähe)
+   2. Verbeamtung
+   3. Dienstort in Nähe
+   4. Rest
+
+   Als „nah" gelten PLZ 49xxx/48xxx/26xxx/27xxx/28xxx/30xxx/31xxx/32xxx/33xxx
+   sowie Osnabrück, Vechta, Cloppenburg, Oldenburg, Münster, Bremen, Lingen,
+   Bielefeld, Hannover, Rheine, Nordhorn, Meppen, Wilhelmshaven u.ä.
 4. **Kompakt dumpen** statt Volltexte zu lesen: Titel, Arbeitgeber, Dienstorte,
    Entgelt/Besoldung, Verbeamtung, Befristung, Arbeitszeit, Homeoffice, Frist.
    Das reicht für die große Mehrheit der Entscheidungen.
@@ -126,6 +138,24 @@ schreiben** (das verlangt das Profil ausdrücklich):
      Immer dazuschreiben, dass es nur mit Umzug oder überwiegendem Homeoffice
      aufgeht.
 
+**Verbeamtung ist hoch gewichtet** (seit August 2026 im Profil verschärft):
+Verbeamtung *plus* belegter hoher Homeoffice-Anteil oder *plus* erreichbare Nähe
+schlägt eine vergleichbare Tarifstelle deutlich und rechtfertigt auch eine große
+Entfernung — Beispiel: eine A13h-Stelle mit „bis zu 80 % Homeoffice" ist trotz
+Dienstort München ein Treffer. Verbeamtung **allein** rechtfertigt dagegen keinen
+weiten Weg ohne belegtes Homeoffice. „Dienstort: Hybrid" aus der Interamt-Liste
+ist **kein** Beleg für einen hohen Homeoffice-Anteil — der steht nur im Volltext
+(z.B. „bis zu 60 %", „Homeoffice innerhalb von Deutschland"). Bei aussichtsreichen
+Verbeamtungsstellen deshalb immer den Volltext nach `homeoffice`, `mobiles
+Arbeiten`, `Telearbeit`, `%` durchsuchen.
+
+**Standort-Dubletten**: Behörden schreiben dieselbe Stelle oft parallel an vielen
+Standorten aus (die SVLFG etwa an 17). Dann nur die ein bis zwei nächstgelegenen
+Varianten auf „interessant" setzen und die übrigen mit dem Hinweis archivieren,
+dass es dieselbe Stelle ist und welche Karte die relevante ist — sonst ist das
+Board mit identischen Angeboten zugestellt. Dasselbe gilt für Angebote, die
+gleichzeitig über Interamt und ITZBund laufen.
+
 **Industriegehälter gegen E13 spiegeln** (E13 TVöD Bund ≈ 62.000–88.000 €):
 Bänder ab ~87.000 € gelten als „deutlich über E13“, Bänder um 57.800–84.000 €
 liegen etwa auf E13-Niveau, alles darunter nicht.
@@ -142,21 +172,32 @@ Nutzer direkt ansprechen („du“) und immer die geschätzte Fahrzeit nennen.
 
 ## Was beim nächsten Mal zu tun ist
 
-1. **Warteschlange weiterarbeiten.** Stand 21.08.2026 sind 130 Angebote manuell
-   bewertet, **rund 1.090 sind noch offen**. Einfach vorne in der sortierten
-   Warteschlange weitermachen — bereits bewertete Jobs fallen automatisch heraus,
-   weil sie einen Board-Eintrag und eine `chat.json` haben.
+1. **Warteschlange weiterarbeiten.** Stand 21.08.2026: 1.210 Angebote sind
+   eingeordnet (55 interessant), **648 sind noch offen**. Prioritätsstufen 0–2
+   (Verbeamtung bzw. Nähe) sind vollständig abgearbeitet — offen ist nur noch
+   der Rest, überwiegend Accenture (299) und BWI. Bereits bewertete Jobs fallen
+   automatisch heraus, weil sie einen Board-Eintrag und eine `chat.json` haben.
 2. **Blockweise arbeiten**: ~30 Angebote dumpen, bewerten, speichern, dann der
-   nächste Block. Nach jedem Block kurz committen, damit bei Abbruch nichts verloren geht.
-3. **Den Interamt-Bug im Blick behalten.** Er ist noch nicht behoben. Wenn der
+   nächste Block. Nach jedem Block committen, damit bei Abbruch nichts verloren geht.
+3. **Accenture zuerst prüfen, ob sich der Aufwand lohnt.** Die 299 offenen
+   Accenture-Angebote haben durchweg keine Gehaltsangabe, greifen daher nicht in
+   den Gehaltsfilter und sind überwiegend Beratungs- und Vertriebsrollen — also
+   viele No-Gos. Eine Stichprobe ist sinnvoller als eine Einzelbewertung von 299
+   Angeboten; ggf. mit dem Nutzer klären, ob Accenture pauschal archiviert werden soll.
+4. **Den Interamt-Bug im Blick behalten.** Er ist noch nicht behoben. Wenn der
    Nutzer das möchte, wäre die Reparatur in `InteramtAdapter.openDetail()`:
    nach dem Klick auf die Detailseite warten, bis die dort angezeigte
-   „INTERAMT Angebots-ID“ zur erwarteten Zeile passt (statt nur `networkidle`),
+   „INTERAMT Angebots-ID" zur erwarteten Zeile passt (statt nur `networkidle`),
    und die Zeile über ihre Angebots-ID statt über `tr:nth-child(n)` ansteuern.
    Danach ist ein `yarn crawl --refresh` nötig, damit die falschen Detailtexte
    ersetzt werden — und die bisher auf falschem Text beruhenden Triagen
    (auch die von Gemini) sollten neu bewertet werden.
-4. **Nicht ungefragt bewerben oder Bewerbungsunterlagen schreiben** — die Triage
+5. **Zweiter Datenfehler, ebenfalls offen**: die Gehaltsextraktion schneidet
+   Bandobergrenzen am Tausenderpunkt ab — aus „71.000 € und 104.000 €" wird
+   `gehalt: "71.000 € und 104"`. `src/server/lowpay.ts` rechnet das beim Parsen
+   wieder hoch (Zahlen unter 1000 gelten als abgeschnittene Tausender), die
+   eigentliche Ursache liegt aber in `src/extract.ts`.
+6. **Nicht ungefragt bewerben oder Bewerbungsunterlagen schreiben** — die Triage
    sortiert nur vor, die Entscheidung trifft der Nutzer.
 
 ## Konventionen
