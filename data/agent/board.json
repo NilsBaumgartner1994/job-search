@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T07:22:26.286Z",
+  "updatedAt": "2026-08-21T07:58:49.705Z",
   "entries": [
     {
       "jobId": "accenture:13818109",
@@ -1042,9 +1042,9 @@
     },
     {
       "jobId": "interamt:1375663",
-      "status": "archiviert",
-      "vonKi": true,
-      "updatedAt": "2026-08-20T21:56:11.662Z",
+      "status": "interessant",
+      "vonKi": false,
+      "updatedAt": "2026-08-21T07:58:49.688Z",
       "punkte": 3,
       "punkteDetails": {
         "entfernung": 1,
@@ -4485,6 +4485,12 @@
       "updatedAt": "2026-08-20T21:55:58.631Z"
     },
     {
+      "jobId": "interamt:1469960",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-21T07:58:49.693Z"
+    },
+    {
       "jobId": "interamt:1470398",
       "status": "archiviert",
       "vonKi": true,
@@ -4506,6 +4512,12 @@
         "gesamt": 1
       },
       "begruendung": "Reine Vor-Ort-Tätigkeit in Magdeburg für klassischen Netzwerkbetrieb in einer Krankenhaustochter. Inhaltlich und geografisch unpassend."
+    },
+    {
+      "jobId": "interamt:1472192",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-21T07:58:49.703Z"
     },
     {
       "jobId": "interamt:1472769",
@@ -4563,6 +4575,18 @@
       "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "interamt:1474893",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-21T07:58:49.678Z"
+    },
+    {
+      "jobId": "interamt:1474896",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-21T07:58:49.680Z"
+    },
+    {
       "jobId": "interamt:1475432",
       "status": "archiviert",
       "vonKi": true,
@@ -4570,11 +4594,29 @@
       "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "interamt:1475648",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-21T07:58:49.690Z"
+    },
+    {
+      "jobId": "interamt:1476636",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-21T07:58:49.695Z"
+    },
+    {
       "jobId": "interamt:1476733",
       "status": "archiviert",
       "vonKi": true,
       "updatedAt": "2026-08-21T06:45:17.681Z",
       "begruendung": "Bewerbungsfrist am 20.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1476775",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-21T07:58:49.668Z"
     },
     {
       "jobId": "interamt:1476888",
@@ -4605,6 +4647,12 @@
         "gesamt": 2
       },
       "begruendung": "Die Position ist lediglich nach E 10 TV-L eingruppiert und richtet sich primär an Absolventen einer IT-Ausbildung. Der Dienstort Koblenz ist zudem zu weit von Ihrem Wunschraum entfernt."
+    },
+    {
+      "jobId": "interamt:1477531",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-21T07:58:49.682Z"
     },
     {
       "jobId": "interamt:1477746",
@@ -4660,6 +4708,12 @@
       "begruendung": "Die Stelle ist mit E 10/A 10 für den gehobenen Dienst (Bachelor) ausgeschrieben und erfordert primär elektrotechnische Messtechnik. Sie passt weder gehaltlich noch fachlich zu Ihrer Promotion im Software Engineering."
     },
     {
+      "jobId": "interamt:1479104",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-21T07:58:49.698Z"
+    },
+    {
       "jobId": "interamt:1479488",
       "status": "archiviert",
       "vonKi": true,
@@ -4706,6 +4760,12 @@
         "gesamt": 4
       },
       "begruendung": "Fachlich und finanziell (E 14 / A 14 Referatsleitung) sehr passend, erfordert jedoch Vor-Ort-Präsenz in Köln. Aufgrund der Pendeldistanz und fehlender Remote-Option zu archivieren."
+    },
+    {
+      "jobId": "interamt:1480633",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-21T07:58:49.700Z"
     },
     {
       "jobId": "interamt:1481170",
@@ -5152,6 +5212,12 @@
       "status": "archiviert",
       "vonKi": false,
       "updatedAt": "2026-08-20T21:55:58.747Z"
+    },
+    {
+      "jobId": "itzbund:1000004333801FD0ACFE6637CF7EADC6",
+      "status": "interessant",
+      "vonKi": false,
+      "updatedAt": "2026-08-21T07:58:49.705Z"
     },
     {
       "jobId": "itzbund:1000004333801FD186A644240F9C8DC6",
@@ -5602,6 +5668,12 @@
       "vonKi": true,
       "updatedAt": "2026-08-20T21:01:07.592Z",
       "begruendung": "Bewerbungsfrist am 23.07.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD1A595E46E484E4DC6",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-21T07:58:49.685Z"
     },
     {
       "jobId": "itzbund:1000004333801FD1A5B01838830B2DC6",
