@@ -1,0 +1,40 @@
+{
+  "id": "bwi:69016",
+  "employer": "BWI GmbH",
+  "titel": "Senior IT Architekt - ESB Information Exchange Service (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/senior-it-architekt-esb-information-exchange-service-m-w-d-69016",
+  "referenzcode": "69016",
+  "beschreibung": "ab September bundesweit an einem unserer BWI-Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\n​Der Bereich Shared Service Delivery (SSD) ist für das Servicedesign, die Serviceentwicklung und die Bereitstellung aller End-User-, Rechenzentren & Cloud-lnfrastruktur sowie Communication Services des BWI-Service-Portfolios verantwortlich. Er stellt überwiegend standardisierte Servicelösungen für Kunden zur Verfügung. Die Shared Service Delivery ist integraler Bestandteil der CDO und somit maßgeblich verantwortlich für die gemeinsamen Ziele und Maßnahmen. Unser Ansporn ist maximale Betriebsstabilität und hohe Kundenzufriedenheit. Die Services der ITM Service Management & Automation steigern die Effizienz und den Automatisierungsgrad der BWI und stellen die dafür benötigten Funktionalitäten, sowie eine zentrale ITSM-Landschaft bereit. Ziel ist eine einheitliche Architektur zur Automatisierung der Services bzw. Serviceketten und die Bereitstellung der dafür notwendigen Systeme, sowie das Zurverfügungstellen von Telemetriedaten (Logs, Events, Compliancechecks) zur Sicherung der Systemlandschaft und Ansteuerung von Automatisierung (AIOps). Darüber hinaus tragen sie Verantwortung für die Management– und Dokumentationssysteme der Infrastruktur der BWI und der Bundeswehr. Außerdem ist der Bereich ITM SMA auch für die Durchführung des zentralen BWI Service Asset und Configuration Managements zuständig. Hier sind alle Aufgaben gebündelt die für Plan, Built und Operate der CMDB notwendig sind.\n\nAufgaben:\n- Mitarbeit an der Definition und Weiterentwicklung der Zielarchitektur für Applikation, APIs, Messaging und Event-Driven Integrationen\n- Erstellung, Bewertung und Durchsetzung von Architektur- und Integrationskonzepten\n- Beratung von Projekten in Architektur-, Integrations- und Technologiefragen\n- Enge Zusammenarbeit mit Entwicklungs-, Plattform-, Security- und Betriebsteams\n- Architekturverantwortung für Schnittstellen- und Integrationsplattformen\n- Beratung, Konzeption und aktives mitgestalten beim Ausbau der Plattform und des Service\n- Eigenverantwortliches Arbeiten im Rahmen der jeweiligen Anforderungen bzw. Projekte\n- Kontinuierliche Weiterentwicklung einer ESB-Applikation und des Services IES\n- Implementierung und Migration der Fachbereiche auf die ESB-Plattform\n\nBereich: Cloud / Virtualisierung",
+  "gehalt": "71.000 € und 104",
+  "befristung": [],
+  "arbeitszeit": [],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen dir Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit und dem langfristigen Aufbau eines Wertguthabenkontos für z.",
+  "voraussetzungenZwingend": [
+    "Abgeschlossenes fachbezogenes Hochschulstudium oder vergleichbare Ausbildung mit mind. 5 Jahren Berufserfahrung in den beschriebenen Aufgaben",
+    "Mindestens 5 Jahre Berufserfahrung in der Applikations- oder Service-Architektur",
+    "Erfahrungen in der Konzeption von Architekturen in Cloudumgebungen",
+    "Erfahrungen in mindestens einer der folgenden Methoden und Technologien: ESB-Frameworks, Integration Patterns Messaging / Event Streaming bspw. Kafka Synchroner und Asynchroner Integrationstechnologien wie REST, Message Queues API Management / API Gateways Cloud Native Anwendungen, Kubernetes & containerisierte Plattformen, Serverlesstechnologien wie KNative CI/CD-Pipelines und Automatisierung Agile Methoden wie Kanban, SCRUM, SAFe Java und Software Entwicklungsframeworks",
+    "ESB-Frameworks, Integration Patterns",
+    "Messaging / Event Streaming bspw. Kafka",
+    "Synchroner und Asynchroner Integrationstechnologien wie REST, Message Queues",
+    "API Management / API Gateways",
+    "Cloud Native Anwendungen, Kubernetes & containerisierte Plattformen, Serverlesstechnologien wie KNative",
+    "CI/CD-Pipelines und Automatisierung",
+    "Agile Methoden wie Kanban, SCRUM, SAFe",
+    "Java und Software Entwicklungsframeworks",
+    "Sehr gutes Verständnis von verteilten Systemen und asynchroner Kommunikation",
+    "Kommunikations- und Teamfähigkeit",
+    "Reisebereitschaft ca. 50%"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Verhandlungssichere Deutschkenntnisse in Wort und Schrift, sehr gute Englischkenntnisse von Vorteil​"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-08-20T22:05:59.608Z",
+  "lastSeen": "2026-08-20T22:05:59.608Z"
+}

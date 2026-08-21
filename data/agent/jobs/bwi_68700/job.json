@@ -1,0 +1,34 @@
+{
+  "id": "bwi:68700",
+  "employer": "BWI GmbH",
+  "titel": "Senior Android Engineer (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/senior-android-engineer-m-w-d-68700",
+  "referenzcode": "68700",
+  "beschreibung": "ab September und in Vollzeit in Bonn.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nIm Center of Excellence - Software Engineering (SWE) entwickeln wir Software-Produkte mit echtem Mehrwert. Unsere Lösungen werden im Umfeld der Bundeswehr eingesetzt und unterstützen sicherheitskritische Prozesse, Informationsflüsse und präzise Entscheidungsfindungen. Damit tragen wir aktiv zur Einsatzfähigkeit, zur digitalen Souveränität und zur technologischen Zukunftsfähigkeit Deutschlands bei. In agilen DevOps Teams leben wir Continuous Life, z.B. in dem wir den Automatisierungsgrad unserer Arbeit fortlaufend erhöhen.\nDie Bundeswehr führt einen Android basierten Tactical Client mit einem neuen Battle Management System ein. Unsere Aufgabe ist die Härtung und Weiterentwicklung dieser Komponenten sowie die Integration in die heterogene Systemlandschaft der Bundeswehr. Dafür suchen wir Senior Software Engineer (m/w/d) für ein neues agiles Entwicklungsteam. Gemeinsam begleiten wir unsere Produkte über den gesamten Lebenszyklus hinweg, von der Idee bis zum Betrieb.\n\nAufgaben:\n- Entwicklung von Erweiterungen und Schnittstellen für das webbasierte BMS der Bundeswehr unter Verwendung der bereitgestellten SDKs\n- Entwicklung von nativen Android Applikationen und betriebssystemnaher Erweiterungen zur Härtung des Tactical Clients\n- Konzeption und Abstimmung der Architektur und des Software Designs in einem plattformübergreifenden Gesamtsystem\n- Qualitätssicherung sicherheitskritischer Android Applikationen\n- Aufbau und Erweiterung der CI/CD-Pipeline\n- 3rd Level Support und Softwarepflege, -wartung, -änderungen für unsere Applikationen\n\nBereich: Softwareentwicklung / Programmierung",
+  "gehalt": "71.000 € und 104",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "Bonn"
+  ],
+  "homeoffice": "- Wir ermöglichen dir Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "Abgeschlossenes Studium der Informatik oder eine vergleichbare Qualifizierung",
+    "Mehrjährige Erfahrung als Software Developer unter Verwendung von TypeScript, Angular, Kotlin und C++",
+    "Gute Kenntnisse über die Systemarchitektur von Android",
+    "Erfahrung im Umgang mit gängigen Tools zur Buildautomatisierung und Testing",
+    "Sehr gutes Verständnis von agiler Softwareentwicklung und Softwareentwicklungsprozessen",
+    "Technisches Verständnis von heterogenen Systemlandschaften (z. B. Softwarearchitektur, Schnittstellen, Datenmodelle sowie DevOps-, Betriebs- oder Security-Anforderungen)",
+    "Teamfähigkeit und Erfahrung in der Zusammenarbeit in agilen Teams​"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Idealerweise Erfahrung in regulierten oder sicherheitskritischen Umfeldern (z. B. Behörden, kritische Infrastrukturen), Kenntnisse der Struktur, Kultur und IT-Landschaft der Bundeswehr von Vorteil"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-08-20T22:05:57.730Z",
+  "lastSeen": "2026-08-20T22:05:57.730Z"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "bwi:68812",
+  "employer": "BWI GmbH",
+  "titel": "Senior System Engineer - Active Directory (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/senior-system-engineer-active-directory-m-w-d-68812",
+  "referenzcode": "68812",
+  "beschreibung": "ab 01.09.2026 und in Vollzeit in München oder Rheinbach, alternativ bundesweit an einem unserer BWI Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nDie Abteilung Identity-driven-Infrastucture (IDI) verantwortet die Administration und den Betrieb von Active Directory Umgebungen, BWI intern, als auch in unseren Kundenumgebungen (Bundeswehr und andere Behörden). Dazu gehören ebenfalls der Betrieb der Infrastrukturdienste DNS, Federation Services, DHCP und Lightweight Directory Services. Die Schnittstellen zu anderen Services sind vielfältig und sorgen für stetige Abwechslung in den Tätigkeitsbereichen.​\n\nAufgaben:\n- ​Betrieb und Übernahme administrativer Aufgaben im Umfeld Active Directory\n- Second Level Tätigkeiten im Rahmen des Entstörprozesses und der Problembearbeitung\n- Unterstützung bei der Erstellung von Grob- und Feinkonzepten\n- Überwachung und Pflege der eingesetzten Serversysteme\n- Sicherstellung der betrieblichen Aufgaben sowie Durchführung von Aktivitäten zur Betriebsstabilisierung / Betriebsoptimierung\n- Übernahme von Rufbereitschaften\n- Übernahme der Rolle des Third Level Supports, Erarbeitung von Lösungen (gegebenenfalls unter Einbeziehung des Herstellers Microsoft)",
+  "gehalt": "57.800 € und 84",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "Abgeschlossene Ausbildung in der IT",
+    "Min. 5 Jahre praktische Erfahrung im genannten Aufgabenprofil",
+    "Erfahrungen in großen IT-Umgebungen und Lösungskompetenz für komplexe Aufgabenstellungen",
+    "Sehr gute Kenntnisse in den Bereichen Active Directory und Domain Name System (DNS)",
+    "Gute Kenntnisse in Active Directory Federation Services (ADFS), Lightweight Directory Services (ADLDS) und DHCP",
+    "Kenntnisse in PowerShell",
+    "Verhandlungssichere Deutsch- sowie gute Englischkenntnisse"
+  ],
+  "voraussetzungenWuenschenswert": [],
+  "adapter": "bwi",
+  "firstSeen": "2026-08-20T22:06:06.957Z",
+  "lastSeen": "2026-08-20T22:06:06.957Z"
+}

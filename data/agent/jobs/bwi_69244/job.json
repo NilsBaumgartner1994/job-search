@@ -1,0 +1,36 @@
+{
+  "id": "bwi:69244",
+  "employer": "BWI GmbH",
+  "titel": "Senior Cloud Engineer - Open Source (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/senior-cloud-engineer-open-source-m-w-d-69244",
+  "referenzcode": "69244",
+  "beschreibung": "ab sofort und in Vollzeit in Bonn, Berlin, München oder bundesweit an einem unserer BWI Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\n​​​​​Der Cloud Operation Hub ist unsere zentrale Drehscheibe für moderne Cloud-Lösungen. Als Enabler und Integrator gestalten wir sichere, leistungsfähige und zukunftsorientierte Cloud-Umgebungen für die Bundeswehr und Bund. Wir schaffen die technischen Grundlagen für digitale Souveränität, Automatisierung und Resilienz in komplexen IT-Landschaften. Unser Ziel: Cloud-Innovationen nutzbar machen – sicher, skalierbar und nachhaltig.​\n\nAufgaben:\n- Du entwickelst und betreibst moderne Kubernetes-basierte Plattformen und Infrastrukturen\n- Der Aufbau und die Weiterentwicklung von Cloud-Native-Lösungen auf Basis von Open-Source-Technologien gehören zu deinem Arbeitsalltag\n- Du entwickelst Lösungen für den sicheren Transport von Softwareartefakten in komplexen und isolierten Umgebungen\n- Du wirkst an der Entwicklung und Weiterentwicklung von Kubernetes Operators sowie an der Automatisierung von Prozessen mit\n- Technische Anforderungen analysierst du eigenständig und leitest daraus nachhaltige Lösungsansätze ab\n- Die Erstellung von Richtlinien und technischen Dokumentationen liegt in deinem Verantwortungsbereich\n- Du bringst dich aktiv in Open-Source-Projekte ein und verfolgst aktuelle Entwicklungen im Cloud-Native-Umfeld\n\nBereich: Cloud / Virtualisierung",
+  "gehalt": "71.000 € und 104",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "​Abgeschlossenes Studium im Bereich Informatik, Wirtschaftsinformatik oder eine vergleichbare technische Qualifikation",
+    "Du verfügst über mindestens 5 Jahre Berufserfahrung im Bereich Cloud Native, Kubernetes oder Software Engineering",
+    "Kubernetes und moderne Cloud-Native-Technologien sind dir bestens vertraut. (CNCF Landscape)​​​",
+    "Du programmierst sicher in Golang, Python oder einer vergleichbaren Sprache",
+    "Mit CI/CD-Pipelines hast du bereits praktische Erfahrungen gesammelt",
+    "GitOps- und Infrastructure-as-Code-Ansätze sind für dich keine Fremdwörter",
+    "Du kennst dich mit Linux-Systemen sowie grundlegenden Netzwerk- und Infrastrukturthemen aus",
+    "Der Umgang mit Tools wie Git, OpenTofu, Vault oder vergleichbaren Lösungen ist dir vertraut",
+    "Du verfügst über sehr gute Deutsch- und gute Englischkenntnisse in Wort und Schrift"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Idealerweise konntest du bereits Erfahrungen mit Kubernetes Operators sammeln"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-08-20T22:05:49.003Z",
+  "lastSeen": "2026-08-20T22:05:49.003Z"
+}
