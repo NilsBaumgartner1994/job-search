@@ -1,0 +1,32 @@
+{
+  "id": "bwi:63369",
+  "employer": "BWI GmbH",
+  "titel": "IT Expert DevOps / Platform Engineering (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/it-expert-devops-platform-engineering-m-w-d-63369",
+  "referenzcode": "63369",
+  "beschreibung": "ab sofort und in Vollzeit bundesweit an einem unserer BWI Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\n​Der Bereich PoD1 Applications (App) unterstützt unseren Kunden und seine Geschäftsprozesse mit passgenauen Lösungen, die sich am digitalen Wandel und der Mobilisierung der Arbeitswelt orientieren.Wir stellen vollumfänglich alle Leistungen / Services eines zukunftsfähigen Application Management zur Verfügung, was sowohl die Applikationsentwicklung als auch den Applikationsbetrieb umfasst. Wir entwickeln Applikationen auf Basis standardisierter Enterpriselösungen für mehrere Tausend Nutzer, welche nach Kundenanforderung von uns individuell modifiziert und angepasst werden (Commercial of the Shelf / Modified of the Shelf). Hierzu gehören insbesondere Internetauftritte, Portale, Wikis, Formular- und Lernmanagementsysteme und weitere Business-Applikationen auf Basis von Webtechnologien. Im Bereich datenzentrierter Projekte decken wir das gesamte Spektrum von der Verprobung neuester wissenschaftlicher Erkenntnisse aus den Forschungsfeldern KI und Data Science, bis hin zur Umsetzung moderner, datengetriebener Systeme ab. Dies umfasst auch die Themen Data Science, KI & Machine Learning. Des weiteren beschaffen und warten wir ergänzend zu den Entwicklungsleistungen auch im Kundenauftrag am Markt verfügbare Commercial of the Shelf Applikationen, sofern diese die Requirements / Business Need des Kunden erfüllen. Wir betreiben und verantworten Applikationen End-to-End im Internet, Intranet und Extranet.\n\nAufgaben:\n- Betreuung und (Weiter-)Entwicklung einer Cloud-Native-Plattform für Data Analytics und KI Tools für unseren Kunden Bundeswehr\n- Realisierung und Sicherstellung der Betreibbarkeit eines PaaS/SaaS auf Basis von Kubernetes mit hohem Automatisierungsgrad in der Provisionierung und Deployment in einem agil aufgestellten Team\n- Automatisierte Bereitstellung von containerisierten Plattformkomponenten durch CI/CD sowie Überwachung und Optimierung der Plattform durch den gezielten Einsatz von Logging, Monitoring und Tracing\n- Kontinuierliche und systematische Härtung durch die Realisierung von Anforderungen der IT-Sicherheit\n- Mitwirkung an der Erstellung von code-naher technischen Dokumentationen\n\nBereich: Collaboration / Groupware",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Ihnen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit und dem langfristigen Aufbau eines Wertguthabenkontos für z.",
+  "voraussetzungenZwingend": [
+    "Abgeschlossenes fachbezogenes Hochschulstudium oder eine vergleichbare Ausbildung",
+    "Etwa 2 Jahre Berufserfahrung in einem oder mehreren der folgenden Themenfelder Cloud-native Plattformen, Deployment von Microservices und/oder Automatisierung containerisierter Anwendungen",
+    "Gute Kenntnisse in Kubernetes und den Cloud-native Konzepten, API-Gateways, Service-Mesh (z.B. Istio), Authentifizierung und Observability",
+    "Erfahrungen im Umgang mit Automatisierungswerkzeugen und Infrastructure as Code und GitOps, z.B. mit GitLab-CI, Terraform, Crossplane oder ArgoCD",
+    "Gute Kommunikations- und Teamfähigkeiten, ein analytisches Denkvermögen Lernbereitschaft sowie eine sorgfältige und gewissenhafte Arbeitsweise",
+    "Verhandlungssichere Deutschkenntnisse und ein sicheres Verständnis der englischen Sprache​"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Erfahrung im Deployment von Machine Learning Systemen (MLOps) wünschenswert​"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-07-10T16:54:32.655Z",
+  "lastSeen": "2026-07-13T07:36:44.445Z"
+}

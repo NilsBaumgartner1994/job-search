@@ -1,0 +1,30 @@
+{
+  "id": "bwi:69496",
+  "employer": "BWI GmbH",
+  "titel": "Senior System Engineer Backup (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/senior-system-engineer-backup-m-w-d-69496",
+  "referenzcode": "69496",
+  "beschreibung": "ab sofort und in Vollzeit bundesweit an einem unserer BWI Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nCentral Operations steht im Mittelpunkt der Shared Service Operations (SSO). Jederzeit haben wir den Betriebsstatus der Systeme und Services im Blick. Mit feiner Sensorik erkennen wir rechtzeitig Betriebsstörungen und agieren reaktiv auf Störmeldungen unserer Kunden. Die Abteilung Backup ist Bestandteil des IT-Operation Managements und liefert durch georedundante Aufstellung, einen hohen Grad an Automatisierung und gut geschulte Mitarbeiter*innen eine unterbrechungsfreie Leistungserbringung im Rahmen der vorgegebenen Service Level Agreements.\n\nAufgaben:\n- ​Vorschlagen und Ergreifen von Maßnahmen zur Sicherstellung des Betriebs aller Sicherungsumgebungen / Applikationen\n- Vertretung der Teamleitung und ggf. Zuarbeit für die Service(weiter)entwicklung\n- Betriebsüberwachung der jeweiligen Backup-Software und Bereinigung von schwierigen und umfangreichen Fehlerzuständen\n- Lösung schwieriger und umfangreicher Probleme\n- Bearbeitung von Backup-Themen im Rahmen des Incident und Change-Management\n- Zuarbeit zum Thema Backup im Rahmen von Architektur-, Projekt- und Angebotssituationen\n- Mitarbeit bei der Ausarbeitung und Pflege der zugehörigen Betriebskonzepte, Arbeitsanweisungen und Dokumentation\n\nBereich: Plattform Management",
+  "gehalt": "57.800 € und 84",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "Erfolgreich abgeschlossenes IT-bezogenes Studium oder eine vergleichbare Qualifikation",
+    "Erfahrung mit IBM Spectrum Protect (ISP) oder TSM",
+    "Expertenwissen in der Systemadministration (Betriebssysteme, Netzwerk)",
+    "Erfahrung im 2nd Level-Support von Backupumgebungen",
+    "Teamfähigkeit und abgegrenzte Führung kleiner Teams oder in Vertretungsfällen​"
+  ],
+  "voraussetzungenWuenschenswert": [],
+  "adapter": "bwi",
+  "firstSeen": "2026-08-20T22:05:39.038Z",
+  "lastSeen": "2026-08-20T22:05:39.038Z"
+}

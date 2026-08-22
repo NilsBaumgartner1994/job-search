@@ -1,0 +1,34 @@
+{
+  "id": "bwi:61264",
+  "employer": "BWI GmbH",
+  "titel": "Senior Systems Engineer (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/senior-systems-engineer-m-w-d-61264",
+  "referenzcode": "61264",
+  "beschreibung": "ab sofort und in Vollzeit bundesweit an einem unserer BWI-Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nDie Abteilung CDO SSO CO1 ITOM 2 Application ist Bestandteil der Hauptabteilung CDO SSO CO1 IT Operation Management (ITOM 2) und verantwortet den Betrieb von dezSinN Verfahren, begleitet und unterstützt in Projekten, administriert Middleware und Applikationen.\n\nAufgaben:\n- 2nd / 3rd Level Support von Kundenanwendungen\n- Incident Management und Troubleshooting für den Anwendungsbetrieb\n- Spezialist*in für Middleware-Produkte, vorrangig Applikationsserver\n- Planung, Aufbau und Betrieb komplexer Serverlösungen in den Bereichen Windows und UNIX, nebst Virtualisierung unter ESX, welche teilweise in abgesicherten Schutzumgebung betrieben werden\n- Analyse auftretender Probleme\n- Behebung oder gezielte Zuordnung von Problemen an den Betrieb (Netz, Server, Clients, Anwendung)\n- Dokumentationserstellung von Softwareapplikationen im Zusammenhang mit Migrationstätigkeiten als Beitrag zu Gesamtkonzepten\n\nBereich: Netzwerktechnologie",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Dir Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit und dem langfristigen Aufbau eines Wertguthabenkontos für z.",
+  "voraussetzungenZwingend": [
+    "Erfolgreich abgeschlossenes IT-bezogenes Studium oder eine vergleichbare Qualifikation",
+    "Mind. 5 Jahre Berufserfahrung im Betrieb von Windows und UNIX-Derivaten (AIX, Suse Linux, RedHat Linux) sowie im Betrieb von Deployment von Middlewareprodukten",
+    "Solide Kenntnisse im Complianceumfeld",
+    "Kentnisse zu ITIL / ISO 9001 und ISO/IEC 27001",
+    "Entscheidungs- und Überzeugungsfähigkeit",
+    "Bereitschaft zur Durchführung von Dienstreisen​ (ca. 1-3 Tage pro Quartal)",
+    "Teilnahme an Rufbereitschaften mit Sondervergütung",
+    "Verhandlungssichere Deutschkenntnisse ​in Wort und Schrift"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Erfahrung im Application Hosting, idealerweise betreffend den Sw-Produkten Sparx Enterprise Architect, Microfocus Dimensions und Alfabet​"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-07-10T16:54:33.127Z",
+  "lastSeen": "2026-07-13T07:36:44.452Z"
+}

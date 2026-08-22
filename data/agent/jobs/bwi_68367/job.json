@@ -1,0 +1,30 @@
+{
+  "id": "bwi:68367",
+  "employer": "BWI GmbH",
+  "titel": "Senior IT Architect - Network Automation (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/senior-it-architect-network-automation-m-w-d-68367",
+  "referenzcode": "68367",
+  "beschreibung": "ab September und in Vollzeit bundesweit an einem unserer BWI Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nWerde Teil des Teams Automation & Engineering! Wir verantworten die Architektur für eine Vielzahl moderner System- und Service-Management-Applikationen. Durch das Management unserer komplexen Applikationslandschaften unterstützen wir unsere Fachbereiche mit intelligenter Automatisierung.\n\nAufgaben:\n- Übergreifende Konzeption von Automatisierungslösungen mit dem Ziel Zero Touch Operations über den gesamten Lifecycle (z.B. Deployment, Config, Maintenance)\n- Übernahme der architektonischen Verantwortung für ein Management-System aus dem Netzwerkumfeld (z.B. SINA)\n- Bewertung und Priorisierung komplexer Anforderungen aus Fachbereichen oder Projekten und Erstellung von Lösungskonzepten\n- Federführende Erstellung und Qualitätssicherung technischer Konzepte (Architektur-, Implementierungs-, Sicherheits- und Migrationskonzepte)\n- Mitwirkung bei Projekten im Kontext von Automatisierung\n\nBereich: Mobility / Mobile Apps / Communication",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit und dem langfristigenAufbau eines Wertguthabenkontos für z.",
+  "voraussetzungenZwingend": [
+    "Erfolgreich abgeschlossenes Studium mit Informatikbezug oder eine vergleichbare Qualifikation mit mindestens 5 Jahren relevanter Berufserfahrung",
+    "Kenntnisse in der Implementierung von z.B. Infrastructure- und Configuration-as-Code im Netzwerkumfeld",
+    "Kenntnisse in der Automatisierung mit Ansible, Git oder anderen Enterprise-Lösungen im CI/CD-Kontext",
+    "Strategisches Denkvermögen, Durchsetzungsstärke sowie die Fähigkeit, komplexe Sachverhalte zielgruppengerecht auf Management-Ebene zu moderieren"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Idealerweise Know How im Umgang mit Zertifikatsverwaltung und PKI"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-07-10T16:53:55.040Z",
+  "lastSeen": "2026-08-20T22:06:06.366Z"
+}

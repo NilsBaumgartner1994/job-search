@@ -1,0 +1,30 @@
+{
+  "id": "bwi:69304",
+  "employer": "BWI GmbH",
+  "titel": "Senior Cyber Security Architect Identity and Access Management (IAM) (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/senior-cyber-security-architect-identity-and-access-management-iam-m-w-d-69304",
+  "referenzcode": "69304",
+  "beschreibung": "ab Oktober und in Vollzeit bundesweit an einem unserer BWI Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nDer Bereich IAM verantwortet alle Maßnahmen zur Entwicklung, Integration und Betrieb des Identity and Access Managements der Bundeswehr und weiterer Kunden. Schwerpunkte hierbei sind das Lifecycle Management sowie die Rollen- und Berechtigungsverwaltung von Identitäten (Personen, Funktionen und Organisationsdaten) und die Bereitstellung dieser für IT-Systeme und Applikationen.\n\nAufgaben:\n- Eigenverantwortliche Gestaltung des Designs von Identity and Access Management (IAM) Lösungen\n- Weiterentwicklung der vorhandenen IAM-Architektur im Zielbetrieb (IAMBw) und Eigenbetrieb (IAM4BWI)\n- Verantwortung der technischen Ausrichtung und Sicherstellung der Einhaltung von Sicherheitsstandards sowie Best Practices bei der Verwaltung von Identitäten, Rollen und Zugriffsrechten\n- Beratung von internen und externen Stakeholdern zu Sicherheitsfragen und Lösungen im Kontext von Identitäts- und Berechtigungsmanagement\n- Analyse und Bewertung neuer Technologien, Forschung und Entwicklungen im genannten Umfeld\n- Zusammenarbeit mit dem Service Management bei der Umsetzung von Kundenanforderungen\n- Koordination und Umsetzung architekturbezogener Anpassungen aus den Anforderungen der IT-Sicherheit\n- Erstellen von Konzepten und Dokumentationen\n\nBereich: IT- / Cyber-Security",
+  "gehalt": "71.000 € und 104",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "​Abgeschlossenes Studium mit IT-Bezug oder eine vergleichbare Ausbildung",
+    "Mindestens fünf Jahre relevante Berufserfahrung im Enterprise Umfeld zu IT-Security-Architekturen und der Konzeption von IT-Lösungen mit Schwerpunkt auf Identity and Access Management Lösungen für klassische und/oder Cloud-Umgebungen",
+    "Kenntnisse in der Architektur von IAM-Systemen wie DirX Portfolio, SailPoint, Okta, Ping Identity, One Identity oder IBM Security Verify Produkten sowie von Sicherheitsframeworks wie ISO 27001/27002, NIST Cybersecurity Framework, CIS Controls, Zero Trust Security Model",
+    "​Gute Präsentations- und Teamfähigkeiten, eine sorgfältige, eigenständige sowie kundenorientierte Arbeitsweise",
+    "Sehr gute Deutsch- und Englischkenntnisse in Wort und Schrift​"
+  ],
+  "voraussetzungenWuenschenswert": [],
+  "adapter": "bwi",
+  "firstSeen": "2026-08-20T22:05:46.995Z",
+  "lastSeen": "2026-08-20T22:05:46.995Z"
+}

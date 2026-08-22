@@ -1,0 +1,29 @@
+{
+  "id": "bwi:66613",
+  "employer": "BWI GmbH",
+  "titel": "Werkstudent Administration und fachliche Unterstützung SDA (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/werkstudent-administration-und-fachliche-unterstutzung-sda-m-w-d-66613",
+  "referenzcode": "66613",
+  "beschreibung": "ab Mai bundesweit an einem unserer BWI Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nDie Abteilung Software Data Analytics realisiert im Kunden- und Eigenbetrieb datenzentrierte Projekte. Von der Verprobung neuester wissenschaftlicher Erkenntnisse aus den Forschungsfeldern KI und Data Science, bis hin zur Umsetzung von krisenrelevanter Enterprise-Lösungen für mehrere tausend Nutzende decken wir das gesamte Spektrum moderner datengetriebener Systeme ab. Unser Fokus liegt auf den Themen Data Science, KI & Maschine Learning, deren Architekturen und der dazugehörigen Full-Stack Softwareentwicklung. Dabei fokussieren wir uns auf Szenarien im militärischen Kontext und der öffentlichen Verwaltung.\n\nAufgaben:\n- Unterstützung der Fachexperten der Abteilung: Entlastung im Tagesgeschäft durch Vor- und Nachbereitung von Terminen sowie Fristenüberwachung\n- Proof of Concept: Unterstützung und Durchführung von PoC von Office basierten Themen bis hin zu kleinen AI Lösungen\n- Recherche & Aufbereitung: Recherche zu fachlichen Fragestellungen und deren anschauliche Zusammenfassung\n- Datenpflege: Unterstützung bei der Pflege von abteilungsinternen Datenbanken und Wissensplattformen (Wiki/Confluence)\n\nBereich: Zentralbereiche (u.a. Personal/Marketing/Finance)",
+  "befristung": [],
+  "arbeitszeit": [],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "Eingeschriebene*r Student*in der Informatik oder der Naturwissenschaften mit IT-Hintergrund",
+    "Hohe Zuverlässigkeit, Diskretion und diplomatisches Geschick im Umgang mit Kollegen",
+    "Schnelle Auffassungsgabe für komplexe Themen",
+    "Exzellente Ausdrucksweise in Wort und Schrift (Deutsch und Englisch)",
+    "Sehr gute Kenntnisse in MS Office (insb. Outlook, Excel und PowerPoint)",
+    "Praktische Erfahrung in Softwareentwicklung und Scripting",
+    "Interesse an Language Models und RAG"
+  ],
+  "voraussetzungenWuenschenswert": [],
+  "adapter": "bwi",
+  "firstSeen": "2026-07-10T16:54:20.919Z",
+  "lastSeen": "2026-07-13T07:36:44.342Z"
+}

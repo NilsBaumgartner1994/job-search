@@ -1,0 +1,34 @@
+{
+  "id": "bwi:68603",
+  "employer": "BWI GmbH",
+  "titel": "Lead IT Architect - GDC-A Architektur (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/lead-it-architect-gdc-a-architektur-m-w-d-68603",
+  "referenzcode": "68603",
+  "beschreibung": "ab sofort und in Vollzeit bundesweit an einem unserer BWI-Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nDer Bereich Cloud@BWI bündelt die unterschiedlicher Cloud-Vorhaben der BWI und agiert hierbei als zuverlässiger, strategischer Partner sowohl innerhalb der BWI, als auch gegenüber unserem Kunden der Bundeswehr.\nFür unser Projekt Google Distributed Cloud air-gapped (GDC-A) als Teil der pCloudBw suchen wir einen technischen Teilprojektleiter.\n\nAufgaben:\n- Technische Teilprojektleitung und Architektur-Leistungen im Technologie- und Verantwortungsbereich Google Distributed Cloud air-gapped (GDC-A) als Teil der pCloudBw\n- Meilenstein- & Ressourcenplanung, Schnittstellenarbeit und projekttypisches Status-Reporting\n- Zielgruppengerechte Erstellung und Präsentation komplexer Sachverhalte und Architekturthemen für unterschiedliche interne und externe Stakeholder im Kontext GDC-A und pCloudBw\n- Mitarbeit/Abstimmung in Projekt- und Architekturgremien\n- Zusammenarbeit in interdisziplinären und serviceübergreifenden Teams, inkl. Aussteuerung fachlicher Teams bei Bedarf​\n\nBereich: Cloud / Virtualisierung",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit und dem langfristigen",
+  "voraussetzungenZwingend": [
+    "Abgeschlossenes IT-bezogenes Studium der Informatik, Wirtschaftsinformatik oder vergleichbarer MINT-Studiengänge",
+    "Mindestens 7 Jahre einschlägige Berufserfahrung mit Aufgabengebieten als Teilprojektleiter und / oder Architekt",
+    "Mehrjährige Erfahrung im Bereich IT-Architekturmanagement in komplexen IT-Umgebungen sowie im Aufbau von Infrastrukturen im Rechenzentrums-Umfeld",
+    "Mehrjährige Erfahrung mit der Einführung von private Cloud Umgebungen insbesondere im regulierten und militärischen Umfeld und deren Ausprägung als souveräne / dedizierte (on premise) Lösung",
+    "Erfahrung in der Zusammenarbeit mit Regulatoren (z.B. BSI, DEUmilSAA u.ä.) im Bereich Zertifizierungen und Akkreditierungen",
+    "Selbstständiges Arbeiten, methodisches, wirtschaftliches und lösungsorientiertes Denken und Handeln, Initiative, Veränderungs- und Entscheidungsfähigkeit",
+    "Bereitschaft in rotierender Rufbereitschaft zu arbeiten",
+    "Deutsch verhandlungssicher, Englisch fließend in Wort und Schrift​"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Sehr gute Kenntnisse im Bereich Linux, Kubernetes, Prometheus, ISTIO, Grafana, LAN/Server únd Storage Hardware sowie idealerweise im Bereich GDC-A"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-07-10T16:53:47.149Z",
+  "lastSeen": "2026-08-20T22:06:05.917Z"
+}

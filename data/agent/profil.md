@@ -32,3 +32,15 @@ Weg ohne Homeoffice in Kauf zu nehmen.
 Angebote, deren Gehalt eindeutig unter E13/A13 liegt (bzw. in der Industrie unter rund
 62.000 € Jahresbrutto an der Bandobergrenze), brauchst du mir nicht einzeln vorzulegen —
 die dürfen direkt archiviert werden.
+
+Die Entfernung wiegt für mich schwerer, als oben beschrieben — konkret:
+- Dienstorte, die so weit weg liegen wie Bonn oder Wiesbaden oder noch weiter
+  (ab etwa 2,5 Stunden einfacher Fahrt), kommen für mich nur in Frage, wenn die
+  Stelle praktisch ortsunabhängig ist: 100 % remote, ganz überwiegend Homeoffice
+  oder nur ein bis zwei Präsenztage im Monat. Alles andere in dieser Entfernung
+  darfst du direkt archivieren, egal wie gut es fachlich passen würde.
+- Selbst Hannover oder Münster (rund 1 bis 1,5 Stunden) sind mir zu weit, wenn
+  überhaupt kein Homeoffice möglich ist. Dort muss also zumindest in irgendeiner
+  Form Homeoffice möglich sein.
+- Ein bloßes "Dienstort: Hybrid" aus der Trefferliste ist für mich kein Beleg für
+  Homeoffice. Der Anteil muss in der Ausschreibung selbst stehen.

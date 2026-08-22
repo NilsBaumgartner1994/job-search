@@ -43,12 +43,18 @@ und landet damit nicht im Repo.
 2. **Ohne Bewertung wegräumen** (kostet keine Anfrage):
    - `archiviereAbgelaufene(loadJobs())` aus `src/server/expiry.ts` — abgelaufene Fristen
    - `archiviereZuNiedrigBezahlte(loadJobs())` aus `src/server/lowpay.ts` — alles
-     eindeutig unter E13/A13. Beide laufen auch automatisch in `yarn agent` und
-     `startAgent()`. Vor einer Änderung an der Regel immer erst einen Trockenlauf
-     über `istGehaltZuNiedrig()` machen und die getroffenen Angaben ansehen.
+     eindeutig unter E13/A13
+   - `archiviereZuWeitEntfernte(loadJobs())` aus `src/server/distance.ts` — alles,
+     was die Entfernungsregel reißt (siehe unten)
+
+   Alle drei laufen auch automatisch in `yarn agent` und `startAgent()`. Vor einer
+   Änderung an einer Regel immer erst einen Trockenlauf machen (`istGehaltZuNiedrig()`
+   bzw. `entfernungsProblem()`) und die Treffer stichprobenartig ansehen — bei beiden
+   Filtern sind so schon Fehler aufgefallen, die sonst hunderte Angebote falsch
+   einsortiert hätten.
 3. **Warteschlange bilden** wie in `cli.ts`: Jobs ohne Board-Eintrag oder mit
-   Status `todo`, ohne `chat.json`, Frist nicht abgelaufen und nicht unter
-   Zielniveau — sortiert mit `sortTriageQueue()` (öffentliche Arbeitgeber zuerst,
+   Status `todo`, ohne `chat.json`, Frist nicht abgelaufen, nicht unter
+   Zielniveau und nicht zu weit weg — sortiert mit `sortTriageQueue()` (öffentliche Arbeitgeber zuerst,
    Jobs ohne Gehaltsangabe nach hinten). **Dann nach Priorität umsortieren:**
    1. Verbeamtung **und** (Homeoffice-Hinweis **oder** Dienstort in Nähe)
    2. Verbeamtung
@@ -111,8 +117,25 @@ Andere Adapter (ITZBund, BWI, BKA, BND, Accenture) sind davon nicht betroffen.
 Das Profil zählt, nicht diese Zusammenfassung — wenn es geändert wurde, neu lesen.
 Stand August 2026 gilt:
 
+**Die Entfernungsregel ist die schärfste Hürde** (seit August 2026, umgesetzt in
+`src/server/distance.ts`):
+
+- Dienstort ab ~2,5 h (Bonn, Wiesbaden und weiter) → nur bei **praktisch
+  ortsunabhängiger** Stelle: 100 % remote, ≥ 60 % Homeoffice, „Homeoffice
+  innerhalb von Deutschland" oder ein bis zwei Präsenztage im Monat.
+- Dienstort dazwischen (Münster, Hannover, Ruhrgebiet) → mindestens *irgendein*
+  Homeoffice muss belegt sein.
+- Bis ~45 min → Entfernung spielt keine Rolle.
+
+Entscheidend ist der **Beleg in der Ausschreibung**. „Dienstort: Hybrid" aus der
+Interamt-Trefferliste zählt ausdrücklich **nicht**. Bei aussichtsreichen Angeboten
+deshalb immer den Volltext nach `homeoffice`, `mobiles Arbeiten`, `Telearbeit`, `%`
+durchsuchen — das hat die Rangfolge in der Praxis massiv verändert (eine A13h-Stelle
+in München mit „bis zu 80 % Homeoffice" schlägt eine E13-Stelle in Bonn mit „Hybrid").
+
 **Fahrzeit ab Osnabrück/Vechta/Cloppenburg grob schätzen und in die Begründung
-schreiben** (das verlangt das Profil ausdrücklich):
+schreiben** (das verlangt das Profil ausdrücklich; `fahrzeitMinuten()` in
+`distance.ts` liefert die Schätzung aus PLZ-Leitregion bzw. Ortsnamen):
 
 | Ziel | grobe Fahrzeit |
 |---|---|
@@ -137,15 +160,9 @@ schreiben** (das verlangt das Profil ausdrücklich):
 4. Unter E13/A13 **und** weiter als ~40 min → `archivieren`. Reiner
    Betrieb/Support (1st/2nd Level, Benutzerbetreuung, Systemadministration,
    Netzwerkbetrieb) liegt unter dem Profil, auch bei E13.
-5. Ab E13/A13 und fachlich passend:
-   - bis ~40 min → `interessant`
-   - bis ~3 h → `interessant`, mit Entfernungshinweis und der Aufforderung, den
-     Homeoffice-Anteil vorab zu klären
-   - über ~3,5 h → nur `interessant` bei fachlichem Top-Treffer
-     (Softwareentwicklung, Architektur, KI/Data Science, Forschung, Führung)
-     oder deutlich über E13 (E14/A14+, Führungsposition); sonst `archivieren`.
-     Immer dazuschreiben, dass es nur mit Umzug oder überwiegendem Homeoffice
-     aufgeht.
+5. Ab E13/A13, fachlich passend **und** Entfernungsregel erfüllt → `interessant`.
+   Die Entfernung entscheidet vor der Fachlichkeit: ein fachlicher Volltreffer in
+   Bonn ohne belegtes Vollzeit-Homeoffice wird archiviert, nicht vorgelegt.
 
 **Verbeamtung ist hoch gewichtet** (seit August 2026 im Profil verschärft):
 Verbeamtung *plus* belegter hoher Homeoffice-Anteil oder *plus* erreichbare Nähe
@@ -158,8 +175,10 @@ ist **kein** Beleg für einen hohen Homeoffice-Anteil — der steht nur im Vollt
 Verbeamtungsstellen deshalb immer den Volltext nach `homeoffice`, `mobiles
 Arbeiten`, `Telearbeit`, `%` durchsuchen.
 
-**Standort-Dubletten**: Behörden schreiben dieselbe Stelle oft parallel an vielen
-Standorten aus (die SVLFG etwa an 17). Dann nur die ein bis zwei nächstgelegenen
+**Standort-Dubletten**: Arbeitgeber schreiben dieselbe Stelle oft parallel an vielen
+Standorten aus (die SVLFG etwa an 17), und die BWI listet mehrere Standorte in einer
+Anzeige — dort zählt der nächstgelegene, weil man ihn wählen kann. Bei getrennten
+Ausschreibungen nur die ein bis zwei nächstgelegenen
 Varianten auf „interessant" setzen und die übrigen mit dem Hinweis archivieren,
 dass es dieselbe Stelle ist und welche Karte die relevante ist — sonst ist das
 Board mit identischen Angeboten zugestellt. Dasselbe gilt für Angebote, die
@@ -181,38 +200,31 @@ Nutzer direkt ansprechen („du“) und immer die geschätzte Fahrzeit nennen.
 
 ## Was beim nächsten Mal zu tun ist
 
-1. **Warteschlange weiterarbeiten.** Stand 21.08.2026: 1.210 Angebote sind
-   eingeordnet (55 interessant), **648 sind noch offen**. Prioritätsstufen 0–2
-   (Verbeamtung bzw. Nähe) sind vollständig abgearbeitet — offen ist nur noch
-   der Rest, überwiegend Accenture (299) und BWI. Bereits bewertete Jobs fallen
-   automatisch heraus, weil sie einen Board-Eintrag und eine `chat.json` haben.
-2. **Blockweise arbeiten**: ~30 Angebote dumpen, bewerten, speichern, dann der
-   nächste Block. Nach jedem Block committen, damit bei Abbruch nichts verloren geht.
-3. **Accenture zuerst prüfen, ob sich der Aufwand lohnt.** Die 299 offenen
-   Accenture-Angebote haben durchweg keine Gehaltsangabe, greifen daher nicht in
-   den Gehaltsfilter und sind überwiegend Beratungs- und Vertriebsrollen — also
-   viele No-Gos. Eine Stichprobe ist sinnvoller als eine Einzelbewertung von 299
-   Angeboten; ggf. mit dem Nutzer klären, ob Accenture pauschal archiviert werden soll.
-4. **Den Interamt-Bug im Blick behalten.** Er ist noch nicht behoben. Wenn der
-   Nutzer das möchte, wäre die Reparatur in `InteramtAdapter.openDetail()`:
-   nach dem Klick auf die Detailseite warten, bis die dort angezeigte
+1. **Die Warteschlange ist leer.** Stand 22.08.2026 sind alle 1.858 Angebote
+   eingeordnet, 89 davon interessant. Neue Arbeit entsteht erst durch den
+   nächsten `yarn crawl`.
+2. **Nach einem Crawl** greifen die drei Filter automatisch; danach bleibt nur
+   ein kleiner Rest zur inhaltlichen Bewertung. Blockweise arbeiten (~30 Angebote
+   dumpen, bewerten, speichern), nach jedem Block committen.
+3. **Notizen des Nutzers berücksichtigen** (`src/server/notes.ts`): Was er zu
+   einzelnen Angeboten schreibt, wiegt schwerer als das abstrakte Profil und
+   zeigt am konkreten Fall, was ihm wirklich wichtig ist. Vor einer Triage-Runde
+   `notizenKontext()` lesen bzw. die Notizen im Board durchsehen.
+4. **Interamt-Bug (offen)**: Bei rund der Hälfte der Interamt-Angebote gehört der
+   Detailtext zu einem anderen Angebot — `detailGehoertZuJob()` in
+   `src/server/detail.ts` prüft das. Reparatur wäre in
+   `InteramtAdapter.openDetail()`: nach dem Klick warten, bis die angezeigte
    „INTERAMT Angebots-ID" zur erwarteten Zeile passt (statt nur `networkidle`),
    und die Zeile über ihre Angebots-ID statt über `tr:nth-child(n)` ansteuern.
-   Danach ist ein `yarn crawl --refresh` nötig, damit die falschen Detailtexte
-   ersetzt werden — und die bisher auf falschem Text beruhenden Triagen
-   (auch die von Gemini) sollten neu bewertet werden.
-5. **Zweiter Datenfehler, ebenfalls offen**: die Gehaltsextraktion schneidet
-   Bandobergrenzen am Tausenderpunkt ab — aus „71.000 € und 104.000 €" wird
-   `gehalt: "71.000 € und 104"`. `src/server/lowpay.ts` rechnet das beim Parsen
-   wieder hoch (Zahlen unter 1000 gelten als abgeschnittene Tausender), die
-   eigentliche Ursache liegt aber in `src/extract.ts`.
+   Danach `yarn crawl --refresh` und die betroffenen Triagen neu bewerten.
+   **Das kostet aktuell echte Treffer**: Weil der Homeoffice-Anteil nur im
+   Detailtext steht, archiviert die Entfernungsregel weit entfernte Angebote mit
+   vertauschtem Text, obwohl dort vielleicht 100 % Remote zugesagt sind.
+5. **Gehaltsextraktion (offen)**: `src/extract.ts` schneidet Bandobergrenzen am
+   Tausenderpunkt ab („71.000 € und 104"). `lowpay.ts` rechnet das beim Parsen
+   wieder hoch, die Ursache bleibt aber bestehen.
 6. **Nicht ungefragt bewerben oder Bewerbungsunterlagen schreiben** — die Triage
    sortiert nur vor, die Entscheidung trifft der Nutzer.
-7. **Die Spalte „🎯 Will ich mich bewerben" (`bewerben`) gehört dem Nutzer.**
-   Die KI setzt weiterhin nur `interessant` oder `archiviert`; dort parkt er
-   selbst, worauf er sich bewerben will. Karten in dieser Spalte nie
-   automatisch umsortieren — auch nicht bei abgelaufener Frist (siehe
-   `ARCHIVIERBARE_STATUS` in `src/server/expiry.ts`).
 
 ## Konventionen
 

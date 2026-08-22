@@ -1,0 +1,33 @@
+{
+  "id": "bwi:69504",
+  "employer": "BWI GmbH",
+  "titel": "IT Architect Mobility Management (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/it-architect-mobility-management-m-w-d-69504",
+  "referenzcode": "69504",
+  "beschreibung": "ab November und in Vollzeit in Berlin, Bonn, Meckenheim oder München,alternativ bundesweit an einem unserer BWI-Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nDie Abteilung Software & Mobility Management verantwortet innerhalb des Bereichs Digital Workplace die technische Neu- und Weiterentwicklung der durch die BWI GmbH angebotenen Services für Software am Windows Client, sowie für stationäre und mobile Arbeitsplatzsysteme bzw. Endgeräte, zugehörige Kommunikationsdienste und Backend Infrastrukturen.Das Entwicklungsteam Mobility Management ist darin u.a. für die Service-Architektur modernster Lösungen mit hohem Schutzbedarf inkl. VS-NfD zugelassene Systeme für mobile Endgeräte und Backends zuständig.\n\nAufgaben:\n- Architektur & Design von EMM-/UEM-Services als Plattform-Ansatz für mehrere Mandanten\n- Auswahl, Bewertung & Weiterentwicklung von EMM-Plattformen und Frameworks\n- Konzeption und Planung sicherer mobiler Lösungen (z. B. für VS-NfD-Infrastrukturen) sowie deren Integration in bestehende IT-Ökosysteme\n- Definition von Service-Standards & Zielarchitekturen\n- Lifecycle und Integration bestehender Systeme\n- Planung & Unterstützung bei Rollout, Tests, Serviceübergabe und Releasemanagement\n- Entwicklung von Automationen für die Bereitstellung und Betrieb von EMM-Plattformen\n- Begleitung von Projekten als technischer Experte für mobile, skalierende Lösungen\n- Enge Abstimmung mit anderen Architekturteams\n- Kontinuierliche Verbesserung der Services unter Berücksichtigung der technologischen Trends\n- Erstellung und Fortschreibung der Dokumentation\n- Technische Beratung des Servicemanagements und der Kunden.\n- Unterstützung des 2nd-Level-Supports mit Hersteller-Kommunikation für die verantworteten Produkte\n\nBereich: Mobility / Mobile Apps / Communication",
+  "gehalt": "57.800 € und 84",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "Erfolgreich abgeschlossenes Studium oder Ausbildung mit IT-Bezug",
+    "Mindestens 3 Jahre nachweisbare Erfahrung mit MDM Lösungen wie z.B. VMWare Workspace ONE / Blackberry UEM sowie iOS und Android Plattformen, bevorzugt in VS-NfD Infrastrukturen",
+    "Erfahrungen mit Windows Server OS, Linux Server OS (RHEL) sowie Automationstools (Powershell, Shell, Ansible)",
+    "Sehr gutes Verständnis von IT-Service- & Systemarchitekturen.",
+    "Teamfähigkeit und Kundenorientierung sowie Eigeninitiative und selbstständige Arbeitsweise",
+    "Fließende Deutschkenntnisse und gute Englischkenntnisse in Wort und Schrift"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "ITIL Foundation Zertifizierung wünschenswert"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-08-20T22:05:37.033Z",
+  "lastSeen": "2026-08-20T22:05:37.033Z"
+}

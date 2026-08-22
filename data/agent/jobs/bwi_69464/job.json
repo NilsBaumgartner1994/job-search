@@ -1,0 +1,33 @@
+{
+  "id": "bwi:69464",
+  "employer": "BWI GmbH",
+  "titel": "Solution Change Manager/ Solution Deployment Manager (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/solution-change-manager-solution-deployment-manager-m-w-d-69464",
+  "referenzcode": "69464",
+  "beschreibung": "ab Oktober und in Vollzeit bundesweit an einem unserer BWI-Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nDer Bereich Customer Solution (CS) Land & Luft versteht sich als Unterstützer und Treiber der Digitalisierung der Bundeswehr in den Dimensionen Land und Luft. Unser Bereich unterstützt sowohl die militärischen, als auch die zivilen Organisationsbereiche der Bundeswehr bei den betrieblichen, prozessualen und organisatorischen Herausforderungen der Digitalisierung.​​​​\n\nAufgaben:\n- Change Request Management: Entgegennahme, Klassifizierung, Priorisierung und Genehmigung von Change Requests inkl. Impact- und Risikoanalyse; CAB-Steuerung und Change-Dokumentation\n- DevOps-Koordination: Steuerung der technischen Umsetzung durch das DevOps-Team; Koordination von Implementierungszeitplänen und Überwachung des Fortschritts\n- Teststeuerung: Koordination aller Testaktivitäten; Steuerung des STU-Rollouts; Testfreigabe nach erfolgreicher Validierung\n- Deployment-Koordination: Koordination des STU- und Produktions-Rollouts auf Basis des Solution Deployment Plans; Go-Live- und Rollback-Management\n- Support-Steuerung: Steuerung des 2nd und 3rd Level Supports während des gesamten Change-Lebenszyklus; Eskalationsmanagement und Runbook-Übergabe\n\nBereich: Softwareentwicklung / Programmierung",
+  "gehalt": "71.000 € und 104",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "​Abgeschlossenes Studium der Ingenieurwissenschaften, Wirtschaftsinformatik, technischen Betriebswirtschaftslehre",
+    "Erfahrung mit Change-Management-Tools: Jira, Confluence, ServiceNow",
+    "Erfahrung mit Deployment-Tools: Azure DevOps, GitHub Actions, GitLab CI",
+    "Tiefes Know-how in ITIL-basierten Change Management",
+    "Erfahrung in der Koordination von Deployments (STU, Produktion)",
+    "Verständnis von CI/CD-Pipelines und DevOps-Prozessen",
+    "Grundverständnis von Docker, Kubernetes und Container-Orchestrierung",
+    "Erfahrung in der Zusammenarbeit mit 2nd/3rd Level Support"
+  ],
+  "voraussetzungenWuenschenswert": [],
+  "adapter": "bwi",
+  "firstSeen": "2026-08-20T22:05:40.115Z",
+  "lastSeen": "2026-08-20T22:05:40.115Z"
+}

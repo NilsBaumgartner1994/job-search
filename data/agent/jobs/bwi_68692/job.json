@@ -1,0 +1,32 @@
+{
+  "id": "bwi:68692",
+  "employer": "BWI GmbH",
+  "titel": "Lead Cloud DevSecOps Engineer - Schwerpunkt Softwareentwicklung und Kubernetes (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/lead-cloud-devsecops-engineer-schwerpunkt-softwareentwicklung-und-kubernetes-m-w-d-68692",
+  "referenzcode": "68692",
+  "beschreibung": "ab sofort und in Vollzeit bundesweit an einem unserer BWI Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\n​Die Abteilung „POD 2 Cloud & Platform“ verantwortet das Design, die Entwicklung sowie den Betrieb der Cloud Plattform für unsere Kunden. Mit Hilfe von agilen Entwicklungsmethoden und interdisziplinären DevOps Teams gestalten wir die private Cloud Plattform und leisten unseren Beitrag für die digitale Zukunftsfähigkeit unseres Landes.\nWenn Du leidenschaftlich gerne Methoden der Software Entwicklung im Aufbau und Betrieb von IT Infrastruktur einsetzt, in der Cloud zu Hause bist und gleichzeitig das Fundament klassischer IT-Systeme verstehst, dann bist du bei uns genau richtig.\n\nAufgaben:\n- Aufbau, Gestaltung, Weiterentwicklung und Betrieb hoch automatisierter Kubernetes basierter Infrastrukturen sowie von Deployment - Prozessen\n- Erstellung der Architektur und Entwicklung einer Softwarelösungen zum Transport und Prüfung von Softwareartefakten in Air-Gapped Umgebungen\n- Weiterentwicklung von Kubernetes Operatoren für eine automatisierte Verwaltung eines Artefaktverwaltungs-, Bezugs- und Prüfungssystems\n- Entwicklung und Betrieb von Kubernetes Operatoren in Golang und API Extensions im Umfeld Software Supply Chain Security\n- Sicherstellung der Einhaltung von Sicherheitsstandards (z.B. BSI Grundschutz) und und Best Practices\n- ​Zusammenarbeit im agilen DevOps-Team, zur aktiven Gestaltung innovativer und skalierbarer Private Cloud-Lösungen\n\nBereich: Cloud / Virtualisierung",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit und dem langfristigen Aufbau eines Wertguthabenkontos für z.",
+  "voraussetzungenZwingend": [
+    "Abgeschlossenes IT-bezogenes Studium oder eine vergleichbare Qualifikation",
+    "Mindestens sechs Jahre Berufserfahrung im Software Engineering und der Konzeption von IT-Lösungen in Cloud Umgebungen",
+    "Weitreichende Kenntnisse in Bezug auf die Programmierung mit Golang, vorzugsweise im Kontext von Kubernetes basierten Operatoren",
+    "​Sehr gute Erfahrung in der Anwendung von Cloud-Native Tool Sets zur Code Versionierung, Secrets Management, sowie Datensicherheit und Compliance",
+    "Sehr gute Kenntnisse in ​Kubernetes - vorzugsweise on premise",
+    "Know How über ​Linux-Systeme sowie ​den Aufbau, Nutzung und Betrieb von CI/CD-Pipelines für die Automatisierung von Infrastruktur und Anwendungen in Cloud Umgebungen",
+    "Sicherer Umgang mit ​gängigen IT-Sicherheitspraktiken wie Identitäts- und Zugriffsmanagement, Datenschutz, Verschlüsselung, Zertifikats- und Schlüsselverwaltung",
+    "Kenntnisse in der ​Anwendung von GitOps und Infrastructure-as-Code Ansätzen sowie in der ​​Anwendung von Prinzipien des Software Development Lifecycle (SDLC) in der Bereitstellung von IT Infrastruktur"
+  ],
+  "voraussetzungenWuenschenswert": [],
+  "adapter": "bwi",
+  "firstSeen": "2026-07-10T16:53:43.277Z",
+  "lastSeen": "2026-08-20T22:06:05.908Z"
+}

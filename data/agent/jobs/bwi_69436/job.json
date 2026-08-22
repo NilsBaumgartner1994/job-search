@@ -1,0 +1,37 @@
+{
+  "id": "bwi:69436",
+  "employer": "BWI GmbH",
+  "titel": "Senior Architect GeoInfo & METOC (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/senior-architect-geoinfo-metoc-m-w-d-69436",
+  "referenzcode": "69436",
+  "beschreibung": "ab November und in Vollzeit bundesweit an einem unserer BWI-Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\n​In der Customer Solution Unit „GeoInfo, Analytics & Simulation“ (CS GIAS) stellen wir der Bundeswehr die benötigte IT zur Erfassung, Georeferenzierung, Analyse, Zusammenführung und Nutzung von Geo-Daten sowie Systeme für die Durchführung von Wetterberatungen zur Verfügung, damit die Bundeswehr eine Informationsdominanz und eine überlegene Entscheidungsgeschwindigkeit erreichen kann. Unser Fokus liegt dabei auf der Realisierung der hohen Anforderungen im Architekturdesign und Bereitstellung dieser Lösungen, um die hohen Anforderungen der Bundeswehr an Systeme zur Erstellung von Geo- und Wetterprodukten und Wetterberatungen gerecht zu werden. Wir erzeugen selbst keine Geo-Produkte und führen auch keine Wetterberatungen durch.\nAls Customer Solution Architect verantwortest Du strategische und technologische Weiterentwicklungen im Geschäftsfeld GeoInfo. In dieser Rolle gestaltest und steuerst Du die technische Architektur und Weiterentwicklung von IT- Lösungen maßgeblich mit. Dazu beräst und unterstützt Du als IT-Architekt die Angebotsvorgänge, die anhängenden Umsetzungsprojekte und den Betrieb der Lösungen. Du arbeitest mit internen und externen Wissensträgern, Anwendern und Herstellern zu den Anforderungen des Geoinformationsdienstes der Bundeswehr (GeoInfoDBw) zusammen.\n\nAufgaben:\n- Verantwortung für die IT-Bebauungsplanung in dem Bereich GeoInfo\n- Aufnahme der Anforderungen mit dem Kunden Bundeswehr und Ableitung der fachlichen und nicht fachlichen Anforderungen sowie die Überführung dieser in ein Lösungsdesign\n- Verantwortung technischer Konzepte und Testszenarien zu ganzheitlichen IT-Lösungen\n- Koordination der BWI-Services, Portfolio Management und Enterprise Lead Architekten der BWI hinsichtlich erforderlicher (Weiter-)Entwicklung von Servicearchitekturen\n- Verantwortung und Koordination technischer Leistungsbeschreibungen, Erarbeitung von Architekturdesigns und Unterstützung der Projektkalkulationen\n- Sicherstellung der Integration neuer Lösungen in bestehende Systemlandschaften\n- Fachliche Führung eines interdisziplinären, serviceübergreifenden Teams und Mitarbeit in Arbeitsgruppen mit der Bundeswehr\n\nBereich: Softwareentwicklung / Programmierung",
+  "gehalt": "71.000 € und 104",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "Abgeschlossenes Studium mit starkem IT-Bezug oder eine vergleichbare Ausbildung",
+    "Tiefgehendes Verständnis von IT-Sicherheitsarchitekturen und IT-Architekturen (Cloud- und Legacy-Umgebungen)",
+    "Bereitschaft zur Mitarbeit in einem DevSecOps Team und Wahrnehmung einer Ende-zu-Ende Verantwortung von Lösungen",
+    "Sicherer Umgang mit Architekturframeworks wie z.B. TOGAF und NAF und Erfahrung in der Anwendung von Architektur-Methodiken",
+    "Selbständige, lösungsorientierte Arbeitsweise gepaart mit Lernbereitschaft und einem guten technischen Verständnis",
+    "Fließende Deutsch- und sehr gute Englischkenntnisse in Wort und Schrift",
+    "Nationale und internationale Reisebereitschaft​"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Mindestens 6 Jahre relevante Berufserfahrung mit Aufgabengebieten in der Lösungsarchitektur in komplexen IT-Umgebungen, idealerweise im Behörden- und Bundeswehrumfeld",
+    "Erfahrungen im Architekturdesign von Lösungen im Umfeld von KRITIS regulierten Sektoren sind wünschenswert",
+    "Wünschenswert sind Erfahrungen mit den besonderen Anforderungen und Architekturen von METOC-Systemen (Wetterdatenverarbeitung)",
+    "Erfahrungen im Requirements Engineering nach IREB sind wünschenswert"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-08-20T22:05:41.392Z",
+  "lastSeen": "2026-08-20T22:05:41.392Z"
+}

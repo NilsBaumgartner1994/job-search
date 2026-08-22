@@ -1,0 +1,33 @@
+{
+  "id": "bwi:65511",
+  "employer": "BWI GmbH",
+  "titel": "Senior AI Engineer (w/m/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/senior-ai-engineer-w-m-d-65511",
+  "referenzcode": "65511",
+  "beschreibung": "ab sofort und in Vollzeit bundesweit an einem BWI Standort.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nWir im Technology Engineering Team sind als Teil vom Chief Technology Office (CTO) mitverantwortlich für die strategische Erneuerung des Leistungsportfolios der BWI. Unser Auftrag ist es eine KI-Service Plattform zu entwickeln und zu betreiben, über welche Mitarbeitende der BWI Zugriff auf modernste KI-Technologie erhalten. Hierzu verbinden wir Innovation und Forschung zur Künstlichen Intelligenz mit Best Practices aus DevSecOps und MLOps. Aktuell bauen wir ein starkes Team mit Expertise in unterschiedlichen Bereichen der KI-Entwicklung auf. Werde auch Du Teil unseres Teams und unterstütze uns auf unserer gemeinsamen Mission!\n\nAufgaben:\n- Architektur und Entwicklung der zentralen KI-Plattform unter Verwendung von Techniken wie MCP, A2A und AG-UI\n- Implementierung LLM-basierter Agenten mithilfe gängiger Python-Frameworks (z.B. LangGraph, CrewAI, PydanticAI)\n- Entwicklung und Optimierung der Kern-API für die KI-Plattform (z. B. REST/GraphQL) zur Integration von ML-Modellen\n- Sicherstellung der Skalierbarkeit, Zuverlässigkeit und Performance der API unter Last (z. B. Caching, Rate Limiting)\n- Zusammenarbeit mit MLOps Engineers zur Verbindung von Modellen und Infrastruktur (GPU-Cluster, Kubernetes)\n- Implementierung von Sicherheitsmechanismen (API-Gateways, Token-Authentifizierung)\n- Dokumentation und Support für interne sowie externe Entwickler\n\nBereich: Softwareentwicklung / Programmierung",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Dir Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit und dem langfristigen Aufbau eines Wertguthabenkontos für z.",
+  "voraussetzungenZwingend": [
+    "Abgeschlossenes Masterstudium der Informatik, Mathematik oder einer vergleichbaren Fachrichtung",
+    "Mindestens 5 Jahre relevante Berufserfahrung nach Abschluss des Studiums zwingend erforderlich",
+    "Erfahrung in Backend-Entwicklung mit Python, Go, Rust oder Java",
+    "Erfahrung in API-Design wie REST, GraphQL, gRPC, MQTT oder WebSockets",
+    "Erfahrung mit On-Prem Cloud-Techniken (z. B. Kubernetes) und ML-Operations-Frameworks",
+    "Expertise in Leistungsoptimierung und Monitoring (z. B. Prometheus, Grafana)",
+    "Erfahrung mit Datenbanken (SQL/NoSQL) und Storage-Systemen",
+    "Erfahrung mit ML-Modellen und deren Integration in APIs",
+    "Verhandlungssichere Deutschkenntnisse sowie sehr gute Englischkenntnisse in Wort und Schrift"
+  ],
+  "voraussetzungenWuenschenswert": [],
+  "adapter": "bwi",
+  "firstSeen": "2026-07-10T16:54:27.072Z",
+  "lastSeen": "2026-07-13T07:36:44.412Z"
+}

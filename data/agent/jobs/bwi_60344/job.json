@@ -1,0 +1,31 @@
+{
+  "id": "bwi:60344",
+  "employer": "BWI GmbH",
+  "titel": "Application Manager Krisenvorsorgeinformationssystem Bund (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/application-manager-krisenvorsorgeinformationssystem-bund-m-w-d-60344",
+  "referenzcode": "60344",
+  "beschreibung": "In Vollzeit bevorzugt in Bonn, alternativ bundesweit an einem unserer BWI-Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\n​Im Bereich Analytics & Simulation (A&S) entwickeln und betreiben wir für die Bundeswehr die IT, die zur Erfassung, Analyse, Zusammenführung und Nutzung von Daten benötigt wird, um Informationsdominanz und überlegene Entscheidungsgeschwindigkeit zu erreichen. Der Bereich realisiert im Kunden- und Eigenbetrieb datenzentrierte Projekte. Von der Evaluation neuester wissenschaftlicher Erkenntnisse aus den Forschungsfeldern KI und Data Science bis hin zur Umsetzung krisenrelevanter Enterprise Lösungen für mehrere tausend Nutzer, decken wir das gesamte Spektrum moderner datengetriebener Systeme ab. Unser Schwerpunkt liegt auf den Themen Data Science, KI & Machine Learning, deren Architekturen und der dazugehörigen Full-Stack Softwareentwicklung.\nWir setzen auf agile Arbeitsmethoden und eine enge Zusammenarbeit mit unseren Kunden, um innovative und hochwertige Produkte zu entwickeln. Dabei fokussieren wir uns auf zukunftsweisende Szenarien der öffentlichen Verwaltung auf Bundesebene und im militärischen Kontext.\n\nAufgaben:\n- Planung, Konzeption, Realisierung und Weiterentwicklung einer On-Prem Cloud-Native Anwendungsplattform für das Krisenvorsorgeinformationssystem unseres Kunden Bundeswehr\n- Automatisierte Bereitstellung von containerisierten Anwendungen durch CI/CD in einem agil aufgestellten Team\n- Überwachung und Optimierung der Plattform durch den Einsatz von Observability Werkzeugen\n- Systematische Härtung durch die Realisierung von Anforderungen der IT-Sicherheit\n- Ausbau und Pflege der technischen Dokumentation des Aufgabenbereichs\n- Vorbereitung und Unterstützung des Betriebes\n\nBereich: Solution Design",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Dir Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "Abgeschlossenes Hochschulstudium in Informatik in Kombination mit mehr als 4 Jahren relevanter Berufserfahrung bestenfalls in der Entwicklung oder im Betrieb von Geschäftsanwendungen in sicherheitssensitiven Industrien wie bspw. Banken, Versicherungen, Wirtschaftsprüfung oder Militär",
+    "Mehrjährige Erfahrung in DevOps und CI/CD Architektur (bspw. mittels Tools wie GitLab, ArgoCD, Nexus, Artifactory) und Konzepten wie GitOps und Infrastructure as Code sowie in Container Virtualisierung und Orchestrierung (Docker, Kubernetes)",
+    "Gute Kenntnisse im Umfeld Zertifikate und DNS",
+    "Verhandlungssichere Deutschkenntnisse in Wort und Schrift sowie sehr gute Englischkenntnisse zwingend erforderlich"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Mehrjährige praktische Kenntnisse in Schnittstellen und synchronen/asynchronen Kommunikationsprotokollen (HTTP/REST, GraphQL, Kafka) sowie in Java Spring Boot und Datenbankintegration mittels JPA sowie im Frontend React(JS) wünschenswert",
+    "Gute Kenntnisse im Umfeld Identity & Access Management idealerweise mittels KeyCloak o.ä."
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-07-10T16:54:34.082Z",
+  "lastSeen": "2026-08-20T22:06:08.791Z"
+}

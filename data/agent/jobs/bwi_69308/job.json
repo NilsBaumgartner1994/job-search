@@ -1,0 +1,35 @@
+{
+  "id": "bwi:69308",
+  "employer": "BWI GmbH",
+  "titel": "Senior System Engineer (Datenbankadministrator) DB2 (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/senior-system-engineer-datenbankadministrator-db2-m-w-d-69308",
+  "referenzcode": "69308",
+  "beschreibung": "ab sofort und in Vollzeit bevorzugt in Bonn, Berlin oder München, alternativ bundesweit an einem unserer BWI Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nCentral Operations steht im Mittelpunkt der Shared Service Operation (SSO) und hat jederzeit den Betriebsstatus der Systeme und Services im Blick. Mit feiner Sensorik erkennt die Abteilung rechtzeitig Betriebsstörungen und agiert reaktiv auf Störmeldungen unserer Kunden. Der Bereich Database Services administriert die DB2 Datenbankserver auf Basis von Linux.\n\nAufgaben:\n- Pflege von Usern und Berechtigungen, Zugriffssteuerung\n- Einrichten von Triggern/Jobs\n- Erstellung und Pflege von Bashscripten\n- Backup/Restore von Datenbanken\n- Konfiguration der Datenbanken\n- Planung, Aufbau und Betrieb (Administration) der Datenbanken entsprechend den betrieblichen Anforderungen, IT Sicherheitsvorgaben und Vorgaben aus den Sicherheitsprozessen im UNIX und LINUX Umfeld\n- Sicherstellung von Monitoring und Reporting Strukturen\n- Erstellung/Wartung von Playbooks (YAML) in Ansible\n- Umgang mit Kubernetes​\n\nBereich: Datenbanken / Server",
+  "gehalt": "57.800 € und 84",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "Studium im relevantem Fachgebiet oder eine als gleichwertig anerkannte Berufsausbildung mit entsprechenden Fachkenntnissen",
+    "Mindestens 5-jährige praktische Erfahrung in der Administration von DB2 Datenbanken",
+    "Betrieb von DB2 LUW Hochverfügbarkeitslösungen (DB2-HADR, TSA MP bzw. Pacemaker, Replikation (Q-Rep))",
+    "Tiefgehende Kenntnisse der IT-Service-Support-Prozesse (Schwerpunkt Incident-, Problem-, Change Management)",
+    "Langjährige Erfahrung bei der Begleitung von Projekten (Reporting und termingerechte Umsetzung)",
+    "Praktische Erfahrung in Ansible",
+    "Erfahrung in Kubernetes",
+    "Sehr gute analytische Fähigkeiten, sowie gutes Organisations- und Koordinierungsvermögen, die Bereitschaft zur Teamarbeit, eigenverantwortliches und gewissenhaftes Arbeiten, überdurchschnittliche Belastbarkeit"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Zertifizierungen im Bereich DB2 wünschenswert oder vergleichbares Know-How"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-08-20T22:05:45.864Z",
+  "lastSeen": "2026-08-20T22:05:45.864Z"
+}
