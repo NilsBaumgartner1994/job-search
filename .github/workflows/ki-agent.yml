@@ -1,5 +1,7 @@
 # Lässt den KI-Agenten (Gemini) in GitHub Actions laufen:
 # - übernimmt zuerst deine im Browser (GitHub-Pages-Seite) gemachten Änderungen
+#   (Spaltenwechsel und Notizen) — die Notizen gehen anschließend als Kontext
+#   in jeden Prompt ein, damit die KI deine Kriterien mitlernt
 # - archiviert Angebote mit abgelaufener Bewerbungsfrist direkt (ohne KI-Anfrage)
 # - triagiert dann bis zu <limit> unbearbeitete Jobs, auf Wunsch mehrere
 #   Angebote je Anfrage (Sammel-Triage, siehe <buendel> / AGENT_BATCH_SIZE)
@@ -14,7 +16,7 @@ on:
   workflow_dispatch:
     inputs:
       aenderungen:
-        description: 'Änderungen aus dem Browser (JSON vom Button "Änderungen kopieren" der Pages-Seite) — leer lassen, wenn keine'
+        description: 'Status- und Notiz-Änderungen aus dem Browser (JSON vom Button "Änderungen kopieren" der Pages-Seite) — leer lassen, wenn keine'
         required: false
         default: ""
       limit:

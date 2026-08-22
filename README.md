@@ -255,8 +255,10 @@ Details:
    wer du bist (Studium, Erfahrung) und was du dir wünschst (Orte, Gehalt,
    No-Gos). Beim ersten Öffnen geht das Profil-Fenster automatisch auf.
 2. **"🤖 KI-Agent starten"** klicken. Der Agent bekommt nun ein Angebot nach
-   dem nächsten vorgelegt — jeweils mit deinem Profil und dem **kompletten
-   Seitentext** der Ausschreibung (`raw.detail`, HTML → Text) — und
+   dem nächsten vorgelegt — jeweils mit deinem Profil, deinen
+   [📝 Notizen](#-notizen--damit-die-ki-dazulernt) zu schon eingeordneten
+   Angeboten und dem **kompletten Seitentext** der Ausschreibung
+   (`raw.detail`, HTML → Text) — und
    entscheidet: lohnt ein genauer Blick (**⭐ Interessant**) oder kann es weg
    (**🗄 Archiviert**)? Dazu vergibt er **strukturierte Punkte** (je 0–10) für
    Entfernung, Homeoffice/Remote, Gehalt, Vollzeit/Teilzeit, Verbeamtung und
@@ -272,8 +274,9 @@ Details:
    jedes Laufs direkt nach **🗄 Archiviert** — mit der Begründung
    „Bewerbungsfrist am TT.MM.JJJJ abgelaufen“; eine frühere KI-Einschätzung
    bleibt darunter erhalten. Betroffen sind nur Jobs in **📥 Noch
-   abzuarbeiten** und **⭐ Interessant** — was du schon auf **📨 Beworben**
-   oder **❌ Bewerbung abgelehnt** gesetzt hast, bleibt unangetastet.
+   abzuarbeiten** und **⭐ Interessant** — was du auf **🎯 Will ich mich
+   bewerben**, **📨 Beworben** oder **❌ Bewerbung abgelehnt** gesetzt hast,
+   bleibt unangetastet.
 3. Wegen des Rate-Limits im Gratis-Kontingent (~10 Anfragen/Minute) pausiert
    der Agent zwischen zwei Anfragen — bei vielen hundert Angeboten läuft ein
    kompletter Erstlauf also eine ganze Weile; einfach laufen lassen. Standard
@@ -284,11 +287,19 @@ Details:
 ### Das Board
 
 - **Spalten** (horizontal scrollbar): 📥 Noch abzuarbeiten → ⭐ Interessant →
-  📨 Beworben → ❌ Bewerbung abgelehnt → 🗄 Archiviert.
+  🎯 Will ich mich bewerben → 📨 Beworben → ❌ Bewerbung abgelehnt →
+  🗄 Archiviert.
+- **🎯 Will ich mich bewerben** ist die Parkspur zwischen „schau ich mir an“
+  und „Bewerbung ist raus“: Angebote, bei denen die Entscheidung *dafür*
+  gefallen ist, die Bewerbung aber noch geschrieben werden muss. Anders als
+  ⭐ Interessant wird diese Spalte **nicht automatisch geleert**, wenn die
+  Bewerbungsfrist abläuft — sonst würde eine verpasste Frist stillschweigend
+  im Archiv verschwinden.
 - Karten lassen sich per **Drag & Drop** zwischen den Spalten verschieben —
   das zählt als menschliche Entscheidung. Jede Karte zeigt, ob sie zuletzt
   von der **🤖 KI** oder vom **👤 Menschen** eingruppiert wurde, dazu die
-  KI-Punkte (Tooltip zeigt die Einzelbewertungen), Frist und Entgeltgruppe.
+  KI-Punkte (Tooltip zeigt die Einzelbewertungen), Frist, Entgeltgruppe und
+  — falls vorhanden — ein **📝 Notiz**-Badge (Tooltip zeigt die Notiz).
 - **Sortierung**: Standard ist ⭐ KI-Punkte (absteigend). Über das Dropdown
   im Kopf jeder Spalte lässt sich jede Spalte einzeln nach 💶 Gehalt
   (Entgelt-/Besoldungsgruppe, dann Euro-Beträge, ohne Angabe zuletzt) oder
@@ -299,6 +310,32 @@ Details:
   KI-Agenten** (die große Triage-Anfrage ist einklappbar). Dort lassen sich
   auch **Folgefragen** stellen ("Erfülle ich die Voraussetzungen?") — die
   Antwort landet im selben Verlauf.
+
+### 📝 Notizen — damit die KI dazulernt
+
+Jeder Job hat im Detail-Modal (direkt unter den Status-Buttons) ein freies
+**Notiz-Feld**: *warum* ist dieses Angebot wichtig bzw. warum fliegt es raus?
+
+Der Sinn dahinter: Das Profil (`data/agent/profil.md`) beschreibt die Wünsche
+abstrakt, die Notizen zeigen sie am konkreten Fall. Der KI-Agent bekommt
+**alle Notizen bei jeder Anfrage als Teil des System-Prompts mit** (die 40
+jüngsten, je bis 600 Zeichen, jeweils mit Titel, Arbeitgeber und Spalte) —
+plus die Notiz zum gerade bewerteten Angebot direkt beim Angebotstext. Jede
+neue Notiz schärft damit die nächste Triage, ohne dass das Profil
+umgeschrieben werden muss. Bei Widersprüchen zum Profil gilt laut Prompt die
+neuere Notiz.
+
+- Notizen lassen sich **jederzeit** schreiben, auch ohne die Karte zu
+  verschieben. Ein leeres Feld löscht die Notiz wieder.
+- Wird eine Karte per Drag & Drop verschoben, erinnert unten kurz ein Hinweis
+  ans Notieren („🗄 Archiviert · Warum weg?“) — mit einem Klick direkt ins
+  Notizfeld. Wer ihn ignoriert, verliert nichts.
+- Auf der **Pages-Seite** funktionieren Notizen wie Status-Änderungen: erst im
+  Browser gemerkt (⏳), dann über „Änderungen kopieren“ in den Workflow (siehe
+  [unten](#änderungen-von-der-pages-seite-zurück-ins-repo)).
+
+Die Notizen sind bewusst etwas anderes als die **Notizen-Spalte der statischen
+`jobs.html`** — jene liegen nur im localStorage und sieht die KI nie.
 
 ### Speicherung (Dateisystem statt localStorage)
 
@@ -314,17 +351,20 @@ data/agent/jobs/<job-id>/chat.json   Chat-Verlauf mit dem KI-Agenten
 ```
 
 `board.json` ist die allgemeine Übersichtsdatei: pro Job die ID, der
-Kanban-Status (`todo`/`interessant`/`beworben`/`abgelehnt`/`archiviert`)
+Kanban-Status
+(`todo`/`interessant`/`bewerben`/`beworben`/`abgelehnt`/`archiviert`)
 und der Boolean `vonKi` (true = von der KI eingruppiert, false = vom
 Menschen), dazu optional Gesamt-Punkte, die Einzelbewertungen
 (`punkteDetails`: Entfernung, Homeoffice, Gehalt, Arbeitszeit, Verbeamtung,
-Gesamt) und Begründung. Da Job-IDs Zeichen wie `:`
+Gesamt), Begründung sowie deine eigene `notiz` samt `notizAt`
+(Änderungszeitpunkt). Da Job-IDs Zeichen wie `:`
 enthalten, werden sie für Ordnernamen zu `_` normalisiert
 (`bka:T-2026-54` → `bka_T-2026-54`).
 
-Board-Status und die Status/Notizen der statischen `jobs.html`
+Board-Status/-Notizen und die Status/Notizen der statischen `jobs.html`
 (localStorage im Browser) sind bewusst **zwei getrennte Welten** — die
-statische Variante funktioniert weiterhin ohne Server.
+statische Variante funktioniert weiterhin ohne Server. Nur die Notizen aus
+`board.json` bekommt der KI-Agent zu sehen.
 
 ## Crawler in GitHub Actions
 
@@ -435,8 +475,9 @@ eine andere Authentifizierung und funktionieren hier nicht.
 ### Änderungen von der Pages-Seite zurück ins Repo
 
 Die Pages-Seite ist statisch und kann nicht ins Repo schreiben. Status-
-Änderungen (Karte verschieben bzw. Status-Button im Detail) werden deshalb
-**nur im Browser gemerkt** (localStorage) und als "⏳ lokal" markiert:
+Änderungen (Karte verschieben bzw. Status-Button im Detail) **und Notizen**
+werden deshalb **nur im Browser gemerkt** (localStorage) und als "⏳ lokal"
+bzw. "📝 Notiz ⏳" markiert:
 
 1. Oben erscheint der Button **"⏳ Änderungen (N)"** → antippen
 2. **"Änderungen kopieren"** → JSON liegt in der Zwischenablage
@@ -447,6 +488,12 @@ Die Pages-Seite ist statisch und kann nicht ins Repo schreiben. Status-
    Änderungen im Repo-Stand enthalten und werden lokal automatisch
    aufgeräumt (auch pro Änderung: was schon übernommen ist, fliegt aus dem
    localStorage)
+
+Das JSON hat die Form `[{"jobId": "…", "status": "…", "notiz": "…"}, …]`;
+`status` und `notiz` sind einzeln optional — eine reine Notiz-Änderung lässt
+den Status unberührt und umgekehrt. Ab dem nächsten Agenten-Lauf fließen die
+übernommenen Notizen in die Prompts ein (siehe
+[📝 Notizen](#-notizen--damit-die-ki-dazulernt)).
 
 Der Chat-Verlauf jedes Jobs ist auch auf der Pages-Seite einsehbar
 (read-only); **Folgefragen** an den Agenten gehen nur in der lokalen

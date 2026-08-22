@@ -9,7 +9,12 @@ import type { BoardStatus } from "./types.js";
  * vor jedem Lauf auf; die Begründung im Board erklärt die Einstufung.
  */
 
-/** Statuswerte, die die automatische Archivierung überschreiben darf. */
+/**
+ * Statuswerte, die die automatische Archivierung überschreiben darf.
+ * „Will ich mich bewerben“ gehört bewusst NICHT dazu: dort hat der Nutzer eine
+ * feste Absicht hinterlegt (oft samt Notiz). Verschwindet die Karte still im
+ * Archiv, merkt er nie, dass er die Frist verpasst hat.
+ */
 const ARCHIVIERBARE_STATUS: BoardStatus[] = ["todo", "interessant"];
 
 /** Heutiges Datum als ISO-Tag (YYYY-MM-DD) — vergleichbar mit bewerbungsfrist. */
@@ -30,8 +35,9 @@ export function istFristAbgelaufen(job: JobOffer, heute = heuteIso()): boolean {
 
 /**
  * Archiviert alle Jobs mit abgelaufener Frist, die noch in „Noch abzuarbeiten“
- * oder „Interessant“ liegen. Bereits beworbene/abgelehnte/archivierte Jobs
- * bleiben unangetastet — deren Status ist Historie.
+ * oder „Interessant“ liegen. Jobs in „Will ich mich bewerben“ sowie bereits
+ * beworbene/abgelehnte/archivierte bleiben unangetastet — das sind
+ * Entscheidungen des Nutzers bzw. Historie.
  *
  * Gibt die archivierten Jobs zurück (für Logs und die Fortschrittsanzeige).
  */

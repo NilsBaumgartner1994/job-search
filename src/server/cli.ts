@@ -5,7 +5,7 @@ import { archivLogText, archiviereAbgelaufene, istFristAbgelaufen } from "./expi
 import { archiviereZuNiedrigBezahlte, istGehaltZuNiedrig, lowpayLogText } from "./lowpay.js";
 import { GeminiError, usageSummaryText } from "./gemini.js";
 import { publishDocs } from "./publish.js";
-import { getEntry, hasChat, loadBoard, setStatus } from "./store.js";
+import { getEntry, hasChat, loadBoard, setNote, setStatus } from "./store.js";
 import { BOARD_STATUSES, type BoardStatus } from "./types.js";
 
 /**
@@ -15,7 +15,9 @@ import { BOARD_STATUSES, type BoardStatus } from "./types.js";
  *
  * 1. Wendet Änderungen aus dem Browser an (Umgebungsvariable AENDERUNGEN —
  *    das JSON, das die GitHub-Pages-Seite über "Änderungen kopieren" liefert):
- *    [{"jobId":"bka:T-2026-54","status":"beworben"}, …] → vonKi=false
+ *    [{"jobId":"bka:T-2026-54","status":"beworben","notiz":"…"}, …] → vonKi=false.
+ *    "status" und "notiz" sind einzeln optional — eine reine Notiz-Änderung
+ *    lässt den Status unberührt und umgekehrt.
  * 2. Archiviert Angebote mit abgelaufener Bewerbungsfrist sowie Angebote
  *    eindeutig unter dem Zielniveau E13/A13 direkt (ohne Gemini-Anfrage) —
  *    dafür lohnt sich kein Kontingent mehr.
@@ -43,6 +45,7 @@ function parseNumberArg(argv: string[], name: string, fallback: number): number 
 interface ChangeInput {
   jobId?: string;
   status?: string;
+  notiz?: string;
 }
 
 function applyChanges(raw: string, knownIds: Set<string>): void {
@@ -54,22 +57,40 @@ function applyChanges(raw: string, knownIds: Set<string>): void {
     console.error(`⚠ AENDERUNGEN ist kein gültiges JSON — übersprungen: ${raw.slice(0, 200)}`);
     return;
   }
-  let applied = 0;
+  let statusAenderungen = 0;
+  let notizAenderungen = 0;
   for (const change of changes) {
     const jobId = String(change.jobId ?? "");
-    const status = change.status as BoardStatus;
-    if (!BOARD_STATUSES.includes(status)) {
-      console.error(`⚠ Änderung mit ungültigem Status übersprungen: ${JSON.stringify(change)}`);
-      continue;
-    }
     if (!knownIds.has(jobId)) {
       console.error(`⚠ Änderung für unbekannten Job übersprungen: ${jobId}`);
       continue;
     }
-    setStatus(jobId, status, false);
-    applied++;
+    const hatStatus = change.status !== undefined;
+    const hatNotiz = change.notiz !== undefined;
+    if (hatStatus && !BOARD_STATUSES.includes(change.status as BoardStatus)) {
+      console.error(`⚠ Änderung mit ungültigem Status übersprungen: ${JSON.stringify(change)}`);
+      continue;
+    }
+    if (!hatStatus && !hatNotiz) {
+      console.error(`⚠ Änderung ohne Status und ohne Notiz übersprungen: ${jobId}`);
+      continue;
+    }
+    if (hatStatus) {
+      // Notiz gleich mit übernehmen, damit board.json nur einmal geschrieben wird
+      setStatus(jobId, change.status as BoardStatus, false, {
+        notiz: hatNotiz ? String(change.notiz) : undefined,
+      });
+      statusAenderungen++;
+      if (hatNotiz) notizAenderungen++;
+    } else {
+      setNote(jobId, String(change.notiz));
+      notizAenderungen++;
+    }
   }
-  console.log(`✔ ${applied} Änderung(en) aus dem Browser übernommen (vonKi=false).`);
+  console.log(
+    `✔ ${statusAenderungen} Status- und ${notizAenderungen} Notiz-Änderung(en) ` +
+      "aus dem Browser übernommen (vonKi=false).",
+  );
 }
 
 async function main(): Promise<void> {
