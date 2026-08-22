@@ -1,0 +1,35 @@
+{
+  "id": "accenture:R00325129",
+  "employer": "Accenture",
+  "titel": "Database Platform Engineer (all genders)",
+  "link": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Kronberg-Campus-Kronberg-1/Database-Platform-Engineer--all-genders-_R00325129-1",
+  "referenzcode": "R00325129",
+  "beschreibung": "Daten sind das Fundament moderner Unternehmen – und genau hier setzt du an. Als Database Platform Engineer gestaltest du hochskalierbare, resiliente PostgreSQL‑Plattformen und machst Daten für unsere Kunden zuverlässig, sicher und zukunftsfähig nutzbar.\nDeine Mission\nDu baust die technologische Datenbasis für moderne Data‑Plattformen – immer ausgerichtet an den fachlichen, technischen und betrieblichen Anforderungen unserer Kunden. Dabei denkst du Datenbanken nicht als Einzelsysteme, sondern als automatisierte, cloud‑native Plattformen auf Enterprise‑Niveau.\nDas erwartet dich\nDesign, Aufbau und Betrieb skalierbarer, hochverfügbarer PostgreSQL oder Oracle ‑Plattformen für moderne Data‑ und Analytics‑Use‑Cases\nPlanung und Umsetzung komplexer Datenbank‑Migrationen, z. B. von On‑Premise zu Cloud (z.B. Azure, AWS oder GCP), zwischen Hyperscalern oder von Legacy‑Systemen zu PostgreSQL‑Plattformen\nAutomatisierung des gesamten Database Lifecycles (IaC, GitOps, CI/CD) im Sinne von „Database as a Service“\nTechnische Führungsrolle mit Fokus auf Observability, Reliability, Governance und Best Practices über Teams hinweg\nDarauf freuen wir uns\nAbgeschlossenes Studium der Informatik, Wirtschaftsinformatik, einer vergleichbaren technischen Fachrichtung oder einschlägig relevanter Berufserfahrung\nTiefgehende mehrjährige Erfahrung im PostgreSQL oder Oracle Platform Engineering und in Advanced Database Architectures\nSehr gutes Verständnis von Query Planner, Index‑Strategien, Partitionierung, Replikation und High‑Availability‑Setups\nStarke Skills in Automation & Infrastructure as Code (z. B. Ansible) sowie Erfahrung mit GitOps‑ und CI/CD‑Ansätzen für Datenbanken\nBereitschaft zu projektbezogenen Geschäftsreisen sowie fließende Deutsch‑ und Englischkenntnisse in Wort und Schrift\nWas wir dir bieten\nAnspruchsvolle Projekte rund um moderne Data‑, Cloud‑ und Plattform‑Architekturen bei führenden nationalen und internationalen Kunden\nUmfangreiche Weiterentwicklungsmöglichkeiten mit Zugang zu über 30.000 Trainings, Zertifizierungen und Lernplattformen – fachlich wie persönlich\nFlexible Arbeitsmodelle inklusive Remote‑Anteil sowie Überstundenausgleich im Einklang mit Projektanforderungen\nAttraktive Corporate Benefits, z. B. Mitarbeitenden‑Rabatte, Vorsorge‑ und Gesundheitsangebote sowie weitere Zusatzleistungen\nDu und Accenture\nAls Teil von Accenture Technology arbeitest du an der Schnittstelle von Innovation, Engineering und Business. Du entwickelst zukunftsweisende Plattformen, nutzt modernste Technologien und gestaltest aktiv die digitale Transformation unserer Kunden mit.\nDie Accenture‑Kultur: Hier machst DU den Unterschied\nBei Accenture zählen unterschiedliche Perspektiven, Erfahrungen und Ideen. Wir fördern ein inklusives Arbeitsumfeld, in dem du so sein kannst, wie du bist – und dein Potenzial voll entfalten kannst.\nDein Kontakt\nDu hast Fragen zur Stelle oder zum Bewerbungsprozess? Dann wende dich gerne an unser Recruiting‑Team in Deutschland (recruiting_germany@accenture.com). Wir freuen uns darauf, dich kennenzulernen.\n#DataAndAI\nAbout Accenture\nAccenture is a leading global professional services company that helps the world’s leading businesses, governments and other organizations build their digital core, optimize their operations, accelerate revenue growth and enhance citizen services—creating tangible value at speed and scale. We are a talent- and innovation-led company with approximately 791,000 people serving clients in more than 120 countries. Technology is at the core of change today, and we are one of the world’s leaders in helping drive that change, with strong ecosystem relationships. We combine our strength in technology and leadership in cloud, data and AI with unmatched industry experience, functional expertise and global delivery capability. Our broad range of services, solutions and assets across Strategy & Consulting, Technology, Operations, Industry X and Song, together with our culture of shared success and commitment to creating 360° value, enable us to help our clients reinvent and build trusted, lasting relationships. We measure our success by the 360° value we create for our clients, each other, our shareholders, partners and communities.Visit us at www.accenture.com\nErklärung zur Chancengleichheit am Arbeitsplatz\nWir sind der Meinung, dass niemand aufgrund seiner Andersartigkeit diskriminiert werden sollte. Alle Einstellungsentscheidungen werden unabhängig von Alter, Rasse, Glaubensbekenntnis, Hautfarbe, Religion, Geschlecht, nationaler Herkunft, Abstammung, Behinderung, Veteranenstatus, sexueller Orientierung, Geschlechtsidentität oder -ausdruck, genetischen Informationen, Familienstand, Staatsbürgerschaft oder anderen gesetzlich geschützten Kriterien getroffen. Unsere große Vielfalt macht uns innovativer, wettbewerbsfähiger und kreativer und hilft uns, unsere Kunden und unsere Gemeinschaften besser zu betreuen.",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "Kronberg, Campus Kronberg 1",
+    "Dusseldorf",
+    "Dresden",
+    "Hamburg",
+    "Jena",
+    "Kaiserslautern",
+    "Munich",
+    "Essen, Schalthaus II",
+    "Wuerzburg",
+    "Stuttgart",
+    "Wolfsburg",
+    "Mannheim",
+    "Berlin"
+  ],
+  "homeoffice": "Flexible Arbeitsmodelle inklusive Remote‑Anteil sowie Überstundenausgleich im Einklang mit Projektanforderungen",
+  "voraussetzungenZwingend": [],
+  "voraussetzungenWuenschenswert": [],
+  "adapter": "accenture",
+  "firstSeen": "2026-07-13T07:33:54.316Z",
+  "lastSeen": "2026-07-13T07:44:08.493Z"
+}

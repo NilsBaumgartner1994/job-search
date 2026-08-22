@@ -1,0 +1,35 @@
+{
+  "id": "bwi:68579",
+  "employer": "BWI GmbH",
+  "titel": "Senior Software Engineer Microservices (w/m/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/senior-software-engineer-microservices-w-m-d-68579",
+  "referenzcode": "68579",
+  "beschreibung": "ab sofort und in Vollzeit bundesweit an einem BWI Standort\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nWir im Technology Engineering Team sind als Teil vom Chief Technology Office (CTO) mitverantwortlich für die strategische Erneuerung des Leistungsportfolios der BWI. Unser Auftrag ist es eine KI-Service Plattform zu entwickeln und zu betreiben, über welche Mitarbeitende der BWI Zugriff auf modernste KI-Technologie erhalten. Hierzu verbinden wir Innovation und Forschung zur Künstlichen Intelligenz mit Best Practices aus DevSecOps und MLOps. Aktuell bauen wir ein starkes Team mit Expertise in unterschiedlichen Bereichen der KI-Entwicklung auf. Werde auch Du Teil unseres Teams und unterstütze uns auf unserer gemeinsamen Mission!\n\nAufgaben:\n- Konzeption, Implementierung und Weiterentwicklung eines zentralen Self-Service-Portals für unsere KI-Plattform\n- Paketierung, Deployment und Betrieb von KI-Anwendungen mittels Helm-Charts auf unserer Kubernetes-Plattform\n- Entwicklung von skalierbaren und zuverlässigen Microservices zur Erweiterung der Plattform-Funktionalitäten\n- Analyse, Debugging und Erweiterung von verwendeten Open-Source-Lösungen zur nahtlosen Integration in die Plattformarchitektur\n- Optimierung von Microservices für die Integration von KI-Modellen\n- Implementierung von Sicherheitsmechanismen (z.B. API-Gateways, Token-Authentifizierung)\n- Erstellen von Umsetzungskonzepten und Treffen von strategischen Entscheidungen zu Systemarchitekturen\n- Arbeit in einem interdisziplinären Team mit AI-, MLOps-, Data- und Platform-Engineers\n- Dokumentation und Support für interne sowie externe Entwickler\n\nBereich: Softwareentwicklung / Programmierung",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "Abgeschlossenes Masterstudium der Informatik, Mathematik oder einer vergleichbaren Fachrichtung",
+    "Mindestens 5 Jahre relevante Berufserfahrung nach Abschluss des Studiums zwingend erforderlich",
+    "Erfahrung im Entwurf, Entwicklung und Betrieb von Microservice Webanwendungen im Produktionsumfeld",
+    "Fundierte Praxiskenntnisse im Umgang mit Kubernetes sowie im Erstellen und Verwalten von Helm-Charts",
+    "Fundierte Kenntnisse in der Entwicklung von skalierbaren Backend-Systemen mit Python, Go, oder Rust",
+    "Starkes Mindset für saubere Software-Entwicklung (Domain Driven Design, Dependency Injection, Design-Patterns) und die Fähigkeit, dich schnell in Codebasen einzuarbeiten",
+    "Umfangreiches praktisches Wissen über moderne DevOps-Praktiken",
+    "Sicherer Umgang mit API-Technologien, Message Queues und Datenbanken",
+    "Verhandlungssichere Deutschkenntnisse sowie sehr gute Englischkenntnisse in Wort und Schrift"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Erfahrung mit der Integration von Machine-Learning und GenAI Modellen ist von Vorteil"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-07-10T16:53:48.063Z",
+  "lastSeen": "2026-07-13T07:36:44.150Z"
+}

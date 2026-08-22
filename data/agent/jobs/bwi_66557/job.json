@@ -1,0 +1,30 @@
+{
+  "id": "bwi:66557",
+  "employer": "BWI GmbH",
+  "titel": "Lead IT Architect – Modularchitekt Information Exchange Service (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/lead-it-architect-modularchitekt-information-exchange-service-m-w-d-66557",
+  "referenzcode": "66557",
+  "beschreibung": "ab sofort bundesweit an einem unserer BWI-Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nDer Bereich Service Development 2 (SDV2) in der Shared Service Architecture (SSA) entwickelt und verantwortet den Modulbaukasten der Shared Service Delivery (SSD). Der Modulbaukasten ist die Standardisierte und vereinfachte Sicht auf die Leistungsfähigkeit der SSD. Für die Entwicklung der einzelnen Module innerhalb des Baukastens arbeiten unsere IT-Architekten eng mit den Services zusammen und sind für Standardisierung und vollautomatisierte Bereitstellung dieser Leistungen verantwortlich. Wir sorgen mit unseren Teams für eine effiziente Leistungsbereitstellung gegenüber unserem Kunden.\n\nAufgaben:\n- ​Technische und Prozessuale Entwicklung und Weiterentwicklung der Schnittstelleninfrastruktur auf Basis des Information Exchange Services\n- Erstellung von komplexen Lösungsdesigns im Rahmen der Automatisierung und Etablierung des Information Exchange Service\n- Beratung und Unterstützung der Lösungsarchitektur zu den Services sowie zu technischen Aspekten bei Angebots Erstellungen\n- Begleitung von Projekten als technischer Experte für den Information Exchange Service und dessen Integration\n- Enge Abstimmung mit den übergreifenden Architekturteams und Entwicklungsabteilungen\n- Unterstützung der Service Teams bei der Anforderungsanalyse für die Module und bei der Automatisierung und Standardisierung der Leistungsbestandteile\n\nBereich: Service Delivery Management",
+  "befristung": [],
+  "arbeitszeit": [],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen dir Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit und dem langfristigen Aufbau eines Wertguthabenkontos für z.",
+  "voraussetzungenZwingend": [
+    "Erfolgreich abgeschlossenes IT-Studium oder vergleichbare Ausbildung",
+    "Sehr gute Kenntnisse im Enterprise Service Bus, API-Schnittstellen, Cloud Technologien, BSI-Sicherheitsanforderung",
+    "Sehr hohe Qualitäts- und Kundenorientierung und Kommunikationsfähigkeit über alle Ebenen",
+    "​Empathie sowie Team-, Präsentations- und Moderationsfähigkeit",
+    "Verhandlungssichere Deutsch- sowie gute Englischkenntnisse"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Mindestens 6 Jahre relevante Berufserfahrung in der Erstellung komplexer Schnittstellenarchitekturen und deren Integration, idealerweise mit VS-NfD Infrastrukturen",
+    "Sehr hohe analytische Fähigkeiten bei der Ende-2-Ende Serviceplanung von komplexen Serviceketten sowie idealerweise eine ITIL Foundation V4 Zertifizierung"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-07-10T16:54:21.756Z",
+  "lastSeen": "2026-07-13T07:36:44.350Z"
+}

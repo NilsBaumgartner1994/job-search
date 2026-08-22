@@ -1,0 +1,32 @@
+{
+  "id": "bwi:68623",
+  "employer": "BWI GmbH",
+  "titel": "IT Expert Mobility EMM / MAM - Hardware Lifecycle (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/it-expert-mobility-emm-mam-hardware-lifecycle-m-w-d-68623",
+  "referenzcode": "68623",
+  "beschreibung": "ab sofort und in Vollzeit bundesweit an einem BWI-Standort.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nDer Bereich Mobility im ServiceTower PoD 1 (Frontend Geräte, sowie Applikationen), verantwortet den Service von hochmobilen Endgeräten (Smartphones/ Tablets, Barcode-Scanner, sowie Zeiterfassungsterminals) im Kunden- und Eigenbetrieb der BWI. Im Rahmen eines Enterprise Mobility Managements werden modernste Lösungen für mobiles Informations-, Geräte- und App-Management gesteuert, verwaltet und der betriebliche/ funktionale Input für die (Weiter-) Entwicklung der Services verarbeitet. Neben den oben genannten Hardware-Produkten, gehören die dazugehörigen Betriebssysteme und Peripheriegeräte zum Service-Portfolio. Zu diesen, von Mobility verantworteten mobilen End2End Lösungen (bis zur Geheimhaltungsstufe „VS-NfD“) gehören auch weitere sichere Lösungen, wie SNS (Sichere, netzübergreifenden Sprachkommunikation), dem Betrieb unserer mobilen Applikationen, dem Service Management unseres Bundesmessengers/ Bundeswehrmessengers (BuM/ BwM), aber auch der Lifecycle-Steuerung von individuellen Applikationen (ggfs. inkl. Aussteuerung der Programmierung) und der Lifecycle-Steuerung unserer Hardware Komponenten (z.B. Marktsichtung, Beschaffung, Refresh, Wiedervermarktung).\n\nAufgaben:\n- Übernahme von Aufgaben im Kontext des Hardware Lifecycle des zugeordneten Portfolios\n- ​Durchführung von ITIL-Service Management Aufgaben für Service-Funktionen von mobilen Endgeräten (Smartphones, Tablets, Barcode Scanner, etc.) und zugehöriger Apps (u.a. Betriebssystem, Applikationen, BuM/ BwM, sowie individueller Lösungen (z.B. WebLinks)) für die OS-Basis Android und iOS\n- Übernahme von Aufgaben im End-2-End Service Management für alle ITIL Service-Phasen, bzw. den kompletten Service LifeCycle von Integrierten Prozessen und Services bzw. Service-Funktionen ganzheitlicher mobiler Lösungen\n- Mitarbeit bei (Weiter-)Entwicklungen des Services sowie Übernahme von Teilprojekten im Bereich mobiler Services, Service-Funktionen oder ApplikationenUnterstützung bei der Herstellung der servicebezogenen Kostentransparenz, sowie bei der finanziellen Unternehmensplanung\n- Erstellung von Angeboten, Leistungsbeschreibungen, Berichten, Reportings und Kennzahlen sowie Ableitung von Maßnahmen zur Erreichung und stetiger Verbesserung der SLAs und OLAs\n\nBereich: Mobility / Mobile Apps / Communication",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen dir Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit und dem langfristigen Aufbau eines Wertguthabenkontos für z.",
+  "voraussetzungenZwingend": [
+    "​Abgeschlossenes Studium oder eine vergleichbare Ausbildung im IT-Umfeld",
+    "Etwa 2 Jahre Berufserfahrung im IT-Service Management Umfeld oder IT-Expert im Bereich Mobility; ITIL-Zertifizierung von Vortei",
+    "Kenntnisse von Mobility Services und EMM-Lösungen sowie Erfahrung mit BSI-gelisteten Herstellern (z.B. Secusmart, Materna Virtual Solutions, Workspace ONE) oder vergleichbare VS-NfD Lösungen (z.B. Apple Indigo, Samsung Knox Native)",
+    "Kenntnisse im Hardware Lifecycle Managemen, Mobile Application Management und von Messenger-Lösungen sowie in der Steuerung von individuellen Applikationen",
+    "Analytisches Denkvermögen, gute Kommunikations- und Organisationsfähigkeiten, Entscheidungs- und Umsetzungsstärke sowie Zielorienteirung",
+    "Verhandlungssichere Deutsch- und fundierte Englischkenntnisse in Wort wie Schrift sowie Bereitschaft zu Dienstreisen (ca. 2 x 3 Tage/Monat)"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Erfahrung mit komplexen IT-Projekten, idealerweise zu mobilen Lösungen (auf OS-Basis Android und iOS) bzw. Apps sowie Erfahrung mit agiler Arbeitsweise"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-07-10T16:53:46.999Z",
+  "lastSeen": "2026-07-13T07:36:44.143Z"
+}

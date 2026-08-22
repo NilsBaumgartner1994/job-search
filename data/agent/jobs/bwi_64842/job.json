@@ -1,0 +1,33 @@
+{
+  "id": "bwi:64842",
+  "employer": "BWI GmbH",
+  "titel": "Platform Engineer xPlatforms – Defence Innovation Center (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/platform-engineer-xplatforms-defence-innovation-center-m-w-d-64842",
+  "referenzcode": "64842",
+  "beschreibung": "ab sofort und in Vollzeit bundesweit an einem unserer BWI Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nDer Geschäftsbereich Chief Technology Office (CTO) ist verantwortlich für die systematische Planung, Durchführung und Steuerung des Innovations- und Technologie Managements der BWI sowie für die Optimierung und Weiterentwicklung ihres Solution- und Service-Portfolios und der unterstützenden IT-Architekur. Das Team xPlatforms stellt im CTO Defense Innovation Center experimentelle Software-Entwicklungs- und IT-Laborumgebungen für Innovationseinheiten der BWI, Bundeswehr, Forschungspartner und Industrie bereit. Es ermöglicht Hosting und Housing für Bundeswehr-relevante Technologieprojekte und macht die Ideen und Prinzipien einer konsequenten DevSecOps-Kultur für das militärische Umfeld erlebbar. Wir verbessern und beschleunigen die Digitalisierung und Automatisierung (in) der Bundeswehr durch die Bereitstellung von Tools & Technologien im Bereich der experimentellen Software-Entwicklung. BwXDev ist unsere experimentelle Software-Entwicklungsumgebung für die Bundeswehr. Dafür suchen wir Teamplayer und pragmatische Engineers mit „Hands-on-Mentalität“ und Spaß an spannenden Herausforderungen in einem agilen Umfeld. Als Platform Engineer (m/w/d) befähigst du unsere Software-, AI- und Data-Teams, ihre Anwendungen schnell, sicher und skalierbar inunserer hybriden Cloud-Umgebung (Private Cloud / On-Prem Kubernetes) zu betreiben. Dein Ziel: \"You build it, you run it\" für alle Teams zu ermöglichen.\n\nAufgaben:\n- Du konzipierst und entwickelst unsere zentrale Container-Plattform (Kubernetes) weiter und stellst sie als Self-Service Produkt bereit\n- Du automatisierst die Bereitstellung von Infrastruktur (Compute, Network, Storage) mittels Terraform und Ansible. Manuelle Eingriffe sind für dich ein Tabu\n- Du agierst als technischer Mentor für Junior-Kollegen und berätst die Entwickler-Teams (Dev, AI, Big Data) bei der Nutzung der Plattform\n- Du implementierst Monitoring-, Logging- und Tracing-Lösungen (z.B. Prometheus, Grafana, ELK), um die Stabilität unserer skalierbaren Workloads zu garantieren\n- Du baust moderne Deployment-Pipelines und setzt GitOps-Prinzipien (z.B. mit ArgoCD oder Flux) um\n\nBereich: Softwareentwicklung / Programmierung",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Dir Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit und dem langfristigen Aufbau eines Wertguthabenkontos für z.",
+  "voraussetzungenZwingend": [
+    "Abgeschlossenes Hochschulstudium oder vergleichbare Berufsausbildung und mindestens 6 Jahre Berufserfahrung im DevOps- oder Platform-Engineering-Umfeld",
+    "Tiefgreifendes Wissen in der Orchestrierung von Containern. Du weißt nicht nur, wie man kubectl nutzt, sondern verstehst die K8s-Architektur, Networking (CNI), Storage (CSI) und Security",
+    "Expertenwissen in Terraform (oder OpenTofu). Erfahrung mit Konfigurationsmanagement-Tools wie Ansible ist willkommen, aber unser Fokus liegt auf immutabler Infrastruktur",
+    "Sehr gute Kenntnisse im Betrieb von Linux-Systemen (Kernel,Networking, Systemd), da dies das Fundament unserer Cluster ist",
+    "Verständnis für die Anforderungen von AI-Modelling und Big Data Workloads (GPU-Scheduling, High-Performance Storage)",
+    "Du hast bereits Erfahrung darin gesammelt, technische Projekte zu leiten oder Architekturentscheidungen in Teams voranzutreiben",
+    "Du sprichst verhandlungssicheres Deutsch und sehr gutes Englisch"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Du beherrschst mind. eine höhere Skript- oder Programmiersprache sicher (idealerweise Python oder Go) und fühlst dich auf der Shell zuhause"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-07-10T16:54:29.057Z",
+  "lastSeen": "2026-07-13T07:36:44.423Z"
+}

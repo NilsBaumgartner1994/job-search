@@ -2,6 +2,7 @@ import { loadJobs } from "../storage.js";
 import { batchSizeText, planBatches, requireProfile, sortTriageQueue, triageJobs } from "./agent.js";
 import { ensureEnv } from "./env.js";
 import { archivLogText, archiviereAbgelaufene, istFristAbgelaufen } from "./expiry.js";
+import { archiviereZuWeitEntfernte, distanzLogText, istZuWeitWeg } from "./distance.js";
 import { archiviereZuNiedrigBezahlte, istGehaltZuNiedrig, lowpayLogText } from "./lowpay.js";
 import { GeminiError, usageSummaryText } from "./gemini.js";
 import { publishDocs } from "./publish.js";
@@ -18,9 +19,10 @@ import { BOARD_STATUSES, type BoardStatus } from "./types.js";
  *    [{"jobId":"bka:T-2026-54","status":"beworben","notiz":"…"}, …] → vonKi=false.
  *    "status" und "notiz" sind einzeln optional — eine reine Notiz-Änderung
  *    lässt den Status unberührt und umgekehrt.
- * 2. Archiviert Angebote mit abgelaufener Bewerbungsfrist sowie Angebote
- *    eindeutig unter dem Zielniveau E13/A13 direkt (ohne Gemini-Anfrage) —
- *    dafür lohnt sich kein Kontingent mehr.
+ * 2. Archiviert Angebote mit abgelaufener Bewerbungsfrist, Angebote eindeutig
+ *    unter dem Zielniveau E13/A13 sowie zu weit entfernte ohne ausreichendes
+ *    Homeoffice direkt (ohne Gemini-Anfrage) — dafür lohnt sich kein
+ *    Kontingent mehr.
  * 3. Triagiert unbearbeitete Jobs mit Gemini, bis --limit Jobs bearbeitet
  *    sind ODER --minuten Zeit vergangen ist — je nachdem, was zuerst greift
  *    (0 = jeweils unbeschränkt). Bereits Geschaffte bleibt bei Abbruch
@@ -116,6 +118,7 @@ async function main(): Promise<void> {
   // dann landen sie weder in der Triage-Warteschlange noch kosten sie Anfragen
   console.log(archivLogText(archiviereAbgelaufene(jobs)));
   console.log(lowpayLogText(archiviereZuNiedrigBezahlte(jobs)));
+  console.log(distanzLogText(archiviereZuWeitEntfernte(jobs)));
 
   const { profile, error } = requireProfile();
   if (!profile) {
@@ -134,7 +137,7 @@ async function main(): Promise<void> {
     jobs.filter((job) => {
       const entry = getEntry(board, job.id);
       // eben archiviert — nicht erneut in die Warteschlange aufnehmen
-      if (istFristAbgelaufen(job) || istGehaltZuNiedrig(job)) return false;
+      if (istFristAbgelaufen(job) || istGehaltZuNiedrig(job) || istZuWeitWeg(job)) return false;
       return (!entry || entry.status === "todo") && !hasChat(job.id);
     }),
   );
