@@ -60,7 +60,7 @@ export function setStatus(
   jobId: string,
   status: BoardStatus,
   vonKi: boolean,
-  extra?: { punkte?: number; punkteDetails?: TriageScores; begruendung?: string },
+  extra?: { punkte?: number; punkteDetails?: TriageScores; begruendung?: string; notiz?: string },
 ): BoardEntry {
   const board = loadBoard();
   let entry = getEntry(board, jobId);
@@ -74,6 +74,36 @@ export function setStatus(
   if (extra?.punkte !== undefined) entry.punkte = extra.punkte;
   if (extra?.punkteDetails !== undefined) entry.punkteDetails = extra.punkteDetails;
   if (extra?.begruendung !== undefined) entry.begruendung = extra.begruendung;
+  if (extra?.notiz !== undefined) applyNote(entry, extra.notiz);
+  saveBoard(board);
+  return entry;
+}
+
+/** Schreibt die Notiz in den Eintrag; leerer Text löscht sie wieder. */
+function applyNote(entry: BoardEntry, notiz: string): void {
+  const text = notiz.trim();
+  if (text) {
+    entry.notiz = text;
+    entry.notizAt = new Date().toISOString();
+  } else {
+    delete entry.notiz;
+    delete entry.notizAt;
+  }
+}
+
+/**
+ * Setzt die Notiz des Nutzers zu einem Job — unabhängig vom Status, damit sich
+ * auch ohne Spaltenwechsel festhalten lässt, warum ein Angebot wichtig ist.
+ * Ein Job ohne Board-Eintrag bekommt dabei einen (Status "todo").
+ */
+export function setNote(jobId: string, notiz: string): BoardEntry {
+  const board = loadBoard();
+  let entry = getEntry(board, jobId);
+  if (!entry) {
+    entry = { jobId, status: "todo", vonKi: false, updatedAt: new Date().toISOString() };
+    board.entries.push(entry);
+  }
+  applyNote(entry, notiz);
   saveBoard(board);
   return entry;
 }
@@ -98,6 +128,13 @@ export function saveJobSnapshot(job: JobOffer): void {
   mkdirSync(dir, { recursive: true });
   const { raw: _raw, ...snapshot } = job;
   writeJson(join(dir, "job.json"), snapshot);
+}
+
+/** Liest den Schnappschuss zurück — für Kontext (z.B. Titel) ohne data/jobs.json. */
+export function loadJobSnapshot(jobId: string): Partial<JobOffer> | undefined {
+  const path = join(jobDir(jobId), "job.json");
+  if (!existsSync(path)) return undefined;
+  return readJson<Partial<JobOffer> | undefined>(path, undefined);
 }
 
 export function loadChat(jobId: string): ChatMessage[] {

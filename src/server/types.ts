@@ -1,9 +1,21 @@
-/** Spalten des Kanban-Boards. "todo" = noch abzuarbeiten (Default für Jobs ohne Eintrag). */
-export type BoardStatus = "todo" | "interessant" | "beworben" | "abgelehnt" | "archiviert";
+/**
+ * Spalten des Kanban-Boards. "todo" = noch abzuarbeiten (Default für Jobs ohne
+ * Eintrag). "bewerben" liegt bewusst zwischen "interessant" und "beworben":
+ * dort parkt der Nutzer die Angebote, auf die er sich wirklich bewerben will —
+ * die Bewerbung ist aber noch nicht raus.
+ */
+export type BoardStatus =
+  | "todo"
+  | "interessant"
+  | "bewerben"
+  | "beworben"
+  | "abgelehnt"
+  | "archiviert";
 
 export const BOARD_STATUSES: BoardStatus[] = [
   "todo",
   "interessant",
+  "bewerben",
   "beworben",
   "abgelehnt",
   "archiviert",
@@ -37,6 +49,14 @@ export interface BoardEntry {
   punkteDetails?: TriageScores;
   /** Kurzbegründung der KI-Entscheidung (falls vorhanden) */
   begruendung?: string;
+  /**
+   * Freie Notiz des Nutzers: warum ihm dieses Angebot wichtig ist bzw. warum
+   * er es weggelegt hat. Wird der KI als zusätzlicher Kontext mitgegeben
+   * (siehe notes.ts) — so lernt sie mit jeder Notiz die echten Kriterien.
+   */
+  notiz?: string;
+  /** Zeitpunkt der letzten Notiz-Änderung */
+  notizAt?: string;
   updatedAt: string;
 }
 

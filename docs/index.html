@@ -67,6 +67,26 @@
   .badge.frist { background: #fff0e6; color: var(--pending); }
   .badge.punkte { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
   .badge.pending { background: #fff4ec; color: var(--pending); font-weight: 600; }
+  .badge.notiz { background: #fff8e1; color: #8a6100; }
+
+  /* Notiz-Feld: bewusst prominent direkt unter den Status-Buttons */
+  .notizbox { background: #fffdf5; border: 1px solid #f0e2b6; border-radius: 8px; padding: 10px 12px; margin: 10px 0; }
+  .notizbox b { display: block; margin-bottom: 4px; }
+  .notizbox textarea {
+    width: 100%; min-height: 90px; font: inherit; border: 1px solid var(--line);
+    border-radius: 8px; padding: 8px; resize: vertical; background: #fff;
+  }
+  .notizbox .row { display: flex; align-items: center; gap: 8px; margin-top: 6px; flex-wrap: wrap; }
+
+  /* Toast: erinnert nach einem Spaltenwechsel ans Notieren, ohne zu blockieren */
+  #toast {
+    position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%);
+    background: #172b4d; color: #fff; border-radius: 10px; padding: 10px 14px;
+    display: none; align-items: center; gap: 10px; z-index: 20; max-width: 94vw;
+    box-shadow: 0 4px 12px rgba(9,30,66,.3);
+  }
+  #toast.open { display: flex; }
+  #toast button { background: none; border: 1px solid rgba(255,255,255,.5); color: #fff; white-space: nowrap; }
 
   .overlay {
     position: fixed; inset: 0; background: rgba(9,30,66,.5);
@@ -113,6 +133,8 @@
 </header>
 
 <div id="board"><p class="hint" style="padding:16px">Lade…</p></div>
+
+<div id="toast"></div>
 
 <!-- Job-Detail-Modal -->
 <div class="overlay" id="jobOverlay">
@@ -163,10 +185,12 @@ const STORAGE_KEY = "job-kanban-pending";
 const COLUMNS = [
   { key: "todo",        label: "📥 Noch abzuarbeiten" },
   { key: "interessant", label: "⭐ Interessant" },
+  { key: "bewerben",    label: "🎯 Will ich mich bewerben" },
   { key: "beworben",    label: "📨 Beworben" },
   { key: "abgelehnt",   label: "❌ Bewerbung abgelehnt" },
   { key: "archiviert",  label: "🗄 Archiviert" },
 ];
+const STATUS_LABEL = Object.fromEntries(COLUMNS.map(c => [c.key, c.label]));
 
 // Sortier-Modi für die Spalten. "punkte" = KI-Gesamtpunkte (Standard).
 const SORT_OPTIONS = [
@@ -180,7 +204,8 @@ let colSorts = Object.fromEntries(COLUMNS.map(c => [c.key, DEFAULT_SORT]));
 
 let data = { jobs: [], board: { entries: [] } };
 let entryById = new Map();
-let pending = loadPending(); // { jobId: status } — nur im Browser, bis zum nächsten Workflow-Lauf
+// { jobId: { status?, notiz? } } — nur im Browser, bis zum nächsten Workflow-Lauf
+let pending = loadPending();
 let openJobId = null;
 
 function esc(s) {
@@ -204,9 +229,21 @@ function fmtZeitpunkt(iso) {
 }
 function safeId(jobId) { return jobId.replace(/[^a-zA-Z0-9._-]+/g, "_"); }
 
+/**
+ * Offene Änderungen aus dem localStorage. Früher stand dort je Job nur der
+ * Status als String — solche Altstände werden beim Laden ins heutige Format
+ * { status, notiz } gehoben, damit niemand seine Änderungen verliert.
+ */
 function loadPending() {
-  try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}") || {}; }
+  let roh;
+  try { roh = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}") || {}; }
   catch { return {}; }
+  const out = {};
+  for (const [jobId, wert] of Object.entries(roh)) {
+    if (typeof wert === "string") out[jobId] = { status: wert };
+    else if (wert && typeof wert === "object") out[jobId] = wert;
+  }
+  return out;
 }
 function savePending() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(pending));
@@ -219,7 +256,18 @@ function boardStatus(jobId) {
 }
 /** Anzeige-Status: lokale (noch nicht übernommene) Änderung gewinnt. */
 function effectiveStatus(jobId) {
-  return pending[jobId] || boardStatus(jobId);
+  const offen = pending[jobId];
+  return (offen && offen.status) || boardStatus(jobId);
+}
+/** Notiz im Repo (aus board.json). */
+function boardNotiz(jobId) {
+  const entry = entryById.get(jobId);
+  return (entry && entry.notiz) || "";
+}
+/** Anzeige-Notiz: lokale (noch nicht übernommene) Änderung gewinnt. */
+function effectiveNotiz(jobId) {
+  const offen = pending[jobId];
+  return offen && offen.notiz !== undefined ? offen.notiz : boardNotiz(jobId);
 }
 
 async function init() {
@@ -232,11 +280,22 @@ async function init() {
   // zu Jobs, die es nicht mehr gibt (Frist abgelaufen)
   const known = new Set(data.jobs.map(j => j.id));
   let cleaned = false;
-  for (const jobId of Object.keys(pending)) {
-    if (!known.has(jobId) || boardStatus(jobId) === pending[jobId]) {
+  for (const [jobId, offen] of Object.entries(pending)) {
+    if (!known.has(jobId)) {
       delete pending[jobId];
       cleaned = true;
+      continue;
     }
+    // Status und Notiz einzeln prüfen — der Workflow kann auch nur eines übernommen haben
+    if (offen.status !== undefined && boardStatus(jobId) === offen.status) {
+      delete offen.status;
+      cleaned = true;
+    }
+    if (offen.notiz !== undefined && boardNotiz(jobId) === offen.notiz.trim()) {
+      delete offen.notiz;
+      cleaned = true;
+    }
+    if (offen.status === undefined && offen.notiz === undefined) delete pending[jobId];
   }
   if (cleaned) savePending();
 
@@ -374,7 +433,8 @@ function render() {
 
 function renderCard(job) {
   const entry = entryById.get(job.id);
-  const isPending = !!pending[job.id];
+  const offen = pending[job.id];
+  const isPending = !!(offen && offen.status !== undefined);
   const el = document.createElement("div");
   el.className = "jobcard";
   el.draggable = true;
@@ -391,6 +451,12 @@ function renderCard(job) {
     }
   } else if (isPending) {
     badges.push('<span class="badge mensch">👤 Mensch</span>');
+  }
+  const notiz = effectiveNotiz(job.id);
+  if (notiz) {
+    const lokal = offen && offen.notiz !== undefined;
+    badges.push('<span class="badge notiz" title="' + esc(notiz) + '">📝 Notiz' +
+      (lokal ? " ⏳" : "") + "</span>");
   }
   if (job.hasChat) badges.push('<span class="badge" title="Chat-Verlauf vorhanden">💬</span>');
   if (job.bewerbungsfrist) badges.push('<span class="badge frist">bis ' + esc(fmtDatum(job.bewerbungsfrist)) + "</span>");
@@ -411,15 +477,76 @@ function renderCard(job) {
   return el;
 }
 
-function setPendingStatus(jobId, status) {
-  if (boardStatus(jobId) === status) {
-    delete pending[jobId]; // zurück auf den Repo-Stand = keine Änderung mehr
-  } else {
-    pending[jobId] = status;
-  }
+/** Setzt einen Teil (Status oder Notiz) der offenen Änderung eines Jobs. */
+function setPending(jobId, feld, wert, repoWert) {
+  const offen = pending[jobId] || {};
+  if (wert === repoWert) delete offen[feld]; // zurück auf den Repo-Stand = keine Änderung mehr
+  else offen[feld] = wert;
+  if (offen.status === undefined && offen.notiz === undefined) delete pending[jobId];
+  else pending[jobId] = offen;
   savePending();
+}
+
+function setPendingStatus(jobId, status) {
+  setPending(jobId, "status", status, boardStatus(jobId));
   render();
   if (openJobId === jobId) openJob(jobId);
+  else notizErinnerung(jobId, status);
+}
+
+function setPendingNotiz(jobId, notiz) {
+  setPending(jobId, "notiz", notiz.trim(), boardNotiz(jobId));
+  render();
+}
+
+// ---------- Notiz-Erinnerung (Toast) ----------
+
+/**
+ * Nach einem Spaltenwechsel per Drag & Drop kurz ans Notieren erinnern.
+ * Genau dann weiß man noch, warum die Karte verschoben wurde — und genau
+ * diese Begründungen bekommt der KI-Agent später als Prompt-Kontext.
+ */
+function notizErinnerung(jobId, status) {
+  const frage = status === "archiviert" ? "Warum weg?"
+    : status === "bewerben" ? "Warum willst du dich hier bewerben?"
+    : "Warum?";
+  zeigeToast(esc(STATUS_LABEL[status] || status) + " · " + esc(frage),
+    "📝 Notiz", () => openJob(jobId));
+}
+
+let toastTimer = null;
+function zeigeToast(text, buttonText, onClick) {
+  const el = document.getElementById("toast");
+  el.innerHTML = "<span>" + text + "</span>";
+  if (buttonText) {
+    const btn = document.createElement("button");
+    btn.textContent = buttonText;
+    btn.addEventListener("click", () => { versteckeToast(); onClick(); });
+    el.appendChild(btn);
+  }
+  el.classList.add("open");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(versteckeToast, 6000);
+}
+function versteckeToast() {
+  clearTimeout(toastTimer);
+  document.getElementById("toast").classList.remove("open");
+}
+
+/** Notiz-Feld für das Detail-Modal (HTML). */
+function notizBoxHtml(jobId) {
+  const entry = entryById.get(jobId);
+  const lokal = pending[jobId] && pending[jobId].notiz !== undefined;
+  return '<div class="notizbox"><b>📝 Meine Notiz — warum ist dieses Angebot (un)wichtig?</b>' +
+    '<textarea id="notizText" placeholder="z.B. „Genau meine Fachrichtung, Verbeamtung möglich und nah dran — hier will ich mich bewerben.“">' +
+    esc(effectiveNotiz(jobId)) + "</textarea>" +
+    '<div class="row"><button class="primary" id="btnSaveNotiz">Notiz merken</button>' +
+    '<span class="hint" id="notizStatus">' +
+      (lokal ? "⏳ nur in diesem Browser — mit den Änderungen übertragen"
+        : entry && entry.notizAt ? "im Repo, zuletzt geändert am " + esc(fmtZeitpunkt(entry.notizAt)) : "") +
+    "</span></div>" +
+    '<p class="hint">Der KI-Agent bekommt deine Notizen bei jeder Triage mit — je mehr du ' +
+    "notierst, desto besser trifft er deinen Geschmack.</p></div>";
 }
 
 // ---------- Job-Modal ----------
@@ -456,6 +583,8 @@ function renderJobModal(detail) {
   html += '<div class="statusrow">' + COLUMNS.map(c =>
     '<button data-setstatus="' + c.key + '"' + (c.key === status ? ' class="active"' : "") + ">" +
     c.label + "</button>").join("") + "</div>";
+
+  html += notizBoxHtml(job.id);
 
   if (pending[job.id]) {
     html += '<div class="pendingnote">⏳ Diese Änderung ist nur in deinem Browser gespeichert. ' +
@@ -499,6 +628,10 @@ function renderJobModal(detail) {
   body.innerHTML = html;
   body.querySelectorAll("[data-setstatus]").forEach(btn =>
     btn.addEventListener("click", () => setPendingStatus(job.id, btn.dataset.setstatus)));
+  document.getElementById("btnSaveNotiz").addEventListener("click", () => {
+    setPendingNotiz(job.id, document.getElementById("notizText").value);
+    openJob(job.id);
+  });
 }
 
 function renderMsg(msg) {
@@ -518,8 +651,18 @@ function renderMsg(msg) {
 
 // ---------- Änderungen exportieren ----------
 
+/**
+ * Die offenen Änderungen im Format, das `yarn agent` (Input "aenderungen")
+ * erwartet: [{jobId, status?, notiz?}, …] — Status und Notiz jeweils nur,
+ * wenn sie sich gegenüber dem Repo-Stand unterscheiden.
+ */
 function changesArray() {
-  return Object.entries(pending).map(([jobId, status]) => ({ jobId, status }));
+  return Object.entries(pending).map(([jobId, offen]) => {
+    const change = { jobId };
+    if (offen.status !== undefined) change.status = offen.status;
+    if (offen.notiz !== undefined) change.notiz = offen.notiz;
+    return change;
+  });
 }
 
 function renderChangesButton() {

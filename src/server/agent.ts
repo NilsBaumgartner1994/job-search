@@ -3,6 +3,7 @@ import { MAX_BATCH_SIZE, type ServerEnv } from "./env.js";
 import { archiviereAbgelaufene, istFristAbgelaufen } from "./expiry.js";
 import { archiviereZuNiedrigBezahlte, istGehaltZuNiedrig } from "./lowpay.js";
 import { GeminiError, generateContent, type GeminiMessage } from "./gemini.js";
+import { notizenKontext, notizZuJob } from "./notes.js";
 import {
   appendChat,
   hasChat,
@@ -27,7 +28,13 @@ export function stopAgent(): void {
   stopRequested = true;
 }
 
+/**
+ * System-Prompt für jede Anfrage. Hinter dem Profil stehen die eigenen Notizen
+ * des Nutzers (siehe notes.ts) — damit lernt die KI aus jeder Einordnung dazu,
+ * ohne dass das Profil dafür umgeschrieben werden müsste.
+ */
 function systemPrompt(profile: string): string {
+  const notizen = notizenKontext();
   return [
     "Du bist ein persönlicher Job-Assistent. Du hilfst dem Nutzer, Stellenangebote",
     "vorzusortieren: Lohnt es sich für ihn, das Angebot genauer anzuschauen, oder",
@@ -36,6 +43,7 @@ function systemPrompt(profile: string): string {
     "",
     "=== Profil und Wünsche des Nutzers ===",
     profile.trim(),
+    ...(notizen ? ["", notizen] : []),
   ].join("\n");
 }
 
@@ -67,7 +75,12 @@ function indent(lines: string[], prefix: string): string[] {
   return lines.map((line) => prefix + line);
 }
 
-function triagePrompt(text: string): string {
+/**
+ * Prompt für EIN Angebot. `notiz` ist die Notiz des Nutzers zu genau diesem
+ * Angebot (meist leer) — sie steht bewusst direkt beim Angebotstext, damit die
+ * KI sie nicht mit den Notizen zu anderen Angeboten verwechselt.
+ */
+function triagePrompt(text: string, notiz = ""): string {
   return [
     "Hier ist ein Stellenangebot (kompletter Seitentext). Entscheide, ob sich ein",
     "genauerer Blick für den Nutzer lohnt, und bewerte es strukturiert mit Punkten.",
@@ -81,6 +94,7 @@ function triagePrompt(text: string): string {
     "",
     ...KRITERIEN,
     "",
+    ...(notiz ? [notiz, ""] : []),
     text,
   ].join("\n");
 }
@@ -115,11 +129,15 @@ function batchTriagePrompt(batch: PreparedJob[]): string {
     "  des jeweiligen Angebots — damit die Bewertungen zugeordnet werden können",
     ...KRITERIEN,
     "",
-    ...batch.flatMap((prepared, index) => [
-      `=== ANGEBOT ${index + 1} von ${count} ===`,
-      prepared.text,
-      "",
-    ]),
+    ...batch.flatMap((prepared, index) => {
+      const notiz = notizZuJob(prepared.job.id);
+      return [
+        `=== ANGEBOT ${index + 1} von ${count} ===`,
+        ...(notiz ? [notiz, ""] : []),
+        prepared.text,
+        "",
+      ];
+    }),
   ].join("\n");
 }
 
@@ -314,7 +332,7 @@ export interface TriageOutcome {
 async function triageOne(env: ServerEnv, profile: string, prepared: PreparedJob): Promise<void> {
   const { job } = prepared;
   saveJobSnapshot(job);
-  const prompt = triagePrompt(prepared.text);
+  const prompt = triagePrompt(prepared.text, notizZuJob(job.id));
   const answer = await generateContent(env, {
     system: systemPrompt(profile),
     messages: [{ role: "user", text: prompt }],
@@ -396,7 +414,12 @@ export async function triageJobs(
       null,
       2,
     );
-    saveTriage(prepared.job, `${hinweis}\n\n${triagePrompt(prepared.text)}`, antwort, result);
+    saveTriage(
+      prepared.job,
+      `${hinweis}\n\n${triagePrompt(prepared.text, notizZuJob(prepared.job.id))}`,
+      antwort,
+      result,
+    );
     outcomes.push({ job: prepared.job, ok: true });
   });
 

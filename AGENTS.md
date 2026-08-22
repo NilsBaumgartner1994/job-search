@@ -9,8 +9,8 @@ arbeiten soll. Sie ergänzt die README, die das Projekt selbst erklärt.
    und schreibt die Angebote nach `data/jobs.json`.
 2. `yarn agent` (`src/server/cli.ts`) lässt **Gemini** die Angebote triagieren:
    „interessant“ oder „archivieren“, mit Punkten und Begründung.
-3. Ergebnisse liegen in `data/agent/board.json` (Kanban-Status je Job) und
-   `data/agent/jobs/<id>/chat.json` (Verlauf je Job).
+3. Ergebnisse liegen in `data/agent/board.json` (Kanban-Status und Notiz je
+   Job) und `data/agent/jobs/<id>/chat.json` (Verlauf je Job).
 4. `publishDocs()` schreibt daraus die Daten für die GitHub-Pages-Seite nach `docs/`.
 
 ## Manuelle Triage durch den Agenten (statt Gemini)
@@ -29,8 +29,17 @@ PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 yarn install --frozen-lockfile
 Hilfsskripte gehören nach `src/_tmp*.ts` — dieses Muster ist in `.gitignore`
 und landet damit nicht im Repo.
 
-1. **Profil lesen**: `data/agent/profil.md`. Das ist die einzige Quelle für die
+1. **Profil lesen**: `data/agent/profil.md`. Das ist die Hauptquelle für die
    Bewertungskriterien. Nicht aus dem Bauch heraus abweichen.
+   **Dazu die Notizen des Nutzers lesen** — `notizenKontext()` aus
+   `src/server/notes.ts` liefert sie fertig formatiert (alle `notiz`-Felder aus
+   `board.json`, jüngste zuerst). Das sind selbstgeschriebene Begründungen zu
+   einzelnen Angeboten („genau meine Fachrichtung“, „nie wieder SAP“) und damit
+   die konkreteste Aussage über seinen Geschmack. Sie ergänzen das Profil; bei
+   Widersprüchen zählt die neuere Notiz. Gemini bekommt sie automatisch in
+   jedem System-Prompt — bei manueller Triage musst du sie selbst lesen.
+   Notizen des Nutzers **nie überschreiben oder löschen**; `setStatus()` lässt
+   sie ohnehin stehen, solange kein `notiz` übergeben wird.
 2. **Ohne Bewertung wegräumen** (kostet keine Anfrage):
    - `archiviereAbgelaufene(loadJobs())` aus `src/server/expiry.ts` — abgelaufene Fristen
    - `archiviereZuNiedrigBezahlte(loadJobs())` aus `src/server/lowpay.ts` — alles
@@ -199,6 +208,11 @@ Nutzer direkt ansprechen („du“) und immer die geschätzte Fahrzeit nennen.
    eigentliche Ursache liegt aber in `src/extract.ts`.
 6. **Nicht ungefragt bewerben oder Bewerbungsunterlagen schreiben** — die Triage
    sortiert nur vor, die Entscheidung trifft der Nutzer.
+7. **Die Spalte „🎯 Will ich mich bewerben" (`bewerben`) gehört dem Nutzer.**
+   Die KI setzt weiterhin nur `interessant` oder `archiviert`; dort parkt er
+   selbst, worauf er sich bewerben will. Karten in dieser Spalte nie
+   automatisch umsortieren — auch nicht bei abgelaufener Frist (siehe
+   `ARCHIVIERBARE_STATUS` in `src/server/expiry.ts`).
 
 ## Konventionen
 

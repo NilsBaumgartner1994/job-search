@@ -13,6 +13,7 @@ import {
   loadChat,
   loadProfile,
   saveProfile,
+  setNote,
   setStatus,
 } from "./store.js";
 import { BOARD_STATUSES, type BoardStatus } from "./types.js";
@@ -95,7 +96,7 @@ async function handle(
     return;
   }
 
-  const jobMatch = path.match(/^\/api\/jobs\/([^/]+)(\/(status|chat))?$/);
+  const jobMatch = path.match(/^\/api\/jobs\/([^/]+)(\/(status|chat|notiz))?$/);
   if (jobMatch) {
     const jobs = loadJobs();
     const job = findJob(jobs, jobMatch[1]);
@@ -116,14 +117,25 @@ async function handle(
     }
 
     if (method === "POST" && sub === "status") {
-      const body = (await readBody(req)) as { status?: string };
+      const body = (await readBody(req)) as { status?: string; notiz?: string };
       const status = body.status as BoardStatus;
       if (!BOARD_STATUSES.includes(status)) {
         json(res, 400, { error: `Ungültiger Status: ${body.status}` });
         return;
       }
-      // Klick/Drag im UI = menschliche Entscheidung → vonKi false
-      const entry = setStatus(job.id, status, false);
+      // Klick/Drag im UI = menschliche Entscheidung → vonKi false.
+      // Eine mitgeschickte Notiz wird gleich mitgespeichert (z.B. beim
+      // Archivieren: „warum weg?“) — ohne Notiz bleibt die alte stehen.
+      const entry = setStatus(job.id, status, false, {
+        notiz: body.notiz === undefined ? undefined : String(body.notiz),
+      });
+      json(res, 200, { ok: true, entry });
+      return;
+    }
+
+    if (method === "PUT" && sub === "notiz") {
+      const body = (await readBody(req)) as { notiz?: string };
+      const entry = setNote(job.id, String(body.notiz ?? ""));
       json(res, 200, { ok: true, entry });
       return;
     }
