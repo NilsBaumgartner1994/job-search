@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T17:43:05.366Z",
+  "updatedAt": "2026-08-24T12:07:45.124Z",
   "entries": [
     {
       "jobId": "accenture:13818109",
@@ -323,19 +323,19 @@
     },
     {
       "jobId": "accenture:R00277541",
-      "status": "interessant",
+      "status": "archiviert",
       "vonKi": true,
-      "updatedAt": "2026-08-22T17:40:43.336Z",
-      "punkte": 5,
+      "updatedAt": "2026-08-24T12:07:44.902Z",
+      "punkte": 2,
       "punkteDetails": {
-        "entfernung": 4,
-        "homeoffice": 5,
-        "gehalt": 0,
+        "entfernung": 3,
+        "homeoffice": 6,
+        "gehalt": 3,
         "arbeitszeit": 8,
         "verbeamtung": 0,
-        "gesamt": 5
+        "gesamt": 2
       },
-      "begruendung": "Cybersecurity-Beratung für den öffentlichen Sektor ist fachlich anschlussfähig und der Kundenkreis passt zu deiner Ausrichtung auf den öffentlichen Dienst. Bedenke bei Accenture generell den Beratungscharakter: Projekteinsatz beim Kunden relativiert den beworbenen Homeoffice-Vorteil. Die nächsten Standorte Essen und Düsseldorf liegen geschätzt 2 bis 2,3 Stunden Fahrt entfernt, ein Gehaltsband nennt die Anzeige nicht."
+      "begruendung": "Neubewertung nach deinem Profil-Update: Die Stelle sitzt in der Accenture-Security-Einheit und verlangt Cybersecurity-Erfahrung samt BSI-Grundschutz-, ISO-27001- und IS-Revisor-Kenntnissen — ausgewiesene IT-Sicherheits-Spezialisierung, die du nicht hast. Der nächste Standort (Düsseldorf) liegt rund 2,3 Stunden entfernt, ein Gehalt wird nicht genannt."
     },
     {
       "jobId": "accenture:R00277682",
@@ -1192,6 +1192,22 @@
       "updatedAt": "2026-08-22T17:32:26.069Z",
       "punkte": 0,
       "begruendung": "Dienstort Madrid, Castellana 85 liegt geschätzt rund 3,6 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "accenture:R00301780",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:07:44.793Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 3,
+        "homeoffice": 5,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "Das ist Energiewirtschafts-Beratung, keine Softwareentwicklung: gefragt sind Wirtschaftswissenschaften, Energiewirtschaft oder Wirtschaftsingenieurwesen, dazu Projektreisen zum Kunden. Der nächste Standort (Essen) liegt rund 2 Stunden Fahrt entfernt, Homeoffice ist nur pauschal zugesagt und ein Gehalt nennt die Ausschreibung gar nicht. Fachlich passt das nicht zu deinem Software-Engineering-Profil."
     },
     {
       "jobId": "accenture:R00302087",
@@ -2298,6 +2314,14 @@
       "begruendung": "Dienstort Munich liegt geschätzt rund 5,5 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "accenture:R00333717",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.662Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Munich liegt geschätzt rund 5,5 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "accenture:R00333933",
       "status": "archiviert",
       "vonKi": true,
@@ -2523,19 +2547,19 @@
     },
     {
       "jobId": "accenture:R00339256",
-      "status": "interessant",
+      "status": "archiviert",
       "vonKi": true,
-      "updatedAt": "2026-08-22T17:42:46.292Z",
-      "punkte": 5,
+      "updatedAt": "2026-08-24T12:07:44.920Z",
+      "punkte": 2,
       "punkteDetails": {
-        "entfernung": 4,
-        "homeoffice": 5,
-        "gehalt": 0,
-        "arbeitszeit": 8,
+        "entfernung": 3,
+        "homeoffice": 6,
+        "gehalt": 3,
+        "arbeitszeit": 7,
         "verbeamtung": 0,
-        "gesamt": 5
+        "gesamt": 2
       },
-      "begruendung": "Identity- und Zugriffssicherheit auf Managerebene ist fachlich anschlussfähig und verbindet Technik mit Verantwortung. Bedenke bei Accenture generell den Beratungscharakter: Projekteinsatz beim Kunden relativiert den beworbenen Homeoffice-Vorteil. Die nächsten Standorte Essen und Düsseldorf liegen geschätzt 2 bis 2,3 Stunden Fahrt entfernt, ein Gehaltsband nennt die Anzeige nicht."
+      "begruendung": "Neubewertung nach deinem Profil-Update: Identity & Access Management mit SailPoint, CyberArk und Okta ist eine reine IT-Security-Spezialistenrolle, dazu kommt hohe Reisetätigkeit. Nächster Standort Düsseldorf, rund 2,3 Stunden Fahrt, kein Gehalt genannt."
     },
     {
       "jobId": "accenture:R00339257",
@@ -3066,6 +3090,22 @@
       "begruendung": "Dienstort Frankfurt liegt geschätzt rund 3,6 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "accenture:R00346286",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.679Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Berlin liegt geschätzt rund 3,6 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "accenture:R00346291",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.679Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Berlin liegt geschätzt rund 3,6 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "accenture:R00346300",
       "status": "archiviert",
       "vonKi": true,
@@ -3266,6 +3306,14 @@
       "begruendung": "AI Portfolio Strategy ist Portfolio- und Strategiearbeit; der KI-Bezug bleibt konzeptionell, ohne technische Umsetzung."
     },
     {
+      "jobId": "accenture:R00349819",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.684Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Wuerzburg liegt geschätzt rund 5,0 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "accenture:R00350294",
       "status": "archiviert",
       "vonKi": true,
@@ -3278,6 +3326,14 @@
       "status": "archiviert",
       "vonKi": true,
       "updatedAt": "2026-08-22T17:32:26.137Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Munich liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "accenture:R00351159",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.685Z",
       "punkte": 0,
       "begruendung": "Dienstort Munich liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
     },
@@ -6241,19 +6297,19 @@
     },
     {
       "jobId": "bwi:68304",
-      "status": "interessant",
+      "status": "archiviert",
       "vonKi": true,
-      "updatedAt": "2026-08-22T17:39:05.460Z",
-      "punkte": 6,
+      "updatedAt": "2026-08-24T12:07:45.098Z",
+      "punkte": 3,
       "punkteDetails": {
         "entfernung": 6,
-        "homeoffice": 6,
-        "gehalt": 0,
-        "arbeitszeit": 8,
+        "homeoffice": 5,
+        "gehalt": 8,
+        "arbeitszeit": 5,
         "verbeamtung": 0,
-        "gesamt": 6
+        "gesamt": 3
       },
-      "begruendung": "DevSecOps auf Senior-Niveau, hier im Umfeld von Geoinformationssystemen — die Geo-Domäne ist Anwendungskontext, der Entwicklungs- und Automatisierungsanteil überwiegt. Ein Gehaltsband nennt die Anzeige nicht — kläre die Vergütung früh. Bundesweit besetzbar, du könntest also den BWI-Standort Hannover wählen (geschätzt rund 1,5 Stunden Fahrt) und dazu mobil arbeiten."
+      "begruendung": "Neubewertung nach deinem Profil-Update: Trotz des DevSecOps-Titels ist das Betrieb und Support großer Systemlandschaften (ESRI ArcGIS, AIX, ITIL) mit geforderten IT-Sicherheitskenntnissen nach BSI-Grundschutz und ISO 27001 — dazu 24/7-Rufbereitschaft an Wochenenden, Feiertagen und nachts. Weder fachlich noch von der Arbeitszeit her passend. Nächster BWI-Standort Hannover, rund 1,5 Stunden."
     },
     {
       "jobId": "bwi:68308",
@@ -6473,19 +6529,19 @@
     },
     {
       "jobId": "bwi:68491",
-      "status": "interessant",
+      "status": "archiviert",
       "vonKi": true,
-      "updatedAt": "2026-08-22T17:39:05.526Z",
-      "punkte": 6,
+      "updatedAt": "2026-08-24T12:07:44.939Z",
+      "punkte": 3,
       "punkteDetails": {
         "entfernung": 6,
         "homeoffice": 6,
-        "gehalt": 0,
+        "gehalt": 8,
         "arbeitszeit": 8,
         "verbeamtung": 0,
-        "gesamt": 6
+        "gesamt": 3
       },
-      "begruendung": "Principal Consultant Cyber Security ist eine Spitzenfachrolle mit konzeptioneller Verantwortung; für einen promovierten Informatiker fachlich erreichbar, auch wenn Beratung stärker im Vordergrund steht als Entwicklung. Ein Gehaltsband nennt die Anzeige nicht — kläre die Vergütung früh. Bundesweit besetzbar, du könntest also den BWI-Standort Hannover wählen (geschätzt rund 1,5 Stunden Fahrt) und dazu mobil arbeiten."
+      "begruendung": "Neubewertung nach deinem Profil-Update: Die Stelle sitzt im Competence Center IT-Security und verlangt etwa acht Jahre einschlägige Erfahrung in Cyber-/Informationssicherheit plus Praxis in SIEM/SOC, Incident Management oder Mobile Security. Das ist die Spezialisierung, die du nicht mitbringst — unabhängig davon, dass BWI bundesweit ausschreibt (nächster Standort Hannover, rund 1,5 Stunden)."
     },
     {
       "jobId": "bwi:68503",
@@ -6609,19 +6665,19 @@
     },
     {
       "jobId": "bwi:68555",
-      "status": "interessant",
+      "status": "archiviert",
       "vonKi": true,
-      "updatedAt": "2026-08-22T17:39:05.582Z",
-      "punkte": 6,
+      "updatedAt": "2026-08-24T12:07:45.045Z",
+      "punkte": 3,
       "punkteDetails": {
         "entfernung": 6,
         "homeoffice": 6,
-        "gehalt": 0,
-        "arbeitszeit": 8,
+        "gehalt": 8,
+        "arbeitszeit": 7,
         "verbeamtung": 0,
-        "gesamt": 6
+        "gesamt": 3
       },
-      "begruendung": "Die Leitung einer PKI-Plattform bringt Personalverantwortung und ein anspruchsvolles Sicherheitsthema zusammen; der Zuschnitt ist plattform- und betriebsnah, die Führungsrolle passt aber zu dir. Ein Gehaltsband nennt die Anzeige nicht — kläre die Vergütung früh. Bundesweit besetzbar, du könntest also den BWI-Standort Hannover wählen (geschätzt rund 1,5 Stunden Fahrt) und dazu mobil arbeiten."
+      "begruendung": "Neubewertung nach deinem Profil-Update: Die Leitung der PKI-Plattform verlangt mindestens zehn Jahre Erfahrung mit Public-Key-Infrastrukturen, Zertifikatsverwaltung und kryptografischen Verfahren, gern mit CISSP. Kryptographie als Kernaufgabe fällt bei dir unter die IT-Security-Spezialisierung — trotz Führungsverantwortung und guter Bezahlung archiviert. Nächster BWI-Standort Hannover, rund 1,5 Stunden."
     },
     {
       "jobId": "bwi:68559",
@@ -7681,19 +7737,19 @@
     },
     {
       "jobId": "bwi:69164",
-      "status": "interessant",
+      "status": "archiviert",
       "vonKi": true,
-      "updatedAt": "2026-08-21T22:13:55.977Z",
-      "punkte": 7,
+      "updatedAt": "2026-08-24T12:07:45.061Z",
+      "punkte": 4,
       "punkteDetails": {
-        "entfernung": 5,
+        "entfernung": 6,
         "homeoffice": 6,
-        "gehalt": 9,
+        "gehalt": 8,
         "arbeitszeit": 8,
         "verbeamtung": 0,
-        "gesamt": 7
+        "gesamt": 4
       },
-      "begruendung": "Eine Lead-Expert-Rolle in der Quantenkommunikation ist forschungsnah und damit anschlussfähig an deine Promotion und deine Erfahrung in Forschung und Lehre; mit 87.700 bis 128.000 Euro liegt sie deutlich über E13 und ist bundesweit besetzbar. Prüfe aber, wie stark physikalisches Fachwissen vorausgesetzt wird — der Schwerpunkt könnte eher bei Physik als bei Informatik liegen."
+      "begruendung": "Neubewertung nach deinem Profil-Update: Die Rolle ist forschungsnah und eine Promotion ist ausdrücklich von Vorteil, verlangt aber sechs Jahre Expertise in Kryptographie, Netzwerksicherheit oder Quantenkommunikation samt QKD und Post-Quantum-Kryptographie. Deine Promotion liegt im Software Engineering, nicht in der Kryptographie — damit ist es eine Sicherheits-Spezialistenstelle. Nächster BWI-Standort Hannover, rund 1,5 Stunden."
     },
     {
       "jobId": "bwi:69172",
@@ -7761,19 +7817,19 @@
     },
     {
       "jobId": "bwi:69192",
-      "status": "interessant",
+      "status": "archiviert",
       "vonKi": true,
-      "updatedAt": "2026-08-21T22:13:56.003Z",
-      "punkte": 7,
+      "updatedAt": "2026-08-24T12:07:45.078Z",
+      "punkte": 4,
       "punkteDetails": {
-        "entfernung": 5,
+        "entfernung": 6,
         "homeoffice": 6,
         "gehalt": 8,
         "arbeitszeit": 8,
         "verbeamtung": 0,
-        "gesamt": 7
+        "gesamt": 4
       },
-      "begruendung": "DevSecOps verbindet Softwareentwicklung, Automatisierung und Sicherheit und passt sehr gut zu deinem Profil. Mit 71.000 bis 104.000 Euro liegt die Vergütung über E13, und die Stelle ist bundesweit an jedem BWI-Standort besetzbar (Hannover: geschätzt rund 1,5 Stunden Fahrt) plus mobiles Arbeiten."
+      "begruendung": "Neubewertung nach deinem Profil-Update: Anders als die übrigen DevSecOps-Stellen der BWI liegt hier der Schwerpunkt ausdrücklich auf Sicherheit — Container-Hardening, CVE-Scanning, Secrets Management, Security Auditing und Compliance, je fünf Jahre Erfahrung. Das ist Sicherheitsbetrieb statt Softwareentwicklung. Nächster BWI-Standort Hannover, rund 1,5 Stunden."
     },
     {
       "jobId": "bwi:69196",
@@ -7993,35 +8049,35 @@
     },
     {
       "jobId": "bwi:69296",
-      "status": "interessant",
+      "status": "archiviert",
       "vonKi": true,
-      "updatedAt": "2026-08-22T17:36:41.846Z",
-      "punkte": 7,
+      "updatedAt": "2026-08-24T12:07:44.989Z",
+      "punkte": 3,
       "punkteDetails": {
         "entfernung": 6,
         "homeoffice": 6,
         "gehalt": 9,
         "arbeitszeit": 8,
         "verbeamtung": 0,
-        "gesamt": 7
+        "gesamt": 3
       },
-      "begruendung": "Lead Cyber Security Architect ist eine Architektur- und Führungsrolle, und mit 87.700 bis 128.000 Euro liegt die Vergütung deutlich über E13. Privileged Identity Management ist ein anspruchsvolles Sicherheitsthema mit echtem Entwurfsanteil. Bundesweit besetzbar, du könntest also den BWI-Standort Hannover wählen (geschätzt rund 1,5 Stunden Fahrt) und dazu mobil arbeiten."
+      "begruendung": "Neubewertung nach deinem Profil-Update: Privileged Identity Management fordert mindestens acht Jahre IT-Security-Architektur, tiefe IAM/PAM-Produktkenntnis und Sicherheitsstandards wie Zero Trust — eine ausgewiesene Sicherheits-Spezialistenrolle. Die Vergütung (87.700–128.420 €) und die bundesweite Ausschreibung (Hannover, rund 1,5 Stunden) sprechen dafür, die Fachlichkeit dagegen."
     },
     {
       "jobId": "bwi:69304",
-      "status": "interessant",
+      "status": "archiviert",
       "vonKi": true,
-      "updatedAt": "2026-08-22T17:36:41.876Z",
-      "punkte": 6,
+      "updatedAt": "2026-08-24T12:07:45.004Z",
+      "punkte": 3,
       "punkteDetails": {
         "entfernung": 6,
         "homeoffice": 6,
         "gehalt": 8,
         "arbeitszeit": 8,
         "verbeamtung": 0,
-        "gesamt": 6
+        "gesamt": 3
       },
-      "begruendung": "Identity- und Access-Management auf Senior-Architektenniveau ist fachlich anschlussfähig und mit 71.000 bis 104.000 Euro über E13. Bundesweit besetzbar, du könntest also den BWI-Standort Hannover wählen (geschätzt rund 1,5 Stunden Fahrt) und dazu mobil arbeiten."
+      "begruendung": "Neubewertung nach deinem Profil-Update: Gefordert sind fünf Jahre IT-Security-Architektur mit Schwerpunkt IAM, Kenntnis von SailPoint/Okta/One Identity und Frameworks wie ISO 27001 und NIST — das ist Sicherheits-Spezialistenarbeit, nicht Software Engineering. Standort bundesweit, nächster BWI-Standort Hannover rund 1,5 Stunden."
     },
     {
       "jobId": "bwi:69308",
@@ -8505,19 +8561,19 @@
     },
     {
       "jobId": "bwi:69600",
-      "status": "interessant",
+      "status": "archiviert",
       "vonKi": true,
-      "updatedAt": "2026-08-22T17:36:42.168Z",
-      "punkte": 7,
+      "updatedAt": "2026-08-24T12:07:45.020Z",
+      "punkte": 3,
       "punkteDetails": {
         "entfernung": 6,
         "homeoffice": 6,
         "gehalt": 9,
-        "arbeitszeit": 8,
+        "arbeitszeit": 7,
         "verbeamtung": 0,
-        "gesamt": 7
+        "gesamt": 3
       },
-      "begruendung": "Lead Cyber Security Manager für Zero Trust ist eine Führungs- und Konzeptionsrolle an einem der zentralen Architekturthemen der IT-Sicherheit, dotiert mit 87.700 bis 128.000 Euro und damit deutlich über E13. Passt zu deiner Kombination aus Technik und Führungserfahrung. Bundesweit besetzbar, du könntest also den BWI-Standort Hannover wählen (geschätzt rund 1,5 Stunden Fahrt) und dazu mobil arbeiten."
+      "begruendung": "Neubewertung nach deinem Profil-Update: Zero-Trust-Programmleitung mit mehrjähriger IT-Sicherheitspraxis und gewünschten Zertifizierungen wie CISM oder CISSP ist eine IT-Security-Spezialistenrolle. Dazu kommt Bereitschaft zu nationalen und internationalen Dienstreisen; nächster BWI-Standort Hannover, rund 1,5 Stunden."
     },
     {
       "jobId": "bwi:69604",
@@ -8590,6 +8646,22 @@
         "gesamt": 3
       },
       "begruendung": "UX/UI-Design ist Gestaltungsarbeit mit eigener Ausbildung und liegt neben deinem Schwerpunkt Software Engineering, auch wenn 87.700 bis 128.000 Euro attraktiv wären."
+    },
+    {
+      "jobId": "bwi:69644",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.518Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „44.100 € und 61“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bwi:69652",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.743Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Bonn liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:1000765",
@@ -8838,6 +8910,22 @@
       "updatedAt": "2026-08-22T17:32:26.222Z",
       "punkte": 0,
       "begruendung": "Dienstort 19059 Schwerin liegt geschätzt rund 3,1 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1382861",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:07:44.827Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 3,
+        "homeoffice": 4,
+        "gehalt": 6,
+        "arbeitszeit": 7,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Das Interventionsteam \"Digitale Tatorte\" ist IT-Forensik und Cybercrime-Ermittlung — genau die Spezialisierung, die du laut Profil nicht hast. Düsseldorf sind rund 2,3 Stunden Fahrt, und Homeoffice hilft dir hier kaum: Datensicherung am Einsatzort, Ad-hoc-Unterstützung und partielle Rufbereitschaft verlangen Präsenz auf kurze Distanz. Die Beamten-Variante derselben Stelle (interamt:1483694, A13h–A14) habe ich aus denselben Gründen archiviert."
     },
     {
       "jobId": "interamt:1384366",
@@ -13465,9 +13553,9 @@
     },
     {
       "jobId": "interamt:1472984",
-      "status": "interessant",
+      "status": "archiviert",
       "vonKi": true,
-      "updatedAt": "2026-08-21T23:04:23.349Z",
+      "updatedAt": "2026-08-24T12:06:34.472Z",
       "punkte": 6,
       "punkteDetails": {
         "entfernung": 6,
@@ -13477,7 +13565,7 @@
         "verbeamtung": 10,
         "gesamt": 6
       },
-      "begruendung": "Hannover liegt geschätzt rund 1,5 Stunden Fahrt entfernt und A 13h bis A 14 mit Verbeamtung trifft dein Zielniveau — die Nähe-plus-Verbeamtung-Kombination, die du bevorzugst. Der Zuschnitt Telekommunikationsrecht und -Infrastruktur könnte allerdings stark juristisch geprägt sein; prüfe in der Original-Ausschreibung, wie viel davon technische Infrastrukturarbeit ist. Die Frist läuft schon am 23.08. ab, und der gespeicherte Detailtext gehört zu einem anderen Angebot."
+      "begruendung": "Bewerbungsfrist am 23.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage).\n\nFrühere KI-Einschätzung: Hannover liegt geschätzt rund 1,5 Stunden Fahrt entfernt und A 13h bis A 14 mit Verbeamtung trifft dein Zielniveau — die Nähe-plus-Verbeamtung-Kombination, die du bevorzugst. Der Zuschnitt Telekommunikationsrecht und -Infrastruktur könnte allerdings stark juristisch geprägt sein; prüfe in der Original-Ausschreibung, wie viel davon technische Infrastrukturarbeit ist. Die Frist läuft schon am 23.08. ab, und der gespeicherte Detailtext gehört zu einem anderen Angebot."
     },
     {
       "jobId": "interamt:1473028",
@@ -13769,19 +13857,19 @@
     },
     {
       "jobId": "interamt:1474332",
-      "status": "interessant",
+      "status": "archiviert",
       "vonKi": true,
-      "updatedAt": "2026-08-21T23:06:23.036Z",
-      "punkte": 7,
+      "updatedAt": "2026-08-24T12:07:45.110Z",
+      "punkte": 3,
       "punkteDetails": {
-        "entfernung": 6,
-        "homeoffice": 5,
-        "gehalt": 9,
+        "entfernung": 5,
+        "homeoffice": 4,
+        "gehalt": 8,
         "arbeitszeit": 8,
         "verbeamtung": 0,
-        "gesamt": 7
+        "gesamt": 3
       },
-      "begruendung": "IT-Sicherheit und Datenschutz auf TV-L E 14 ist deutlich über deiner E13-Schwelle und fachlich gut anschlussfähig, und Hannover liegt mit geschätzt rund 1,5 Stunden Fahrt in erreichbarer Nähe. Verbeamtung ist hier allerdings nicht ausgeschrieben, und beim LKA ist mit erhöhter Präsenzerwartung zu rechnen. Hinweis: der gespeicherte Detailtext gehört zu einem anderen Angebot — Aufgaben und Anforderungen bitte im Original prüfen."
+      "begruendung": "Neubewertung nach deinem Profil-Update: Sachbearbeitung IT-Sicherheit/Datenschutz beim LKA Niedersachsen ist eine reine Informationssicherheits-Rolle und damit die Spezialisierung, die du nicht hast. Hannover sind rund 1,5 Stunden Fahrt. Achtung: Der gespeicherte Detailtext gehört zu einem anderen Angebot (Handwerkskammer Düsseldorf), bewertet ist daher nur nach den Feldern der Trefferliste — vor einer Bewerbung die Original-Ausschreibung prüfen."
     },
     {
       "jobId": "interamt:1474348",
@@ -14722,19 +14810,19 @@
     },
     {
       "jobId": "interamt:1477175",
-      "status": "interessant",
+      "status": "archiviert",
       "vonKi": true,
-      "updatedAt": "2026-08-22T17:40:43.255Z",
-      "punkte": 7,
+      "updatedAt": "2026-08-24T12:07:45.124Z",
+      "punkte": 2,
       "punkteDetails": {
         "entfernung": 3,
-        "homeoffice": 5,
-        "gehalt": 9,
+        "homeoffice": 4,
+        "gehalt": 8,
         "arbeitszeit": 8,
         "verbeamtung": 0,
-        "gesamt": 7
+        "gesamt": 2
       },
-      "begruendung": "Chief Information Security Officer ist eine strategische Sicherheitsrolle mit Gestaltungsanspruch, dotiert nach TV-L E 14 und damit über deiner Schwelle — fachlich für einen promovierten Informatiker gut erreichbar. Düsseldorf liegt geschätzt rund 2,3 Stunden Fahrt entfernt; kläre früh, wie viel Präsenz eine CISO-Rolle dort erfordert."
+      "begruendung": "Neubewertung nach deinem Profil-Update: Informationssicherheitsbeauftragte/r bzw. CISO ist genau die Rolle, die du als Nicht-Spezialist ausgeschlossen hast, dazu rund 2,3 Stunden Fahrt nach Düsseldorf. Achtung: Der gespeicherte Detailtext gehört zu einem anderen Angebot (Angebots-ID 1477109, Hereon-Containerplattform), bewertet ist daher nur nach den Feldern der Trefferliste."
     },
     {
       "jobId": "interamt:1477182",
@@ -16291,9 +16379,9 @@
     },
     {
       "jobId": "interamt:1480195",
-      "status": "interessant",
+      "status": "archiviert",
       "vonKi": true,
-      "updatedAt": "2026-08-21T23:06:23.057Z",
+      "updatedAt": "2026-08-24T12:06:34.474Z",
       "punkte": 8,
       "punkteDetails": {
         "entfernung": 6,
@@ -16303,7 +16391,7 @@
         "verbeamtung": 0,
         "gesamt": 8
       },
-      "begruendung": "Die Leitung des Teams IT-Steuerung und Grundsatzthemen verbindet IT-Strategie mit Führungsverantwortung und liegt mit TVöD-VKA E 14 klar über deiner Schwelle — dazu Hannover mit geschätzt rund 1,5 Stunden Fahrt, also erreichbare Nähe. Verbeamtung ist hier nicht vorgesehen. Die Bewerbungsfrist läuft schon am 23.08. ab, das wäre also zügig anzugehen."
+      "begruendung": "Bewerbungsfrist am 23.08.2026 abgelaufen — automatisch archiviert (ohne KI-Anfrage).\n\nFrühere KI-Einschätzung: Die Leitung des Teams IT-Steuerung und Grundsatzthemen verbindet IT-Strategie mit Führungsverantwortung und liegt mit TVöD-VKA E 14 klar über deiner Schwelle — dazu Hannover mit geschätzt rund 1,5 Stunden Fahrt, also erreichbare Nähe. Verbeamtung ist hier nicht vorgesehen. Die Bewerbungsfrist läuft schon am 23.08. ab, das wäre also zügig anzugehen."
     },
     {
       "jobId": "interamt:1480212",
@@ -16864,6 +16952,14 @@
       "begruendung": "Ludwigsburg liegt geschätzt rund 5,5 Stunden Autofahrt von Osnabrück/Vechta entfernt, und angeboten wird nur ein Hybrid-Modell, kein überwiegendes Homeoffice. Mit TVöD-VKA E 11 liegt die Stelle unter der E13-Schwelle, ab der sich für dich ein weiter Weg rechnen würde. Reine Server-/Netzwerk-/Security-Administration bleibt zudem deutlich unter deinem Profil als promovierter Software Engineer."
     },
     {
+      "jobId": "interamt:1481564",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.529Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 10“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1481634",
       "status": "archiviert",
       "vonKi": true,
@@ -17248,6 +17344,14 @@
       "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 9a“) — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "interamt:1482429",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.530Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 9b“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:1482452",
       "status": "archiviert",
       "vonKi": true,
@@ -17430,6 +17534,214 @@
         "gesamt": 0
       },
       "begruendung": "TV-L E 5 für Nachweisprüfung und Abrechnung ist mehrere Entgeltgruppen unter deinem Ziel von E13 und fachlich reine Verwaltungstätigkeit. Hof in Oberfranken liegt geschätzt rund 5 Stunden Fahrt entfernt, die 50 % Homeoffice greifen erst nach drei Monaten und lösen das Entfernungsproblem nicht."
+    },
+    {
+      "jobId": "interamt:1483321",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.530Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483346",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.530Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 9a - TV-L E 10“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483396",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.530Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „A12“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483432",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.791Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 55116 Mainz liegt geschätzt rund 3,3 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483472",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.791Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 19059 Schwerin liegt geschätzt rund 3,1 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483486",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.530Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-Bund E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483513",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.530Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483514",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.530Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-V 10“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483517",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.791Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 50931 Köln liegt geschätzt rund 2,5 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483524",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.530Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483544",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.531Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 10 - TV-L E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483560",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.531Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483570",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.531Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483578",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.531Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-Bund E 10“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483588",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.531Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 9a“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483603",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.531Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 9b - TV-L E 10“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483607",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.531Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483642",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.531Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 10“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483654",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.793Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 66119 Saarbrücken liegt geschätzt rund 4,0 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483667",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.531Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483694",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:07:44.855Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 3,
+        "homeoffice": 4,
+        "gehalt": 8,
+        "arbeitszeit": 7,
+        "verbeamtung": 10,
+        "gesamt": 4
+      },
+      "begruendung": "A13h–A14 mit Verbeamtung und Direkteinstieg wäre für dich attraktiv, aber die Aufgabe ist IT-Forensik/Cybercrime-Ermittlung und damit die Sicherheits-Spezialisierung, die du nicht mitbringst. Dazu kommen rund 2,3 Stunden Fahrt nach Düsseldorf bei Tatortarbeit vor Ort und partieller Rufbereitschaft — der zugesagte Homeoffice-Anteil rettet die Entfernung nicht. Dies ist die Beamten-Variante von interamt:1382861 (EG 13); wenn du die Forensik doch reizvoll findest, ist diese hier die bessere der beiden Karten."
+    },
+    {
+      "jobId": "interamt:1483697",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.531Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483705",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.531Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 12“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483735",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.531Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „A11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483741",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-24T12:06:34.531Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „A5m - A7“) — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "interamt:684464",

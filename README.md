@@ -298,13 +298,19 @@ Details:
 - Karten lassen sich per **Drag & Drop** zwischen den Spalten verschieben —
   das zählt als menschliche Entscheidung. Jede Karte zeigt, ob sie zuletzt
   von der **🤖 KI** oder vom **👤 Menschen** eingruppiert wurde, dazu die
-  KI-Punkte (Tooltip zeigt die Einzelbewertungen), Frist, Entgeltgruppe und
-  — falls vorhanden — ein **📝 Notiz**-Badge (Tooltip zeigt die Notiz).
+  KI-Punkte (Tooltip zeigt die Einzelbewertungen), Frist, Entgeltgruppe, die
+  geschätzte Fahrzeit (**📍 ≈ 40 min** / **≈ 2,8 h**) und — falls vorhanden —
+  ein **📝 Notiz**-Badge (Tooltip zeigt die Notiz).
 - **Sortierung**: Standard ist ⭐ KI-Punkte (absteigend). Über das Dropdown
-  im Kopf jeder Spalte lässt sich jede Spalte einzeln nach 💶 Gehalt
-  (Entgelt-/Besoldungsgruppe, dann Euro-Beträge, ohne Angabe zuletzt) oder
-  ⏳ Bewerbungsfrist sortieren; das Dropdown oben in der Leiste setzt die
-  Sortierung für **alle Spalten** auf einmal.
+  im Kopf jeder Spalte lässt sich jede Spalte einzeln nach 📍 Entfernung
+  (geschätzte Autofahrzeit ab Osnabrück/Vechta/Cloppenburg zum nächsten
+  Dienstort, aufsteigend; Angebote ohne erkennbaren Dienstort zuletzt),
+  💶 Gehalt (Entgelt-/Besoldungsgruppe, dann Euro-Beträge, ohne Angabe
+  zuletzt) oder ⏳ Bewerbungsfrist sortieren; das Dropdown oben in der Leiste
+  setzt die Sortierung für **alle Spalten** auf einmal.  Die Fahrzeit-Schätzung
+  stammt aus `fahrzeitMinuten()` (`src/server/distance.ts`) und wird von
+  `publishDocs()` in `docs/data.json` mitgeschrieben — die Seite rechnet sie
+  nicht selbst nach.
 - **Klick auf eine Karte** öffnet das Detail-Modal mit Beschreibung,
   Voraussetzungen, KI-Begründung und dem **kompletten Chat-Verlauf mit dem
   KI-Agenten** (die große Triage-Anfrage ist einklappbar). Dort lassen sich

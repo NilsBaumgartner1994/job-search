@@ -1,6 +1,7 @@
 import { mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import type { JobOffer } from "../types.js";
+import { fahrzeitMinuten } from "./distance.js";
 import { hasChat, loadBoard, loadChat, safeDirName } from "./store.js";
 
 /**
@@ -31,6 +32,9 @@ export function lightJob(job: JobOffer) {
     befristung: job.befristung,
     arbeitszeit: job.arbeitszeit,
     homeoffice: job.homeoffice,
+    // Geschätzte Autofahrzeit zum nächsten Dienstort — damit das Board nach
+    // Entfernung sortieren kann, ohne die Schätzung im Browser nachzubauen
+    fahrzeitMinuten: fahrzeitMinuten(job),
     hasChat: hasChat(job.id),
   };
 }

@@ -44,3 +44,21 @@ Die Entfernung wiegt für mich schwerer, als oben beschrieben — konkret:
   Form Homeoffice möglich sein.
 - Ein bloßes "Dienstort: Hybrid" aus der Trefferliste ist für mich kein Beleg für
   Homeoffice. Der Anteil muss in der Ausschreibung selbst stehen.
+
+Ich bin **kein IT-Security-Spezialist**. Sicherheit ist in meinen Projekten immer
+mitgelaufen, aber sie ist nicht mein Fachgebiet: Ich komme aus dem Software
+Engineering (Entwicklung, Architektur, Forschung und Lehre, Führung). Stellen,
+die eine ausgewiesene IT-Sicherheits-Spezialisierung verlangen, passen deshalb
+nicht zu mir und darfst du direkt archivieren — zum Beispiel:
+
+- Informationssicherheitsbeauftragte/r, CISO, ISMS-/BSI-Grundschutz-/ISO-27001-Rollen
+- Cyber Security Consultant/Architect/Manager, SOC/SIEM, Incident Response, Pentest
+- Identity & Access Management (IAM/PAM), PKI, Kryptographie, Zero Trust als Kernaufgabe
+- IT-Forensik / Cybercrime-Ermittlung
+- Ausschreibungen, die mehrjährige einschlägige Erfahrung in Informationssicherheit
+  oder Zertifizierungen wie CISSP, CISM, BSI-Grundschutz-Praktiker verlangen
+
+Kein Ausschluss ist dagegen, wenn Sicherheit nur ein Aspekt einer sonst
+passenden Software-/Architektur-Stelle ist: DevSecOps-Stellen mit Schwerpunkt
+Softwareentwicklung, Kubernetes oder Cloud-Plattformen sind weiterhin
+interessant, solange nicht die Sicherheitsexpertise selbst die Kernanforderung ist.

@@ -194,9 +194,10 @@ const STATUS_LABEL = Object.fromEntries(COLUMNS.map(c => [c.key, c.label]));
 
 // Sortier-Modi für die Spalten. "punkte" = KI-Gesamtpunkte (Standard).
 const SORT_OPTIONS = [
-  { key: "punkte", label: "⭐ KI-Punkte" },
-  { key: "gehalt", label: "💶 Gehalt" },
-  { key: "frist",  label: "⏳ Bewerbungsfrist" },
+  { key: "punkte",     label: "⭐ KI-Punkte" },
+  { key: "entfernung", label: "📍 Entfernung" },
+  { key: "gehalt",     label: "💶 Gehalt" },
+  { key: "frist",      label: "⏳ Bewerbungsfrist" },
 ];
 const DEFAULT_SORT = "punkte";
 // pro Spalte einstellbar; das Header-Dropdown setzt alle Spalten auf einmal
@@ -319,6 +320,21 @@ function punkteOf(jobId) {
 }
 function fristOf(job) { return job.bewerbungsfrist || "9999-12-31"; }
 
+/**
+ * Geschätzte Autofahrzeit in Minuten (kommt aus fahrzeitMinuten() in
+ * distance.ts). Angebote ohne erkennbaren Dienstort landen beim Sortieren nach
+ * Entfernung hinten — nicht vorne, wo sie Nähe vortäuschen würden.
+ */
+function fahrzeitOf(job) {
+  return typeof job.fahrzeitMinuten === "number" ? job.fahrzeitMinuten : 99999;
+}
+
+/** "40 min" bzw. "2,8 h" — kurz genug für ein Badge auf der Karte. */
+function fmtFahrzeit(minuten) {
+  if (minuten < 60) return minuten + " min";
+  return (minuten / 60).toFixed(1).replace(".", ",") + " h";
+}
+
 /** Größten Euro-Betrag aus dem Gehalts-Freitext ziehen ("57.700 € brutto p.a." → 57700). */
 function parseEuro(text) {
   if (!text) return 0;
@@ -362,6 +378,10 @@ function sortJobs(jobs, mode) {
     if (mode === "frist") {
       const c = fristOf(a).localeCompare(fristOf(b));
       return c !== 0 ? c : punkteOf(b.id) - punkteOf(a.id);
+    }
+    if (mode === "entfernung") {
+      const fa = fahrzeitOf(a), fb = fahrzeitOf(b);
+      return fa !== fb ? fa - fb : punkteOf(b.id) - punkteOf(a.id);
     }
     if (mode === "gehalt") {
       const ra = salaryRank(a), rb = salaryRank(b);
@@ -461,6 +481,10 @@ function renderCard(job) {
   if (job.hasChat) badges.push('<span class="badge" title="Chat-Verlauf vorhanden">💬</span>');
   if (job.bewerbungsfrist) badges.push('<span class="badge frist">bis ' + esc(fmtDatum(job.bewerbungsfrist)) + "</span>");
   if (job.gehaltsstufe) badges.push('<span class="badge">' + esc(job.gehaltsstufe) + "</span>");
+  if (typeof job.fahrzeitMinuten === "number") {
+    badges.push('<span class="badge" title="Geschätzte Autofahrzeit ab Osnabrück/Vechta/Cloppenburg zum nächsten Dienstort">📍 ≈ ' +
+      esc(fmtFahrzeit(job.fahrzeitMinuten)) + "</span>");
+  }
 
   el.innerHTML =
     '<div class="t">' + esc(job.titel) + "</div>" +

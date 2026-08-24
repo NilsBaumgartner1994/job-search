@@ -154,13 +154,25 @@ schreiben** (das verlangt das Profil ausdrücklich; `fahrzeitMinuten()` in
    Arbeitsschutz, Kommunikation/PR.
 2. **No-Gos aus dem Profil**: reine Vertriebsstellen, reine SAP-Beratung
    (inklusive SAP-Training, SAP-Inhouse-Consulting, SASPF/ERP-Fachrollen).
-3. Befristet und keine wissenschaftliche Qualifizierungsstelle → `archivieren`
+3. **Keine IT-Security-Spezialistenstellen** (seit August 2026 im Profil):
+   Der Nutzer kommt aus dem Software Engineering, nicht aus der
+   Informationssicherheit. Zu archivieren sind CISO/ISB-Rollen, Cyber Security
+   Consulting/Architecture/Management, SOC/SIEM, Incident Response, Pentest,
+   IAM/PAM, PKI, Kryptographie, Zero Trust als Kernaufgabe sowie IT-Forensik und
+   Cybercrime-Ermittlung — ebenso alles, was mehrjährige einschlägige
+   Sicherheitserfahrung oder Zertifikate wie CISSP, CISM oder
+   BSI-Grundschutz-Praktiker verlangt. **Kein** Ausschlussgrund ist Sicherheit
+   als Nebenaspekt: DevSecOps-Stellen mit Schwerpunkt Softwareentwicklung,
+   Kubernetes oder Cloud-Plattformen bleiben interessant. Entscheidend ist,
+   ob die Sicherheitsexpertise selbst die Kernanforderung ist — der Titel
+   allein reicht nicht, dafür immer das Anforderungsprofil lesen.
+4. Befristet und keine wissenschaftliche Qualifizierungsstelle → `archivieren`
    (der Nutzer sucht unbefristet). Eine Promotionsstelle ist erledigt — er ist
    seit Mai 2026 promoviert.
-4. Unter E13/A13 **und** weiter als ~40 min → `archivieren`. Reiner
+5. Unter E13/A13 **und** weiter als ~40 min → `archivieren`. Reiner
    Betrieb/Support (1st/2nd Level, Benutzerbetreuung, Systemadministration,
    Netzwerkbetrieb) liegt unter dem Profil, auch bei E13.
-5. Ab E13/A13, fachlich passend **und** Entfernungsregel erfüllt → `interessant`.
+6. Ab E13/A13, fachlich passend **und** Entfernungsregel erfüllt → `interessant`.
    Die Entfernung entscheidet vor der Fachlichkeit: ein fachlicher Volltreffer in
    Bonn ohne belegtes Vollzeit-Homeoffice wird archiviert, nicht vorgelegt.
 
@@ -200,9 +212,10 @@ Nutzer direkt ansprechen („du“) und immer die geschätzte Fahrzeit nennen.
 
 ## Was beim nächsten Mal zu tun ist
 
-1. **Die Warteschlange ist leer.** Stand 22.08.2026 sind alle 1.858 Angebote
-   eingeordnet, 89 davon interessant. Neue Arbeit entsteht erst durch den
-   nächsten `yarn crawl`.
+1. **Die Warteschlange ist leer.** Stand 24.08.2026 sind alle 1.456 aktuell
+   gelisteten Angebote eingeordnet (1.894 Board-Einträge — die Differenz sind
+   Angebote, die die Portale inzwischen entfernt haben), 75 davon interessant.
+   Neue Arbeit entsteht erst durch den nächsten `yarn crawl`.
 2. **Nach einem Crawl** greifen die drei Filter automatisch; danach bleibt nur
    ein kleiner Rest zur inhaltlichen Bewertung. Blockweise arbeiten (~30 Angebote
    dumpen, bewerten, speichern), nach jedem Block committen.
