@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T12:07:45.124Z",
+  "updatedAt": "2026-08-26T10:57:38.408Z",
   "entries": [
     {
       "jobId": "accenture:13818109",
@@ -8842,9 +8842,9 @@
     },
     {
       "jobId": "interamt:1375663",
-      "status": "interessant",
+      "status": "archiviert",
       "vonKi": false,
-      "updatedAt": "2026-08-21T07:58:49.688Z",
+      "updatedAt": "2026-08-26T10:57:38.381Z",
       "punkte": 3,
       "punkteDetails": {
         "entfernung": 1,
@@ -14553,9 +14553,9 @@
     },
     {
       "jobId": "interamt:1476542",
-      "status": "interessant",
-      "vonKi": true,
-      "updatedAt": "2026-08-21T23:02:44.876Z",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-26T10:57:38.408Z",
       "punkte": 6,
       "punkteDetails": {
         "entfernung": 2,
@@ -15453,9 +15453,9 @@
     },
     {
       "jobId": "interamt:1478589",
-      "status": "interessant",
-      "vonKi": true,
-      "updatedAt": "2026-08-21T23:02:44.743Z",
+      "status": "beworben",
+      "vonKi": false,
+      "updatedAt": "2026-08-26T10:57:38.340Z",
       "punkte": 9,
       "punkteDetails": {
         "entfernung": 2,
@@ -15811,9 +15811,9 @@
     },
     {
       "jobId": "interamt:1479453",
-      "status": "interessant",
-      "vonKi": true,
-      "updatedAt": "2026-08-21T23:02:44.750Z",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-26T10:57:38.389Z",
       "punkte": 8,
       "punkteDetails": {
         "entfernung": 2,
@@ -15963,9 +15963,9 @@
     },
     {
       "jobId": "interamt:1479830",
-      "status": "interessant",
-      "vonKi": true,
-      "updatedAt": "2026-08-21T23:04:23.318Z",
+      "status": "archiviert",
+      "vonKi": false,
+      "updatedAt": "2026-08-26T10:57:38.349Z",
       "punkte": 8,
       "punkteDetails": {
         "entfernung": 6,
@@ -15975,13 +15975,15 @@
         "verbeamtung": 9,
         "gesamt": 8
       },
-      "begruendung": "Dieselbe SVLFG-Architektenstelle wie in Münster, hier am Standort Hannover: Informatik-Master gefordert, E13 TVöD (rund 63.000 bis 73.300 Euro) und Verbeamtung im höheren Dienst bis A 14 möglich, unbefristet, mit Homeoffice-Optionen. Hannover liegt geschätzt rund 1,5 Stunden Fahrt entfernt — die zweitbeste Standortwahl nach Münster, das noch etwas näher liegt."
+      "begruendung": "Dieselbe SVLFG-Architektenstelle wie in Münster, hier am Standort Hannover: Informatik-Master gefordert, E13 TVöD (rund 63.000 bis 73.300 Euro) und Verbeamtung im höheren Dienst bis A 14 möglich, unbefristet, mit Homeoffice-Optionen. Hannover liegt geschätzt rund 1,5 Stunden Fahrt entfernt — die zweitbeste Standortwahl nach Münster, das noch etwas näher liegt.",
+      "notiz": "Ist bereits ein Angebot auf das ich mich beworben habe an einem anderen Standort.",
+      "notizAt": "2026-08-26T10:57:38.349Z"
     },
     {
       "jobId": "interamt:1479832",
-      "status": "interessant",
-      "vonKi": true,
-      "updatedAt": "2026-08-21T23:04:23.299Z",
+      "status": "beworben",
+      "vonKi": false,
+      "updatedAt": "2026-08-26T10:57:38.323Z",
       "punkte": 9,
       "punkteDetails": {
         "entfernung": 8,
@@ -16681,9 +16683,9 @@
     },
     {
       "jobId": "interamt:1480973",
-      "status": "interessant",
-      "vonKi": true,
-      "updatedAt": "2026-08-21T23:02:44.837Z",
+      "status": "beworben",
+      "vonKi": false,
+      "updatedAt": "2026-08-26T10:57:38.399Z",
       "punkte": 8,
       "punkteDetails": {
         "entfernung": 0,
@@ -18151,9 +18153,9 @@
     },
     {
       "jobId": "itzbund:1000004333801FD0ACFE6637CF7EADC6",
-      "status": "interessant",
+      "status": "archiviert",
       "vonKi": false,
-      "updatedAt": "2026-08-21T07:58:49.705Z"
+      "updatedAt": "2026-08-26T10:57:38.372Z"
     },
     {
       "jobId": "itzbund:1000004333801FD0AD9C0E0D7142CDC6",
