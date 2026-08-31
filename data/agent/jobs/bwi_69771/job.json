@@ -1,0 +1,35 @@
+{
+  "id": "bwi:69771",
+  "employer": "BWI GmbH",
+  "titel": "Senior IT Service Architect - Ausbildungssysteme (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/senior-it-service-architect-ausbildungssysteme-m-w-d-69771",
+  "referenzcode": "69771",
+  "beschreibung": "ab sofort und in Vollzeit bundesweit an einem unserer BWI Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\nDie Customer Solution Unit „Ausbildungssysteme“ (CS ABS) ist verantwortlich für die Projekte und Vorhaben zur Digitalisierung der Ausbildungssysteme in Schulen und Ausbildungseinrichtungen der Bundeswehr und im Geschäftsbereich BMVg. Somit trägt sie zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit sowie der Kampfkraft der Streitkräfte bei. Die Einheit hat als interner Auftragnehmer die Umsetzungsverantwortung für die Verträge und Aufträge im Umfeld der Digitalisierung der Ausbildungssysteme für > 300.000 Nutzer.\nDas Lehrgangsverwaltungstool (LVT) ist ein Bestandteil der Lösungen, die durch die CS ABS verantwortet werden. Das LVT dient vor allem den Ausbildenden und Planenden an den Ausbildungseinrichtungen. Es kapselt die Komplexität der bereitgestellten Lösungen vor den Nutzenden, indem es eine einfache Bedienoberfläche bereitstellt, über die die Ausbildungseinrichtung die für eine spezifische Ausbildung benötigten Ressourcen auswählen kann und indem es die komplette Orchestrierung zur Bereitstellung dieser Ressourcen übernimmt. Zu diesen Ressourcen gehören installierte Arbeitsplatzcomputer, virtuelle Desktops, die konkrete Software-Ausstattung dieser PCs, Nutzerkonten für die zu Schulenden, E-Mail und Chat Accounts, individuelle und Gruppendateiablagen sowie Zugriffsrechte auf Lerninhalte, wie Kurse in Lernmanagementsystemen.\n\nAufgaben:\n- Mitarbeit bei Design, Transition und Weiterentwicklung des LVT und dessen Schnittstellen unter Anwendung des BWI Entwicklungsframeworks (EPDF), abgeleitet aus den Kundenanforderungen\n- Lieferung von Beiträgen bei der Ermittlung der erforderlichen Ressourcen (z.B. Anzahl Fähigkeiten bzw. Kompetenzen für Design, Transition und Operation des LVT)\n- Lieferung von Beiträgen für die Kostenkalkulation, Kostentransparenz und Herstellung eines Benchmarkings\n- Erstellung von Beiträgen für servicespezifische Dokumentationen (z.B. Technical Support Manual, Informationssicherheitskonzept, Schutzbedarfsanalyse, Business Impact Analyse etc.)\n- Erstellung fachlicher Vorgaben für den operativen Betrieb und zur Gewährleistung der Sicherheitsvorgaben\n- Planung und Steuerung der Aktivitäten, die zur Inbetriebnahme einer neuen Version des LVT für den Produktivbetrieb erforderlich sind\n- Durchführung der Impact Analyse von Änderungsanforderungen an das LVT\n- Prüfung und Koordination bei der Umsetzung von Change- & Service Requests\n\nBereich: Solution Design",
+  "gehalt": "71.000 € und 104",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "Erfolgreich abgeschlossenes Studium oder Ausbildung mit IT-Bezug",
+    "Mindestens 4 Jahre einschlägige Berufserfahrung im Bereich der IT Architektur, bevorzugt bei Lösungen zur automatischen Provisionierung von Endgeräten, Nutzerkonten, Rollen und Berechtigungen",
+    "Nachweisbare Erfahrung mit agilen Methoden der Softwareentwicklung und dem Betrieb nach dem DevSecOps-Ansatz",
+    "Sehr gutes Verständnis von IT-Service- & Systemarchitekturen",
+    "Analytische Denkweise, strukturierte und lösungsorientierte Arbeitsweise verbunden mit einem hohen Sicherheits- & Qualitätsbewusstsein",
+    "Teamfähigkeit und Kundenorientierung sowie Eigeninitiative",
+    "Fließende Deutschkenntnisse und gute Englischkenntnisse in Wort und Schrift​"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "Erfahrung mit IAM Systemen, Microsoft Active Directory und automatisierter Softwareverteilung (wünschenswert)",
+    "Anwenderroutine mit Programmiersprachen wie Java und JavaScript sowie Datenbanken wie PostgrSQL (wünschenswert)"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-08-30T10:10:06.152Z",
+  "lastSeen": "2026-08-30T10:10:06.152Z"
+}

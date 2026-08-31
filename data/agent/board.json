@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T10:57:38.408Z",
+  "updatedAt": "2026-08-31T21:25:06.327Z",
   "entries": [
     {
       "jobId": "accenture:13818109",
@@ -296,6 +296,22 @@
         "gesamt": 4
       },
       "begruendung": "Mainframe-Systemprogrammierung ist zwar Entwicklung, aber eine sehr enge Nische in einem Beratungsumfeld mit Kundeneinsatz; ein Gehaltsband fehlt."
+    },
+    {
+      "jobId": "accenture:R00277327",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:24:21.695Z",
+      "punkte": 6,
+      "punkteDetails": {
+        "entfernung": 4,
+        "homeoffice": 6,
+        "gehalt": 4,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 6
+      },
+      "begruendung": "Senior Frontend Entwickler mit Team- und Teilprojektverantwortung — fachlich klar Softwareentwicklung und Führung, also dein Gebiet. Der nächste Standort (Essen) liegt rund 2 Stunden entfernt, gearbeitet wird laut Ausschreibung an einem Accenture-Standort, remote oder beim Kunden; ein Homeoffice-Anteil und ein Gehalt werden aber nicht beziffert, und es ist projektbezogene Mobilität gefordert. Vor einer Bewerbung solltest du beides konkret erfragen."
     },
     {
       "jobId": "accenture:R00277344",
@@ -970,6 +986,22 @@
       "begruendung": "SAP Supply Chain Management — Eine reine SAP-Beratungsrolle und damit eines deiner ausdrücklichen No-Gos."
     },
     {
+      "jobId": "accenture:R00297712",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:25:06.135Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 3,
+        "homeoffice": 6,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "PMO-Analyst ist eine administrative Projektbüro-Rolle auf Einstiegsniveau — Planung, Reporting und Koordination statt Softwareentwicklung oder Architektur. Nächster Standort Düsseldorf, rund 2,3 Stunden Fahrt, ohne Gehaltsangabe. Fachlich und vom Niveau her deutlich unter deinem Profil."
+    },
+    {
       "jobId": "accenture:R00297771",
       "status": "archiviert",
       "vonKi": true,
@@ -1088,6 +1120,22 @@
         "gesamt": 0
       },
       "begruendung": "SAP-Datenmigration — Eine reine SAP-Beratungsrolle und damit eines deiner ausdrücklichen No-Gos."
+    },
+    {
+      "jobId": "accenture:R00299922",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:25:06.157Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 3,
+        "homeoffice": 5,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "SAP-Datenmigration ist reine SAP-Beratung und damit eines deiner ausdrücklichen No-Gos. Dazu rund 2 Stunden bis zum nächsten Standort (Essen) und keine Gehaltsangabe."
     },
     {
       "jobId": "accenture:R00300501",
@@ -1618,6 +1666,22 @@
       "begruendung": "Dienstort London liegt geschätzt rund 3,6 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "accenture:R00315396",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:25:06.169Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 3,
+        "homeoffice": 5,
+        "gehalt": 1,
+        "arbeitszeit": 5,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Ein Praktikum in der Energiewirtschafts-Beratung — weder unbefristet noch auf deinem Qualifikationsniveau, du bist promoviert und suchst eine feste Stelle. Nächster Standort Düsseldorf, rund 2,3 Stunden."
+    },
+    {
       "jobId": "accenture:R00315421",
       "status": "archiviert",
       "vonKi": true,
@@ -1664,6 +1728,22 @@
       "updatedAt": "2026-08-22T17:32:26.081Z",
       "punkte": 0,
       "begruendung": "Dienstort Aachen liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "accenture:R00316234",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:25:06.188Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 3,
+        "homeoffice": 5,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Junior Strategy Consultant für M&A und Private Equity: betriebswirtschaftliche Transaktionsberatung auf Einstiegsniveau, kein IT-Kern. Fachlich unpassend, dazu rund 2,3 Stunden bis Düsseldorf und keine Gehaltsangabe."
     },
     {
       "jobId": "accenture:R00317182",
@@ -2842,6 +2922,14 @@
       "begruendung": "Dienstort Kronberg, Campus Kronberg 1 liegt geschätzt rund 2,0 Stunden Fahrt entfernt, und die Ausschreibung nennt keinerlei Homeoffice-Möglichkeit. Ohne Homeoffice ist dir selbst diese Entfernung zu weit. Automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "accenture:R00341396",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.275Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Kronberg liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "accenture:R00341727",
       "status": "archiviert",
       "vonKi": true,
@@ -3258,6 +3346,14 @@
       "begruendung": "Dienstort Kronberg, Campus Kronberg 1 liegt geschätzt rund 3,6 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "accenture:R00348720",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.284Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Kronberg, Campus Kronberg 1 liegt geschätzt rund 3,6 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "accenture:R00348916",
       "status": "archiviert",
       "vonKi": true,
@@ -3280,6 +3376,22 @@
       "updatedAt": "2026-08-22T17:32:26.136Z",
       "punkte": 0,
       "begruendung": "Dienstort Hamburg liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "accenture:R00349069",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.285Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Hamburg liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "accenture:R00349145",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.285Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Munich liegt geschätzt rund 5,5 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "accenture:R00349539",
@@ -3322,6 +3434,14 @@
       "begruendung": "Dienstort Berlin, Hallesches Ufer 40 liegt geschätzt rund 3,6 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "accenture:R00350379",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.286Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Munich liegt geschätzt rund 5,5 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "accenture:R00350645",
       "status": "archiviert",
       "vonKi": true,
@@ -3330,12 +3450,36 @@
       "begruendung": "Dienstort Munich liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "accenture:R00350761",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:25:06.199Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 3,
+        "homeoffice": 6,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Account Executive ist eine reine Vertriebsrolle und obendrein im SAP-Umfeld — damit trifft die Stelle gleich beide No-Gos aus deinem Profil. Nächster Standort Düsseldorf, rund 2,3 Stunden."
+    },
+    {
       "jobId": "accenture:R00351159",
       "status": "archiviert",
       "vonKi": true,
       "updatedAt": "2026-08-24T12:06:34.685Z",
       "punkte": 0,
       "begruendung": "Dienstort Munich liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "accenture:R00351237",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.287Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Kronberg liegt geschätzt rund 3,6 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "accenture:R00351379",
@@ -3416,6 +3560,78 @@
       "updatedAt": "2026-08-22T17:32:26.140Z",
       "punkte": 0,
       "begruendung": "Dienstort Berlin liegt geschätzt rund 2,0 Stunden Fahrt entfernt, und die Ausschreibung nennt keinerlei Homeoffice-Möglichkeit. Ohne Homeoffice ist dir selbst diese Entfernung zu weit. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "accenture:R00352266",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.288Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Mannheim liegt geschätzt rund 4,1 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "accenture:R00352752",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.289Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Kronberg liegt geschätzt rund 2,3 Stunden Fahrt entfernt, und die Ausschreibung nennt keinerlei Homeoffice-Möglichkeit. Ohne Homeoffice ist dir selbst diese Entfernung zu weit. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "accenture:R00353142",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:25:06.213Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 3,
+        "homeoffice": 6,
+        "gehalt": 3,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Business Development Director für das Adobe-Partnergeschäft ist Vertrieb und Partnermanagement — ein No-Go aus deinem Profil, unabhängig von der Seniorität. Nächster Standort Düsseldorf, rund 2,3 Stunden, ohne Gehaltsangabe."
+    },
+    {
+      "jobId": "bka:A-2026-1",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.186Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „Eine attraktive Ausbildungsvergütung nach dem TVAöD (Tarifvertrag für Auszubildende des öf“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bka:A-2026-2",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.187Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „Eine attraktive Ausbildungsvergütung nach dem TVAöD (Tarifvertrag für Auszubildende des öf“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bka:A-2026-3",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.187Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „Eine attraktive Ausbildungsvergütung nach dem TVAöD (Tarifvertrag für Auszubildende des öf“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bka:A-2026-4",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.187Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „Eine attraktive Ausbildungsvergütung nach dem TVAöD (Tarifvertrag für Auszubildende des öf“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bka:A-2026-5",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.187Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „Eine attraktive Ausbildungsvergütung nach dem TVAöD (Tarifvertrag für Auszubildende des öf“) — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "bka:BKA-KKA-3J_GK-2026-1",
@@ -3610,6 +3826,14 @@
       "begruendung": "Cybercrime-Auswertung beim BKA ist fachlich anschlussfähig und mobiles Arbeiten wird angeboten, Entgeltgruppe 12 liegt aber unter deiner E13-Schwelle. Wiesbaden ist geschätzt rund 3,5 Stunden Fahrt entfernt, und Ermittlungsarbeit mit Gerichtsvertretung bringt spürbare Präsenzpflicht mit sich."
     },
     {
+      "jobId": "bka:T-2026-61",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.187Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „Entgeltgruppe 12 TV EntgO Bund“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "bka:T-2026-62",
       "status": "archiviert",
       "vonKi": true,
@@ -3624,6 +3848,30 @@
         "gesamt": 6
       },
       "begruendung": "Dienstort Wiesbaden liegt geschätzt rund 3,6 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Nachträglich archiviert, weil du die Entfernungsregel im Profil verschärft hast.\n\nFrühere Einschätzung: Lösungsarchitektur für Cloud-native und hybride Infrastrukturen, API-Management und Modernisierungsvorhaben auf Entgeltgruppe 13 ist fachlich ein starker Treffer für einen promovierten Software Engineer mit Architekturerfahrung. Das BKA nennt ausdrücklich mobiles Arbeiten, was bei geschätzt rund 3,5 Stunden Fahrt nach Wiesbaden auch nötig wäre — den konkreten Homeoffice-Anteil unbedingt vorab klären."
+    },
+    {
+      "jobId": "bka:T-2026-63",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.187Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „Entgeltgruppe 12 TV EntgO Bund“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bka:T-2026-64",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.296Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Wiesbaden liegt geschätzt rund 3,6 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bka:T-2026-67",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.187Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „Entgeltgruppe 12 TV EntgO Bund“) — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "bka:W-2026-1",
@@ -7096,6 +7344,14 @@
       "begruendung": "Die Lead-Entwickler-Komponente wäre passend, die Rolle ist aber fest an das Produkt OpenText gebunden und schwerpunktmäßig Anwendungsmanagement."
     },
     {
+      "jobId": "bwi:68792",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.334Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Bonn liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "bwi:68800",
       "status": "archiviert",
       "vonKi": true,
@@ -7238,6 +7494,14 @@
         "gesamt": 6
       },
       "begruendung": "Release Management ist stark entwicklungsnah (Build-, Test- und Auslieferungsprozesse) und passt zu deinem Software-Engineering-Hintergrund, auch wenn es prozessorientierter ist als reine Entwicklung. Mit 71.000 bis 104.000 Euro liegt die Vergütung über E13, und bundesweit ist der Standort Hannover mit geschätzt rund 1,5 Stunden Fahrt erreichbar."
+    },
+    {
+      "jobId": "bwi:68880",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.335Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Berlin liegt geschätzt rund 3,6 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "bwi:68884",
@@ -8160,6 +8424,14 @@
       "begruendung": "Dienstort Bonn liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "bwi:69372",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.344Z",
+      "punkte": 0,
+      "begruendung": "Dienstort München liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "bwi:69376",
       "status": "archiviert",
       "vonKi": true,
@@ -8592,6 +8864,14 @@
       "begruendung": "Principal Expert Technology Management bedeutet Technologiestrategie auf höchster Fachebene — das trifft deine Erfahrung als Geschäftsführer, der Technologieentscheidungen verantwortet hat, und liegt mit 87.700 bis 128.000 Euro deutlich über E13. Bundesweit besetzbar, du könntest also den BWI-Standort Hannover wählen (geschätzt rund 1,5 Stunden Fahrt) und dazu mobil arbeiten."
     },
     {
+      "jobId": "bwi:69612",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.348Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Berlin liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "bwi:69624",
       "status": "archiviert",
       "vonKi": true,
@@ -8614,6 +8894,14 @@
         "gesamt": 4
       },
       "begruendung": "Der KI-Bezug klingt interessant, die Rolle ist aber Betrieb und Betreuung von Business Applications, nicht Entwicklung. Das Band von 57.800 bis 84.000 Euro entspricht etwa E13."
+    },
+    {
+      "jobId": "bwi:69632",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.348Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Bonn liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
     },
     {
       "jobId": "bwi:69636",
@@ -8662,6 +8950,366 @@
       "updatedAt": "2026-08-24T12:06:34.743Z",
       "punkte": 0,
       "begruendung": "Dienstort Bonn liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bwi:69660",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.349Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Bonn liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bwi:69668",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.188Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „44.100 € und 61“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bwi:69672",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.349Z",
+      "punkte": 0,
+      "begruendung": "Dienstort @Berlin liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bwi:69676",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.349Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Bonn liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bwi:69688",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.349Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Leipzig liegt geschätzt rund 3,6 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bwi:69692",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:25:06.226Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 6,
+        "homeoffice": 5,
+        "gehalt": 9,
+        "arbeitszeit": 7,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Die Vergütung (87.700–128.420 €) wäre stark, aber die Ausschreibung verlangt praktische Erfahrung mit Drohnensystemen ausdrücklich als zwingende Voraussetzung, dazu XR-/Computergrafik-Praxis, Mikroelektronik, 3D-Druck und zwingende Reisebereitschaft im In- und Ausland. Das ist ein anderes Spezialgebiet als dein Software Engineering. Nächster BWI-Standort Hannover, rund 1,5 Stunden."
+    },
+    {
+      "jobId": "bwi:69700",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.188Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „44.100 € und 61“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bwi:69704",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.349Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Vollzeit in Bonn liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bwi:69708",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:24:21.653Z",
+      "punkte": 6,
+      "punkteDetails": {
+        "entfernung": 6,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 6
+      },
+      "begruendung": "IT-Portfoliomanagement auf Bundeswehr-Ebene: gefordert sind vier Jahre als Enterprise- oder Solution-Architekt, Zielbilder, TOGAF/NAF und Zusammenarbeit bis zum Top-Management. Das trifft deine Architektur- und Führungserfahrung, ist aber strategischer und weniger technisch als eine Entwicklerrolle. 71.000–104.040 € über E13, nächster BWI-Standort Hannover rund 1,5 Stunden."
+    },
+    {
+      "jobId": "bwi:69712",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.350Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Strausberg liegt geschätzt rund 3,1 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bwi:69716",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:24:21.548Z",
+      "punkte": 7,
+      "punkteDetails": {
+        "entfernung": 6,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 7
+      },
+      "begruendung": "Native Android-Entwicklung am BundesMessenger mit Kotlin, Clean Architecture und CI/CD — das ist echte Softwareentwicklung und damit dein Kerngebiet. 71.000–104.040 € liegen über E13, und BWI schreibt bundesweit aus: der nächste Standort ist Hannover mit rund 1,5 Stunden Fahrt, dazu mobiles Arbeiten."
+    },
+    {
+      "jobId": "bwi:69720",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:24:21.568Z",
+      "punkte": 7,
+      "punkteDetails": {
+        "entfernung": 6,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 7
+      },
+      "begruendung": "Senior Web Developer am BundesMessenger — Softwareentwicklung an einem Open-Source-Produkt des Bundes, fachlich genau dein Profil. Vergütung 71.000–104.040 € über E13; bundesweit ausgeschrieben, nächster BWI-Standort Hannover rund 1,5 Stunden, mit mobilem Arbeiten."
+    },
+    {
+      "jobId": "bwi:69724",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:24:21.604Z",
+      "punkte": 7,
+      "punkteDetails": {
+        "entfernung": 6,
+        "homeoffice": 6,
+        "gehalt": 9,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 7
+      },
+      "begruendung": "Lead QA Automation Engineer ist eine Hands-on-Engineering-Rolle: Test-Frameworks from scratch in Python, Java oder TypeScript, Docker, Kubernetes und CI/CD, dazu fachliche Führung. Mit 87.700–128.420 € deutlich über E13. Nächster BWI-Standort Hannover, rund 1,5 Stunden, mobiles Arbeiten möglich."
+    },
+    {
+      "jobId": "bwi:69728",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:24:21.592Z",
+      "punkte": 7,
+      "punkteDetails": {
+        "entfernung": 6,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 7
+      },
+      "begruendung": "Rust-Entwicklung für Client-SDK und Backend des BundesMessengers, gefordert sind fünf Jahre professionelle Softwareentwicklung und drei Jahre Rust. Fachlich sehr passend, 71.000–104.040 € über E13. Nächster BWI-Standort Hannover, rund 1,5 Stunden, mobiles Arbeiten möglich."
+    },
+    {
+      "jobId": "bwi:69732",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:24:21.674Z",
+      "punkte": 6,
+      "punkteDetails": {
+        "entfernung": 6,
+        "homeoffice": 6,
+        "gehalt": 9,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 6
+      },
+      "begruendung": "Technical Product Owner für Realtime und Videokonferenzen auf Basis von LiveKit und Matrix, mit 87.700–128.420 € deutlich über E13 und einer sehr entwicklungsnahen Produktrolle. Ein Vorbehalt: Die Ausschreibung erwartet mehrere Jahre eigene Arbeit in der Realtime-/Video-Domäne (WebRTC, SFU, STUN/TURN) — schau dir an, ob du das aus deinen Projekten belegen kannst. Nächster BWI-Standort Hannover, rund 1,5 Stunden."
+    },
+    {
+      "jobId": "bwi:69736",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.350Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Bonn liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bwi:69740",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.350Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Bonn liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bwi:69744",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:24:21.638Z",
+      "punkte": 6,
+      "punkteDetails": {
+        "entfernung": 6,
+        "homeoffice": 6,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 6
+      },
+      "begruendung": "Die Einstiegsvariante derselben Enterprise-Architektur-Rolle: nur zwei Jahre Berufserfahrung gefordert, entsprechend liegt die Vergütung mit 57.800–84.000 € eher auf E13-Niveau. Fachlich passend, aber unter deinem Erfahrungsstand — die Senior-Variante (bwi:69748, 71.000–104.040 €) ist für dich die bessere Karte. Nächster BWI-Standort Hannover, rund 1,5 Stunden."
+    },
+    {
+      "jobId": "bwi:69748",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:24:21.627Z",
+      "punkte": 7,
+      "punkteDetails": {
+        "entfernung": 6,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 7
+      },
+      "begruendung": "Senior IT Enterprise Architect passt zu deiner Architektur- und Führungserfahrung; verlangt werden vier Jahre als Enterprise- oder Solution-Architekt sowie TOGAF/NAF und Architekturwerkzeuge. 71.000–104.040 € liegen über E13. Bundesweit ausgeschrieben, nächster BWI-Standort Hannover rund 1,5 Stunden."
+    },
+    {
+      "jobId": "bwi:69767",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:25:06.236Z",
+      "punkte": 4,
+      "punkteDetails": {
+        "entfernung": 6,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 7,
+        "verbeamtung": 0,
+        "gesamt": 4
+      },
+      "begruendung": "Trotz des guten Gehalts ist das Betriebs- und Servicemanagement: Verantwortung für die Betriebsphase, SLA-Einhaltung, ITIL, Change- und Release-Prozesse und Problemmanagement — nicht Entwicklung oder Architektur. Reiner Betrieb liegt laut Profil unter deinem Niveau. Nächster BWI-Standort Hannover, rund 1,5 Stunden. Die Architektur-Variante im selben Umfeld (bwi:69771) habe ich dir dagegen als interessant vorgelegt."
+    },
+    {
+      "jobId": "bwi:69771",
+      "status": "interessant",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:24:21.685Z",
+      "punkte": 6,
+      "punkteDetails": {
+        "entfernung": 6,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 6
+      },
+      "begruendung": "IT-Service-Architektur für die Ausbildungssysteme der Bundeswehr: Design und Weiterentwicklung des Lernverwaltungstools nach dem BWI-Entwicklungsframework, mit agiler Softwareentwicklung und DevSecOps. Der Betriebs- und Serviceanteil (Change- und Service-Requests, Kostenkalkulation) ist größer als bei einer reinen Architekturstelle. 71.000–104.040 € über E13, nächster BWI-Standort Hannover rund 1,5 Stunden."
+    },
+    {
+      "jobId": "bwi:69780",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:25:06.252Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 6,
+        "homeoffice": 5,
+        "gehalt": 8,
+        "arbeitszeit": 6,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Das ist klassischer Systembetrieb: 2nd- und 3rd-Level-Support nach ITIL, Windows-Server, Active Directory, LAN/WAN und Firewalls, dazu Reisebereitschaft zu Nutzerstandorten. Betrieb und Support liegen laut deinem Profil unter deinem Niveau, auch bei 71.000–104.040 €. Nächster BWI-Standort Hannover, rund 1,5 Stunden."
+    },
+    {
+      "jobId": "bwi:69788",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.188Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „44.100 € und 61“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "bwi:69800",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:25:06.262Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 4,
+        "homeoffice": 5,
+        "gehalt": 8,
+        "arbeitszeit": 7,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "SAP-Basis-Betrieb ist SAP-Fachrolle und damit ein No-Go aus deinem Profil. Anders als bei den bundesweiten BWI-Stellen sind hier feste Dienstorte genannt: Wilhelmshaven (rund 1,5 Stunden) und Bonn (rund 2,8 Stunden)."
+    },
+    {
+      "jobId": "bwi:69804",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:25:06.272Z",
+      "punkte": 2,
+      "punkteDetails": {
+        "entfernung": 4,
+        "homeoffice": 5,
+        "gehalt": 8,
+        "arbeitszeit": 7,
+        "verbeamtung": 0,
+        "gesamt": 2
+      },
+      "begruendung": "Wie die Engineer-Variante eine SAP-Basis-Fachrolle und damit ein No-Go aus deinem Profil. Dienstorte Wilhelmshaven (rund 1,5 Stunden) und Bonn (rund 2,8 Stunden)."
+    },
+    {
+      "jobId": "bwi:69811",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:25:06.284Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 6,
+        "homeoffice": 6,
+        "gehalt": 8,
+        "arbeitszeit": 6,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Customer Solution Management heißt hier IT-Servicemanagement, Anforderungsberatung und Projektkoordination mit betriebswirtschaftlicher Ausprägung — keine Entwicklung, keine Architektur. Dazu ist internationale Reisebereitschaft gefordert. Nächster BWI-Standort Hannover, rund 1,5 Stunden."
+    },
+    {
+      "jobId": "bwi:69815",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:25:06.293Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 6,
+        "homeoffice": 6,
+        "gehalt": 10,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Volljurist bzw. Syndikusrechtsanwalt — das setzt zwei juristische Staatsexamen voraus, die du nicht hast. Das Gehalt (104.700–153.000 €) ändert daran nichts. Nächster BWI-Standort Hannover, rund 1,5 Stunden."
+    },
+    {
+      "jobId": "bwi:69819",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:25:06.302Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 6,
+        "homeoffice": 6,
+        "gehalt": 9,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 1
+      },
+      "begruendung": "Wie die Senior-Variante eine Volljuristen-Stelle im IT-Recht und damit fachlich ausgeschlossen — juristische Staatsexamen sind zwingend. Nächster BWI-Standort Hannover, rund 1,5 Stunden."
     },
     {
       "jobId": "interamt:1000765",
@@ -9013,6 +9661,14 @@
       "status": "archiviert",
       "vonKi": true,
       "updatedAt": "2026-08-21T22:58:55.577Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1409679",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.188Z",
       "punkte": 0,
       "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 11“) — automatisch archiviert (ohne KI-Anfrage)."
     },
@@ -17746,6 +18402,646 @@
       "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „A5m - A7“) — automatisch archiviert (ohne KI-Anfrage)."
     },
     {
+      "jobId": "interamt:1483793",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.387Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 93053 Regensburg liegt geschätzt rund 5,3 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483797",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.194Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483804",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.387Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 53113 Bonn liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483858",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.387Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 99096 Erfurt liegt geschätzt rund 3,6 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483880",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.387Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 12103 Berlin liegt geschätzt rund 3,6 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483900",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.194Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483964",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.194Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1483989",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.388Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 14480 Potsdam liegt geschätzt rund 3,1 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484015",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.388Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 80335 München liegt geschätzt rund 5,5 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484052",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.388Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 69117 Heidelberg liegt geschätzt rund 4,0 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484068",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.194Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „A9g - A10“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484104",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.194Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 7 - TVöD-VKA E 10“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484117",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.388Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 39120 Magdeburg liegt geschätzt rund 3,0 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484120",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.388Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 39120 Magdeburg liegt geschätzt rund 3,0 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484151",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.194Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „A11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484219",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.194Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484273",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.194Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-Bund E 12“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484278",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.194Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-Bund E 12“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484300",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.194Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „A11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484335",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.194Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „A12“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484360",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.194Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „A12“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484362",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.194Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „A12“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484382",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.390Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 01705 Freital liegt geschätzt rund 4,3 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484403",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.194Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-TgDRV-Beschaeftigte E11 - TV-TgDRV-Beschaeftigte E12“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484418",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.390Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 53117 Bonn liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484427",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.194Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-TgDRV-Beschaeftigte E11 - TV-TgDRV-Beschaeftigte E12“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484430",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-TgDRV-Beschaeftigte E11 - TV-TgDRV-Beschaeftigte E12“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484446",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.390Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 04159 Leipzig liegt geschätzt rund 3,6 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484447",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-Bund E 8“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484457",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:25:06.312Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 5,
+        "homeoffice": 4,
+        "gehalt": 6,
+        "arbeitszeit": 8,
+        "verbeamtung": 0,
+        "gesamt": 3
+      },
+      "begruendung": "Leitung des Teams IT-Sicherheit ist genau die ausgewiesene Sicherheits-Spezialisierung, die du laut Profil nicht mitbringst. Dazu Laatzen bei Hannover mit rund 1,5 Stunden Fahrt und nur „Dienstort: Hybrid“ aus der Trefferliste, also kein belegter Homeoffice-Anteil; die Eingruppierung E12–E13 liegt zudem am unteren Rand deines Zielniveaus."
+    },
+    {
+      "jobId": "interamt:1484464",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484471",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.391Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 22159 Hamburg liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484472",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.391Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 23556 Lübeck liegt geschätzt rund 3,1 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484620",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.391Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 90478 Nürnberg liegt geschätzt rund 5,0 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484633",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.391Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 90478 Nürnberg liegt geschätzt rund 5,0 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484652",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 9a“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484682",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 10“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484734",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 10 - TV-L E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484738",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 9a“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484789",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-Bund E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484807",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 9a - TVöD-VKA E 10“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484815",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „A9g - A10“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484871",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.392Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 08066 Zwickau liegt geschätzt rund 4,5 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484880",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.392Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 80539 München liegt geschätzt rund 5,5 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484894",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:25:06.319Z",
+      "punkte": 3,
+      "punkteDetails": {
+        "entfernung": 4,
+        "homeoffice": 4,
+        "gehalt": 8,
+        "arbeitszeit": 8,
+        "verbeamtung": 10,
+        "gesamt": 3
+      },
+      "begruendung": "A13h mit Verbeamtung klingt zunächst passend, aber die Dezernentenstelle liegt in der Abteilung Naturschutz und Landschaftspflege — Fachrichtung Biologie, Landespflege oder Umweltwissenschaften, kein IT-Kern. Fachlich unpassend, unabhängig von der Besoldung. Recklinghausen sind rund 2 Stunden Fahrt."
+    },
+    {
+      "jobId": "interamt:1484948",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 9a“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484982",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1484983",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.393Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 32832 Augustdorf liegt geschätzt rund 1,2 Stunden Fahrt entfernt, und die Ausschreibung nennt keinerlei Homeoffice-Möglichkeit. Ohne Homeoffice ist dir selbst diese Entfernung zu weit. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1485021",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „A10 - A12“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1485443",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1485466",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-TgDRV-Beschaeftigte E11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1485551",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 9b“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1485647",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.393Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 19061 Schwerin liegt geschätzt rund 3,1 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1485728",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 7“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1485775",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1485787",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 8“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1485791",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1485813",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.393Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 60327 Frankfurt am Main liegt geschätzt rund 3,5 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1485887",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.394Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 69120 Heidelberg liegt geschätzt rund 4,0 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1485920",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-Bund E 5“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1485931",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 8“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1485933",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 12“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1485945",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „BAT-KF E 5“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1485960",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.394Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 69120 Heidelberg liegt geschätzt rund 4,0 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1485993",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.394Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 50829 Köln liegt geschätzt rund 2,5 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1485997",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1486002",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.394Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 24105 Kiel liegt geschätzt rund 3,3 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1486008",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 12“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1486011",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 9b“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1486017",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-H E 12“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1486027",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 9b“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1486037",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.395Z",
+      "punkte": 0,
+      "begruendung": "Dienstort 24113 Kiel liegt geschätzt rund 3,3 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1486046",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-Bund E 12“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1486060",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 10“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1486079",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 9b“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1486096",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 8“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1486179",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TV-L E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "interamt:1486257",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.195Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „TVöD-VKA E 11“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
       "jobId": "interamt:684464",
       "status": "archiviert",
       "vonKi": true,
@@ -19276,6 +20572,70 @@
       "updatedAt": "2026-08-21T22:58:55.590Z",
       "punkte": 0,
       "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „E4 (TVöD Bund) Befristet bis: 31.12.2029“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD1A6DD8318A45E0DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.197Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „Entgeltgruppe 6 TVöD“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD1A7F434DF54B8EDC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.197Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „Entgeltgruppe 9a des Teils I der EntgO Bund“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD1A88D5F864FB40DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.197Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „E 12 (TVöD Bund)“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD1A89134FA1B6D0DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.409Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Bonn liegt geschätzt rund 2,8 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD1A8AA21B81C976DC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.197Z",
+      "punkte": 0,
+      "begruendung": "Gehalt liegt eindeutig unter deinem Zielniveau E13/A13 (Angabe: „Entgeltgruppe 11 TVöD“) — automatisch archiviert (ohne KI-Anfrage)."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD1A8D484246C81EDC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:25:06.327Z",
+      "punkte": 1,
+      "punkteDetails": {
+        "entfernung": 1,
+        "homeoffice": 4,
+        "gehalt": 8,
+        "arbeitszeit": 5,
+        "verbeamtung": 10,
+        "gesamt": 1
+      },
+      "begruendung": "Sachgebietsleitung Ahndung beim Hauptzollamt Landshut ist eine Volljuristen-Stelle — zwei Staatsexamen sind zwingend, das schließt dich fachlich aus. Der Dienstort Altdorf bei Landshut liegt zudem rund 5,5 Stunden Fahrt entfernt."
+    },
+    {
+      "jobId": "itzbund:1000004333801FD1A8D590EB8156CDC6",
+      "status": "archiviert",
+      "vonKi": true,
+      "updatedAt": "2026-08-31T21:23:37.409Z",
+      "punkte": 0,
+      "begruendung": "Dienstort Augsburg liegt geschätzt rund 5,5 Stunden Fahrt entfernt — so weit wie Bonn oder weiter. Dafür wäre laut deinem Profil eine praktisch ortsunabhängige Stelle nötig (100 % remote, ganz überwiegend Homeoffice oder ein bis zwei Präsenztage im Monat); die Ausschreibung belegt das nicht. Automatisch archiviert (ohne KI-Anfrage)."
     }
   ]
 }
