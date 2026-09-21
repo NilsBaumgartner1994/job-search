@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "Manuelle Triage durch den Coding-Agenten (kein Gemini-Aufruf).\nGrundlage: data/agent/profil.md, die Notizen des Nutzers aus board.json sowie\ndie Regeln aus AGENTS.md (Entfernungsregel, No-Gos, Verbeamtungsgewichtung).\nBewertet wurden Trefferlisten-Felder und — wo nötig — der Volltext des Angebots.\nAngebot: Microsoft Administrator*in (m/w/d) (Universität Bielefeld, 33615 Bielefeld)",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  },
+  {
+    "role": "model",
+    "content": "{\n  \"entscheidung\": \"archivieren\",\n  \"punkte\": 3,\n  \"punkteDetails\": {\n    \"entfernung\": 6,\n    \"homeoffice\": 3,\n    \"gehalt\": 6,\n    \"arbeitszeit\": 8,\n    \"verbeamtung\": 0,\n    \"gesamt\": 3\n  },\n  \"begruendung\": \"Bielefeld wäre mit rund 1,25 Stunden noch machbar und E13 stimmt, aber reine Microsoft-Administration ist Systembetrieb und liegt damit unter deinem Profil. Ein Homeoffice-Anteil steht nicht in der Ausschreibung, und die Frist läuft bereits am 22.09.2026 ab.\"\n}",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  }
+]

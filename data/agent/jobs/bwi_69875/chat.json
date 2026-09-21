@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "Manuelle Triage durch den Coding-Agenten (kein Gemini-Aufruf).\nGrundlage: data/agent/profil.md, die Notizen des Nutzers aus board.json sowie\ndie Regeln aus AGENTS.md (Entfernungsregel, No-Gos, Verbeamtungsgewichtung).\nBewertet wurden Trefferlisten-Felder und — wo nötig — der Volltext des Angebots.\nAngebot: Werkstudent Interne Kommunikation Cloud (m/w/d) (BWI GmbH, Berlin, Bonn, München)",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  },
+  {
+    "role": "model",
+    "content": "{\n  \"entscheidung\": \"archivieren\",\n  \"punkte\": 0,\n  \"punkteDetails\": {\n    \"entfernung\": 1,\n    \"homeoffice\": 2,\n    \"gehalt\": 0,\n    \"arbeitszeit\": 2,\n    \"verbeamtung\": 0,\n    \"gesamt\": 0\n  },\n  \"begruendung\": \"Eine Werkstudentenstelle in der internen Kommunikation — weder im Umfang noch fachlich noch vom Niveau her etwas für dich. Dienstorte sind nur Berlin, Bonn oder München, also rund 2,75 bis 5,5 Stunden entfernt.\"\n}",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  }
+]

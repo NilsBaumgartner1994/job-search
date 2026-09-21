@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "Manuelle Triage durch den Coding-Agenten (kein Gemini-Aufruf).\nGrundlage: data/agent/profil.md, die Notizen des Nutzers aus board.json sowie\ndie Regeln aus AGENTS.md (Entfernungsregel, No-Gos, Verbeamtungsgewichtung).\nBewertet wurden Trefferlisten-Felder und — wo nötig — der Volltext des Angebots.\nAngebot: IT‐Architect Analytics & Künstliche Intelligenz (m/w/d) (BWI GmbH, bundesweit)",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  },
+  {
+    "role": "model",
+    "content": "{\n  \"entscheidung\": \"interessant\",\n  \"punkte\": 7,\n  \"punkteDetails\": {\n    \"entfernung\": 5,\n    \"homeoffice\": 5,\n    \"gehalt\": 8,\n    \"arbeitszeit\": 8,\n    \"verbeamtung\": 0,\n    \"gesamt\": 7\n  },\n  \"begruendung\": \"Architekturrolle für Analytics und KI mit Cloud-, Data-Engineering- und Foundation-Model-Themen — dieselbe Familie wie die BWI-Stellen, die dir schon vorgelegt wurden, und fachlich sehr nah an deinem Profil. 71.000 bis über 104.000 € liegen klar über E13. Nächster BWI-Standort ist Hannover mit rund 1,5 Stunden Fahrt, mobiles Arbeiten ist zugesagt, der Anteil aber nicht beziffert.\"\n}",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  }
+]

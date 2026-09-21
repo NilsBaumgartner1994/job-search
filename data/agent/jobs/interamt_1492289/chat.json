@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "Manuelle Triage durch den Coding-Agenten (kein Gemini-Aufruf).\nGrundlage: data/agent/profil.md, die Notizen des Nutzers aus board.json sowie\ndie Regeln aus AGENTS.md (Entfernungsregel, No-Gos, Verbeamtungsgewichtung).\nBewertet wurden Trefferlisten-Felder und — wo nötig — der Volltext des Angebots.\nAngebot: Technischen Referenten (m/w/d) im Bereich Technik (Niedersächsische Landesmedienanstalt, 30175 Hannover)",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  },
+  {
+    "role": "model",
+    "content": "{\n  \"entscheidung\": \"archivieren\",\n  \"punkte\": 2,\n  \"punkteDetails\": {\n    \"entfernung\": 4,\n    \"homeoffice\": 3,\n    \"gehalt\": 7,\n    \"arbeitszeit\": 8,\n    \"verbeamtung\": 0,\n    \"gesamt\": 2\n  },\n  \"begruendung\": \"Die Landesmedienanstalt sucht Nachrichtentechnik: Studio- und Verbreitungstechnik, terrestrische Sendeanlagen, Betrieb der Medientechnik. Abteilungsleitung und E13/E14 wären reizvoll, die Fachrichtung ist aber Rundfunktechnik statt Software Engineering. Hannover sind rund 1,5 Stunden, ein Homeoffice-Anteil wird nicht genannt.\"\n}",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  }
+]

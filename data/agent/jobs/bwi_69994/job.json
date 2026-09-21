@@ -1,0 +1,32 @@
+{
+  "id": "bwi:69994",
+  "employer": "BWI GmbH",
+  "titel": "Groupware Test Engineer (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/groupware-test-engineer-m-w-d-69994",
+  "referenzcode": "69994",
+  "beschreibung": "ab sofort und in Vollzeit bevorzugt in Berlin, Bonn, Köln, München alternativ bundesweit an einem unserer BWI-Standorte\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\n​Der Geschäftsbereich CDO SSD PoD2 Collaboration verantwortet die Architektur und Prozesse von Collaborations- Lösungen wie z.B. Fileservice, E-Mail, Document&Content Management sowie Unified Communications über den gesamten Lifecycle für den BWI Eigenbetrieb, die Bundeswehr und den Bund. Unsere Strategie sieht eine Bereitstellung von on-premise- und cloud- basierten Collaborations- Lösungen mit einer weitreichenden Automatisierung von Geschäftsprozessen und deren Anwendungsfällen u.a. auch mit Applikation auf Basis von Microsoft Sharepoint und Dynamics sowie der K2- und Pega-Plattform zur Workflowautomatisierung.\n\nAufgaben:\n- ​Konzeption und Planung des Testmanagements mit der Erstellung von Testszenarien und Testfällen unter Einhaltung bestehender Prozesse im Umfeld der Automatisierung von Groupware- Anwendungsfällen\n- Durchführung von funktionalen, Regressions- und Integrationstests sowie ​von \"End-to-End\" – Tests über die verbundenen Systeme der Service Management Infrastruktur (SMI) bis in die Backendsysteme mit notwendiger Ergebnisdokumentation​\n- Erstellung von Handlungsanweisungen und Nutzerdokumentationen\n- Konzeption und regelmäßige Bereitstellung von automatisierten Regressionstests\n- Teamorientierte Zusammenarbeit mit Service- und Projektverantwortlichen sowie mit den weiteren Stakeholdern\n\nBereich: Collaboration / Groupware",
+  "gehalt": "57.800 € und 84",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "Erfolgreich abgeschlossenes Studium mit IT-Bezug oder eine vergleichbare Ausbildung gepaart mit einer mehrjährigen Berufserfahrung",
+    "Sehr gute Plattformkenntnisse im Bereich der Microsoft Plattform und deren Schnittstellen in Systeme der Service Management Infrastruktur (SMI)​",
+    "Erfahrungen in der Konzeption und Automatisierung von Serviceprozessen auf Groupware Plattformen und dem ​​IT-Testmanagement",
+    "Erfahrungen im Umgang und Zusammenarbeit mit modernen Methoden des Projektmanagements – agiles Arbeiten mit Scrum, Kanban und unterstützenden Tools wie Jira und Concludis​",
+    "​Verhandlungssichere Deutschkenntnisse in Wort wie Schrift und ein fundiertes Verständnis der englischen Sprache"
+  ],
+  "voraussetzungenWuenschenswert": [
+    "ITIL-Foundation V3 Zer​tifizierung ist wünschenswert"
+  ],
+  "adapter": "bwi",
+  "firstSeen": "2026-09-17T03:28:05.550Z",
+  "lastSeen": "2026-09-17T03:28:05.550Z"
+}

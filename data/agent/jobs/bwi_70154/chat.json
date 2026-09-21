@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "Manuelle Triage durch den Coding-Agenten (kein Gemini-Aufruf).\nGrundlage: data/agent/profil.md, die Notizen des Nutzers aus board.json sowie\ndie Regeln aus AGENTS.md (Entfernungsregel, No-Gos, Verbeamtungsgewichtung).\nBewertet wurden Trefferlisten-Felder und — wo nötig — der Volltext des Angebots.\nAngebot: BI- und Reporting-Spezialist (m/w/d) (BWI GmbH, Berlin, Bonn, Hannover, Meckenheim, München)",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  },
+  {
+    "role": "model",
+    "content": "{\n  \"entscheidung\": \"archivieren\",\n  \"punkte\": 2,\n  \"punkteDetails\": {\n    \"entfernung\": 5,\n    \"homeoffice\": 5,\n    \"gehalt\": 6,\n    \"arbeitszeit\": 8,\n    \"verbeamtung\": 0,\n    \"gesamt\": 2\n  },\n  \"begruendung\": \"Die Anzeige verlangt mindestens fünf Jahre Callcenter-Erfahrung und drei Jahre Reporting mit SAP BO — das ist Fachreporting für den Servicebetrieb, nicht Data Engineering. Fachlich passt das nicht zu dir. Hannover ist als Standort genannt (rund 1,5 Stunden).\"\n}",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  }
+]

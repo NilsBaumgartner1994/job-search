@@ -1,0 +1,33 @@
+{
+  "id": "bwi:70110",
+  "employer": "BWI GmbH",
+  "titel": "Junior Golang Developer (m/w/d)",
+  "link": "https://www.bwi.de/karriere/stellenangebote/job/junior-golang-developer-m-w-d-70110",
+  "referenzcode": "70110",
+  "beschreibung": "ab sofort und in Vollzeit bundesweit an einem unserer BWI Standorte.\n\nSorge gemeinsam mit uns für die digitale Zukunftsfähigkeit der Bundeswehr.\nAls primärer Digitalisierungspartner der Bundeswehr erbringen wir stabile, sichere und effiziente IT-Services im In- und Ausland, vom Grundbetrieb bis in den einsatznahen Bereich und tragen so zur kontinuierlichen Erhöhung der Führungs- und Einsatzfähigkeit der Bundeswehr bei. Mit über 8.000 Kolleg*innen betreiben und modernisieren wir eine der größten und komplexesten IT-Infrastrukturen in Deutschland. Wir suchen verantwortungsvolle IT-Spezialist*innen, die die Bundeswehr-IT aus Überzeugung in herausfordernden Digitalisierungsvorhaben weiterentwickeln und so einen Beitrag zur Sicherheit Deutschlands leisten wollen.\n​In der Abteilung „Security Product Engineering“ werden die IT-Sicherheitskritischen Software-Projekte des CCITS umgesetzt und betrieben. Wir sind Teil des „Competence Centers IT-Security“ (CCITS), in welchem die operativen IT-, Informations- und Cyber-Sicherheitskompetenzen zentralisiert sind.​\n\nAufgaben:\n- Du unterstützt bei der Entwicklung von komplexen Microservices einer IT-Sicherheits-Infrastruktur\n- Du unterstützt bei dem Aufbau der CI/CD Pipeline\n- Du arbeitest als Mitglied eines agilen Teams\n- Ergebnisse und Fortschritte hältst Du über die gewissenhafte Erstellung und Pflege technischer Dokumentationen fest\n\nBereich: IT- / Cyber-Security",
+  "gehalt": "51.300 € und 75",
+  "befristung": [],
+  "arbeitszeit": [
+    "Vollzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "bundesweit"
+  ],
+  "homeoffice": "- Wir ermöglichen Flexibilität, um Beruf und Privatleben in Einklang zu bringen, etwa durch mobiles Arbeiten oder Vertrauensarbeitszeit",
+  "voraussetzungenZwingend": [
+    "Abgeschlossenes fachbezogenes Hochschulstudium oder vergleichbar und mind. 2 Jahre einschlägige Berufserfahrung",
+    "Gute Golang Kenntnisse",
+    "Kenntnisse im Bereich Authentifizierungsverfahren, bspw OIDC, mTLS",
+    "Kenntnisse im Bereich IT Security, bspw. Mitre Att&ck",
+    "Kommunikationsstärke und ein agiles Mindset",
+    "Teamfähigkeit und Durchsetzungsfähigkeit",
+    "Deutsch fließend, Englisch gute Kenntnisse",
+    "Grundsätzliche Reisebereitschaft"
+  ],
+  "voraussetzungenWuenschenswert": [],
+  "adapter": "bwi",
+  "firstSeen": "2026-09-17T03:28:03.562Z",
+  "lastSeen": "2026-09-17T03:28:03.562Z"
+}

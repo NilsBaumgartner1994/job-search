@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "Manuelle Triage durch den Coding-Agenten (kein Gemini-Aufruf).\nGrundlage: data/agent/profil.md, die Notizen des Nutzers aus board.json sowie\ndie Regeln aus AGENTS.md (Entfernungsregel, No-Gos, Verbeamtungsgewichtung).\nBewertet wurden Trefferlisten-Felder und — wo nötig — der Volltext des Angebots.\nAngebot: Projektleiter:in / Berater:in (m/w/d) (HIS-Institut für Hochschulentwicklung e.V., 30159 Hannover)",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  },
+  {
+    "role": "model",
+    "content": "{\n  \"entscheidung\": \"archivieren\",\n  \"punkte\": 2,\n  \"punkteDetails\": {\n    \"entfernung\": 4,\n    \"homeoffice\": 3,\n    \"gehalt\": 6,\n    \"arbeitszeit\": 8,\n    \"verbeamtung\": 0,\n    \"gesamt\": 2\n  },\n  \"begruendung\": \"Das HIS-Institut sucht hier ausdrücklich ein Masterstudium aus den Naturwissenschaften/Life Science mit Erfahrung in Laborarbeit und Laborplanung — Hochschulberatung ja, aber nicht in deiner Fachrichtung. Hannover wären rund 1,5 Stunden, Homeoffice ist nur als „Dienstort: Hybrid“ aus der Trefferliste erkennbar und damit nicht belegt.\"\n}",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  }
+]

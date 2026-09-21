@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "Manuelle Triage durch den Coding-Agenten (kein Gemini-Aufruf).\nGrundlage: data/agent/profil.md, die Notizen des Nutzers aus board.json sowie\ndie Regeln aus AGENTS.md (Entfernungsregel, No-Gos, Verbeamtungsgewichtung).\nBewertet wurden Trefferlisten-Felder und — wo nötig — der Volltext des Angebots.\nAngebot: Eine/einen ML Data Scientist (w/m/d) in Duisburg (Landesamt für zentrale polizeiliche Dienste NRW, 47059 Duisburg)",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  },
+  {
+    "role": "model",
+    "content": "{\n  \"entscheidung\": \"interessant\",\n  \"punkte\": 6,\n  \"punkteDetails\": {\n    \"entfernung\": 3,\n    \"homeoffice\": 5,\n    \"gehalt\": 6,\n    \"arbeitszeit\": 8,\n    \"verbeamtung\": 0,\n    \"gesamt\": 6\n  },\n  \"begruendung\": \"Das Dezernat entwickelt eigene intelligente Systeme und datengetriebene Softwarelösungen — ML-Modelle bauen statt Sicherheitsbetrieb, das passt fachlich klar zu dir. Unbefristet und E13. Duisburg liegt rund 2 Stunden entfernt; „mobiles Arbeiten“ ist im Text zugesagt, aber ohne Anteil, deshalb solltest du vor einer Bewerbung klären, wie viele Präsenztage tatsächlich anfallen — bei zwei Stunden je Richtung entscheidet das alles.\"\n}",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  }
+]

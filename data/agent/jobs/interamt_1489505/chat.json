@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "Manuelle Triage durch den Coding-Agenten (kein Gemini-Aufruf).\nGrundlage: data/agent/profil.md, die Notizen des Nutzers aus board.json sowie\ndie Regeln aus AGENTS.md (Entfernungsregel, No-Gos, Verbeamtungsgewichtung).\nBewertet wurden Trefferlisten-Felder und — wo nötig — der Volltext des Angebots.\nAngebot: Tierärztin / Tierarzt (m/w/d) für die Leitung des Geschäftsbereichs Tiergesundheit (Chemisches und Veterinäruntersuchungsamt RRW, 47798 Krefeld)",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  },
+  {
+    "role": "model",
+    "content": "{\n  \"entscheidung\": \"archivieren\",\n  \"punkte\": 1,\n  \"punkteDetails\": {\n    \"entfernung\": 3,\n    \"homeoffice\": 3,\n    \"gehalt\": 9,\n    \"arbeitszeit\": 8,\n    \"verbeamtung\": 0,\n    \"gesamt\": 1\n  },\n  \"begruendung\": \"Leitung des Geschäftsbereichs Tiergesundheit mit tierärztlicher Approbation als Voraussetzung — fachlich vollständig außerhalb deines Gebiets, auch wenn E15 und Führungsrolle attraktiv klingen. Krefeld sind rund 2 Stunden Fahrt.\"\n}",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  }
+]

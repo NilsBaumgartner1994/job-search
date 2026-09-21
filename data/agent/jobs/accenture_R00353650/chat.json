@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "Manuelle Triage durch den Coding-Agenten (kein Gemini-Aufruf).\nGrundlage: data/agent/profil.md, die Notizen des Nutzers aus board.json sowie\ndie Regeln aus AGENTS.md (Entfernungsregel, No-Gos, Verbeamtungsgewichtung).\nBewertet wurden Trefferlisten-Felder und — wo nötig — der Volltext des Angebots.\nAngebot: DevOps Engineering Manager (all genders) (Accenture, Kronberg, Hamburg, Alter Wandrahm/Dienerreihe, Dresden, Fabrikstrasse 13, Dusseldorf, Kaistrasse, Corporate, Stuttgart, BoschAreal, Corporate, Mannheim, Harrlachweg 3, Jena, B28, Carl-Pulfrich-Strasse 5b, Berlin, Hallesches Ufer 40, Munich, Balan Campus Building 17)",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  },
+  {
+    "role": "model",
+    "content": "{\n  \"entscheidung\": \"interessant\",\n  \"punkte\": 6,\n  \"punkteDetails\": {\n    \"entfernung\": 3,\n    \"homeoffice\": 4,\n    \"gehalt\": 0,\n    \"arbeitszeit\": 7,\n    \"verbeamtung\": 0,\n    \"gesamt\": 6\n  },\n  \"begruendung\": \"Cloud- und Platform-Engineering mit MLOps/LLMOps, technischen Zielbildern und Teamführung — die Kombination aus Architektur, Entwicklung und Führung trifft dein Profil gut. Der nächste Standort ist Düsseldorf mit rund 2,25 Stunden Fahrt. Die Anzeige nennt weder ein Gehaltsband noch einen Homeoffice-Anteil, im Bewerbersystem steht nur „Hybrid“; bedenke außerdem den Beratungscharakter mit Projekteinsatz beim Kunden. Beides vor einer Bewerbung konkret erfragen.\"\n}",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  }
+]

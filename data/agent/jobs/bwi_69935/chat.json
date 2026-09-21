@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "Manuelle Triage durch den Coding-Agenten (kein Gemini-Aufruf).\nGrundlage: data/agent/profil.md, die Notizen des Nutzers aus board.json sowie\ndie Regeln aus AGENTS.md (Entfernungsregel, No-Gos, Verbeamtungsgewichtung).\nBewertet wurden Trefferlisten-Felder und — wo nötig — der Volltext des Angebots.\nAngebot: Senior Solution Architect - Infrastruktur / Cloud Services (m/w/d) (BWI GmbH, bundesweit)",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  },
+  {
+    "role": "model",
+    "content": "{\n  \"entscheidung\": \"interessant\",\n  \"punkte\": 6,\n  \"punkteDetails\": {\n    \"entfernung\": 5,\n    \"homeoffice\": 5,\n    \"gehalt\": 8,\n    \"arbeitszeit\": 8,\n    \"verbeamtung\": 0,\n    \"gesamt\": 6\n  },\n  \"begruendung\": \"Lösungsarchitektur mit Schwerpunkt Design und Konzeption komplexer IT-Solutions, inklusive Public/Private Cloud und Container — der Entwurfskern passt zu dir, der Infrastruktur- und Netzwerkanteil ist allerdings größer als bei den reinen Software-Architekturstellen. Gehalt 71.000 bis über 104.000 €, also deutlich über E13. Nächster BWI-Standort Hannover, rund 1,5 Stunden Fahrt, mobiles Arbeiten zugesagt ohne Prozentangabe.\"\n}",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  }
+]
