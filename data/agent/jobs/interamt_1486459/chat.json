@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "Manuelle Triage durch den Coding-Agenten (kein Gemini-Aufruf).\nGrundlage: data/agent/profil.md, die Notizen des Nutzers aus board.json sowie\ndie Regeln aus AGENTS.md (Entfernungsregel, No-Gos, Verbeamtungsgewichtung).\nBewertet wurden Trefferlisten-Felder und — wo nötig — der Volltext des Angebots.\nAngebot: Ingenieur*in Versorgungstechnik (m/w/d) (Heinrich-Heine-Universität Düsseldorf, 40225 Düsseldorf)",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  },
+  {
+    "role": "model",
+    "content": "{\n  \"entscheidung\": \"archivieren\",\n  \"punkte\": 1,\n  \"punkteDetails\": {\n    \"entfernung\": 2,\n    \"homeoffice\": 3,\n    \"gehalt\": 6,\n    \"arbeitszeit\": 8,\n    \"verbeamtung\": 0,\n    \"gesamt\": 1\n  },\n  \"begruendung\": \"Versorgungstechnik (Heizung, Lüftung, Sanitär) im Gebäudemanagement ist ein ganz anderes Ingenieurfach als Informatik. Düsseldorf wären rund 2,25 Stunden Fahrt ohne belegten Homeoffice-Anteil.\"\n}",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "Manuelle Triage durch den Coding-Agenten (kein Gemini-Aufruf).\nGrundlage: data/agent/profil.md, die Notizen des Nutzers aus board.json sowie\ndie Regeln aus AGENTS.md (Entfernungsregel, No-Gos, Verbeamtungsgewichtung).\nBewertet wurden Trefferlisten-Felder und — wo nötig — der Volltext des Angebots.\nAngebot: Experte Rechenzentrum Infrastruktur (m/w/d) (BWI GmbH, bundesweit)",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  },
+  {
+    "role": "model",
+    "content": "{\n  \"entscheidung\": \"archivieren\",\n  \"punkte\": 3,\n  \"punkteDetails\": {\n    \"entfernung\": 5,\n    \"homeoffice\": 5,\n    \"gehalt\": 8,\n    \"arbeitszeit\": 7,\n    \"verbeamtung\": 0,\n    \"gesamt\": 3\n  },\n  \"begruendung\": \"Gefordert sind vier Jahre Erfahrung in der Planung von Rechenzentrums-Infrastrukturen plus ITIL-Prozesswissen mit Zertifizierung — das ist Infrastruktur- und Prozessarbeit, keine Softwareentwicklung. Das Gehalt von 71.000 bis über 104.000 € ist gut, ändert an der fachlichen Lücke aber nichts. Nächster BWI-Standort Hannover, rund 1,5 Stunden.\"\n}",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  }
+]

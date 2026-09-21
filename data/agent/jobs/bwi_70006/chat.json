@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "Manuelle Triage durch den Coding-Agenten (kein Gemini-Aufruf).\nGrundlage: data/agent/profil.md, die Notizen des Nutzers aus board.json sowie\ndie Regeln aus AGENTS.md (Entfernungsregel, No-Gos, Verbeamtungsgewichtung).\nBewertet wurden Trefferlisten-Felder und — wo nötig — der Volltext des Angebots.\nAngebot: Senior IT Architect Datacenter VMware Network Virtualisation (m/w/d) (BWI GmbH, bundesweit)",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  },
+  {
+    "role": "model",
+    "content": "{\n  \"entscheidung\": \"archivieren\",\n  \"punkte\": 4,\n  \"punkteDetails\": {\n    \"entfernung\": 5,\n    \"homeoffice\": 5,\n    \"gehalt\": 8,\n    \"arbeitszeit\": 8,\n    \"verbeamtung\": 0,\n    \"gesamt\": 4\n  },\n  \"begruendung\": \"„IT Architect“ im Titel, inhaltlich aber Rechenzentrums- und Netzwerkvirtualisierung: gefordert werden Zertifizierungen in VMware Cloud Foundation, LAN-Networking, NSX und Firewalling. Das ist Infrastrukturspezialisierung, die du nicht mitbringst und laut Profil auch nicht suchst. Nächster BWI-Standort Hannover, rund 1,5 Stunden.\"\n}",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  }
+]

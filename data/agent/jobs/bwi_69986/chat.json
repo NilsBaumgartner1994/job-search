@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "Manuelle Triage durch den Coding-Agenten (kein Gemini-Aufruf).\nGrundlage: data/agent/profil.md, die Notizen des Nutzers aus board.json sowie\ndie Regeln aus AGENTS.md (Entfernungsregel, No-Gos, Verbeamtungsgewichtung).\nBewertet wurden Trefferlisten-Felder und — wo nötig — der Volltext des Angebots.\nAngebot: Senior Robotics Research Engineer - Foundation Models & Agentic Systems (m/w/d) (BWI GmbH, bundesweit)",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  },
+  {
+    "role": "model",
+    "content": "{\n  \"entscheidung\": \"interessant\",\n  \"punkte\": 8,\n  \"punkteDetails\": {\n    \"entfernung\": 5,\n    \"homeoffice\": 5,\n    \"gehalt\": 9,\n    \"arbeitszeit\": 8,\n    \"verbeamtung\": 0,\n    \"gesamt\": 8\n  },\n  \"begruendung\": \"Robotik-Forschung mit Foundation Models und agentischen Systemen — die Ausschreibung nennt eine Promotion in Informatik/ML ausdrücklich als Qualifikation und verlangt ausgezeichnete Software-Engineering-Kenntnisse; das passt sehr gut zu deiner Forschungs- und Entwicklungslaufbahn. Das Band von 87.700 € bis über 128.000 € liegt deutlich über E13. „Bundesweit“ heißt bei der BWI ein BWI-Standort, der nächste ist Hannover mit rund 1,5 Stunden Fahrt; mobiles Arbeiten ist zugesagt, aber ohne Prozentangabe — kläre den Anteil vor einer Bewerbung.\"\n}",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  }
+]

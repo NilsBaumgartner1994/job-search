@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "Manuelle Triage durch den Coding-Agenten (kein Gemini-Aufruf).\nGrundlage: data/agent/profil.md, die Notizen des Nutzers aus board.json sowie\ndie Regeln aus AGENTS.md (Entfernungsregel, No-Gos, Verbeamtungsgewichtung).\nBewertet wurden Trefferlisten-Felder und — wo nötig — der Volltext des Angebots.\nAngebot: Lead Expert Business Integration (m/w/d) (BWI GmbH, bundesweit)",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  },
+  {
+    "role": "model",
+    "content": "{\n  \"entscheidung\": \"interessant\",\n  \"punkte\": 5,\n  \"punkteDetails\": {\n    \"entfernung\": 5,\n    \"homeoffice\": 5,\n    \"gehalt\": 9,\n    \"arbeitszeit\": 8,\n    \"verbeamtung\": 0,\n    \"gesamt\": 5\n  },\n  \"begruendung\": \"Technische Leitungsrolle rund um eine Cloud-basierte Test-, Integrations- und Entwicklungsumgebung mit Kubernetes, Linux und Ansible — mit 87.700 bis über 128.000 € das höchste Band in dieser Runde. Dämpfer: Der Schwerpunkt liegt auf Steuerung und Vorbereitung von Testszenarien, nicht auf Entwicklung, und die Anzeige verlangt Mitarbeit in mindestens drei Bundeswehr-Umsetzungsprojekten. Nächster BWI-Standort Hannover, rund 1,5 Stunden Fahrt, mobiles Arbeiten zugesagt.\"\n}",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  }
+]

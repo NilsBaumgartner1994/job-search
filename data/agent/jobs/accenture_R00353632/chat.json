@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "Manuelle Triage durch den Coding-Agenten (kein Gemini-Aufruf).\nGrundlage: data/agent/profil.md, die Notizen des Nutzers aus board.json sowie\ndie Regeln aus AGENTS.md (Entfernungsregel, No-Gos, Verbeamtungsgewichtung).\nBewertet wurden Trefferlisten-Felder und — wo nötig — der Volltext des Angebots.\nAngebot: Junior Consultant für AI-Powered Enterprise-Netzwerke (all genders) (Accenture, Kronberg, Stuttgart, Hamburg, Dusseldorf, Munich, Berlin)",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  },
+  {
+    "role": "model",
+    "content": "{\n  \"entscheidung\": \"archivieren\",\n  \"punkte\": 3,\n  \"punkteDetails\": {\n    \"entfernung\": 3,\n    \"homeoffice\": 3,\n    \"gehalt\": 0,\n    \"arbeitszeit\": 7,\n    \"verbeamtung\": 0,\n    \"gesamt\": 3\n  },\n  \"begruendung\": \"Junior Consultant für Enterprise-Netzwerke: Einstiegsstufe und Netzwerkschwerpunkt — beides passt nicht zu deinem Erfahrungsstand und deinem Software-Engineering-Profil. Nächster Standort Düsseldorf, rund 2,25 Stunden, kein Gehalt und kein Homeoffice-Anteil genannt.\"\n}",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  }
+]

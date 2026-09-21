@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "Manuelle Triage durch den Coding-Agenten (kein Gemini-Aufruf).\nGrundlage: data/agent/profil.md, die Notizen des Nutzers aus board.json sowie\ndie Regeln aus AGENTS.md (Entfernungsregel, No-Gos, Verbeamtungsgewichtung).\nBewertet wurden Trefferlisten-Felder und — wo nötig — der Volltext des Angebots.\nAngebot: Groupware Test Engineer (m/w/d) (BWI GmbH, bundesweit)",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  },
+  {
+    "role": "model",
+    "content": "{\n  \"entscheidung\": \"archivieren\",\n  \"punkte\": 4,\n  \"punkteDetails\": {\n    \"entfernung\": 5,\n    \"homeoffice\": 5,\n    \"gehalt\": 6,\n    \"arbeitszeit\": 8,\n    \"verbeamtung\": 0,\n    \"gesamt\": 4\n  },\n  \"begruendung\": \"Testmanagement auf Microsoft-Groupware-Plattformen mit Service-Management-Schnittstellen und ITIL-Zertifizierung als Wunsch — der Schwerpunkt liegt auf Serviceprozessen und Plattformbetrieb, nicht auf Softwareentwicklung oder Testautomatisierung im Entwicklungsteam. 57.800 bis 84.000 € liegen etwa auf E13-Niveau; nächster BWI-Standort Hannover, rund 1,5 Stunden.\"\n}",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "Manuelle Triage durch den Coding-Agenten (kein Gemini-Aufruf).\nGrundlage: data/agent/profil.md, die Notizen des Nutzers aus board.json sowie\ndie Regeln aus AGENTS.md (Entfernungsregel, No-Gos, Verbeamtungsgewichtung).\nBewertet wurden Trefferlisten-Felder und — wo nötig — der Volltext des Angebots.\nAngebot: Solution Architects Analytics & AI (m/w/d) (Deutsche Bundesbank, 60431 Frankfurt am Main)",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  },
+  {
+    "role": "model",
+    "content": "{\n  \"entscheidung\": \"interessant\",\n  \"punkte\": 8,\n  \"punkteDetails\": {\n    \"entfernung\": 4,\n    \"homeoffice\": 9,\n    \"gehalt\": 9,\n    \"arbeitszeit\": 9,\n    \"verbeamtung\": 10,\n    \"gesamt\": 8\n  },\n  \"begruendung\": \"Fachlich ein Volltreffer: Analytics- und KI-Lösungen konzipieren, Prototypen selbst bauen, Requirements Engineering — genau deine Schnittmenge aus Software Engineering und KI. Frankfurt liegt zwar rund 3,5 Stunden weg, aber die Bundesbank belegt im Text ausdrücklich „umfangreiche Homeoffice-Möglichkeiten innerhalb von Deutschland (grundsätzlich bis zu 60 % der Arbeitszeit)“ — damit ist genau die Bedingung erfüllt, die du für so weite Dienstorte gesetzt hast. Dazu unbefristet, A13–A15 mit Fortführung eines Beamtenverhältnisses bis A 15; achte auf die Frist am 27.09.2026.\"\n}",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  }
+]

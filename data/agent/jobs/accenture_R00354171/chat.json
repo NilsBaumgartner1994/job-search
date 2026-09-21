@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "Manuelle Triage durch den Coding-Agenten (kein Gemini-Aufruf).\nGrundlage: data/agent/profil.md, die Notizen des Nutzers aus board.json sowie\ndie Regeln aus AGENTS.md (Entfernungsregel, No-Gos, Verbeamtungsgewichtung).\nBewertet wurden Trefferlisten-Felder und — wo nötig — der Volltext des Angebots.\nAngebot: Junior Frontend Developer (all genders) (Accenture, Kronberg, Building Beta, Stuttgart, Hamburg, Dusseldorf, Munich, Berlin)",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  },
+  {
+    "role": "model",
+    "content": "{\n  \"entscheidung\": \"archivieren\",\n  \"punkte\": 3,\n  \"punkteDetails\": {\n    \"entfernung\": 3,\n    \"homeoffice\": 5,\n    \"gehalt\": 0,\n    \"arbeitszeit\": 7,\n    \"verbeamtung\": 0,\n    \"gesamt\": 3\n  },\n  \"begruendung\": \"Frontend-Entwicklung mit React passt fachlich, die Junior-Stufe („erste Praxiserfahrung sammeln“, Unterstützung erfahrener Entwickler) liegt aber weit unter deinem Erfahrungsstand. Die Senior-Frontend-Stelle bei Accenture liegt bei dir bereits auf „interessant“. Nächster Standort Düsseldorf, rund 2,25 Stunden.\"\n}",
+    "at": "2026-09-21T10:20:12.688Z",
+    "kind": "triage"
+  }
+]

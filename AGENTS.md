@@ -212,9 +212,9 @@ Nutzer direkt ansprechen („du“) und immer die geschätzte Fahrzeit nennen.
 
 ## Was beim nächsten Mal zu tun ist
 
-1. **Die Warteschlange ist leer.** Stand 31.08.2026 sind alle 1.478 aktuell
-   gelisteten Angebote eingeordnet (2.037 Board-Einträge — die Differenz sind
-   Angebote, die die Portale inzwischen entfernt haben), 77 davon interessant
+1. **Die Warteschlange ist leer.** Stand 21.09.2026 sind alle 1.450 aktuell
+   gelisteten Angebote eingeordnet (2.398 Board-Einträge — die Differenz sind
+   Angebote, die die Portale inzwischen entfernt haben), 85 davon interessant
    und 3 beworben. Neue Arbeit entsteht erst durch den nächsten `yarn crawl`.
 2. **Nach einem Crawl** greifen die drei Filter automatisch; danach bleibt nur
    ein kleiner Rest zur inhaltlichen Bewertung. Blockweise arbeiten (~30 Angebote

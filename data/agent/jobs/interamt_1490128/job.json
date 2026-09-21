@@ -1,0 +1,52 @@
+{
+  "id": "interamt:1490128",
+  "employer": "Landesamt für zentrale polizeiliche Dienste NRW",
+  "titel": "Eine/einen ML Data Scientist (w/m/d) in Duisburg",
+  "link": "https://interamt.de/koop/app/trefferliste?stellenangebotliste=1490128",
+  "referenzcode": "1490128",
+  "gehaltsstufe": "TV-L E 13",
+  "befristung": [
+    "Unbefristet"
+  ],
+  "arbeitszeit": [
+    "Vollzeit",
+    "Teilzeit"
+  ],
+  "verbeamtung": false,
+  "laufbahn": [],
+  "dienstorte": [
+    "47059 Duisburg"
+  ],
+  "homeoffice": "Dienstort: Hybrid",
+  "bewerbungsfrist": "2026-10-07",
+  "voraussetzungenZwingend": [],
+  "voraussetzungenWuenschenswert": [
+    "Sie bringen bereits mehrjährige Erfahrung im Bereich Data Engineering oder Data Science mit und haben Kenntnisse im Aufbau und in der Nutzung von Data Lakes und Data Warehouses",
+    "Sie verfügen über fundierte Erfahrung in der explorativen Datenanalyse (EDA) und Visualisierung und verfügen über detailliertes Wissen über die aktuell verfügbaren Modelle und deren Eignung für die spez. Einsatzzwecke",
+    "Sie bringen methodische Kenntnisse über Statistik, Modellvalidierung, Hyperparameter-Optimierung, spezifisch auch Feature-Engineering mit",
+    "Sehr gute Deutsch- und Englischkenntnisse sind für Sie selbstverständlich",
+    "Sie sind vertraut mit Containerisierung und Orchestrierung (Kubernetes) und bringen Kenntnisse in CI/CD-Prozessen für Machine-Learning-Modelle mit.",
+    "Sie besitzen ein gutes Verständnis für Feature Engineering. Modelltraining und Modellbewertung",
+    "Analytisches Denken, Problemlösungsfähigkeiten, Teamfähigkeit und eine gute Kommunikationsfähigkeit runden Ihr Profil ab",
+    "Bitte bewerben Sie sich in deutscher Sprache (beruflicher Werdegang, Arbeitszeugnisse, Qualifikationen usw.) bis zum 07.10.2026 unter folgenden Link:",
+    "https://jobs.polizei.nrw/index.php?ac=jobad&code=ZD1omNYdRQ7TIl4xuyiMrr9iD1PGF%2BRagWWpyTxgZ8tNNbUcXmjLef7EiaxqFq%2FRjGXXvDMkao2fzMUPQdL%2B8LEV2cQgtexN",
+    "Haben Sie Fragen?",
+    "Wenden Sie sich gern an:",
+    "Herr Dominic Reese",
+    "0203/4175-80100, für fachliche Fragen",
+    "Herrn Matthias Beck",
+    "0203/4175-72122, für Fragen zum Bewerbungsverfahren",
+    "Vergütung:",
+    "Unsere Bezahlung richtet sich nach dem Tarifvertrag für den öffentlichen Dienst der Länder (TV-L). Eine Eingruppierung bis einschließlich Entgeltgruppe 13 TV-L ist möglich.",
+    "Maßgabe des LGG NRW bevorzugt berücksichtigt. Teilzeitbeschäftigung ist möglich. Bewerbungen von Menschen mit Schwerbehinderung, ihnen Gleichgestellte sowie Menschen mit Migrationshintergrund sind ausdrücklich erwünscht.",
+    "Informationen zum Datenschutz finden Sie unter:",
+    "https://lzpd.polizei.nrw/artikel/information-zur-verarbeitung-personenbezogener-daten-durch-das-lzpd-nrw",
+    "Wir freuen uns auf Ihre Bewerbung!",
+    "Auf dieses Angebot können Sie sich nur über die",
+    "Bewerbungsseite",
+    "der ausschreibenden Behörde bewerben."
+  ],
+  "adapter": "interamt",
+  "firstSeen": "2026-09-17T03:34:42.015Z",
+  "lastSeen": "2026-09-17T03:34:42.015Z"
+}
